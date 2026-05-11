@@ -87,7 +87,7 @@ Open <http://localhost:3000>.
 |---|---|---|
 | `EMAIL_HOST` / `EMAIL_PORT` / `EMAIL_USER` / `EMAIL_PASS` / `EMAIL_FROM` | yes (for `/api/contact`) | SMTP credentials for nodemailer. Port defaults to `465` (TLS). |
 | `CONTACT_RECIPIENT` | no | Address that receives form submissions. Defaults to `info@collabdt.org`. |
-| `MINIO_BUCKET_URL` | yes (for hero video) | Base URL of the public MinIO bucket that hosts `cdt-homepage/cdt-demo-home.mp4` and `home-bg.png`. Server-side only (no `NEXT_PUBLIC_` prefix) — read in `src/app/page.tsx` and passed down via props so the URL is not inlined into the client bundle. Background falls back to `public/images/homepage/home-bg.png` when unset. |
+| `MINIO_BUCKET_URL` | yes | Base URL of the public MinIO bucket that hosts `cdt-homepage/cdt-demo-home.mp4` and `home-bg.png`. Server-side only (no `NEXT_PUBLIC_` prefix) — read in `src/app/page.tsx` and passed down via props so the URL is not inlined into the client bundle. Background falls back to `public/images/homepage/home-bg.png` when unset. |
 
 ---
 

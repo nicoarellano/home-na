@@ -9,6 +9,7 @@ import Navbar from './Navbar'
 import HeroSection from './HeroSection'
 import AboutSection from './AboutSection'
 import ContributorsSection from './ContributorsSection'
+import TeamSection from './TeamSection'
 import ContactSection from './ContactSection'
 import Footer from './Footer'
 import { Language } from '@/lib/language'
@@ -32,7 +33,7 @@ export function Home({ assetsUrl }: HomeProps) {
     document.documentElement.classList.toggle('dark', true)
 
     const handleScroll = () => {
-      const sections = ['about', 'contributors', 'contact']
+      const sections = ['about', 'contributors', 'team', 'contact']
       const current = sections.find((section) => {
         const element = document.getElementById(section)
         if (element) {
@@ -140,6 +141,7 @@ export function Home({ assetsUrl }: HomeProps) {
       <HeroSection assetsUrl={assetsUrl} />
       <AboutSection />
       <ContributorsSection />
+      <TeamSection />
       <ContactSection onSubmit={handleSubmit} isSubmitting={isSubmitting} />
       <Footer />
     </div>
