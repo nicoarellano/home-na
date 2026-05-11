@@ -25,14 +25,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: 'Collab Digital Twins',
       description: tHero('description'),
-      images: [`${basePath}/images/cdt-logo-bg.png`],
+      siteName: 'Collab Digital Twins',
+      images: [`${basePath}/images/cdt-og_card.png`],
       type: 'website',
+      locale: locale === 'Fr' ? 'fr_CA' : 'en_CA',
     },
     twitter: {
       card: 'summary_large_image',
       title: 'Collab Digital Twins',
       description: tHero('description'),
-      images: [`${basePath}/images/cdt-logo-bg.png`],
+      images: [`${basePath}/images/cdt-og_card.png`],
     },
   }
 }
