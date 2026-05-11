@@ -80,7 +80,7 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
                 className="btn-sovereign text-base px-8 w-full sm:w-auto"
                 asChild
               >
-                <a href="/cdt" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.collabdt.org/cdt" target="_blank" rel="noopener noreferrer">
                   {tHero('platformButton')}
                 </a>
               </Button>

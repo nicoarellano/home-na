@@ -119,7 +119,7 @@ export default function Navbar({
               </Button>
 
               <Button size="sm" className="btn-nav-cta rounded-md px-5 text-sm" asChild>
-                <a href="/cdt" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.collabdt.org/cdt" target="_blank" rel="noopener noreferrer">
                   {tHero('platformButton')}
                 </a>
               </Button>
