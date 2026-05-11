@@ -1,0 +1,177 @@
+{
+  "HomePage": {
+    "nav": {
+      "about": "about",
+      "contributors": "contributors",
+      "contact": "contact"
+    },
+    "hero": {
+      "democratizing": "Democratizing Digital Twin Technology",
+      "title": "Collab Digital Twins",
+      "description": "We are a Canadian not-for-profit, stewarding a web-based, non-proprietary platform for the visualization of and interaction with multi-scale geospatial information systems, open data, and BIM models. We are advocates for open digital technologies, the human imagination, and long-term public benefit.",
+      "platformButton": "Go to the Platform",
+      "betaButton": "Join the Beta",
+      "videoFallback": "Your browser does not support the video tag.",
+      "release": "RELEASE"
+    },
+    "mission": {
+      "sectionLabel": "Our Mission",
+      "titleBefore": "Our mission is to",
+      "titleHighlight": "democratize",
+      "titleAfter": "Digital Twin technologies",
+      "description": "We are bridging BIM and GIS using open standards and free, open-source technologies, enabling stakeholders to visualize and analyze data directly in the browser, eliminating proprietary barriers."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "openStandards": {
+        "title": "Open Standards",
+        "description": "Eliminate proprietary barriers and promote interoperability through open standards."
+      },
+      "communityDriven": {
+        "title": "Community Driven",
+        "description": "Build with and for the community."
+      },
+      "transparent": {
+        "title": "Transparent",
+        "description": "Foster trust and collaborative development through open source code."
+      },
+      "imagination": {
+        "title": "Imagination",
+        "description": "Challenge current boundaries that limit what is possible with open source digital technologies."
+      },
+      "multidisciplinary": {
+        "title": "Multidisciplinary",
+        "description": "Where we are today is evidence that we are stronger and smarter together."
+      },
+      "accessible": {
+        "title": "Accessible",
+        "description": "Empower everyone with intuitive, user-friendly tools that work directly in the browser."
+      }
+    },
+    "contributors": {
+      "title": "Join Our Community",
+      "description": "Connect with other developers, contributors, and users in our growing community.",
+      "mailingButton": "Mailing List",
+      "githubButton": "GitHub Organization",
+      "coreTeam": "Core Team",
+      "meet": "Meet the dedicated individuals steering the CDT Platform",
+      "director": "Director",
+      "associateDirector": "Associate Director",
+      "projectLead": "Project Lead",
+      "sysAdmin": "System Administrator",
+      "researcher": "Researcher",
+      "stars": "Stars",
+      "forks": "Forks",
+      "commits": "Commits"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "description": "Whether you're interested in contributing, need support, or want to discuss enterprise solutions, we'd love to hear from you.",
+      "formTitle": "Send us a Message",
+      "formDescription": "Fill out the form below and we'll get back to you as soon as possible.",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Enter your last name",
+      "email": "Email Address",
+      "emailAddress": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "organization": "Organization",
+      "organizationPlaceholder": "Enter your organization (optional)",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project or inquiry...",
+      "sendButton": "Send Message",
+      "orEmail": "Or email us directly at",
+      "contactInfo": "Contact Information",
+      "contactInformation": "Contact Information",
+      "emailLabel": "Email",
+      "enterpriseTitle": "Enterprise Support",
+      "enterpriseSupport": "Enterprise Support",
+      "enterpriseDescription": "Need dedicated support, custom features, or professional services?",
+      "enterpriseLink": "Contact Enterprise Team →",
+      "contactEnterpriseTeam": "Contact Enterprise Team",
+      "successTitle": "Message sent!",
+      "successDescription": "We'll get back to you as soon as possible.",
+      "successMessage": "Your email client should now be open with your message ready to send!",
+      "getInTouch": "GET IN TOUCH",
+      "sendMessage": "Send us a Message",
+      "joinCommunity": "Join Our Community",
+      "communityDescription": "Connect with other developers, contributors, and users in our growing community.",
+      "githubDiscussions": "GitHub Discussions",
+      "mailingList": "Mailing List",
+      "sending": "Sending..."
+    },
+    "footer": {
+      "description": "We are a Canadian not-for-profit, stewarding a web-based, non-proprietary platform for the visualization of and interaction with multi-scale geospatial information systems, open data, and BIM models.",
+      "license": "Licensed under AGPL 3.0",
+      "stewardship": "Stewarded by a Canadian not-for-profit organization for long-term public benefit",
+      "copyright": "Collab Digital Twins. All rights reserved.",
+      "community": "Community",
+      "contributors": "Contributors",
+      "discussion": "Discussion",
+      "organization": "Organization",
+      "aboutUs": "About Us",
+      "contact": "Contact",
+      "madeWith": "Made with",
+      "byCommunity": "by the CDT community",
+      "stewarded": "Stewarded by",
+      "mission": "A not-for-profit organization promoting openness, innovation, and long-term public benefit",
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy"
+    },
+    "countdown": {
+      "days": "DAYS",
+      "hours": "HOURS",
+      "minutes": "MINUTES",
+      "seconds": "SECONDS"
+    },
+    "navbar": {
+      "platform": "Platform",
+      "about": "About",
+      "documentation": "Documentation",
+      "deployment": "Deployment"
+    },
+    "about": {
+      "mission": "Our Mission is to democratize",
+      "dt": " Digital Twin technologies",
+      "coreValues": "OUR CORE VALUES",
+      "openStandards": "Open Standards",
+      "eliminate": "Eliminate proprietary barriers and promote interoperability through open standards.",
+      "communityDriven": "Community Driven",
+      "buildWithCommunity": "Build with and for the community.",
+      "transparent": "Transparent",
+      "fosterTrust": "Foster trust and collaborative development through open source code.",
+      "imagination": "Imagination",
+      "challengeBoundaries": "Challenge current boundaries that limit what is possible with open source digital technologies.",
+      "multidisciplinary": "Multidisciplinary",
+      "strongerTogether": "Where we are today is evidence that we are stronger and smarter together."
+    },
+    "deployment": {
+      "deployment": "Deployment Options",
+      "title": "Deployment Models",
+      "subtitle": "Select the deployment model that best aligns with your organization's technical capabilities and operational requirements.",
+      "selfHosted": {
+        "name": "Self-Hosted",
+        "price": "No cost",
+        "description": "For organizations with technical expertise and IT infrastructure",
+        "feature1": "Documentation provided at no cost",
+        "feature2": "Community support",
+        "feature3": "Full control over your data and infrastructure",
+        "feature4": "Customizable to your specific needs",
+        "cta": "Get Started"
+      },
+      "cdtHosted": {
+        "name": "CDT Hosted",
+        "price": "SaaS model with free tier available",
+        "description": "For organizations with limited IT resources",
+        "feature1": "Faster time to deployment",
+        "feature2": "Documentation provided at no cost",
+        "feature3": "Includes support",
+        "feature4": "Periodic automatic updates and maintenance",
+        "feature5": "Canadian-hosted for data sovereignty",
+        "feature6": "Generates revenue needed to sustain our mission",
+        "cta": "Get Started"
+      }
+    }
+  }
+}

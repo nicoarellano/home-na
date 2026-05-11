@@ -1,0 +1,246 @@
+/* ====================================================
+   HOME PAGE — "The Sovereign Architect" Design System
+   ==================================================== */
+
+@import './sovereign-tokens.css';
+
+.hp h1, .hp h2, .hp h3 {
+  font-size: revert-layer;
+  font-weight: revert-layer;
+  line-height: revert-layer;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--hp-primary-container);
+  font-family: 'Geist', sans-serif;
+}
+
+.stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  background: rgba(239, 145, 97, 0.1);
+  border: 1px solid rgba(239, 145, 97, 0.25);
+  border-radius: 9999px;
+  font-size: 0.68rem;
+  color: var(--hp-primary-container);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: 'Geist', sans-serif;
+}
+
+.text-orange-glow {
+  color: var(--hp-primary);
+  text-shadow: 0 0 60px rgba(239, 145, 97, 0.5),
+               0 0 20px rgba(255, 182, 146, 0.25);
+}
+
+.text-signature {
+  background: var(--hp-primary-container);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tonal-card {
+  background: var(--hp-mid);
+  border-radius: 0.75rem;
+  position: relative;
+  transition: background 0.3s ease,
+              transform 0.3s ease,
+              box-shadow 0.4s ease;
+}
+
+.tonal-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 50%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.tonal-card:hover {
+  background: var(--hp-high);
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.glass-nav {
+  background: var(--hp-surface);
+}
+
+.glass-nav::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.05) 50%, transparent 100%);
+  pointer-events: none;
+}
+
+.btn-sovereign {
+  background: linear-gradient(135deg, #5b2a9e 0%, #7c2d8f 55%, #a8406f 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  font-family: 'Geist', sans-serif;
+  border: none !important;
+  border-radius: 0.375rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease !important;
+  letter-spacing: -0.01em;
+}
+
+.btn-sovereign:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 0 8px 32px rgba(239, 145, 97, 0.35) !important;
+}
+
+.btn-sovereign:active {
+  transform: scale(0.98) !important;
+}
+
+.btn-glass {
+  background: rgba(232, 228, 224, 0.6) !important;
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+  color: var(--hp-on-surface) !important;
+  font-weight: 600;
+  font-family: 'Geist', sans-serif;
+  backdrop-filter: blur(8px);
+  border-radius: 0.375rem;
+  transition: transform 0.2s ease, background 0.2s ease !important;
+  letter-spacing: -0.01em;
+}
+
+.btn-glass:hover {
+  transform: scale(1.02) !important;
+  background: rgba(232, 228, 224, 0.85) !important;
+}
+
+.btn-glass:active {
+  transform: scale(0.98) !important;
+}
+
+.btn-nav-cta {
+  background: var(--hp-primary-container) !important;
+  color: var(--hp-on-primary-ctr) !important;
+  font-weight: 600 !important;
+  font-family: 'Geist', sans-serif;
+  border: none !important;
+  transition: transform 0.2s ease, box-shadow 0.3s ease !important;
+  letter-spacing: -0.01em;
+}
+
+.btn-nav-cta:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 0 4px 20px rgba(239, 145, 97, 0.3) !important;
+}
+
+.hp-input {
+  background: var(--hp-lowest) !important;
+  border: 1px solid transparent !important;
+  color: var(--hp-on-surface) !important;
+  transition: background 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.2s ease !important;
+}
+
+.hp-input::placeholder {
+  color: var(--hp-on-surface-variant);
+  opacity: 0.5;
+}
+
+.hp-input:focus {
+  background: var(--hp-high) !important;
+  border-color: rgba(84, 67, 59, 0.15) !important;
+  box-shadow: 0 0 0 3px rgba(84, 67, 59, 0.08) !important;
+  outline: none !important;
+}
+
+@keyframes marquee-scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+@keyframes marquee-scroll-right {
+  0%   { transform: translateX(-33.333%); }
+  100% { transform: translateX(0); }
+}
+
+.marquee-left {
+  animation: marquee-scroll-left 40s linear infinite;
+}
+
+.marquee-right {
+  animation: marquee-scroll-right 40s linear infinite;
+}
+
+.marquee-left:hover,
+.marquee-right:hover {
+  animation-play-state: paused;
+}
+
+.video-glow {
+  position: relative;
+}
+
+.video-glow::before {
+  content: '';
+  position: absolute;
+  inset: -12px;
+  border-radius: 1.25rem;
+  background: radial-gradient(ellipse at center,
+    rgba(239, 145, 97, 0.08) 0%,
+    transparent 60%);
+  filter: blur(24px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.dark .tonal-card::before {
+  background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 50%);
+}
+
+.dark .tonal-card:hover {
+  box-shadow: 0 20px 40px rgba(14, 14, 14, 0.6);
+}
+
+.dark .btn-glass {
+  background: rgba(53, 53, 52, 0.5) !important;
+  border: 1px solid rgba(84, 67, 59, 0.15) !important;
+}
+
+.dark .btn-glass:hover {
+  background: rgba(53, 53, 52, 0.7) !important;
+}
+
+.dark .stat-pill {
+  background: rgba(239, 145, 97, 0.08);
+  border-color: rgba(239, 145, 97, 0.18);
+}
+
+.dark .hp-input:focus {
+  background: var(--hp-high) !important;
+  border-color: rgba(84, 67, 59, 0.15) !important;
+  box-shadow: 0 0 0 3px rgba(84, 67, 59, 0.08) !important;
+}
+
+.dark .video-glow::before {
+  background: radial-gradient(ellipse at center,
+    rgba(239, 145, 97, 0.12) 0%,
+    transparent 60%);
+}
