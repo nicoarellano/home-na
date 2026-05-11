@@ -73,15 +73,34 @@ export function Home({ assetsUrl }: HomeProps) {
       message: formData.get('message') as string,
     }
 
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
+    if (!accessKey) {
+      toast.error('Contact form is not configured', {
+        description: 'Please email us directly at info@collabdt.org',
+      })
+      setIsSubmitting(false)
+      return
+    }
+
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: `Contact Form: Message from ${data.firstName} ${data.lastName}`,
+          from_name: `${data.firstName} ${data.lastName}`,
+          replyto: data.email,
+          name: `${data.firstName} ${data.lastName}`,
+          email: data.email,
+          organization: data.organization || '(not provided)',
+          message: data.message,
+        }),
       })
 
-      if (!response.ok) {
-        throw new Error('Failed to send message')
+      const result = await response.json().catch(() => ({ success: false }))
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || 'Failed to send message')
       }
 
       toast.success('Message Sent!', {
