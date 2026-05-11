@@ -31,7 +31,7 @@ export default function DeploymentSection() {
         t('cdtHosted.feature6'),
       ],
       cta: t('cdtHosted.cta'),
-      icon: <img src='/images/homepage/cdt-logo-white.svg' className='w-8 h-8' alt="CDT" />,
+      icon: <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/images/homepage/cdt-logo-white.svg`} className='w-8 h-8' alt="CDT" />,
     },
   ]
 
