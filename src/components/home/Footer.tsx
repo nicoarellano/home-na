@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 
 export default function Footer() {
@@ -97,7 +98,7 @@ export default function Footer() {
                 { key: 'cookiePolicy', href: '/cookiepolicy' },
               ].map(({ key, href }) => (
                 <li key={key}>
-                  <a
+                  <Link
                     href={href}
                     className="text-[0.9rem] transition-colors duration-150"
                     style={{ color: 'var(--hp-on-surface-variant)', textDecoration: 'none' }}
@@ -105,7 +106,7 @@ export default function Footer() {
                     onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface-variant)')}
                   >
                     {tFooter(key as 'privacyPolicy' | 'cookiePolicy')}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { PolicyLayout } from '@/components/policy/PolicyLayout'
 
 export default function PrivacyPolicy() {
@@ -127,7 +128,7 @@ export default function PrivacyPolicy() {
           <h2>Cookies</h2>
           <p>
             To learn more about how we use these and your choices in relation to these tracking
-            technologies, please refer to our <a href="/cookiepolicy">Cookie Policy</a>.
+            technologies, please refer to our <Link href="/cookiepolicy">Cookie Policy</Link>.
           </p>
         </li>
 
