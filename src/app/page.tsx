@@ -1,6 +1,13 @@
-import { Home } from '@/components/home/Home'
+import { routing } from '@/i18n/routing'
 
-export default function HomePage() {
-  const assetsUrl = process.env.MINIO_BUCKET_URL || ''
-  return <Home assetsUrl={assetsUrl} />
+export default function RootIndex() {
+  const target = `./${routing.defaultLocale}/`
+  return (
+    <>
+      <meta httpEquiv='refresh' content={`0; url=${target}`} />
+      <p>
+        Redirecting to <a href={target}>{target}</a>…
+      </p>
+    </>
+  )
 }

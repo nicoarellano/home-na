@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useScroll, useTransform, useSpring } from 'framer-motion'
 import { toast, Toaster } from 'sonner'
 import { useLocale } from 'next-intl'
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from '@/i18n/navigation'
 import Navbar from './Navbar'
 import HeroSection from './HeroSection'
 import AboutSection from './AboutSection'
@@ -23,7 +23,7 @@ export function Home({ assetsUrl }: HomeProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const locale = useLocale() as Language
   const router = useRouter()
-  const [currentLocale, setCurrentLocale] = useState(locale)
+  const pathname = usePathname()
   const { scrollY } = useScroll()
   const navOpacity = useTransform(scrollY, [0, 100], [0.8, 1])
   const navY = useSpring(useTransform(scrollY, [0, 100], [0, 0]), { stiffness: 300, damping: 30 })
@@ -55,16 +55,8 @@ export function Home({ assetsUrl }: HomeProps) {
   }
 
   const toggleLanguage = () => {
-    const homeLocales = [Language.En, Language.Fr]
-    const currentIndex = homeLocales.indexOf(currentLocale)
-    const nextLocale = homeLocales[(currentIndex + 1) % homeLocales.length]
-
-    const expires = new Date()
-    expires.setFullYear(expires.getFullYear() + 1)
-    document.cookie = `NEXT_LOCALE=${nextLocale}; expires=${expires.toUTCString()}; path=/; SameSite=Lax`
-
-    setCurrentLocale(nextLocale)
-    router.refresh()
+    const nextLocale = locale === Language.En ? Language.Fr : Language.En
+    router.replace(pathname, { locale: nextLocale })
   }
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -119,7 +111,7 @@ export function Home({ assetsUrl }: HomeProps) {
       <Navbar
         activeSection={activeSection}
         theme={theme}
-        locale={currentLocale}
+        locale={locale}
         navOpacity={navOpacity}
         navY={navY}
         onToggleTheme={toggleTheme}
