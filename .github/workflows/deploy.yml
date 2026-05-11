@@ -35,6 +35,7 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /home
           NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY: ${{ secrets.WEB3FORMS_ACCESS_KEY }}
+          NEXT_PUBLIC_MINIO_BUCKET_URL: ${{ secrets.MINIO_BUCKET_URL }}
         run: yarn build
 
       - name: Disable Jekyll
