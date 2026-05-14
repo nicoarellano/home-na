@@ -163,7 +163,14 @@
     "leadership": {
       "sectionLabel": "Liderazgo",
       "title": "Gobernanza por junta. Comprometida con la misión.",
-      "intro": "Dirigida por una junta con profunda experiencia en arquitectura, tecnología, investigación y educación. Como OSFL, nuestra carta exige que la plataforma sirva a los usuarios — no a accionistas."
+      "intro": "Dirigida por una junta con profunda experiencia en arquitectura, tecnología, investigación y educación. Como OSFL, nuestra carta exige que la plataforma sirva a los usuarios — no a accionistas.",
+      "titles": {
+        "director": "Director",
+        "directorFemale": "Directora",
+        "secretary": "Directora / Secretaria",
+        "president": "Director / Presidente",
+        "treasurer": "Director / Tesorero"
+      }
     },
     "contact": {
       "sectionLabel": "Solicitar una demo",

@@ -163,7 +163,14 @@
     "leadership": {
       "sectionLabel": "Leadership",
       "title": "Board-governed. Mission-bound.",
-      "intro": "Directed by a board with deep expertise across architecture, technology, research, and education. As a non-profit, our charter requires that the platform serves users — not shareholders."
+      "intro": "Directed by a board with deep expertise across architecture, technology, research, and education. As a non-profit, our charter requires that the platform serves users — not shareholders.",
+      "titles": {
+        "director": "Director",
+        "directorFemale": "Director",
+        "secretary": "Director / Secretary",
+        "president": "Director / President",
+        "treasurer": "Director / Treasurer"
+      }
     },
     "contact": {
       "sectionLabel": "Request a demo",
