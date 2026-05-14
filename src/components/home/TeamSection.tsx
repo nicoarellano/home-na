@@ -176,7 +176,7 @@ export default function TeamSection() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-5 gap-6">
+        <div className="flex flex-col items-center gap-8 sm:flex-row sm:flex-wrap sm:justify-between">
           {directors.map((director) => (
             <DirectorCard key={director.name} director={director} />
           ))}
