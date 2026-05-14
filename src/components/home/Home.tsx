@@ -8,6 +8,7 @@ import { useRouter, usePathname } from '@/i18n/navigation'
 import Navbar from './Navbar'
 import HeroSection from './HeroSection'
 import TrustBandSection from './TrustBandSection'
+import MissionSection from './MissionSection'
 import CapabilitiesSection from './CapabilitiesSection'
 import SolutionsSection from './SolutionsSection'
 import AboutSection from './AboutSection'
@@ -143,6 +144,7 @@ export function Home({ assetsUrl }: HomeProps) {
       />
       <HeroSection assetsUrl={assetsUrl} />
       <TrustBandSection />
+      <MissionSection />
       <CapabilitiesSection />
       <SolutionsSection />
       <AboutSection />

@@ -23,6 +23,11 @@
       "costRecovery": "Cost-recovery pricing",
       "boardGoverned": "Board-governed non-profit"
     },
+    "mission": {
+      "sectionLabel": "Our mission",
+      "title": "Connecting people, places, and the data that shapes them.",
+      "body": "We're a non-profit foundation building shared infrastructure for digital twins — so institutions, communities, and researchers can collaborate on the buildings, neighbourhoods, and landscapes they share. The platform is the means. Connection is the point."
+    },
     "capabilities": {
       "sectionLabel": "Capabilities",
       "title": "What the platform enables.",
