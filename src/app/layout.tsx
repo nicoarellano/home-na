@@ -3,9 +3,11 @@ import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import '@/styles/home.css'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://collabdigitaltwins.github.io'),
-  icons: { icon: '/favicon.ico' },
+  icons: { icon: `${basePath}/favicon.ico` },
 }
 
 interface Props {

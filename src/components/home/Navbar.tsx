@@ -64,10 +64,13 @@ export default function Navbar({
             <Link href="#hero" className="flex items-center gap-3 group">
               <CdtIcon className="w-8 h-8" />
               <span
-                className="font-display font-bold tracking-tight max-xs:text-sm max-xs:text-nowrap transition-colors duration-200"
+                className="font-display font-bold tracking-tight max-xs:text-sm max-xs:text-nowrap lowercase transition-colors duration-200"
                 style={{ color: 'var(--hp-on-surface)' }}
               >
-                {onMobile ? 'CDT' : 'Collab Digital Twins'}
+                <>
+                  <span style={{ color: 'var(--hp-primary-container)' }}>collab</span>
+                  digitaltwins
+                </>
               </span>
             </Link>
           </motion.div>
