@@ -64,7 +64,7 @@ export default function Navbar({
             <Link href="#hero" className="flex items-center gap-3 group">
               <CdtIcon className="w-8 h-8" />
               <span
-                className="font-display font-bold tracking-tight max-xs:text-sm max-xs:text-nowrap lowercase transition-colors duration-200"
+                className="font-display text-xl tracking-wide max-xs:text-sm max-xs:text-nowrap lowercase transition-colors duration-200"
                 style={{ color: 'var(--hp-on-surface)' }}
               >
                 <>

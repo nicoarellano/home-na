@@ -23,6 +23,11 @@
       "costRecovery": "Tarification au coût",
       "boardGoverned": "OBNL gouverné par un conseil"
     },
+    "mission": {
+      "sectionLabel": "Notre mission",
+      "title": "Relier les personnes, les lieux et les données qui les façonnent.",
+      "body": "Nous sommes une fondation à but non lucratif qui bâtit une infrastructure partagée pour les jumeaux numériques — afin que les institutions, les communautés et les chercheurs collaborent sur les bâtiments, les quartiers et les paysages qu'ils partagent. La plateforme est le moyen. La connexion est l'objectif."
+    },
     "capabilities": {
       "sectionLabel": "Capacités",
       "title": "Ce que la plateforme permet.",
