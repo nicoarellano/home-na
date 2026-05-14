@@ -7,9 +7,11 @@ import { Button } from '@/components/ui/Button'
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
 
+type TitleKey = 'director' | 'directorFemale' | 'secretary' | 'president' | 'treasurer'
+
 interface Director {
   name: string
-  title: string
+  titleKey: TitleKey
   avatar: string
   email: string
   github?: string
@@ -19,15 +21,15 @@ interface Director {
 const directors: Director[] = [
   {
     name: 'Lara Chow',
-    title: 'Director / Secretary',
+    titleKey: 'secretary',
     avatar: `${BASE}/images/homepage/team/lc.png`,
     email: 'lara@collabdt.org',
     github: 'lchowCIMS',
     linkedin: 'lara-chow-1508666a',
   },
   {
-    name: 'Nicolas Arellano',
-    title: 'Director / President',
+    name: 'Dr. Nicolas Arellano',
+    titleKey: 'president',
     avatar: `${BASE}/images/homepage/team/na.png`,
     email: 'nico@collabdt.org',
     github: 'nicoarellano',
@@ -35,7 +37,7 @@ const directors: Director[] = [
   },
   {
     name: 'Ken Percy',
-    title: 'Director / Treasurer',
+    titleKey: 'treasurer',
     avatar: `${BASE}/images/homepage/team/kp.png`,
     email: 'ken@collabdt.org',
     github: 'ken-99',
@@ -43,14 +45,14 @@ const directors: Director[] = [
   },
   {
     name: 'Dr. Stephen Fai',
-    title: 'Director',
+    titleKey: 'director',
     avatar: `${BASE}/images/homepage/team/sf.png`,
     email: 'steve@collabdt.org',
     linkedin: 'stephen-fai-58a211a3',
   },
   {
     name: 'Laurie Smith',
-    title: 'Director',
+    titleKey: 'directorFemale',
     avatar: `${BASE}/images/homepage/team/ls.png`,
     email: 'laurie@collabdt.org',
   },
@@ -65,6 +67,7 @@ function initials(name: string) {
 }
 
 function DirectorCard({ director }: { director: Director }) {
+  const tTitles = useTranslations('HomePage.leadership.titles')
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -109,7 +112,7 @@ function DirectorCard({ director }: { director: Director }) {
           className="text-xs"
           style={{ color: 'var(--hp-on-surface-variant)' }}
         >
-          {director.title}
+          {tTitles(director.titleKey)}
         </p>
       </div>
 

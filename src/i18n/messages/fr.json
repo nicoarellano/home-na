@@ -163,7 +163,14 @@
     "leadership": {
       "sectionLabel": "Direction",
       "title": "Gouvernance par conseil. Engagement par mission.",
-      "intro": "Dirigée par un conseil d'administration au savoir-faire approfondi en architecture, technologie, recherche et éducation. En tant qu'OBNL, notre charte exige que la plateforme serve les utilisateurs — pas des actionnaires."
+      "intro": "Dirigée par un conseil d'administration au savoir-faire approfondi en architecture, technologie, recherche et éducation. En tant qu'OBNL, notre charte exige que la plateforme serve les utilisateurs — pas des actionnaires.",
+      "titles": {
+        "director": "Administrateur",
+        "directorFemale": "Administratrice",
+        "secretary": "Administratrice / Secrétaire",
+        "president": "Administrateur / Président",
+        "treasurer": "Administrateur / Trésorier"
+      }
     },
     "contact": {
       "sectionLabel": "Demander une démo",
