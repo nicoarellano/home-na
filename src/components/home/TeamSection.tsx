@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Mail, Github, Linkedin } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/Button'
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
@@ -149,6 +150,8 @@ function DirectorCard({ director }: { director: Director }) {
 }
 
 export default function TeamSection() {
+  const tTeam = useTranslations('HomePage.team')
+
   return (
     <section
       id="team"
@@ -160,20 +163,26 @@ export default function TeamSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
-          className="space-y-4 mb-16"
+          className="space-y-5 mb-16 max-w-3xl lg:max-w-4xl"
         >
-          <div className="section-label">Team</div>
+          <div className="section-label">{tTeam('sectionLabel')}</div>
           <h2
             className="font-display font-bold"
             style={{
-              fontSize: 'clamp(2rem, 4vw, 3rem)',
+              fontSize: 'clamp(1.75rem, 3.6vw, 2.75rem)',
               lineHeight: '1.1',
               letterSpacing: '-0.02em',
               color: 'var(--hp-on-surface)',
             }}
           >
-            Who we are?
+            {tTeam('title')}
           </h2>
+          <p
+            className="text-lg leading-relaxed"
+            style={{ color: 'var(--hp-on-surface-variant)' }}
+          >
+            {tTeam('intro')}
+          </p>
         </motion.div>
 
         <div className="flex flex-col items-center gap-8 sm:flex-row sm:flex-wrap sm:justify-between">

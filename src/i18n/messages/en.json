@@ -1,29 +1,38 @@
 {
   "HomePage": {
     "nav": {
-      "about": "about",
-      "contributors": "contributors",
+      "mission": "mission",
+      "pathways": "pathways",
       "team": "team",
       "contact": "contact"
     },
     "hero": {
-      "democratizing": "Democratizing Digital Twin Technology",
-      "title": "Collab Digital Twins",
-      "description": "We are a Canadian not-for-profit, stewarding a web-based, non-proprietary platform for the visualization of and interaction with multi-scale geospatial information systems, open data, and BIM models. We are advocates for open digital technologies, the human imagination, and long-term public benefit.",
-      "platformButton": "Go to the Platform",
-      "betaButton": "Join the Beta",
-      "videoFallback": "Your browser does not support the video tag.",
-      "release": "RELEASE"
+      "tagline": "A non-profit foundation",
+      "title": "Building digital connections,",
+      "titleEm": "together",
+      "description": "We connect people, places, and data through open digital twin technology — so communities, researchers, and institutions can understand and shape the places they share. Open source is how. Connection is why.",
+      "primaryCta": "Join our community",
+      "secondaryCta": "Explore the platform",
+      "platformButton": "Platform",
+      "videoFallback": "Your browser does not support the video tag."
+    },
+    "why": {
+      "sectionLabel": "Why we exist",
+      "title": "Places are shared. The tools to understand them shouldn't be locked away.",
+      "body": "Digital twins concentrate knowledge about the buildings, neighbourhoods, and landscapes we share — but most of that knowledge sits behind proprietary walls, fragmented across disciplines, inaccessible to the people it concerns. We exist to put open, interoperable digital twin technology in the hands of researchers, communities, and institutions — and to connect the people building with it."
     },
     "mission": {
-      "sectionLabel": "Our Mission",
-      "titleBefore": "Our mission is to",
-      "titleHighlight": "democratize",
-      "titleAfter": "Digital Twin technologies",
-      "description": "We are bridging BIM and GIS using open standards and free, open-source technologies, enabling stakeholders to visualize and analyze data directly in the browser, eliminating proprietary barriers."
+      "sectionLabel": "Our mission",
+      "title": "We advance digital twin research, share what we learn, and grow the capacity of the people who use it.",
+      "pillar1Title": "Advance research",
+      "pillar1Body": "Develop and maintain an open digital twin platform that lets researchers explore, analyze, and collaborate across BIM, GIS, and open data.",
+      "pillar2Title": "Share knowledge",
+      "pillar2Body": "Foster a contributor ecosystem where developers, designers, and domain experts build extensions and integrations on shared infrastructure.",
+      "pillar3Title": "Build capacity",
+      "pillar3Body": "Offer training, educational resources, and capacity-building programs so people and institutions can use these tools confidently — and teach them onward."
     },
     "values": {
-      "title": "Our Core Values",
+      "title": "What connects us",
       "openStandards": {
         "title": "Open Standards",
         "description": "Eliminate proprietary barriers and promote interoperability through open standards."
@@ -49,130 +58,91 @@
         "description": "Empower everyone with intuitive, user-friendly tools that work directly in the browser."
       }
     },
+    "pathways": {
+      "sectionLabel": "Ways to engage",
+      "title": "Pick the path that fits.",
+      "subtitle": "Every offering runs on a cost-recovery basis. Any surplus is reinvested in the platform and the community.",
+      "useFree": {
+        "tag": "For curious users",
+        "name": "Use it free",
+        "headline": "Try the hosted platform.",
+        "body": "Spin up a Canadian-hosted instance with a free tier. Cost-recovery pricing for production use — no profit margin, no lock-in.",
+        "cta": "Open the platform"
+      },
+      "selfHost": {
+        "tag": "For technical teams",
+        "name": "Host it yourself",
+        "headline": "Run the open-source core.",
+        "body": "Full source, AGPL-3.0, documentation, and community support. Keep complete control over your data and infrastructure.",
+        "cta": "Read the docs"
+      },
+      "buildWithUs": {
+        "tag": "For institutions & partners",
+        "name": "Build with us",
+        "headline": "Co-create bespoke solutions.",
+        "body": "Custom development, specialized tools, and enterprise collaboration — built on the open core, delivered on a cost-recovery basis, contributed back where it benefits the commons.",
+        "cta": "Start a conversation"
+      },
+      "learnTeach": {
+        "tag": "For educators & learners",
+        "name": "Learn & teach",
+        "headline": "Train your team. Equip the next generation.",
+        "body": "Workshops, capacity-building programs, and educational resources for institutions adopting digital twin practice.",
+        "cta": "Explore training"
+      }
+    },
     "contributors": {
-      "title": "Join Our Community",
-      "description": "Connect with other developers, contributors, and users in our growing community.",
-      "mailingButton": "Mailing List",
-      "githubButton": "GitHub Organization",
-      "coreTeam": "Core Team",
-      "meet": "Meet the dedicated individuals steering the CDT Platform",
-      "director": "Director",
-      "associateDirector": "Associate Director",
-      "projectLead": "Project Lead",
-      "sysAdmin": "System Administrator",
-      "researcher": "Researcher",
-      "stars": "Stars",
-      "forks": "Forks",
-      "commits": "Commits"
+      "sectionLabel": "Contributor ecosystem",
+      "title": "Built openly. Built together.",
+      "body": "The core platform is open. So are the tools, extensions, and integrations that grow on top of it. Whether you write code, share datasets, design interfaces, or teach others — there's a place for you.",
+      "githubLabel": "GitHub organization",
+      "mailingLabel": "Mailing list",
+      "docsLabel": "Documentation"
+    },
+    "team": {
+      "sectionLabel": "Stewardship",
+      "title": "Who we are.",
+      "intro": "Canadian not-for-profit. The platform is collective work; the foundation is how we keep it that way."
     },
     "contact": {
-      "title": "Get in Touch",
-      "description": "Whether you're interested in contributing, need support, or want to discuss enterprise solutions, we'd love to hear from you.",
-      "formTitle": "Send us a Message",
-      "formDescription": "Fill out the form below and we'll get back to you as soon as possible.",
+      "sectionLabel": "Get in touch",
+      "title": "Tell us how you'd like to connect.",
+      "description": "Whether you're a researcher, partner, contributor, or educator — start by telling us a bit about you. We'll route your message to the right person.",
+      "audienceLabel": "I'm reaching out as a…",
+      "audienceResearcher": "Researcher",
+      "audiencePartner": "Institution / partner",
+      "audienceDeveloper": "Developer / contributor",
+      "audienceEducator": "Educator / trainer",
+      "audienceOther": "Something else",
       "firstName": "First Name",
-      "firstNamePlaceholder": "Enter your first name",
       "lastName": "Last Name",
-      "lastNamePlaceholder": "Enter your last name",
       "email": "Email Address",
-      "emailAddress": "Email Address",
-      "emailPlaceholder": "Enter your email address",
       "organization": "Organization",
-      "organizationPlaceholder": "Enter your organization (optional)",
       "message": "Message",
-      "messagePlaceholder": "Tell us about your project or inquiry...",
       "sendButton": "Send Message",
+      "sending": "Sending...",
       "orEmail": "Or email us directly at",
-      "contactInfo": "Contact Information",
-      "contactInformation": "Contact Information",
-      "emailLabel": "Email",
-      "enterpriseTitle": "Enterprise Support",
-      "enterpriseSupport": "Enterprise Support",
-      "enterpriseDescription": "Need dedicated support, custom features, or professional services?",
-      "enterpriseLink": "Contact Enterprise Team →",
-      "contactEnterpriseTeam": "Contact Enterprise Team",
-      "successTitle": "Message sent!",
-      "successDescription": "We'll get back to you as soon as possible.",
-      "successMessage": "Your email client should now be open with your message ready to send!",
-      "getInTouch": "GET IN TOUCH",
-      "sendMessage": "Send us a Message",
-      "joinCommunity": "Join Our Community",
-      "communityDescription": "Connect with other developers, contributors, and users in our growing community.",
-      "githubDiscussions": "GitHub Discussions",
-      "mailingList": "Mailing List",
-      "sending": "Sending..."
+      "infoEmail": "info@collabdt.org",
+      "supportEmail": "support@collabdt.org"
     },
     "footer": {
-      "description": "We are a Canadian not-for-profit, stewarding a web-based, non-proprietary platform for the visualization of and interaction with multi-scale geospatial information systems, open data, and BIM models.",
+      "description": "A Canadian not-for-profit foundation building digital connections, together — through open, interoperable digital twin technology.",
+      "governance": "Canadian non-profit corporation. Board-governed. Source AGPL-3.0. Surplus reinvested in the platform and the community.",
       "license": "Licensed under AGPL 3.0",
       "stewardship": "Stewarded by a Canadian not-for-profit organization for long-term public benefit",
       "copyright": "Collab Digital Twins. All rights reserved.",
-      "community": "Community",
-      "contributors": "Contributors",
-      "discussion": "Discussion",
-      "organization": "Organization",
-      "aboutUs": "About Us",
-      "contact": "Contact",
-      "madeWith": "Made with",
-      "byCommunity": "by the CDT community",
-      "stewarded": "Stewarded by",
-      "mission": "A not-for-profit organization promoting openness, innovation, and long-term public benefit",
+      "navigate": "Navigate",
+      "navMission": "Mission",
+      "navPathways": "Pathways",
+      "navTeam": "Team",
+      "navContact": "Contact",
+      "navPlatform": "Platform",
+      "resources": "Resources",
+      "betaAccess": "Beta Access",
+      "documentation": "Documentation",
+      "legal": "Legal",
       "privacyPolicy": "Privacy Policy",
       "cookiePolicy": "Cookie Policy"
-    },
-    "countdown": {
-      "days": "DAYS",
-      "hours": "HOURS",
-      "minutes": "MINUTES",
-      "seconds": "SECONDS"
-    },
-    "navbar": {
-      "platform": "Platform",
-      "about": "About",
-      "documentation": "Documentation",
-      "deployment": "Deployment"
-    },
-    "about": {
-      "mission": "Our Mission is to democratize",
-      "dt": " Digital Twin technologies",
-      "coreValues": "OUR CORE VALUES",
-      "openStandards": "Open Standards",
-      "eliminate": "Eliminate proprietary barriers and promote interoperability through open standards.",
-      "communityDriven": "Community Driven",
-      "buildWithCommunity": "Build with and for the community.",
-      "transparent": "Transparent",
-      "fosterTrust": "Foster trust and collaborative development through open source code.",
-      "imagination": "Imagination",
-      "challengeBoundaries": "Challenge current boundaries that limit what is possible with open source digital technologies.",
-      "multidisciplinary": "Multidisciplinary",
-      "strongerTogether": "Where we are today is evidence that we are stronger and smarter together."
-    },
-    "deployment": {
-      "deployment": "Deployment Options",
-      "title": "Deployment Models",
-      "subtitle": "Select the deployment model that best aligns with your organization's technical capabilities and operational requirements.",
-      "selfHosted": {
-        "name": "Self-Hosted",
-        "price": "No cost",
-        "description": "For organizations with technical expertise and IT infrastructure",
-        "feature1": "Documentation provided at no cost",
-        "feature2": "Community support",
-        "feature3": "Full control over your data and infrastructure",
-        "feature4": "Customizable to your specific needs",
-        "cta": "Get Started"
-      },
-      "cdtHosted": {
-        "name": "CDT Hosted",
-        "price": "SaaS model with free tier available",
-        "description": "For organizations with limited IT resources",
-        "feature1": "Faster time to deployment",
-        "feature2": "Documentation provided at no cost",
-        "feature3": "Includes support",
-        "feature4": "Periodic automatic updates and maintenance",
-        "feature5": "Canadian-hosted for data sovereignty",
-        "feature6": "Generates revenue needed to sustain our mission",
-        "cta": "Get Started"
-      }
     }
   }
 }

@@ -1,29 +1,38 @@
 {
   "HomePage": {
     "nav": {
-      "about": "à propos",
-      "contributors": "contributeurs",
+      "mission": "mission",
+      "pathways": "engagement",
       "team": "équipe",
       "contact": "contact"
     },
     "hero": {
-      "democratizing": "Démocratiser les jumeaux numériques technologies",
-      "title": "Collab Digital Twins",
-      "description": "Nous sommes un organisme canadien à but non lucratif, gérant une plateforme web non-propriétaire pour la visualisation et l'interaction avec des systèmes d'information géospatiale multi-échelles, des données ouvertes et des modèles BIM. Nous défendons les technologies numériques ouvertes, l'imagination humaine et l'intérêt public à long terme.",
-      "platformButton": "Accéder à la plateforme",
-      "betaButton": "Rejoindre la Bêta",
-      "videoFallback": "Votre navigateur ne prend pas en charge la balise vidéo.",
-      "release": "LANCEMENT"
+      "tagline": "Un organisme à but non lucratif",
+      "title": "Construire des connexions numériques,",
+      "titleEm": "ensemble",
+      "description": "Nous connectons les personnes, les lieux et les données grâce à une technologie de jumeaux numériques ouverte — pour que les communautés, les chercheurs et les institutions puissent comprendre et façonner les lieux qu'ils partagent. L'open source est le comment. La connexion est le pourquoi.",
+      "primaryCta": "Rejoindre notre communauté",
+      "secondaryCta": "Explorer la plateforme",
+      "platformButton": "Plateforme",
+      "videoFallback": "Votre navigateur ne prend pas en charge la balise vidéo."
+    },
+    "why": {
+      "sectionLabel": "Pourquoi nous existons",
+      "title": "Les lieux sont partagés. Les outils pour les comprendre ne devraient pas être verrouillés.",
+      "body": "Les jumeaux numériques concentrent les connaissances sur les bâtiments, les quartiers et les paysages que nous partageons — mais la majeure partie de ces connaissances reste enfermée derrière des murs propriétaires, fragmentée entre les disciplines, inaccessible aux personnes concernées. Nous existons pour mettre une technologie de jumeau numérique ouverte et interopérable entre les mains des chercheurs, des communautés et des institutions — et pour connecter celles et ceux qui la bâtissent."
     },
     "mission": {
       "sectionLabel": "Notre mission",
-      "titleBefore": "Notre mission est de",
-      "titleHighlight": "démocratiser",
-      "titleAfter": "les technologies de jumeaux numériques",
-      "description": "Nous créons un pont entre le BIM et les SIG en utilisant des normes ouvertes et des technologies libres et open source, permettant aux parties prenantes de visualiser et d'analyser les données directement dans le navigateur, éliminant ainsi les barrières propriétaires."
+      "title": "Faire avancer la recherche sur les jumeaux numériques, partager ce que nous apprenons et renforcer les capacités de celles et ceux qui les utilisent.",
+      "pillar1Title": "Faire avancer la recherche",
+      "pillar1Body": "Développer et maintenir une plateforme de jumeaux numériques ouverte qui permet aux chercheurs d'explorer, d'analyser et de collaborer à travers le BIM, les SIG et les données ouvertes.",
+      "pillar2Title": "Partager les connaissances",
+      "pillar2Body": "Cultiver un écosystème de contributeurs où développeurs, designers et experts métier construisent des extensions et des intégrations sur une infrastructure commune.",
+      "pillar3Title": "Renforcer les capacités",
+      "pillar3Body": "Offrir des formations, des ressources éducatives et des programmes de renforcement des capacités pour que les personnes et les institutions utilisent ces outils avec confiance — et les transmettent à leur tour."
     },
     "values": {
-      "title": "Nos valeurs fondamentales",
+      "title": "Ce qui nous relie",
       "openStandards": {
         "title": "Standards ouverts",
         "description": "Éliminer les barrières propriétaires et promouvoir l'interopérabilité grâce aux standards ouverts."
@@ -38,141 +47,102 @@
       },
       "imagination": {
         "title": "Imagination",
-        "description": "Remettre en question les limites actuelles qui restreignent ce qui est possible avec les technologies numériques open source."
+        "description": "Repousser les limites actuelles de ce qui est possible avec les technologies numériques open source."
       },
       "multidisciplinary": {
         "title": "Multidisciplinaire",
-        "description": "Où nous en sommes aujourd'hui est la preuve que nous sommes plus forts et plus intelligents ensemble."
+        "description": "Où nous en sommes aujourd'hui prouve que nous sommes plus forts et plus intelligents ensemble."
       },
       "accessible": {
         "title": "Accessible",
-        "description": "Autonomiser tous avec des outils intuitifs et conviviaux qui fonctionnent directement dans le navigateur."
+        "description": "Donner à chacun des outils intuitifs et conviviaux qui fonctionnent directement dans le navigateur."
+      }
+    },
+    "pathways": {
+      "sectionLabel": "Modes d'engagement",
+      "title": "Choisissez la voie qui vous correspond.",
+      "subtitle": "Chaque offre fonctionne sur la base d'un recouvrement des coûts. Tout surplus est réinvesti dans la plateforme et la communauté.",
+      "useFree": {
+        "tag": "Pour les utilisateurs curieux",
+        "name": "Utiliser gratuitement",
+        "headline": "Essayez la plateforme hébergée.",
+        "body": "Lancez une instance hébergée au Canada avec un niveau gratuit. Tarification au coût pour l'usage en production — sans marge bénéficiaire, sans verrouillage.",
+        "cta": "Ouvrir la plateforme"
+      },
+      "selfHost": {
+        "tag": "Pour les équipes techniques",
+        "name": "Hébergez-la vous-même",
+        "headline": "Exécutez le cœur open source.",
+        "body": "Sources complètes, AGPL-3.0, documentation et soutien communautaire. Gardez le contrôle total de vos données et de votre infrastructure.",
+        "cta": "Consulter la documentation"
+      },
+      "buildWithUs": {
+        "tag": "Pour les institutions et partenaires",
+        "name": "Construire avec nous",
+        "headline": "Co-créer des solutions sur mesure.",
+        "body": "Développement personnalisé, outils spécialisés et collaboration entreprise — bâtis sur le cœur ouvert, livrés au coût, et reversés à la communauté quand cela bénéficie au commun.",
+        "cta": "Démarrer une conversation"
+      },
+      "learnTeach": {
+        "tag": "Pour les formateurs et apprenants",
+        "name": "Apprendre et enseigner",
+        "headline": "Formez votre équipe. Outillez la prochaine génération.",
+        "body": "Ateliers, programmes de renforcement des capacités et ressources éducatives pour les institutions qui adoptent la pratique des jumeaux numériques.",
+        "cta": "Explorer la formation"
       }
     },
     "contributors": {
-      "title": "Rejoignez notre communauté",
-      "description": "Connectez-vous avec d'autres développeurs, contributeurs et utilisateurs dans notre communauté en pleine croissance.",
-      "mailingButton": "Liste de diffusion",
-      "githubButton": "Organisation GitHub",
-      "coreTeam": "Équipe principale",
-      "meet": "Rencontrez les personnes dévouées qui dirigent la plateforme CDT",
-      "director": "Directeur",
-      "associateDirector": "Directeur associé",
-      "projectLead": "Responsable de projet",
-      "researcher": "Chercheur",
-      "sysAdmin": "Administrateur système",
-      "stars": "Étoiles",
-      "forks": "Forks",
-      "commits": "Commits"
+      "sectionLabel": "Écosystème de contributeurs",
+      "title": "Construit ouvertement. Construit ensemble.",
+      "body": "Le cœur de la plateforme est ouvert. Les outils, extensions et intégrations qui grandissent dessus le sont aussi. Que vous écriviez du code, partagiez des données, conceviez des interfaces ou enseigniez à d'autres — il y a une place pour vous.",
+      "githubLabel": "Organisation GitHub",
+      "mailingLabel": "Liste de diffusion",
+      "docsLabel": "Documentation"
+    },
+    "team": {
+      "sectionLabel": "Gouvernance",
+      "title": "Qui nous sommes.",
+      "intro": "Organisme canadien à but non lucratif. La plateforme est un travail collectif ; la fondation est la manière dont nous le gardons ainsi."
     },
     "contact": {
-      "title": "Contactez-nous",
-      "description": "Que vous souhaitiez contribuer, avoir besoin de soutien ou discuter de solutions d'entreprise, ça nous ferait plaisir de vous entendre.",
-      "formTitle": "Envoyez-nous un message",
-      "formDescription": "Remplissez le formulaire ci-dessous et nous vous répondrons avec plaisir dès que possible.",
+      "sectionLabel": "Contactez-nous",
+      "title": "Dites-nous comment vous souhaitez vous connecter.",
+      "description": "Que vous soyez chercheur, partenaire, contributeur ou éducateur — commencez par nous en dire un peu sur vous. Nous orienterons votre message vers la bonne personne.",
+      "audienceLabel": "Je m'adresse à vous en tant que…",
+      "audienceResearcher": "Chercheur·euse",
+      "audiencePartner": "Institution / partenaire",
+      "audienceDeveloper": "Développeur·euse / contributeur·rice",
+      "audienceEducator": "Éducateur·rice / formateur·rice",
+      "audienceOther": "Autre chose",
       "firstName": "Prénom",
-      "firstNamePlaceholder": "Entrez votre prénom",
       "lastName": "Nom de famille",
-      "lastNamePlaceholder": "Entrez votre nom de famille",
       "email": "Adresse e-mail",
-      "emailAddress": "Adresse e-mail",
-      "emailPlaceholder": "Entrez votre adresse e-mail",
       "organization": "Organisation",
-      "organizationPlaceholder": "Entrez votre organisation (facultatif)",
       "message": "Message",
-      "messagePlaceholder": "Parlez-nous de votre projet ou de votre demande...",
       "sendButton": "Envoyer le message",
+      "sending": "Envoi en cours...",
       "orEmail": "Ou envoyez-nous un e-mail directement à",
-      "contactInfo": "Informations de contact",
-      "contactInformation": "Informations de contact",
-      "emailLabel": "E-mail",
-      "enterpriseTitle": "Support d'entreprise",
-      "enterpriseSupport": "Support d'entreprise",
-      "enterpriseDescription": "Besoin d'un support dédié, de fonctionnalités personnalisées ou de services professionnels?",
-      "enterpriseLink": "Contacter l'équipe entreprise →",
-      "contactEnterpriseTeam": "Contactez l'équipe entreprise",
-      "successTitle": "Message envoyé!",
-      "successDescription": "Nous vous répondrons dès que possible.",
-      "successMessage": "Votre client de messagerie devrait maintenant être ouvert avec votre message prêt à être envoyé!",
-      "getInTouch": "Contactez-nous",
-      "sendMessage": "Envoyez-nous un message",
-      "joinCommunity": "Rejoignez notre communauté",
-      "communityDescription": "Connectez-vous avec d'autres développeurs, contributeurs et utilisateurs dans notre communauté croissante.",
-      "githubDiscussions": "Discussions GitHub",
-      "mailingList": "Liste de diffusion",
-      "sending": "Envoi en cours..."
+      "infoEmail": "info@collabdt.org",
+      "supportEmail": "support@collabdt.org"
     },
     "footer": {
-      "description": "Nous sommes un organisme canadien à but non lucratif, gérant une plateforme web non-propriétaire pour la visualisation et l'interaction avec des systèmes d'information géospatiale multi-échelles, des données ouvertes et des modèles BIM.",
+      "description": "Une fondation canadienne à but non lucratif qui construit des connexions numériques, ensemble — grâce à une technologie de jumeau numérique ouverte et interopérable.",
+      "governance": "Société canadienne à but non lucratif. Gouvernée par un conseil d'administration. Source AGPL-3.0. Surplus réinvesti dans la plateforme et la communauté.",
       "license": "Sous licence AGPL 3.0",
       "stewardship": "Géré par un organisme canadien à but non lucratif pour l'intérêt public à long terme",
       "copyright": "Collab Digital Twins. Tous droits réservés.",
-      "community": "Communauté",
-      "contributors": "Contributeurs",
-      "discussion": "Discussion",
-      "organization": "Organisation",
-      "aboutUs": "À propos de nous",
-      "contact": "Contact",
-      "madeWith": "Fait avec",
-      "byCommunity": "par la communauté CDT",
-      "stewarded": "Géré par",
-      "mission": "Une organisation à but non lucratif promouvant l'ouverture, l'innovation et le bénéfice public à long terme",
+      "navigate": "Naviguer",
+      "navMission": "Mission",
+      "navPathways": "Engagement",
+      "navTeam": "Équipe",
+      "navContact": "Contact",
+      "navPlatform": "Plateforme",
+      "resources": "Ressources",
+      "betaAccess": "Accès bêta",
+      "documentation": "Documentation",
+      "legal": "Mentions légales",
       "privacyPolicy": "Politique de confidentialité",
       "cookiePolicy": "Politique de cookies"
-    },
-    "countdown": {
-      "days": "JOURS",
-      "hours": "HEURES",
-      "minutes": "MINUTES",
-      "seconds": "SECONDES"
-    },
-    "navbar": {
-      "platform": "Plateforme",
-      "about": "À propos",
-      "documentation": "Documentation",
-      "deployment": "Déploiement"
-    },
-    "about": {
-      "mission": "Notre mission est de démocratiser",
-      "dt": "Technologie jumeaux numérique",
-      "coreValues": "NOS VALEURS FONDAMENTALES",
-      "openStandards": "Normes ouvertes",
-      "eliminate": "Éliminer les barrières propriétaires et encourager l'interopérabilité grâce aux normes ouvertes.",
-      "communityDriven": "Axé sur la communauté",
-      "buildWithCommunity": "Construire avec et pour la communauté.",
-      "transparent": "Transparent",
-      "fosterTrust": "Favoriser la confiance et le développement collaboratif grâce au code open source.",
-      "imagination": "Imagination",
-      "challengeBoundaries": "Défier les limites actuelles qui restreignent ce qui est possible avec les technologies numériques open source.",
-      "multidisciplinary": "Multidisciplinaire",
-      "strongerTogether": "Où nous en sommes aujourd'hui est preuve que nous sommes plus forts et plus intelligents ensemble."
-    },
-    "deployment": {
-      "deployment": "OPTIONS DE DÉPLOIEMENT",
-      "title": "Modèles de déploiement",
-      "subtitle": "Sélectionnez le modèle de déploiement qui correspond le mieux aux capacités techniques et aux exigences opérationnelles de votre organisation.",
-      "selfHosted": {
-        "name": "Auto-hébergé",
-        "price": "Gratuit",
-        "description": "Pour les organisations équipée avec expertise technique et d'infrastructure informatique",
-        "feature1": "Documentation fournie gratuit",
-        "feature2": "Support communautaire",
-        "feature3": "Contrôle total de vos données et infrastructure",
-        "feature4": "Personnalisable selon vos besoins spécifiques",
-        "cta": "Commencer"
-      },
-      "cdtHosted": {
-        "name": "Hébergé par CDT",
-        "price": "Modèle SaaS avec niveau gratuit disponible",
-        "description": "Pour les organisations avec des ressources informatiques limitées",
-        "feature1": "Déploiement plus rapide",
-        "feature2": "Documentation fournie gratuit",
-        "feature3": "Support inclus",
-        "feature4": "Mises à jour et maintenance automatiques périodiques",
-        "feature5": "Hébergement canadien pour la souveraineté des données",
-        "feature6": "Génère des revenus nécessaires pour soutenir notre mission",
-        "cta": "Commencer"
-      }
     }
   }
 }

@@ -14,7 +14,7 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
 
   return (
     <section
-      id="about"
+      id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16"
       style={{ background: 'var(--hp-surface)' }}
     >
@@ -38,7 +38,7 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
                   className="w-1.5 h-1.5 rounded-full animate-pulse"
                   style={{ background: 'var(--hp-primary-container)' }}
                 />
-                {tHero('democratizing')}
+                {tHero('tagline')}
               </div>
             </motion.div>
 
@@ -48,22 +48,22 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="font-display font-bold"
               style={{
-                fontSize: 'clamp(3rem, 7vw, 5.5rem)',
-                lineHeight: '0.92',
+                fontSize: 'clamp(2.5rem, 6vw, 4.75rem)',
+                lineHeight: '0.98',
                 letterSpacing: '-0.02em',
                 color: 'var(--hp-on-surface)',
               }}
             >
-              <span className="text-signature">Collab</span>
+              {tHero('title')}
               <br />
-              Digital Twins
+              <span className="text-signature">{tHero('titleEm')}</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
-              className="text-lg md:text-xl leading-relaxed max-w-md"
+              className="text-lg md:text-xl leading-relaxed max-w-xl"
               style={{ color: 'var(--hp-on-surface-variant)' }}
             >
               {tHero('description')}
@@ -80,21 +80,15 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
                 className="btn-sovereign text-base px-8 w-full sm:w-auto"
                 asChild
               >
-                <a href="https://app.collabdt.org/cdt" target="_blank" rel="noopener noreferrer">
-                  {tHero('platformButton')}
-                </a>
+                <a href="#pathways">{tHero('primaryCta')}</a>
               </Button>
               <Button
                 size="lg"
                 className="btn-glass text-base px-8 w-full sm:w-auto"
                 asChild
               >
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScB12Qc7khiOk4a_E753jDccx6026AjO-_FINBKoZZZtkmqnA/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {tHero('betaButton')}
+                <a href="https://app.collabdt.org/cdt" target="_blank" rel="noopener noreferrer">
+                  {tHero('secondaryCta')}
                 </a>
               </Button>
             </motion.div>

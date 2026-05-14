@@ -1,25 +1,37 @@
 'use client'
 
-import { Globe } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/Tabs'
 import { Language } from '@/lib/language'
 
 interface LanguageToggleProps {
-  language: Language
-  onToggle: () => void
+  currentLanguage: Language
+  onSelect: (language: Language) => void
 }
 
-export default function LanguageToggle({ language, onToggle }: LanguageToggleProps) {
-  const printLanguage = language.toUpperCase() ?? 'EN'
+const LANGUAGES: { value: Language; label: string }[] = [
+  { value: Language.En, label: 'EN' },
+  { value: Language.Fr, label: 'FR' },
+  { value: Language.Es, label: 'ES' },
+]
+
+export default function LanguageToggle({ currentLanguage, onSelect }: LanguageToggleProps) {
   return (
-    <Button
-      onClick={onToggle}
-      variant="outline"
-      size="sm"
-      className="gap-2 border-border/60 hover:border-accent-primary/40"
+    <Tabs
+      value={currentLanguage}
+      onValueChange={(value) => onSelect(value as Language)}
     >
-      <Globe className="w-4 h-4" />
-      {printLanguage}
-    </Button>
+      <TabsList className="h-8 gap-1 p-0 bg-transparent">
+        {LANGUAGES.map((lang) => (
+          <TabsTrigger
+            key={lang.value}
+            value={lang.value}
+            className="h-7 px-2.5 text-xs font-display font-semibold tracking-wider rounded-md border border-transparent bg-transparent shadow-none transition-colors text-[var(--hp-on-surface-variant)] hover:text-[var(--hp-on-surface)] data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-[var(--hp-primary-container)] data-[state=active]:text-[var(--hp-primary-container)]"
+            aria-label={`Switch to ${lang.label}`}
+          >
+            {lang.label}
+          </TabsTrigger>
+        ))}
+      </TabsList>
+    </Tabs>
   )
 }

@@ -3,6 +3,18 @@
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 
+const NAV_LINKS = [
+  { key: 'navMission', href: '#mission' },
+  { key: 'navPathways', href: '#pathways' },
+  { key: 'navTeam', href: '#team' },
+  { key: 'navContact', href: '#contact' },
+  { key: 'navPlatform', href: 'https://app.collabdt.org/cdt', external: true },
+] as const
+
+const MAILING_LIST_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLScB12Qc7khiOk4a_E753jDccx6026AjO-_FINBKoZZZtkmqnA/viewform'
+const DOCS_URL = 'https://docs.collabdt.org/'
+
 export default function Footer() {
   const tFooter = useTranslations('HomePage.footer')
 
@@ -18,7 +30,7 @@ export default function Footer() {
               Collab Digital Twins
             </div>
             <p
-              className="text-[0.9rem] leading-relaxed max-w-[220px]"
+              className="text-[0.9rem] leading-relaxed max-w-[260px]"
               style={{ color: 'var(--hp-on-surface-variant)' }}
             >
               {tFooter('description')}
@@ -26,17 +38,14 @@ export default function Footer() {
           </div>
 
           <div className="space-y-5">
-            <div className="section-label">Navigate</div>
+            <div className="section-label">{tFooter('navigate')}</div>
             <ul className="space-y-3">
-              {[
-                { label: 'About', href: '#about' },
-                { label: 'Contributors', href: '#contributors' },
-                { label: 'Contact', href: '#contact' },
-                { label: 'Platform', href: '/cdt' },
-              ].map(({ label, href }) => (
-                <li key={label}>
+              {NAV_LINKS.map((link) => (
+                <li key={link.key}>
                   <a
-                    href={href}
+                    href={link.href}
+                    target={'external' in link && link.external ? '_blank' : undefined}
+                    rel={'external' in link && link.external ? 'noopener noreferrer' : undefined}
                     className="text-[0.9rem] transition-colors duration-150"
                     style={{
                       color: 'var(--hp-on-surface-variant)',
@@ -45,7 +54,7 @@ export default function Footer() {
                     onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface)')}
                     onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface-variant)')}
                   >
-                    {label}
+                    {tFooter(link.key)}
                   </a>
                 </li>
               ))}
@@ -53,25 +62,38 @@ export default function Footer() {
           </div>
 
           <div className="space-y-5">
-            <div className="section-label">Resources</div>
+            <div className="section-label">{tFooter('resources')}</div>
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScB12Qc7khiOk4a_E753jDccx6026AjO-_FINBKoZZZtkmqnA/viewform"
+                  href={DOCS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm transition-colors duration-150"
+                  className="text-[0.9rem] transition-colors duration-150"
                   style={{ color: 'var(--hp-on-surface-variant)', textDecoration: 'none' }}
                   onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface)')}
                   onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface-variant)')}
                 >
-                  Beta Access
+                  {tFooter('documentation')}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={MAILING_LIST_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[0.9rem] transition-colors duration-150"
+                  style={{ color: 'var(--hp-on-surface-variant)', textDecoration: 'none' }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface)')}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface-variant)')}
+                >
+                  {tFooter('betaAccess')}
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:info@collabdt.org"
-                  className="text-sm transition-colors duration-150"
+                  className="text-[0.9rem] transition-colors duration-150"
                   style={{ color: 'var(--hp-on-surface-variant)', textDecoration: 'none' }}
                   onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface)')}
                   onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface-variant)')}
@@ -83,7 +105,7 @@ export default function Footer() {
           </div>
 
           <div className="space-y-5">
-            <div className="section-label">Legal</div>
+            <div className="section-label">{tFooter('legal')}</div>
             <ul className="space-y-3">
               <li>
                 <p
@@ -93,10 +115,10 @@ export default function Footer() {
                   {tFooter('license')}
                 </p>
               </li>
-              {[
+              {([
                 { key: 'privacyPolicy', href: '/privacypolicy' },
                 { key: 'cookiePolicy', href: '/cookiepolicy' },
-              ].map(({ key, href }) => (
+              ] as const).map(({ key, href }) => (
                 <li key={key}>
                   <Link
                     href={href}
@@ -105,7 +127,7 @@ export default function Footer() {
                     onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface)')}
                     onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface-variant)')}
                   >
-                    {tFooter(key as 'privacyPolicy' | 'cookiePolicy')}
+                    {tFooter(key)}
                   </Link>
                 </li>
               ))}
@@ -113,12 +135,24 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-20 flex flex-col md:flex-row items-center justify-between gap-4 max-w-5xl mx-auto">
+        <div
+          className="mt-16 pt-8 max-w-5xl mx-auto"
+          style={{ borderTop: '1px solid rgba(255,255,255,0.04)' }}
+        >
+          <p
+            className="text-xs leading-relaxed text-center max-w-3xl mx-auto"
+            style={{ color: 'var(--hp-on-surface-variant)' }}
+          >
+            {tFooter('governance')}
+          </p>
+        </div>
+
+        <div className="mt-8 flex flex-col md:flex-row items-center justify-between gap-4 max-w-5xl mx-auto">
           <p className="text-xs" style={{ color: 'var(--hp-outline)' }}>
             {tFooter('stewardship')}
           </p>
           <p className="text-xs" style={{ color: 'var(--hp-outline)' }}>
-            {new Date().getFullYear()} {tFooter('copyright')}
+            © {new Date().getFullYear()} {tFooter('copyright')}
           </p>
         </div>
       </div>

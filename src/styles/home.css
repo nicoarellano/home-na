@@ -10,6 +10,11 @@
   line-height: revert-layer;
 }
 
+html:has(.hp) {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 .section-label {
   display: inline-flex;
   align-items: center;
