@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: 'Collab Digital Twins',
       images: [`${basePath}/images/cdt-og_card.png`],
       type: 'website',
-      locale: locale === 'Fr' ? 'fr_CA' : 'en_CA',
+      locale: locale === 'Fr' ? 'fr_CA' : locale === 'Es' ? 'es_ES' : 'en_CA',
     },
     twitter: {
       card: 'summary_large_image',

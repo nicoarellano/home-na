@@ -17,7 +17,7 @@ interface NavbarProps {
   navOpacity?: any
   navY: any
   onToggleTheme: () => void
-  onToggleLanguage: () => void
+  onSelectLanguage: (target: Language) => void
   onScrollToSection: (id: string) => void
   showNavigation?: boolean
 }
@@ -28,13 +28,12 @@ export default function Navbar({
   locale,
   navY,
   onToggleTheme,
-  onToggleLanguage,
+  onSelectLanguage,
   onScrollToSection,
   showNavigation = true,
 }: NavbarProps) {
   const tNav = useTranslations('HomePage.nav')
   const tHero = useTranslations('HomePage.hero')
-  const nextLocale = locale === Language.En ? Language.Fr : Language.En
   const [onMobile, setOnMobile] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [currentSection, setCurrentSection] = useState(activeSection)
@@ -75,7 +74,7 @@ export default function Navbar({
 
           {showNavigation && (
             <div className={`${onMobile ? 'hidden' : 'flex'} items-center gap-1 flex-1 justify-center`}>
-              {['about', 'contributors', 'team', 'contact'].map((section) => (
+              {['mission', 'pathways', 'team', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => {
@@ -91,7 +90,7 @@ export default function Navbar({
                     fontWeight: currentSection === section ? 700 : 500,
                   }}
                 >
-                  {tNav(section as 'about' | 'contributors' | 'team' | 'contact')}
+                  {tNav(section as 'mission' | 'pathways' | 'team' | 'contact')}
                   {currentSection === section && (
                     <motion.div
                       layoutId="activeSection"
@@ -106,7 +105,7 @@ export default function Navbar({
 
           <div className="flex items-center gap-3 flex-shrink-0 ml-auto">
             <div className={`${onMobile ? 'hidden' : 'flex'} items-center gap-3`}>
-              <LanguageToggle language={nextLocale} onToggle={onToggleLanguage} />
+              <LanguageToggle currentLanguage={locale} onSelect={onSelectLanguage} />
 
               <Button
                 variant="ghost"
@@ -148,7 +147,7 @@ export default function Navbar({
             >
               <div className="py-4 space-y-1 mt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.04)' }}>
                 {showNavigation &&
-                  ['about', 'contributors', 'team', 'contact'].map((section) => (
+                  ['mission', 'pathways', 'team', 'contact'].map((section) => (
                     <button
                       key={section}
                       onClick={() => {
@@ -168,7 +167,7 @@ export default function Navbar({
                             : 'transparent',
                       }}
                     >
-                      {tNav(section as 'about' | 'contributors' | 'team' | 'contact')}
+                      {tNav(section as 'mission' | 'pathways' | 'team' | 'contact')}
                     </button>
                   ))}
 
@@ -183,13 +182,13 @@ export default function Navbar({
                     <span className="text-sm">{theme === 'dark' ? 'Light' : 'Dark'}</span>
                   </Button>
                   <div className="flex-1">
-                    <LanguageToggle language={nextLocale} onToggle={onToggleLanguage} />
+                    <LanguageToggle currentLanguage={locale} onSelect={onSelectLanguage} />
                   </div>
                 </div>
 
                 <div className="pt-2 px-1">
                   <Button size="sm" className="btn-sovereign w-full rounded-md" asChild>
-                    <a href="/cdt" target="_blank" rel="noopener noreferrer">
+                    <a href="https://app.collabdt.org/cdt" target="_blank" rel="noopener noreferrer">
                       {tHero('platformButton')}
                     </a>
                   </Button>

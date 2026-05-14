@@ -1,28 +1,38 @@
 {
   "HomePage": {
     "nav": {
-      "about": "acerca de",
-      "contributors": "colaboradores",
+      "mission": "misión",
+      "pathways": "participación",
+      "team": "equipo",
       "contact": "contacto"
     },
     "hero": {
-      "democratizing": "Democratizando las tecnologías de Gemelos Digitales",
-      "title": "Collab Digital Twins",
-      "description": "Somos una organización sin fines de lucro canadiense que administra una plataforma web no propietaria para la visualización e interacción con sistemas de información geoespacial a múltiples escalas, datos abiertos y modelos BIM. Somos defensores de las tecnologías digitales abiertas, la imaginación humana y el beneficio público a largo plazo.",
-      "platformButton": "Ir a la Plataforma",
-      "betaButton": "Unirse a la Beta",
-      "videoFallback": "Tu navegador no admite la etiqueta de video.",
-      "release": "LANZAMIENTO"
+      "tagline": "Una fundación sin fines de lucro",
+      "title": "Construyendo conexiones digitales,",
+      "titleEm": "juntos",
+      "description": "Conectamos personas, lugares y datos a través de tecnología abierta de gemelos digitales — para que las comunidades, las personas investigadoras y las instituciones puedan comprender y dar forma a los lugares que comparten. El código abierto es el cómo. La conexión es el porqué.",
+      "primaryCta": "Únete a nuestra comunidad",
+      "secondaryCta": "Explorar la plataforma",
+      "platformButton": "Plataforma",
+      "videoFallback": "Tu navegador no admite la etiqueta de video."
+    },
+    "why": {
+      "sectionLabel": "Por qué existimos",
+      "title": "Los lugares son compartidos. Las herramientas para entenderlos no deberían estar bajo llave.",
+      "body": "Los gemelos digitales concentran el conocimiento sobre los edificios, los barrios y los paisajes que compartimos — pero la mayor parte de ese conocimiento queda encerrada tras muros propietarios, fragmentada entre disciplinas, inaccesible para las personas a las que concierne. Existimos para poner una tecnología de gemelos digitales abierta e interoperable en manos de personas investigadoras, comunidades e instituciones — y para conectar a quienes la construyen."
     },
     "mission": {
       "sectionLabel": "Nuestra misión",
-      "titleBefore": "Nuestra misión es",
-      "titleHighlight": "democratizar",
-      "titleAfter": "las tecnologías de Gemelos Digitales (Digital Twins)",
-      "description": "Estamos conectando BIM y GIS utilizando estándares abiertos y tecnologías de código abierto gratuitas, permitiendo a las partes interesadas visualizar y analizar datos directamente en el navegador, eliminando barreras propietarias."
+      "title": "Avanzar la investigación en gemelos digitales, compartir lo que aprendemos y ampliar la capacidad de quienes los utilizan.",
+      "pillar1Title": "Avanzar la investigación",
+      "pillar1Body": "Desarrollar y mantener una plataforma abierta de gemelos digitales que permita a las personas investigadoras explorar, analizar y colaborar a través de BIM, GIS y datos abiertos.",
+      "pillar2Title": "Compartir el conocimiento",
+      "pillar2Body": "Fomentar un ecosistema de personas colaboradoras donde desarrolladores, diseñadores y expertas del dominio construyan extensiones e integraciones sobre una infraestructura común.",
+      "pillar3Title": "Construir capacidades",
+      "pillar3Body": "Ofrecer formación, recursos educativos y programas de fortalecimiento de capacidades para que personas e instituciones utilicen estas herramientas con confianza — y las transmitan."
     },
     "values": {
-      "title": "Nuestros valores fundamentales",
+      "title": "Lo que nos conecta",
       "openStandards": {
         "title": "Estándares abiertos",
         "description": "Eliminar barreras propietarias y promover la interoperabilidad a través de estándares abiertos."
@@ -37,139 +47,102 @@
       },
       "imagination": {
         "title": "Imaginación",
-        "description": "Desafiar los límites actuales que restringen lo que es posible con las tecnologías digitales de código abierto."
+        "description": "Desafiar los límites actuales de lo que es posible con las tecnologías digitales de código abierto."
       },
       "multidisciplinary": {
         "title": "Multidisciplinarios",
-        "description": "El lugar en el que estamos hoy es prueba de que somos más fuertes y más inteligentes juntos."
+        "description": "Donde estamos hoy es prueba de que somos más fuertes y más inteligentes juntos."
       },
       "accessible": {
         "title": "Accesibles",
-        "description": "Empoderar a todos con herramientas intuitivas y fáciles de usar que funcionan directamente en el navegador."
+        "description": "Dar a todas las personas herramientas intuitivas y fáciles de usar que funcionan directamente en el navegador."
+      }
+    },
+    "pathways": {
+      "sectionLabel": "Formas de participar",
+      "title": "Elige el camino que te corresponda.",
+      "subtitle": "Cada oferta funciona sobre la base de recuperación de costos. Cualquier excedente se reinvierte en la plataforma y la comunidad.",
+      "useFree": {
+        "tag": "Para personas curiosas",
+        "name": "Úsala gratis",
+        "headline": "Prueba la plataforma alojada.",
+        "body": "Inicia una instancia alojada en Canadá con una capa gratuita. Tarifas a costo para uso en producción — sin margen de ganancia, sin bloqueo.",
+        "cta": "Abrir la plataforma"
+      },
+      "selfHost": {
+        "tag": "Para equipos técnicos",
+        "name": "Aloja la tuya",
+        "headline": "Ejecuta el núcleo de código abierto.",
+        "body": "Código completo, AGPL-3.0, documentación y soporte comunitario. Mantén el control total sobre tus datos e infraestructura.",
+        "cta": "Leer la documentación"
+      },
+      "buildWithUs": {
+        "tag": "Para instituciones y socios",
+        "name": "Construye con nosotros",
+        "headline": "Co-crea soluciones a medida.",
+        "body": "Desarrollo personalizado, herramientas especializadas y colaboración empresarial — construidos sobre el núcleo abierto, entregados a costo, y devueltos al común cuando lo beneficia.",
+        "cta": "Iniciar una conversación"
+      },
+      "learnTeach": {
+        "tag": "Para personas educadoras y aprendices",
+        "name": "Aprende y enseña",
+        "headline": "Capacita a tu equipo. Equipa a la próxima generación.",
+        "body": "Talleres, programas de capacitación y recursos educativos para instituciones que adoptan la práctica del gemelo digital.",
+        "cta": "Explorar formación"
       }
     },
     "contributors": {
-      "title": "Únase a nuestra comunidad",
-      "description": "Conéctese con otros desarrolladores, colaboradores y usuarios en nuestra creciente comunidad.",
-      "mailingButton": "Lista de correo",
-      "githubButton": "Organización en GitHub",
-      "coreTeam": "Equipo principal",
-      "meet": "Conozca a las personas dedicadas que dirigen la plataforma CDT",
-      "director": "Director",
-      "associateDirector": "Director Asociado",
-      "projectLead": "Líder de Proyecto",
-      "sysAdmin": "Administrador de Sistemas",
-      "researcher": "Investigador",
-      "stars": "Estrellas",
-      "forks": "Bifurcaciones (Forks)",
-      "commits": "Commits"
+      "sectionLabel": "Ecosistema de colaboración",
+      "title": "Construido abiertamente. Construido juntos.",
+      "body": "El núcleo de la plataforma es abierto. También lo son las herramientas, extensiones e integraciones que crecen sobre él. Escribas código, compartas datos, diseñes interfaces o enseñes a otras personas — hay un lugar para ti.",
+      "githubLabel": "Organización en GitHub",
+      "mailingLabel": "Lista de correo",
+      "docsLabel": "Documentación"
+    },
+    "team": {
+      "sectionLabel": "Gobernanza",
+      "title": "Quiénes somos.",
+      "intro": "Organización canadiense sin fines de lucro. La plataforma es trabajo colectivo; la fundación es como lo mantenemos así."
     },
     "contact": {
-      "title": "Póngase en contacto",
-      "description": "Ya sea que esté interesado en colaborar, necesite soporte o desee discutir soluciones empresariales, nos encantaría saber de usted.",
-      "formTitle": "Envíenos un mensaje",
-      "formDescription": "Complete el formulario a continuación y nos pondremos en contacto con usted lo antes posible.",
+      "sectionLabel": "Ponte en contacto",
+      "title": "Cuéntanos cómo te gustaría conectar.",
+      "description": "Seas persona investigadora, socia, colaboradora o educadora — empieza por contarnos un poco sobre ti. Dirigiremos tu mensaje a la persona adecuada.",
+      "audienceLabel": "Me pongo en contacto como…",
+      "audienceResearcher": "Investigador·a",
+      "audiencePartner": "Institución / socio",
+      "audienceDeveloper": "Desarrollador·a / colaborador·a",
+      "audienceEducator": "Educador·a / formador·a",
+      "audienceOther": "Otra cosa",
       "firstName": "Nombre",
-      "firstNamePlaceholder": "Ingrese su nombre",
       "lastName": "Apellido",
-      "lastNamePlaceholder": "Ingrese su apellido",
-      "email": "Dirección de correo",
-      "emailAddress": "Dirección de correo",
-      "emailPlaceholder": "Ingrese su dirección de correo",
+      "email": "Correo electrónico",
       "organization": "Organización",
-      "organizationPlaceholder": "Ingrese su organización (opcional)",
       "message": "Mensaje",
-      "messagePlaceholder": "Cuéntenos sobre su proyecto o consulta...",
       "sendButton": "Enviar mensaje",
-      "orEmail": "O envíenos un correo directamente a",
-      "contactInfo": "Información de contacto",
-      "contactInformation": "Información de contacto",
-      "emailLabel": "Correo",
-      "enterpriseTitle": "Soporte empresarial",
-      "enterpriseSupport": "Soporte empresarial",
-      "enterpriseDescription": "¿Necesita soporte dedicado, funciones personalizadas o servicios profesionales?",
-      "enterpriseLink": "Contactar al equipo empresarial →",
-      "contactEnterpriseTeam": "Contactar al equipo empresarial",
-      "successTitle": "¡Mensaje enviado!",
-      "successDescription": "Nos pondremos en contacto con usted lo antes posible.",
-      "successMessage": "¡Su cliente de correo debería estar abierto ahora con su mensaje listo para enviar!",
-      "getInTouch": "PÓNGASE EN CONTACTO",
-      "sendMessage": "Envíenos un mensaje",
-      "joinCommunity": "Únase a nuestra comunidad",
-      "communityDescription": "Conéctese con otros desarrolladores, colaboradores y usuarios en nuestra creciente comunidad.",
-      "githubDiscussions": "Discusiones en GitHub",
-      "mailingList": "Lista de correo",
-      "sending": "Enviando..."
+      "sending": "Enviando...",
+      "orEmail": "O envíanos un correo directamente a",
+      "infoEmail": "info@collabdt.org",
+      "supportEmail": "support@collabdt.org"
     },
     "footer": {
-      "description": "Somos una organización sin fines de lucro canadiense que administra una plataforma web no propietaria para la visualización e interacción con sistemas de información geoespacial a múltiples escalas, datos abiertos y modelos BIM.",
+      "description": "Una fundación canadiense sin fines de lucro que construye conexiones digitales, juntos — a través de tecnología abierta e interoperable de gemelos digitales.",
+      "governance": "Corporación canadiense sin fines de lucro. Gobernada por una junta directiva. Código AGPL-3.0. Excedentes reinvertidos en la plataforma y la comunidad.",
       "license": "Licenciado bajo AGPL 3.0",
       "stewardship": "Administrado por una organización sin fines de lucro canadiense para el beneficio público a largo plazo",
       "copyright": "Collab Digital Twins. Todos los derechos reservados.",
-      "community": "Comunidad",
-      "contributors": "Colaboradores",
-      "discussion": "Discusión",
-      "organization": "Organización",
-      "aboutUs": "Sobre nosotros",
-      "contact": "Contacto",
-      "madeWith": "Hecho con",
-      "byCommunity": "por la comunidad de CDT",
-      "stewarded": "Administrado por",
-      "mission": "Una organización sin fines de lucro que promueve la apertura, la innovación y el beneficio público a largo plazo"
-    },
-    "countdown": {
-      "days": "DÍAS",
-      "hours": "HORAS",
-      "minutes": "MINUTOS",
-      "seconds": "SEGUNDOS"
-    },
-    "navbar": {
-      "platform": "Plataforma",
-      "about": "Acerca de",
+      "navigate": "Navegar",
+      "navMission": "Misión",
+      "navPathways": "Participación",
+      "navTeam": "Equipo",
+      "navContact": "Contacto",
+      "navPlatform": "Plataforma",
+      "resources": "Recursos",
+      "betaAccess": "Acceso beta",
       "documentation": "Documentación",
-      "deployment": "Despliegue"
-    },
-    "about": {
-      "mission": "Nuestra misión es democratizar",
-      "dt": " las tecnologías de Gemelos Digitales (Digital Twins)",
-      "coreValues": "NUESTROS VALORES FUNDAMENTALES",
-      "openStandards": "Estándares abiertos",
-      "eliminate": "Eliminar barreras propietarias y promover la interoperabilidad a través de estándares abiertos.",
-      "communityDriven": "Impulsados por la comunidad",
-      "buildWithCommunity": "Construir con y para la comunidad.",
-      "transparent": "Transparentes",
-      "fosterTrust": "Fomentar la confianza y el desarrollo colaborativo a través de código de fuente abierta.",
-      "imagination": "Imaginación",
-      "challengeBoundaries": "Desafiar los límites actuales que restringen lo que es posible con las tecnologías digitales de código abierto.",
-      "multidisciplinary": "Multidisciplinarios",
-      "strongerTogether": "El lugar en el que estamos hoy es prueba de que somos más fuertes y más inteligentes juntos."
-    },
-    "deployment": {
-      "deployment": "Opciones de despliegue",
-      "title": "Modelos de despliegue",
-      "subtitle": "Seleccione el modelo de despliegue que mejor se adapte a las capacidades técnicas y requisitos operativos de su organización.",
-      "selfHosted": {
-        "name": "Alojamiento propio (Self-Hosted)",
-        "price": "Sin costo",
-        "description": "Para organizaciones con experiencia técnica e infraestructura de TI",
-        "feature1": "Documentación proporcionada sin costo",
-        "feature2": "Soporte de la comunidad",
-        "feature3": "Control total sobre sus datos e infraestructura",
-        "feature4": "Personalizable para sus necesidades específicas",
-        "cta": "Empezar"
-      },
-      "cdtHosted": {
-        "name": "Alojado por CDT",
-        "price": "Modelo SaaS con capa gratuita disponible",
-        "description": "Para organizaciones con recursos de TI limitados",
-        "feature1": "Menor tiempo de implementación",
-        "feature2": "Documentación proporcionada sin costo",
-        "feature3": "Incluye soporte",
-        "feature4": "Actualizaciones y mantenimiento automáticos periódicos",
-        "feature5": "Alojado en Canadá para soberanía de datos",
-        "feature6": "Genera los ingresos necesarios para sostener nuestra misión",
-        "cta": "Empezar"
-      }
+      "legal": "Legal",
+      "privacyPolicy": "Política de privacidad",
+      "cookiePolicy": "Política de cookies"
     }
   }
 }

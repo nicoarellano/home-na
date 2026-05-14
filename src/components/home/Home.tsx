@@ -7,7 +7,9 @@ import { useLocale } from 'next-intl'
 import { useRouter, usePathname } from '@/i18n/navigation'
 import Navbar from './Navbar'
 import HeroSection from './HeroSection'
+import WhyWeExistSection from './WhyWeExistSection'
 import AboutSection from './AboutSection'
+import PathwaysSection from './PathwaysSection'
 import ContributorsSection from './ContributorsSection'
 import TeamSection from './TeamSection'
 import ContactSection from './ContactSection'
@@ -19,7 +21,7 @@ interface HomeProps {
 }
 
 export function Home({ assetsUrl }: HomeProps) {
-  const [activeSection, setActiveSection] = useState('about')
+  const [activeSection, setActiveSection] = useState('mission')
   const [theme, setTheme] = useState<'light' | 'dark'>('dark')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const locale = useLocale() as Language
@@ -33,7 +35,7 @@ export function Home({ assetsUrl }: HomeProps) {
     document.documentElement.classList.toggle('dark', true)
 
     const handleScroll = () => {
-      const sections = ['about', 'contributors', 'team', 'contact']
+      const sections = ['mission', 'pathways', 'team', 'contact']
       const current = sections.find((section) => {
         const element = document.getElementById(section)
         if (element) {
@@ -55,9 +57,9 @@ export function Home({ assetsUrl }: HomeProps) {
     document.documentElement.classList.toggle('dark', newTheme === 'dark')
   }
 
-  const toggleLanguage = () => {
-    const nextLocale = locale === Language.En ? Language.Fr : Language.En
-    router.replace(pathname, { locale: nextLocale })
+  const selectLanguage = (target: Language) => {
+    if (target === locale) return
+    router.replace(pathname, { locale: target })
   }
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -135,11 +137,13 @@ export function Home({ assetsUrl }: HomeProps) {
         navOpacity={navOpacity}
         navY={navY}
         onToggleTheme={toggleTheme}
-        onToggleLanguage={toggleLanguage}
+        onSelectLanguage={selectLanguage}
         onScrollToSection={scrollToSection}
       />
       <HeroSection assetsUrl={assetsUrl} />
+      <WhyWeExistSection />
       <AboutSection />
+      <PathwaysSection />
       <ContributorsSection />
       <TeamSection />
       <ContactSection onSubmit={handleSubmit} isSubmitting={isSubmitting} />

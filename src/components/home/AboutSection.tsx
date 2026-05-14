@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Globe, Users, Eye, Lightbulb, Network, Monitor, type LucideIcon } from 'lucide-react'
+import { Globe, Users, Eye, Lightbulb, Network, Monitor, Compass, Share2, GraduationCap, type LucideIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 interface ValueCard {
@@ -67,6 +67,24 @@ export default function AboutSection() {
   const tMission = useTranslations('HomePage.mission')
   const tValues = useTranslations('HomePage.values')
 
+  const pillars: ValueCard[] = [
+    {
+      icon: Compass,
+      title: tMission('pillar1Title'),
+      description: tMission('pillar1Body'),
+    },
+    {
+      icon: Share2,
+      title: tMission('pillar2Title'),
+      description: tMission('pillar2Body'),
+    },
+    {
+      icon: GraduationCap,
+      title: tMission('pillar3Title'),
+      description: tMission('pillar3Body'),
+    },
+  ]
+
   const coreValues: ValueCard[] = [
     {
       icon: Globe,
@@ -102,10 +120,10 @@ export default function AboutSection() {
 
   return (
     <>
-      <section className="py-32 relative" style={{ background: 'var(--hp-surface)' }}>
+      <section id="mission" className="py-32 relative" style={{ background: 'var(--hp-surface)' }}>
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-12 gap-20 items-start">
+          <div className="max-w-6xl mx-auto space-y-16">
+            <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -117,17 +135,13 @@ export default function AboutSection() {
                 <h2
                   className="font-display font-bold"
                   style={{
-                    fontSize: 'clamp(2rem, 4vw, 3rem)',
-                    lineHeight: '1.1',
+                    fontSize: 'clamp(1.75rem, 3.4vw, 2.5rem)',
+                    lineHeight: '1.15',
                     letterSpacing: '-0.02em',
                     color: 'var(--hp-on-surface)',
                   }}
                 >
-                  {tMission('titleBefore')}{' '}
-                  <span style={{ color: 'var(--hp-primary-container)' }}>
-                    {tMission('titleHighlight')}
-                  </span>{' '}
-                  {tMission('titleAfter')}
+                  {tMission('title')}
                 </h2>
               </motion.div>
 
@@ -136,14 +150,48 @@ export default function AboutSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-100px' }}
                 transition={{ duration: 0.6, delay: 0.15 }}
-                className="lg:col-span-7 pt-2 lg:pt-12"
+                className="lg:col-span-7 grid gap-5"
               >
-                <p
-                  className="text-lg leading-relaxed"
-                  style={{ color: 'var(--hp-on-surface-variant)' }}
-                >
-                  {tMission('description')}
-                </p>
+                {pillars.map((pillar, idx) => (
+                  <motion.div
+                    key={pillar.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-60px' }}
+                    transition={{ duration: 0.5, delay: 0.1 * idx }}
+                    className="tonal-card p-6"
+                  >
+                    <div className="flex items-start gap-4">
+                      <div
+                        className="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0"
+                        style={{ background: 'rgba(239, 145, 97, 0.1)' }}
+                      >
+                        <pillar.icon
+                          className="w-5 h-5"
+                          style={{ color: 'var(--hp-primary-container)' }}
+                        />
+                      </div>
+                      <div className="space-y-2 min-w-0">
+                        <h3
+                          className="font-display font-bold"
+                          style={{
+                            fontSize: '1.05rem',
+                            lineHeight: '1.3',
+                            color: 'var(--hp-on-surface)',
+                          }}
+                        >
+                          {pillar.title}
+                        </h3>
+                        <p
+                          className="text-[0.95rem] leading-relaxed"
+                          style={{ color: 'var(--hp-on-surface-variant)' }}
+                        >
+                          {pillar.description}
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
               </motion.div>
             </div>
           </div>
