@@ -150,7 +150,7 @@ function DirectorCard({ director }: { director: Director }) {
 }
 
 export default function TeamSection() {
-  const tTeam = useTranslations('HomePage.team')
+  const tTeam = useTranslations('HomePage.leadership')
 
   return (
     <section

@@ -1,38 +1,127 @@
 {
   "HomePage": {
     "nav": {
-      "mission": "misión",
-      "pathways": "participación",
-      "team": "equipo",
+      "capabilities": "capacidades",
+      "solutions": "soluciones",
+      "developers": "desarrolladores",
       "contact": "contacto"
     },
     "hero": {
-      "tagline": "Una fundación sin fines de lucro",
-      "title": "Construyendo conexiones digitales,",
-      "titleEm": "juntos",
-      "description": "Conectamos personas, lugares y datos a través de tecnología abierta de gemelos digitales — para que las comunidades, las personas investigadoras y las instituciones puedan comprender y dar forma a los lugares que comparten. El código abierto es el cómo. La conexión es el porqué.",
-      "primaryCta": "Únete a nuestra comunidad",
+      "tagline": "Infraestructura de gemelo digital sin fines de lucro",
+      "title": "Gemelos digitales multi-escala.",
+      "titleEm": "Construidos sobre estándares abiertos.",
+      "description": "Una plataforma completa de BIM, GIS y datos abiertos que se ejecuta en el navegador — desplegada a tu manera, personalizada según tus necesidades, libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible.",
+      "primaryCta": "Solicitar una demo",
       "secondaryCta": "Explorar la plataforma",
       "platformButton": "Plataforma",
       "videoFallback": "Tu navegador no admite la etiqueta de video."
     },
-    "why": {
-      "sectionLabel": "Por qué existimos",
-      "title": "Los lugares son compartidos. Las herramientas para entenderlos no deberían estar bajo llave.",
-      "body": "Los gemelos digitales concentran el conocimiento sobre los edificios, los barrios y los paisajes que compartimos — pero la mayor parte de ese conocimiento queda encerrada tras muros propietarios, fragmentada entre disciplinas, inaccesible para las personas a las que concierne. Existimos para poner una tecnología de gemelos digitales abierta e interoperable en manos de personas investigadoras, comunidades e instituciones — y para conectar a quienes la construyen."
+    "trustBand": {
+      "openStandards": "Estándares abiertos",
+      "agpl": "Código AGPL-3.0 disponible",
+      "sovereignHosted": "Alojamiento soberano",
+      "costRecovery": "Tarifas a costo",
+      "boardGoverned": "OSFL gobernada por junta"
     },
-    "mission": {
-      "sectionLabel": "Nuestra misión",
-      "title": "Avanzar la investigación en gemelos digitales, compartir lo que aprendemos y ampliar la capacidad de quienes los utilizan.",
-      "pillar1Title": "Avanzar la investigación",
-      "pillar1Body": "Desarrollar y mantener una plataforma abierta de gemelos digitales que permita a las personas investigadoras explorar, analizar y colaborar a través de BIM, GIS y datos abiertos.",
-      "pillar2Title": "Compartir el conocimiento",
-      "pillar2Body": "Fomentar un ecosistema de personas colaboradoras donde desarrolladores, diseñadores y expertas del dominio construyan extensiones e integraciones sobre una infraestructura común.",
-      "pillar3Title": "Construir capacidades",
-      "pillar3Body": "Ofrecer formación, recursos educativos y programas de fortalecimiento de capacidades para que personas e instituciones utilicen estas herramientas con confianza — y las transmitan."
+    "capabilities": {
+      "sectionLabel": "Capacidades",
+      "title": "Lo que la plataforma habilita.",
+      "bridge": {
+        "title": "Conectar BIM, GIS y datos abiertos",
+        "body": "Visualiza y analiza gemelos digitales multi-escala en un único espacio de trabajo en el navegador — desde edificios individuales hasta paisajes regionales."
+      },
+      "interop": {
+        "title": "Interoperable por diseño",
+        "body": "Estándares abiertos y formatos abiertos. Conecta tus tuberías y herramientas existentes sin guardianes propietarios."
+      },
+      "extend": {
+        "title": "Extender e integrar",
+        "body": "Construye herramientas de análisis, extensiones personalizadas e integraciones mediante APIs documentadas."
+      },
+      "deploy": {
+        "title": "Despliega a tu manera",
+        "body": "Usa el servicio gestionado soberano o auto-aloja el núcleo AGPL-3.0 en tu infraestructura. Cambia entre modos sin re-plataformar."
+      },
+      "customize": {
+        "title": "Personaliza sin bifurcar",
+        "body": "Encarga funcionalidades especializadas a costo — construidas sobre el núcleo abierto para permanecer en la ruta de actualizaciones."
+      },
+      "train": {
+        "title": "Capacita a tu equipo",
+        "body": "Programas formales de formación y desarrollo de capacidades para instituciones que adoptan la práctica del gemelo digital."
+      }
+    },
+    "solutions": {
+      "sectionLabel": "Soluciones",
+      "title": "Elige tu despliegue.",
+      "subtitle": "Cuatro rutas hacia el valor — todas a costo, con cualquier excedente reinvertido en la plataforma.",
+      "managedCloud": {
+        "tag": "Ruta más rápida",
+        "name": "Nube gestionada (SaaS)",
+        "headline": "Alojamiento soberano, listo en días.",
+        "body": "Ejecutamos la plataforma sobre infraestructura soberana de tu elección, con soporte incluido, actualizaciones automáticas y garantías de residencia de datos. Tarifas a costo — sin margen.",
+        "feature1": "Residencia de datos bajo tu control",
+        "feature2": "Soporte incluido",
+        "feature3": "Actualizaciones automáticas",
+        "feature4": "Capa gratuita disponible",
+        "cta": "Solicitar precios"
+      },
+      "selfManaged": {
+        "tag": "Control total",
+        "name": "Despliegue auto-gestionado",
+        "headline": "Ejecuta el núcleo de código abierto en tu infraestructura.",
+        "body": "Código AGPL-3.0 completo, documentación y soporte comunitario. Mantén el control total sobre tus datos, red e integraciones.",
+        "feature1": "Código AGPL-3.0",
+        "feature2": "Auto-alojado en tu infraestructura",
+        "feature3": "Soporte comunitario",
+        "feature4": "Soporte pago opcional",
+        "cta": "Leer la documentación"
+      },
+      "customDev": {
+        "tag": "Co-construcción",
+        "name": "Desarrollo personalizado",
+        "headline": "Herramientas especializadas, sobre el núcleo abierto.",
+        "body": "Co-desarrollamos herramientas de análisis especializadas y extensiones de la plataforma a costo. Excedente reinvertido. Donde el trabajo beneficia al común, se devuelve aguas arriba.",
+        "feature1": "Trabajos a costo",
+        "feature2": "Construido sobre el núcleo abierto",
+        "feature3": "Permanece en la ruta de actualizaciones",
+        "feature4": "Excedente reinvertido",
+        "cta": "Iniciar una conversación"
+      },
+      "training": {
+        "tag": "Desarrollo de capacidades",
+        "name": "Formación y habilitación",
+        "headline": "Equipa a tu equipo para operar y extender.",
+        "body": "Talleres, documentación y programas de desarrollo de capacidades para instituciones que adoptan la práctica del gemelo digital. Adaptados al rol y nivel de tu equipo.",
+        "feature1": "Talleres y tutoriales",
+        "feature2": "Programas de onboarding",
+        "feature3": "Currículo por rol",
+        "feature4": "Formación de formadores",
+        "cta": "Explorar formación"
+      }
+    },
+    "whyCdt": {
+      "sectionLabel": "Por qué CDT",
+      "title": "Construido para eliminar las cosas que suelen salir mal.",
+      "noLockIn": {
+        "title": "Sin bloqueo propietario",
+        "body": "El código AGPL-3.0 significa que siempre puedes auto-alojar, bifurcar o salir. Tu inversión en la plataforma es portable."
+      },
+      "dataSovereignty": {
+        "title": "Soberanía de datos",
+        "body": "Alojamiento gestionado soberano en la región de tu elección, o auto-alojamiento totalmente en sitio. Tú decides dónde viven tus datos."
+      },
+      "costRecovery": {
+        "title": "Economía a costo",
+        "body": "Somos una OSFL. Sin margen de ganancia integrado. Cualquier excedente se reinvierte en la plataforma — no se extrae."
+      },
+      "multidisciplinary": {
+        "title": "Multidisciplinario por diseño",
+        "body": "Construido desde el principio para conectar BIM, GIS, investigación y operaciones. La plataforma se adapta a cómo realmente trabajan las instituciones."
+      }
     },
     "values": {
-      "title": "Lo que nos conecta",
+      "title": "Principios sobre los que construir",
       "openStandards": {
         "title": "Estándares abiertos",
         "description": "Eliminar barreras propietarias y promover la interoperabilidad a través de estándares abiertos."
@@ -58,83 +147,52 @@
         "description": "Dar a todas las personas herramientas intuitivas y fáciles de usar que funcionan directamente en el navegador."
       }
     },
-    "pathways": {
-      "sectionLabel": "Formas de participar",
-      "title": "Elige el camino que te corresponda.",
-      "subtitle": "Cada oferta funciona sobre la base de recuperación de costos. Cualquier excedente se reinvierte en la plataforma y la comunidad.",
-      "useFree": {
-        "tag": "Para personas curiosas",
-        "name": "Úsala gratis",
-        "headline": "Prueba la plataforma alojada.",
-        "body": "Inicia una instancia alojada en Canadá con una capa gratuita. Tarifas a costo para uso en producción — sin margen de ganancia, sin bloqueo.",
-        "cta": "Abrir la plataforma"
-      },
-      "selfHost": {
-        "tag": "Para equipos técnicos",
-        "name": "Aloja la tuya",
-        "headline": "Ejecuta el núcleo de código abierto.",
-        "body": "Código completo, AGPL-3.0, documentación y soporte comunitario. Mantén el control total sobre tus datos e infraestructura.",
-        "cta": "Leer la documentación"
-      },
-      "buildWithUs": {
-        "tag": "Para instituciones y socios",
-        "name": "Construye con nosotros",
-        "headline": "Co-crea soluciones a medida.",
-        "body": "Desarrollo personalizado, herramientas especializadas y colaboración empresarial — construidos sobre el núcleo abierto, entregados a costo, y devueltos al común cuando lo beneficia.",
-        "cta": "Iniciar una conversación"
-      },
-      "learnTeach": {
-        "tag": "Para personas educadoras y aprendices",
-        "name": "Aprende y enseña",
-        "headline": "Capacita a tu equipo. Equipa a la próxima generación.",
-        "body": "Talleres, programas de capacitación y recursos educativos para instituciones que adoptan la práctica del gemelo digital.",
-        "cta": "Explorar formación"
-      }
+    "developers": {
+      "sectionLabel": "Plataforma para desarrolladores",
+      "title": "Extiende la plataforma. Integra tus sistemas.",
+      "body": "APIs documentadas y un ecosistema de colaboración para herramientas de análisis, extensiones e integraciones. Construye junto al núcleo — o encima de él.",
+      "docsLabel": "Documentación de API",
+      "githubLabel": "GitHub",
+      "mailingLabel": "Lista de correo para desarrolladores"
     },
-    "contributors": {
-      "sectionLabel": "Ecosistema de colaboración",
-      "title": "Construido abiertamente. Construido juntos.",
-      "body": "El núcleo de la plataforma es abierto. También lo son las herramientas, extensiones e integraciones que crecen sobre él. Escribas código, compartas datos, diseñes interfaces o enseñes a otras personas — hay un lugar para ti.",
-      "githubLabel": "Organización en GitHub",
-      "mailingLabel": "Lista de correo",
-      "docsLabel": "Documentación"
-    },
-    "team": {
-      "sectionLabel": "Gobernanza",
-      "title": "Quiénes somos.",
-      "intro": "Organización canadiense sin fines de lucro. La plataforma es trabajo colectivo; la fundación es como lo mantenemos así."
+    "leadership": {
+      "sectionLabel": "Liderazgo",
+      "title": "Gobernanza por junta. Comprometida con la misión.",
+      "intro": "Dirigida por una junta con profunda experiencia en arquitectura, tecnología, investigación y educación. Como OSFL, nuestra carta exige que la plataforma sirva a los usuarios — no a accionistas."
     },
     "contact": {
-      "sectionLabel": "Ponte en contacto",
-      "title": "Cuéntanos cómo te gustaría conectar.",
-      "description": "Seas persona investigadora, socia, colaboradora o educadora — empieza por contarnos un poco sobre ti. Dirigiremos tu mensaje a la persona adecuada.",
-      "audienceLabel": "Me pongo en contacto como…",
-      "audienceResearcher": "Investigador·a",
-      "audiencePartner": "Institución / socio",
-      "audienceDeveloper": "Desarrollador·a / colaborador·a",
-      "audienceEducator": "Educador·a / formador·a",
-      "audienceOther": "Otra cosa",
+      "sectionLabel": "Solicitar una demo",
+      "title": "Velo por ti mismo.",
+      "description": "Cuéntanos sobre tu equipo y caso de uso. Organizaremos un recorrido a medida y trazaremos una ruta de despliegue adecuada.",
+      "audienceLabel": "Tu contexto",
+      "audienceAec": "Arquitectura / ingeniería",
+      "audiencePublic": "Gobierno / sector público",
+      "audienceResearch": "Institución de investigación",
+      "audienceDeveloper": "Desarrollador·a / integrador·a",
+      "audienceOther": "Otro",
       "firstName": "Nombre",
       "lastName": "Apellido",
-      "email": "Correo electrónico",
+      "email": "Correo profesional",
       "organization": "Organización",
-      "message": "Mensaje",
-      "sendButton": "Enviar mensaje",
+      "message": "¿Cómo podemos ayudar?",
+      "sendButton": "Solicitar demo",
       "sending": "Enviando...",
       "orEmail": "O envíanos un correo directamente a",
       "infoEmail": "info@collabdt.org",
       "supportEmail": "support@collabdt.org"
     },
     "footer": {
-      "description": "Una fundación canadiense sin fines de lucro que construye conexiones digitales, juntos — a través de tecnología abierta e interoperable de gemelos digitales.",
+      "tagline": "construyendo conexiones digitales, juntos",
+      "description": "Infraestructura de gemelo digital multi-escala para instituciones. Estándares abiertos, tarifas a costo, sin bloqueo propietario.",
       "governance": "Corporación canadiense sin fines de lucro. Gobernada por una junta directiva. Código AGPL-3.0. Excedentes reinvertidos en la plataforma y la comunidad.",
       "license": "Licenciado bajo AGPL 3.0",
       "stewardship": "Administrado por una organización sin fines de lucro canadiense para el beneficio público a largo plazo",
       "copyright": "Collab Digital Twins. Todos los derechos reservados.",
       "navigate": "Navegar",
-      "navMission": "Misión",
-      "navPathways": "Participación",
-      "navTeam": "Equipo",
+      "navCapabilities": "Capacidades",
+      "navSolutions": "Soluciones",
+      "navDevelopers": "Desarrolladores",
+      "navLeadership": "Liderazgo",
       "navContact": "Contacto",
       "navPlatform": "Plataforma",
       "resources": "Recursos",

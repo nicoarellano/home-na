@@ -77,7 +77,7 @@ export default function Navbar({
 
           {showNavigation && (
             <div className={`${onMobile ? 'hidden' : 'flex'} items-center gap-1 flex-1 justify-center`}>
-              {['mission', 'pathways', 'team', 'contact'].map((section) => (
+              {['capabilities', 'solutions', 'developers', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => {
@@ -93,7 +93,7 @@ export default function Navbar({
                     fontWeight: currentSection === section ? 700 : 500,
                   }}
                 >
-                  {tNav(section as 'mission' | 'pathways' | 'team' | 'contact')}
+                  {tNav(section as 'capabilities' | 'solutions' | 'developers' | 'contact')}
                   {currentSection === section && (
                     <motion.div
                       layoutId="activeSection"
@@ -150,7 +150,7 @@ export default function Navbar({
             >
               <div className="py-4 space-y-1 mt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.04)' }}>
                 {showNavigation &&
-                  ['mission', 'pathways', 'team', 'contact'].map((section) => (
+                  ['capabilities', 'solutions', 'developers', 'contact'].map((section) => (
                     <button
                       key={section}
                       onClick={() => {
@@ -170,7 +170,7 @@ export default function Navbar({
                             : 'transparent',
                       }}
                     >
-                      {tNav(section as 'mission' | 'pathways' | 'team' | 'contact')}
+                      {tNav(section as 'capabilities' | 'solutions' | 'developers' | 'contact')}
                     </button>
                   ))}
 

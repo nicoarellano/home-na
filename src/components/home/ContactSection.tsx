@@ -1,14 +1,14 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Microscope, Building2, Code2, GraduationCap, MoreHorizontal, type LucideIcon } from 'lucide-react'
+import { Building2, Landmark, FlaskConical, Code2, MoreHorizontal, type LucideIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { Textarea } from '@/components/ui/Textarea'
 
-type AudienceKey = 'researcher' | 'partner' | 'developer' | 'educator' | 'other'
+type AudienceKey = 'aec' | 'public' | 'research' | 'developer' | 'other'
 
 interface AudienceChip {
   key: AudienceKey
@@ -17,10 +17,10 @@ interface AudienceChip {
 }
 
 const AUDIENCES: AudienceChip[] = [
-  { key: 'researcher', labelKey: 'audienceResearcher', icon: Microscope },
-  { key: 'partner', labelKey: 'audiencePartner', icon: Building2 },
+  { key: 'aec', labelKey: 'audienceAec', icon: Building2 },
+  { key: 'public', labelKey: 'audiencePublic', icon: Landmark },
+  { key: 'research', labelKey: 'audienceResearch', icon: FlaskConical },
   { key: 'developer', labelKey: 'audienceDeveloper', icon: Code2 },
-  { key: 'educator', labelKey: 'audienceEducator', icon: GraduationCap },
   { key: 'other', labelKey: 'audienceOther', icon: MoreHorizontal },
 ]
 
@@ -31,7 +31,22 @@ interface ContactSectionProps {
 
 export default function ContactSection({ onSubmit, isSubmitting = false }: ContactSectionProps) {
   const t = useTranslations('HomePage.contact')
-  const [audience, setAudience] = useState<AudienceKey>('researcher')
+  const [audience, setAudience] = useState<AudienceKey>('aec')
+  const [isDemoRequest, setIsDemoRequest] = useState(false)
+  const messageRef = useRef<HTMLTextAreaElement>(null)
+
+  useEffect(() => {
+    try {
+      const flag = sessionStorage.getItem('cdt_demo_request')
+      if (flag === '1') {
+        setIsDemoRequest(true)
+        if (messageRef.current && !messageRef.current.value) {
+          messageRef.current.value = "I'd like to request a demo of the platform."
+        }
+        sessionStorage.removeItem('cdt_demo_request')
+      }
+    } catch {}
+  }, [])
 
   return (
     <section
@@ -67,7 +82,14 @@ export default function ContactSection({ onSubmit, isSubmitting = false }: Conta
             </p>
           </div>
 
-          <div className="tonal-card p-8 md:p-10">
+          <div
+            className="tonal-card p-8 md:p-10"
+            style={
+              isDemoRequest
+                ? { boxShadow: '0 0 0 1px var(--hp-primary-container), 0 20px 40px rgba(239,145,97,0.15)' }
+                : undefined
+            }
+          >
             <div className="space-y-3 mb-8">
               <p
                 className="font-display text-xs font-semibold uppercase tracking-wider"
@@ -108,6 +130,11 @@ export default function ContactSection({ onSubmit, isSubmitting = false }: Conta
 
             <form onSubmit={onSubmit} className="space-y-5">
               <input type="hidden" name="audience" value={audience} />
+              <input
+                type="hidden"
+                name="inquiry_type"
+                value={isDemoRequest ? 'demo_request' : 'general'}
+              />
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
@@ -164,6 +191,7 @@ export default function ContactSection({ onSubmit, isSubmitting = false }: Conta
                   {t('message')}
                 </label>
                 <Textarea
+                  ref={messageRef}
                   id="message"
                   name="message"
                   required

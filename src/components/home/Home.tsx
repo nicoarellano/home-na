@@ -7,10 +7,11 @@ import { useLocale } from 'next-intl'
 import { useRouter, usePathname } from '@/i18n/navigation'
 import Navbar from './Navbar'
 import HeroSection from './HeroSection'
-import WhyWeExistSection from './WhyWeExistSection'
+import TrustBandSection from './TrustBandSection'
+import CapabilitiesSection from './CapabilitiesSection'
+import SolutionsSection from './SolutionsSection'
 import AboutSection from './AboutSection'
-import PathwaysSection from './PathwaysSection'
-import ContributorsSection from './ContributorsSection'
+import DeveloperPlatformSection from './DeveloperPlatformSection'
 import TeamSection from './TeamSection'
 import ContactSection from './ContactSection'
 import Footer from './Footer'
@@ -21,7 +22,7 @@ interface HomeProps {
 }
 
 export function Home({ assetsUrl }: HomeProps) {
-  const [activeSection, setActiveSection] = useState('mission')
+  const [activeSection, setActiveSection] = useState('capabilities')
   const [theme, setTheme] = useState<'light' | 'dark'>('dark')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const locale = useLocale() as Language
@@ -35,7 +36,7 @@ export function Home({ assetsUrl }: HomeProps) {
     document.documentElement.classList.toggle('dark', true)
 
     const handleScroll = () => {
-      const sections = ['mission', 'pathways', 'team', 'contact']
+      const sections = ['capabilities', 'solutions', 'developers', 'contact']
       const current = sections.find((section) => {
         const element = document.getElementById(section)
         if (element) {
@@ -141,10 +142,11 @@ export function Home({ assetsUrl }: HomeProps) {
         onScrollToSection={scrollToSection}
       />
       <HeroSection assetsUrl={assetsUrl} />
-      <WhyWeExistSection />
+      <TrustBandSection />
+      <CapabilitiesSection />
+      <SolutionsSection />
       <AboutSection />
-      <PathwaysSection />
-      <ContributorsSection />
+      <DeveloperPlatformSection />
       <TeamSection />
       <ContactSection onSubmit={handleSubmit} isSubmitting={isSubmitting} />
       <Footer />
