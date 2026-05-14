@@ -1,52 +1,52 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Rocket, Server, Hammer, GraduationCap, type LucideIcon } from 'lucide-react'
+import { ArrowRight, Check, Cloud, Server, Hammer, GraduationCap, type LucideIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/Button'
 
-interface Pathway {
-  key: 'useFree' | 'selfHost' | 'buildWithUs' | 'learnTeach'
+interface Solution {
+  key: 'managedCloud' | 'selfManaged' | 'customDev' | 'training'
   icon: LucideIcon
   href: string
   external: boolean
 }
 
-const PATHWAYS: Pathway[] = [
+const SOLUTIONS: Solution[] = [
   {
-    key: 'useFree',
-    icon: Rocket,
-    href: 'https://app.collabdt.org/cdt',
-    external: true,
+    key: 'managedCloud',
+    icon: Cloud,
+    href: '#contact',
+    external: false,
   },
   {
-    key: 'selfHost',
+    key: 'selfManaged',
     icon: Server,
     href: 'https://docs.collabdt.org/',
     external: true,
   },
   {
-    key: 'buildWithUs',
+    key: 'customDev',
     icon: Hammer,
     href: '#contact',
     external: false,
   },
   {
-    key: 'learnTeach',
+    key: 'training',
     icon: GraduationCap,
     href: '#contact',
     external: false,
   },
 ]
 
-export default function PathwaysSection() {
-  const t = useTranslations('HomePage.pathways')
+export default function SolutionsSection() {
+  const t = useTranslations('HomePage.solutions')
 
   return (
     <section
-      id="pathways"
+      id="solutions"
       className="py-32 relative"
-      style={{ background: 'var(--hp-surface)' }}
+      style={{ background: 'var(--hp-low)' }}
     >
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
@@ -78,11 +78,11 @@ export default function PathwaysSection() {
           </motion.div>
 
           <div className="grid sm:grid-cols-2 gap-5">
-            {PATHWAYS.map((path, idx) => {
-              const Icon = path.icon
+            {SOLUTIONS.map((sol, idx) => {
+              const Icon = sol.icon
               return (
                 <motion.div
-                  key={path.key}
+                  key={sol.key}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-60px' }}
@@ -100,7 +100,7 @@ export default function PathwaysSection() {
                       className="text-[0.65rem] font-bold uppercase tracking-[0.2em]"
                       style={{ color: 'var(--hp-on-surface-variant)' }}
                     >
-                      {t(`${path.key}.tag`)}
+                      {t(`${sol.key}.tag`)}
                     </span>
                   </div>
 
@@ -113,20 +113,36 @@ export default function PathwaysSection() {
                       color: 'var(--hp-on-surface)',
                     }}
                   >
-                    {t(`${path.key}.name`)}
+                    {t(`${sol.key}.name`)}
                   </h3>
                   <p
                     className="font-display text-base mb-3"
                     style={{ color: 'var(--hp-primary-container)' }}
                   >
-                    {t(`${path.key}.headline`)}
+                    {t(`${sol.key}.headline`)}
                   </p>
                   <p
-                    className="text-[0.95rem] leading-relaxed mb-7 flex-grow"
+                    className="text-[0.95rem] leading-relaxed mb-5"
                     style={{ color: 'var(--hp-on-surface-variant)' }}
                   >
-                    {t(`${path.key}.body`)}
+                    {t(`${sol.key}.body`)}
                   </p>
+
+                  <ul className="space-y-2 mb-7 flex-grow">
+                    {(['feature1', 'feature2', 'feature3', 'feature4'] as const).map((f) => (
+                      <li
+                        key={f}
+                        className="flex items-start gap-2 text-[0.9rem]"
+                        style={{ color: 'var(--hp-on-surface-variant)' }}
+                      >
+                        <Check
+                          className="w-4 h-4 mt-0.5 flex-shrink-0"
+                          style={{ color: 'var(--hp-primary-container)' }}
+                        />
+                        <span>{t(`${sol.key}.${f}`)}</span>
+                      </li>
+                    ))}
+                  </ul>
 
                   <Button
                     variant="ghost"
@@ -135,13 +151,13 @@ export default function PathwaysSection() {
                     asChild
                   >
                     <a
-                      href={path.href}
-                      target={path.external ? '_blank' : undefined}
-                      rel={path.external ? 'noopener noreferrer' : undefined}
+                      href={sol.href}
+                      target={sol.external ? '_blank' : undefined}
+                      rel={sol.external ? 'noopener noreferrer' : undefined}
                       className="inline-flex items-center gap-1 font-medium"
                       style={{ color: 'var(--hp-primary-container)' }}
                     >
-                      {t(`${path.key}.cta`)}
+                      {t(`${sol.key}.cta`)}
                       <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                     </a>
                   </Button>

@@ -1,38 +1,127 @@
 {
   "HomePage": {
     "nav": {
-      "mission": "mission",
-      "pathways": "engagement",
-      "team": "équipe",
+      "capabilities": "capacités",
+      "solutions": "solutions",
+      "developers": "développeurs",
       "contact": "contact"
     },
     "hero": {
-      "tagline": "Un organisme à but non lucratif",
-      "title": "Construire des connexions numériques,",
-      "titleEm": "ensemble",
-      "description": "Nous connectons les personnes, les lieux et les données grâce à une technologie de jumeaux numériques ouverte — pour que les communautés, les chercheurs et les institutions puissent comprendre et façonner les lieux qu'ils partagent. L'open source est le comment. La connexion est le pourquoi.",
-      "primaryCta": "Rejoindre notre communauté",
+      "tagline": "Infrastructure de jumeau numérique à but non lucratif",
+      "title": "Jumeaux numériques multi-échelles.",
+      "titleEm": "Bâtis sur des standards ouverts.",
+      "description": "Une plateforme complète BIM, SIG et données ouvertes qui s'exécute dans le navigateur — déployée à votre manière, personnalisée selon vos besoins, libre de tout verrouillage propriétaire. Économie de recouvrement des coûts. Code source disponible.",
+      "primaryCta": "Demander une démo",
       "secondaryCta": "Explorer la plateforme",
       "platformButton": "Plateforme",
       "videoFallback": "Votre navigateur ne prend pas en charge la balise vidéo."
     },
-    "why": {
-      "sectionLabel": "Pourquoi nous existons",
-      "title": "Les lieux sont partagés. Les outils pour les comprendre ne devraient pas être verrouillés.",
-      "body": "Les jumeaux numériques concentrent les connaissances sur les bâtiments, les quartiers et les paysages que nous partageons — mais la majeure partie de ces connaissances reste enfermée derrière des murs propriétaires, fragmentée entre les disciplines, inaccessible aux personnes concernées. Nous existons pour mettre une technologie de jumeau numérique ouverte et interopérable entre les mains des chercheurs, des communautés et des institutions — et pour connecter celles et ceux qui la bâtissent."
+    "trustBand": {
+      "openStandards": "Standards ouverts",
+      "agpl": "Source AGPL-3.0 disponible",
+      "sovereignHosted": "Hébergement souverain",
+      "costRecovery": "Tarification au coût",
+      "boardGoverned": "OBNL gouverné par un conseil"
     },
-    "mission": {
-      "sectionLabel": "Notre mission",
-      "title": "Faire avancer la recherche sur les jumeaux numériques, partager ce que nous apprenons et renforcer les capacités de celles et ceux qui les utilisent.",
-      "pillar1Title": "Faire avancer la recherche",
-      "pillar1Body": "Développer et maintenir une plateforme de jumeaux numériques ouverte qui permet aux chercheurs d'explorer, d'analyser et de collaborer à travers le BIM, les SIG et les données ouvertes.",
-      "pillar2Title": "Partager les connaissances",
-      "pillar2Body": "Cultiver un écosystème de contributeurs où développeurs, designers et experts métier construisent des extensions et des intégrations sur une infrastructure commune.",
-      "pillar3Title": "Renforcer les capacités",
-      "pillar3Body": "Offrir des formations, des ressources éducatives et des programmes de renforcement des capacités pour que les personnes et les institutions utilisent ces outils avec confiance — et les transmettent à leur tour."
+    "capabilities": {
+      "sectionLabel": "Capacités",
+      "title": "Ce que la plateforme permet.",
+      "bridge": {
+        "title": "Relier BIM, SIG et données ouvertes",
+        "body": "Visualisez et analysez des jumeaux numériques multi-échelles dans un seul espace de travail dans le navigateur — du bâtiment unique aux paysages régionaux."
+      },
+      "interop": {
+        "title": "Interopérable par conception",
+        "body": "Standards ouverts et formats ouverts. Connectez vos pipelines et outils existants sans gardiens propriétaires."
+      },
+      "extend": {
+        "title": "Étendre et intégrer",
+        "body": "Construisez des outils d'analyse, des extensions personnalisées et des intégrations grâce à des API documentées."
+      },
+      "deploy": {
+        "title": "Déployez à votre manière",
+        "body": "Utilisez le service géré souverain ou auto-hébergez le cœur AGPL-3.0 sur votre infrastructure. Changez de mode sans changer de plateforme."
+      },
+      "customize": {
+        "title": "Personnaliser sans forker",
+        "body": "Commandez des fonctionnalités spécialisées sur la base du recouvrement des coûts — bâties sur le cœur ouvert pour rester sur la voie des mises à jour."
+      },
+      "train": {
+        "title": "Outillez votre équipe",
+        "body": "Programmes formels de formation et de renforcement des capacités pour les institutions qui adoptent la pratique des jumeaux numériques."
+      }
+    },
+    "solutions": {
+      "sectionLabel": "Solutions",
+      "title": "Choisissez votre déploiement.",
+      "subtitle": "Quatre voies vers la valeur — toutes tarifées au coût, tout surplus étant réinvesti dans la plateforme.",
+      "managedCloud": {
+        "tag": "Voie la plus rapide",
+        "name": "Cloud géré (SaaS)",
+        "headline": "Hébergement souverain, prêt en quelques jours.",
+        "body": "Nous exécutons la plateforme sur une infrastructure souveraine de votre choix, avec support inclus, mises à jour automatiques et garanties de résidence des données. Tarification au coût — sans marge.",
+        "feature1": "Résidence des données sous votre contrôle",
+        "feature2": "Support inclus",
+        "feature3": "Mises à jour automatiques",
+        "feature4": "Niveau gratuit disponible",
+        "cta": "Demander un tarif"
+      },
+      "selfManaged": {
+        "tag": "Contrôle total",
+        "name": "Déploiement auto-géré",
+        "headline": "Exécutez le cœur open source sur votre infrastructure.",
+        "body": "Source AGPL-3.0 complète, documentation et soutien communautaire. Gardez le contrôle total sur vos données, votre réseau et vos intégrations.",
+        "feature1": "Source AGPL-3.0",
+        "feature2": "Auto-hébergé sur votre infrastructure",
+        "feature3": "Soutien communautaire",
+        "feature4": "Support payant optionnel",
+        "cta": "Consulter la documentation"
+      },
+      "customDev": {
+        "tag": "Co-construction",
+        "name": "Développement personnalisé",
+        "headline": "Outils spécialisés, bâtis sur le cœur ouvert.",
+        "body": "Nous co-développons des outils d'analyse spécialisés et des extensions de la plateforme sur la base du recouvrement des coûts. Surplus réinvesti. Là où le travail bénéficie au commun, il est reversé en amont.",
+        "feature1": "Engagements au coût",
+        "feature2": "Bâti sur le cœur ouvert",
+        "feature3": "Reste sur la voie des mises à jour",
+        "feature4": "Surplus réinvesti",
+        "cta": "Démarrer une conversation"
+      },
+      "training": {
+        "tag": "Renforcement des capacités",
+        "name": "Formation et habilitation",
+        "headline": "Outillez votre équipe pour exploiter et étendre.",
+        "body": "Ateliers, documentation et programmes de renforcement des capacités pour les institutions qui adoptent la pratique des jumeaux numériques. Adaptés au rôle et au niveau de votre équipe.",
+        "feature1": "Ateliers et tutoriels",
+        "feature2": "Programmes d'intégration",
+        "feature3": "Cursus par rôle",
+        "feature4": "Formation des formateurs",
+        "cta": "Explorer la formation"
+      }
+    },
+    "whyCdt": {
+      "sectionLabel": "Pourquoi CDT",
+      "title": "Conçu pour éliminer les choses qui dérapent habituellement.",
+      "noLockIn": {
+        "title": "Pas de verrouillage propriétaire",
+        "body": "La source AGPL-3.0 signifie que vous pouvez toujours auto-héberger, forker ou sortir. Votre investissement dans la plateforme est portable."
+      },
+      "dataSovereignty": {
+        "title": "Souveraineté des données",
+        "body": "Hébergement géré souverain dans la région de votre choix, ou auto-hébergement entièrement sur site. Vous décidez où vos données résident."
+      },
+      "costRecovery": {
+        "title": "Économie de recouvrement des coûts",
+        "body": "Nous sommes un OBNL. Aucune marge bénéficiaire intégrée. Tout surplus est réinvesti dans la plateforme — pas extrait."
+      },
+      "multidisciplinary": {
+        "title": "Multidisciplinaire par conception",
+        "body": "Conçu dès le départ pour relier BIM, SIG, recherche et opérations. La plateforme épouse la façon dont les institutions travaillent réellement."
+      }
     },
     "values": {
-      "title": "Ce qui nous relie",
+      "title": "Principes sur lesquels bâtir",
       "openStandards": {
         "title": "Standards ouverts",
         "description": "Éliminer les barrières propriétaires et promouvoir l'interopérabilité grâce aux standards ouverts."
@@ -58,83 +147,52 @@
         "description": "Donner à chacun des outils intuitifs et conviviaux qui fonctionnent directement dans le navigateur."
       }
     },
-    "pathways": {
-      "sectionLabel": "Modes d'engagement",
-      "title": "Choisissez la voie qui vous correspond.",
-      "subtitle": "Chaque offre fonctionne sur la base d'un recouvrement des coûts. Tout surplus est réinvesti dans la plateforme et la communauté.",
-      "useFree": {
-        "tag": "Pour les utilisateurs curieux",
-        "name": "Utiliser gratuitement",
-        "headline": "Essayez la plateforme hébergée.",
-        "body": "Lancez une instance hébergée au Canada avec un niveau gratuit. Tarification au coût pour l'usage en production — sans marge bénéficiaire, sans verrouillage.",
-        "cta": "Ouvrir la plateforme"
-      },
-      "selfHost": {
-        "tag": "Pour les équipes techniques",
-        "name": "Hébergez-la vous-même",
-        "headline": "Exécutez le cœur open source.",
-        "body": "Sources complètes, AGPL-3.0, documentation et soutien communautaire. Gardez le contrôle total de vos données et de votre infrastructure.",
-        "cta": "Consulter la documentation"
-      },
-      "buildWithUs": {
-        "tag": "Pour les institutions et partenaires",
-        "name": "Construire avec nous",
-        "headline": "Co-créer des solutions sur mesure.",
-        "body": "Développement personnalisé, outils spécialisés et collaboration entreprise — bâtis sur le cœur ouvert, livrés au coût, et reversés à la communauté quand cela bénéficie au commun.",
-        "cta": "Démarrer une conversation"
-      },
-      "learnTeach": {
-        "tag": "Pour les formateurs et apprenants",
-        "name": "Apprendre et enseigner",
-        "headline": "Formez votre équipe. Outillez la prochaine génération.",
-        "body": "Ateliers, programmes de renforcement des capacités et ressources éducatives pour les institutions qui adoptent la pratique des jumeaux numériques.",
-        "cta": "Explorer la formation"
-      }
+    "developers": {
+      "sectionLabel": "Plateforme développeur",
+      "title": "Étendez la plateforme. Intégrez vos systèmes.",
+      "body": "API documentées et écosystème de contributeurs pour outils d'analyse, extensions et intégrations. Construisez aux côtés du cœur — ou par-dessus.",
+      "docsLabel": "Documentation API",
+      "githubLabel": "GitHub",
+      "mailingLabel": "Liste de diffusion développeurs"
     },
-    "contributors": {
-      "sectionLabel": "Écosystème de contributeurs",
-      "title": "Construit ouvertement. Construit ensemble.",
-      "body": "Le cœur de la plateforme est ouvert. Les outils, extensions et intégrations qui grandissent dessus le sont aussi. Que vous écriviez du code, partagiez des données, conceviez des interfaces ou enseigniez à d'autres — il y a une place pour vous.",
-      "githubLabel": "Organisation GitHub",
-      "mailingLabel": "Liste de diffusion",
-      "docsLabel": "Documentation"
-    },
-    "team": {
-      "sectionLabel": "Gouvernance",
-      "title": "Qui nous sommes.",
-      "intro": "Organisme canadien à but non lucratif. La plateforme est un travail collectif ; la fondation est la manière dont nous le gardons ainsi."
+    "leadership": {
+      "sectionLabel": "Direction",
+      "title": "Gouvernance par conseil. Engagement par mission.",
+      "intro": "Dirigée par un conseil d'administration au savoir-faire approfondi en architecture, technologie, recherche et éducation. En tant qu'OBNL, notre charte exige que la plateforme serve les utilisateurs — pas des actionnaires."
     },
     "contact": {
-      "sectionLabel": "Contactez-nous",
-      "title": "Dites-nous comment vous souhaitez vous connecter.",
-      "description": "Que vous soyez chercheur, partenaire, contributeur ou éducateur — commencez par nous en dire un peu sur vous. Nous orienterons votre message vers la bonne personne.",
-      "audienceLabel": "Je m'adresse à vous en tant que…",
-      "audienceResearcher": "Chercheur·euse",
-      "audiencePartner": "Institution / partenaire",
-      "audienceDeveloper": "Développeur·euse / contributeur·rice",
-      "audienceEducator": "Éducateur·rice / formateur·rice",
-      "audienceOther": "Autre chose",
+      "sectionLabel": "Demander une démo",
+      "title": "Voyez par vous-même.",
+      "description": "Parlez-nous de votre équipe et de votre cas d'usage. Nous organiserons une démonstration sur mesure et esquisserons un chemin de déploiement adapté.",
+      "audienceLabel": "Votre contexte",
+      "audienceAec": "Architecture / ingénierie",
+      "audiencePublic": "Gouvernement / secteur public",
+      "audienceResearch": "Institution de recherche",
+      "audienceDeveloper": "Développeur·euse / intégrateur·rice",
+      "audienceOther": "Autre",
       "firstName": "Prénom",
       "lastName": "Nom de famille",
-      "email": "Adresse e-mail",
+      "email": "Adresse e-mail professionnelle",
       "organization": "Organisation",
-      "message": "Message",
-      "sendButton": "Envoyer le message",
+      "message": "Comment pouvons-nous aider ?",
+      "sendButton": "Demander une démo",
       "sending": "Envoi en cours...",
       "orEmail": "Ou envoyez-nous un e-mail directement à",
       "infoEmail": "info@collabdt.org",
       "supportEmail": "support@collabdt.org"
     },
     "footer": {
-      "description": "Une fondation canadienne à but non lucratif qui construit des connexions numériques, ensemble — grâce à une technologie de jumeau numérique ouverte et interopérable.",
+      "tagline": "construire des connexions numériques, ensemble",
+      "description": "Infrastructure de jumeau numérique multi-échelles pour les institutions. Standards ouverts, tarification au coût, sans verrouillage propriétaire.",
       "governance": "Société canadienne à but non lucratif. Gouvernée par un conseil d'administration. Source AGPL-3.0. Surplus réinvesti dans la plateforme et la communauté.",
       "license": "Sous licence AGPL 3.0",
       "stewardship": "Géré par un organisme canadien à but non lucratif pour l'intérêt public à long terme",
       "copyright": "Collab Digital Twins. Tous droits réservés.",
       "navigate": "Naviguer",
-      "navMission": "Mission",
-      "navPathways": "Engagement",
-      "navTeam": "Équipe",
+      "navCapabilities": "Capacités",
+      "navSolutions": "Solutions",
+      "navDevelopers": "Développeurs",
+      "navLeadership": "Direction",
       "navContact": "Contact",
       "navPlatform": "Plateforme",
       "resources": "Ressources",

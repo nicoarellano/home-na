@@ -64,17 +64,20 @@ export default function Navbar({
             <Link href="#hero" className="flex items-center gap-3 group">
               <CdtIcon className="w-8 h-8" />
               <span
-                className="font-display font-bold tracking-tight max-xs:text-sm max-xs:text-nowrap transition-colors duration-200"
+                className="font-display font-bold tracking-tight max-xs:text-sm max-xs:text-nowrap lowercase transition-colors duration-200"
                 style={{ color: 'var(--hp-on-surface)' }}
               >
-                {onMobile ? 'CDT' : 'Collab Digital Twins'}
+                <>
+                  <span style={{ color: 'var(--hp-primary-container)' }}>collab</span>
+                  digitaltwins
+                </>
               </span>
             </Link>
           </motion.div>
 
           {showNavigation && (
             <div className={`${onMobile ? 'hidden' : 'flex'} items-center gap-1 flex-1 justify-center`}>
-              {['mission', 'pathways', 'team', 'contact'].map((section) => (
+              {['capabilities', 'solutions', 'developers', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => {
@@ -90,7 +93,7 @@ export default function Navbar({
                     fontWeight: currentSection === section ? 700 : 500,
                   }}
                 >
-                  {tNav(section as 'mission' | 'pathways' | 'team' | 'contact')}
+                  {tNav(section as 'capabilities' | 'solutions' | 'developers' | 'contact')}
                   {currentSection === section && (
                     <motion.div
                       layoutId="activeSection"
@@ -147,7 +150,7 @@ export default function Navbar({
             >
               <div className="py-4 space-y-1 mt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.04)' }}>
                 {showNavigation &&
-                  ['mission', 'pathways', 'team', 'contact'].map((section) => (
+                  ['capabilities', 'solutions', 'developers', 'contact'].map((section) => (
                     <button
                       key={section}
                       onClick={() => {
@@ -167,7 +170,7 @@ export default function Navbar({
                             : 'transparent',
                       }}
                     >
-                      {tNav(section as 'mission' | 'pathways' | 'team' | 'contact')}
+                      {tNav(section as 'capabilities' | 'solutions' | 'developers' | 'contact')}
                     </button>
                   ))}
 

@@ -4,9 +4,10 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 
 const NAV_LINKS = [
-  { key: 'navMission', href: '#mission' },
-  { key: 'navPathways', href: '#pathways' },
-  { key: 'navTeam', href: '#team' },
+  { key: 'navCapabilities', href: '#capabilities' },
+  { key: 'navSolutions', href: '#solutions' },
+  { key: 'navDevelopers', href: '#developers' },
+  { key: 'navLeadership', href: '#team' },
   { key: 'navContact', href: '#contact' },
   { key: 'navPlatform', href: 'https://app.collabdt.org/cdt', external: true },
 ] as const
@@ -29,6 +30,12 @@ export default function Footer() {
             >
               Collab Digital Twins
             </div>
+            <p
+              className="text-[0.75rem] italic lowercase tracking-wide"
+              style={{ color: 'var(--hp-primary-container)' }}
+            >
+              {tFooter('tagline')}
+            </p>
             <p
               className="text-[0.9rem] leading-relaxed max-w-[260px]"
               style={{ color: 'var(--hp-on-surface-variant)' }}

@@ -12,6 +12,16 @@ interface HeroSectionProps {
 export default function HeroSection({ assetsUrl }: HeroSectionProps) {
   const tHero = useTranslations('HomePage.hero')
 
+  const handleDemoRequest = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    try {
+      sessionStorage.setItem('cdt_demo_request', '1')
+    } catch {}
+    const target = document.getElementById('contact')
+    if (target) target.scrollIntoView({ behavior: 'smooth' })
+    else window.location.hash = '#contact'
+  }
+
   return (
     <section
       id="hero"
@@ -80,7 +90,9 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
                 className="btn-sovereign text-base px-8 w-full sm:w-auto"
                 asChild
               >
-                <a href="#pathways">{tHero('primaryCta')}</a>
+                <a href="#contact" onClick={handleDemoRequest}>
+                  {tHero('primaryCta')}
+                </a>
               </Button>
               <Button
                 size="lg"

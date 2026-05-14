@@ -1,38 +1,127 @@
 {
   "HomePage": {
     "nav": {
-      "mission": "mission",
-      "pathways": "pathways",
-      "team": "team",
+      "capabilities": "capabilities",
+      "solutions": "solutions",
+      "developers": "developers",
       "contact": "contact"
     },
     "hero": {
-      "tagline": "A non-profit foundation",
-      "title": "Building digital connections,",
-      "titleEm": "together",
-      "description": "We connect people, places, and data through open digital twin technology — so communities, researchers, and institutions can understand and shape the places they share. Open source is how. Connection is why.",
-      "primaryCta": "Join our community",
+      "tagline": "Non-profit digital twin infrastructure",
+      "title": "Multi-scale digital twins.",
+      "titleEm": "Built on open standards.",
+      "description": "A complete BIM, GIS, and open-data platform that runs in the browser — deployed your way, customized to your needs, free of vendor lock-in. Cost-recovery economics. Source available.",
+      "primaryCta": "Request a demo",
       "secondaryCta": "Explore the platform",
       "platformButton": "Platform",
       "videoFallback": "Your browser does not support the video tag."
     },
-    "why": {
-      "sectionLabel": "Why we exist",
-      "title": "Places are shared. The tools to understand them shouldn't be locked away.",
-      "body": "Digital twins concentrate knowledge about the buildings, neighbourhoods, and landscapes we share — but most of that knowledge sits behind proprietary walls, fragmented across disciplines, inaccessible to the people it concerns. We exist to put open, interoperable digital twin technology in the hands of researchers, communities, and institutions — and to connect the people building with it."
+    "trustBand": {
+      "openStandards": "Open standards",
+      "agpl": "AGPL-3.0 source available",
+      "sovereignHosted": "Sovereign hosting",
+      "costRecovery": "Cost-recovery pricing",
+      "boardGoverned": "Board-governed non-profit"
     },
-    "mission": {
-      "sectionLabel": "Our mission",
-      "title": "We advance digital twin research, share what we learn, and grow the capacity of the people who use it.",
-      "pillar1Title": "Advance research",
-      "pillar1Body": "Develop and maintain an open digital twin platform that lets researchers explore, analyze, and collaborate across BIM, GIS, and open data.",
-      "pillar2Title": "Share knowledge",
-      "pillar2Body": "Foster a contributor ecosystem where developers, designers, and domain experts build extensions and integrations on shared infrastructure.",
-      "pillar3Title": "Build capacity",
-      "pillar3Body": "Offer training, educational resources, and capacity-building programs so people and institutions can use these tools confidently — and teach them onward."
+    "capabilities": {
+      "sectionLabel": "Capabilities",
+      "title": "What the platform enables.",
+      "bridge": {
+        "title": "Bridge BIM, GIS, and open data",
+        "body": "Visualize and analyze multi-scale digital twins in a single browser-based workspace — from individual buildings to regional landscapes."
+      },
+      "interop": {
+        "title": "Interoperable by design",
+        "body": "Open standards and open formats. Connect existing pipelines and tools without proprietary gatekeepers."
+      },
+      "extend": {
+        "title": "Extend and integrate",
+        "body": "Build analysis tools, custom extensions, and integrations through documented APIs."
+      },
+      "deploy": {
+        "title": "Deploy your way",
+        "body": "Use the managed sovereign service or self-host the AGPL-3.0 core on your infrastructure. Switch between modes without re-platforming."
+      },
+      "customize": {
+        "title": "Customize without forking",
+        "body": "Commission specialized features on a cost-recovery basis — built on the open core so you stay on the upgrade path."
+      },
+      "train": {
+        "title": "Equip your team",
+        "body": "Formal training and capacity-building programs for institutions adopting digital twin practice."
+      }
+    },
+    "solutions": {
+      "sectionLabel": "Solutions",
+      "title": "Pick your deployment.",
+      "subtitle": "Four routes to value — every one priced on cost-recovery, with any surplus reinvested in the platform.",
+      "managedCloud": {
+        "tag": "Fastest path",
+        "name": "Managed Cloud (SaaS)",
+        "headline": "Sovereign hosting, ready in days.",
+        "body": "We run the platform on sovereign infrastructure of your choice, with included support, automatic updates, and data residency guarantees. Cost-recovery pricing — no profit margin.",
+        "feature1": "Data residency you control",
+        "feature2": "Included support",
+        "feature3": "Automatic updates",
+        "feature4": "Free tier available",
+        "cta": "Request pricing"
+      },
+      "selfManaged": {
+        "tag": "Full control",
+        "name": "Self-Managed Deployment",
+        "headline": "Run the open-source core on your infrastructure.",
+        "body": "Full AGPL-3.0 source, documentation, and community support. Keep complete control over your data, network, and integrations.",
+        "feature1": "AGPL-3.0 source",
+        "feature2": "Self-hosted on your infrastructure",
+        "feature3": "Community support",
+        "feature4": "Optional paid support",
+        "cta": "Read the docs"
+      },
+      "customDev": {
+        "tag": "Co-build",
+        "name": "Custom Development",
+        "headline": "Specialized tools, built on the open core.",
+        "body": "We co-develop specialized analysis tools and platform extensions on a cost-recovery basis. Surplus reinvested. Where the work benefits the commons, it's contributed upstream.",
+        "feature1": "Cost-recovery engagements",
+        "feature2": "Built on the open core",
+        "feature3": "Stays on the upgrade path",
+        "feature4": "Surplus reinvested",
+        "cta": "Start a conversation"
+      },
+      "training": {
+        "tag": "Capacity-building",
+        "name": "Training & Enablement",
+        "headline": "Equip your team to operate and extend.",
+        "body": "Workshops, documentation, and capacity-building programs for institutions adopting digital twin practice. Tailored to your team's role and proficiency.",
+        "feature1": "Workshops & tutorials",
+        "feature2": "Onboarding programs",
+        "feature3": "Role-based curriculum",
+        "feature4": "Train-the-trainer support",
+        "cta": "Explore training"
+      }
+    },
+    "whyCdt": {
+      "sectionLabel": "Why CDT",
+      "title": "Built to remove the things that usually go wrong.",
+      "noLockIn": {
+        "title": "No vendor lock-in",
+        "body": "AGPL-3.0 source means you can always self-host, fork, or exit. Your investment in the platform is portable."
+      },
+      "dataSovereignty": {
+        "title": "Data sovereignty",
+        "body": "Sovereign managed hosting in the region of your choice, or fully on-premise self-hosting. You decide where your data lives."
+      },
+      "costRecovery": {
+        "title": "Cost-recovery economics",
+        "body": "We're a non-profit. No profit margin baked in. Any surplus is reinvested in the platform — not extracted."
+      },
+      "multidisciplinary": {
+        "title": "Multidisciplinary by design",
+        "body": "Built from the start to connect BIM, GIS, research, and operations. The platform fits the way institutions actually work."
+      }
     },
     "values": {
-      "title": "What connects us",
+      "title": "Principles you can build on",
       "openStandards": {
         "title": "Open Standards",
         "description": "Eliminate proprietary barriers and promote interoperability through open standards."
@@ -58,83 +147,52 @@
         "description": "Empower everyone with intuitive, user-friendly tools that work directly in the browser."
       }
     },
-    "pathways": {
-      "sectionLabel": "Ways to engage",
-      "title": "Pick the path that fits.",
-      "subtitle": "Every offering runs on a cost-recovery basis. Any surplus is reinvested in the platform and the community.",
-      "useFree": {
-        "tag": "For curious users",
-        "name": "Use it free",
-        "headline": "Try the hosted platform.",
-        "body": "Spin up a Canadian-hosted instance with a free tier. Cost-recovery pricing for production use — no profit margin, no lock-in.",
-        "cta": "Open the platform"
-      },
-      "selfHost": {
-        "tag": "For technical teams",
-        "name": "Host it yourself",
-        "headline": "Run the open-source core.",
-        "body": "Full source, AGPL-3.0, documentation, and community support. Keep complete control over your data and infrastructure.",
-        "cta": "Read the docs"
-      },
-      "buildWithUs": {
-        "tag": "For institutions & partners",
-        "name": "Build with us",
-        "headline": "Co-create bespoke solutions.",
-        "body": "Custom development, specialized tools, and enterprise collaboration — built on the open core, delivered on a cost-recovery basis, contributed back where it benefits the commons.",
-        "cta": "Start a conversation"
-      },
-      "learnTeach": {
-        "tag": "For educators & learners",
-        "name": "Learn & teach",
-        "headline": "Train your team. Equip the next generation.",
-        "body": "Workshops, capacity-building programs, and educational resources for institutions adopting digital twin practice.",
-        "cta": "Explore training"
-      }
+    "developers": {
+      "sectionLabel": "Developer Platform",
+      "title": "Extend the platform. Integrate your systems.",
+      "body": "Documented APIs and a contributor ecosystem for analysis tools, extensions, and integrations. Build alongside the core — or on top of it.",
+      "docsLabel": "API documentation",
+      "githubLabel": "GitHub",
+      "mailingLabel": "Developer mailing list"
     },
-    "contributors": {
-      "sectionLabel": "Contributor ecosystem",
-      "title": "Built openly. Built together.",
-      "body": "The core platform is open. So are the tools, extensions, and integrations that grow on top of it. Whether you write code, share datasets, design interfaces, or teach others — there's a place for you.",
-      "githubLabel": "GitHub organization",
-      "mailingLabel": "Mailing list",
-      "docsLabel": "Documentation"
-    },
-    "team": {
-      "sectionLabel": "Stewardship",
-      "title": "Who we are.",
-      "intro": "Canadian not-for-profit. The platform is collective work; the foundation is how we keep it that way."
+    "leadership": {
+      "sectionLabel": "Leadership",
+      "title": "Board-governed. Mission-bound.",
+      "intro": "Directed by a board with deep expertise across architecture, technology, research, and education. As a non-profit, our charter requires that the platform serves users — not shareholders."
     },
     "contact": {
-      "sectionLabel": "Get in touch",
-      "title": "Tell us how you'd like to connect.",
-      "description": "Whether you're a researcher, partner, contributor, or educator — start by telling us a bit about you. We'll route your message to the right person.",
-      "audienceLabel": "I'm reaching out as a…",
-      "audienceResearcher": "Researcher",
-      "audiencePartner": "Institution / partner",
-      "audienceDeveloper": "Developer / contributor",
-      "audienceEducator": "Educator / trainer",
-      "audienceOther": "Something else",
+      "sectionLabel": "Request a demo",
+      "title": "See it for yourself.",
+      "description": "Tell us about your team and use case. We'll set up a tailored walk-through and outline a deployment path that fits.",
+      "audienceLabel": "Your context",
+      "audienceAec": "Architecture / engineering",
+      "audiencePublic": "Government / public sector",
+      "audienceResearch": "Research institution",
+      "audienceDeveloper": "Developer / integrator",
+      "audienceOther": "Other",
       "firstName": "First Name",
       "lastName": "Last Name",
-      "email": "Email Address",
+      "email": "Work email",
       "organization": "Organization",
-      "message": "Message",
-      "sendButton": "Send Message",
+      "message": "How can we help?",
+      "sendButton": "Request demo",
       "sending": "Sending...",
       "orEmail": "Or email us directly at",
       "infoEmail": "info@collabdt.org",
       "supportEmail": "support@collabdt.org"
     },
     "footer": {
-      "description": "A Canadian not-for-profit foundation building digital connections, together — through open, interoperable digital twin technology.",
+      "tagline": "building digital connections, together",
+      "description": "Multi-scale digital twin infrastructure for institutions. Open standards, cost-recovery pricing, no vendor lock-in.",
       "governance": "Canadian non-profit corporation. Board-governed. Source AGPL-3.0. Surplus reinvested in the platform and the community.",
       "license": "Licensed under AGPL 3.0",
       "stewardship": "Stewarded by a Canadian not-for-profit organization for long-term public benefit",
       "copyright": "Collab Digital Twins. All rights reserved.",
       "navigate": "Navigate",
-      "navMission": "Mission",
-      "navPathways": "Pathways",
-      "navTeam": "Team",
+      "navCapabilities": "Capabilities",
+      "navSolutions": "Solutions",
+      "navDevelopers": "Developers",
+      "navLeadership": "Leadership",
       "navContact": "Contact",
       "navPlatform": "Platform",
       "resources": "Resources",

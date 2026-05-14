@@ -1,23 +1,23 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Github, BookOpen } from 'lucide-react'
+import { BookOpen, Github, Mail } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/Button'
 
+const DOCS_URL = 'https://docs.collabdt.org/'
 const GITHUB_ORG_URL = 'https://github.com/CollabDigitalTwins'
 const MAILING_LIST_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLScB12Qc7khiOk4a_E753jDccx6026AjO-_FINBKoZZZtkmqnA/viewform'
-const DOCS_URL = 'https://docs.collabdt.org/'
 
-export default function ContributorsSection() {
-  const tContributors = useTranslations('HomePage.contributors')
+export default function DeveloperPlatformSection() {
+  const t = useTranslations('HomePage.developers')
 
   return (
     <section
-      id="contributors"
+      id="developers"
       className="py-32 relative"
-      style={{ background: 'var(--hp-low)' }}
+      style={{ background: 'var(--hp-surface)' }}
     >
       <div
         className="absolute inset-0 pointer-events-none"
@@ -36,7 +36,7 @@ export default function ContributorsSection() {
         >
           <div className="space-y-6">
             <div className="flex justify-center">
-              <div className="section-label">{tContributors('sectionLabel')}</div>
+              <div className="section-label">{t('sectionLabel')}</div>
             </div>
 
             <h2
@@ -48,34 +48,34 @@ export default function ContributorsSection() {
                 color: 'var(--hp-on-surface)',
               }}
             >
-              {tContributors('title')}
+              {t('title')}
             </h2>
 
             <p
               className="text-lg leading-relaxed max-w-2xl mx-auto"
               style={{ color: 'var(--hp-on-surface-variant)' }}
             >
-              {tContributors('body')}
+              {t('body')}
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button size="lg" className="btn-sovereign px-7 w-full sm:w-auto" asChild>
+              <a href={DOCS_URL} target="_blank" rel="noopener noreferrer">
+                <BookOpen className="w-4 h-4 mr-2" />
+                {t('docsLabel')}
+              </a>
+            </Button>
+            <Button size="lg" className="btn-glass px-7 w-full sm:w-auto" asChild>
               <a href={GITHUB_ORG_URL} target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />
-                {tContributors('githubLabel')}
+                {t('githubLabel')}
               </a>
             </Button>
             <Button size="lg" className="btn-glass px-7 w-full sm:w-auto" asChild>
               <a href={MAILING_LIST_URL} target="_blank" rel="noopener noreferrer">
                 <Mail className="w-4 h-4 mr-2" />
-                {tContributors('mailingLabel')}
-              </a>
-            </Button>
-            <Button size="lg" className="btn-glass px-7 w-full sm:w-auto" asChild>
-              <a href={DOCS_URL} target="_blank" rel="noopener noreferrer">
-                <BookOpen className="w-4 h-4 mr-2" />
-                {tContributors('docsLabel')}
+                {t('mailingLabel')}
               </a>
             </Button>
           </div>
