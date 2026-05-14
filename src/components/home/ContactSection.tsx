@@ -116,7 +116,7 @@ export default function ContactSection({ onSubmit, isSubmitting = false }: Conta
                           : 'var(--hp-on-surface-variant)',
                         border: selected
                           ? '1px solid var(--hp-primary-container)'
-                          : '1px solid rgba(84, 67, 59, 0.15)',
+                          : '1px solid rgba(74, 61, 92, 0.18)',
                       }}
                       aria-pressed={selected}
                     >

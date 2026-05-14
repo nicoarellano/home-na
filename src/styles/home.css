@@ -171,8 +171,8 @@ html:has(.hp) {
 
 .hp-input:focus {
   background: var(--hp-high) !important;
-  border-color: rgba(84, 67, 59, 0.15) !important;
-  box-shadow: 0 0 0 3px rgba(84, 67, 59, 0.08) !important;
+  border-color: rgba(74, 61, 92, 0.18) !important;
+  box-shadow: 0 0 0 3px rgba(74, 61, 92, 0.1) !important;
   outline: none !important;
 }
 
@@ -226,7 +226,7 @@ html:has(.hp) {
 
 .dark .btn-glass {
   background: rgba(53, 53, 52, 0.5) !important;
-  border: 1px solid rgba(84, 67, 59, 0.15) !important;
+  border: 1px solid rgba(74, 61, 92, 0.18) !important;
 }
 
 .dark .btn-glass:hover {
@@ -240,8 +240,8 @@ html:has(.hp) {
 
 .dark .hp-input:focus {
   background: var(--hp-high) !important;
-  border-color: rgba(84, 67, 59, 0.15) !important;
-  box-shadow: 0 0 0 3px rgba(84, 67, 59, 0.08) !important;
+  border-color: rgba(74, 61, 92, 0.18) !important;
+  box-shadow: 0 0 0 3px rgba(74, 61, 92, 0.1) !important;
 }
 
 .dark .video-glow::before {
