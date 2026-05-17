@@ -10,6 +10,7 @@ import HeroSection from './HeroSection'
 import TrustBandSection from './TrustBandSection'
 import MissionSection from './MissionSection'
 import CapabilitiesSection from './CapabilitiesSection'
+import DemosSection from './DemosSection'
 import SolutionsSection from './SolutionsSection'
 import AboutSection from './AboutSection'
 import DeveloperPlatformSection from './DeveloperPlatformSection'
@@ -146,6 +147,7 @@ export function Home({ assetsUrl }: HomeProps) {
       <TrustBandSection />
       <MissionSection />
       <CapabilitiesSection />
+      <DemosSection assetsUrl={assetsUrl} />
       <SolutionsSection />
       <AboutSection />
       <DeveloperPlatformSection />

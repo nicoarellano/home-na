@@ -28,6 +28,23 @@
       "title": "Connecting people, places, and the data that shapes them.",
       "body": "We're a non-profit foundation building shared infrastructure for digital twins — so institutions, communities, and researchers can collaborate on the buildings, neighbourhoods, and landscapes they share. The platform is the means. Connection is the point."
     },
+    "demos": {
+      "sectionLabel": "Demos",
+      "title": "See the platform in action.",
+      "subtitle": "Short walk-throughs of the platform in action — from the general overview to focused tools built for specific use cases.",
+      "general": {
+        "title": "Platform overview",
+        "body": "A guided tour of the digital twin workspace — bringing BIM, GIS, and open data together in a single browser session, with the tools institutions actually use day-to-day."
+      },
+      "sensors": {
+        "title": "IoT sensors on the map and BIM",
+        "body": "Add live IoT sensors directly onto the map and into the BIM model. Stream readings into the digital twin to connect physical infrastructure with its digital counterpart."
+      },
+      "wildfires": {
+        "title": "Visualizing wildfires",
+        "body": "An interactive map built with a wildfire research group to monitor fire conditions across Canada — combining open datasets from the Canadian Interagency Forest Fire Centre (CIFFC) with photos and videos crowdsourced from users in near-real time."
+      }
+    },
     "capabilities": {
       "sectionLabel": "Capabilities",
       "title": "What the platform enables.",
@@ -68,7 +85,7 @@
         "feature1": "Data residency you control",
         "feature2": "Included support",
         "feature3": "Automatic updates",
-        "feature4": "Free tier available",
+        "feature4": "Free tier (available soon)",
         "cta": "Request pricing"
       },
       "selfManaged": {

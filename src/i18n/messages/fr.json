@@ -28,6 +28,23 @@
       "title": "Relier les personnes, les lieux et les données qui les façonnent.",
       "body": "Nous sommes une fondation à but non lucratif qui bâtit une infrastructure partagée pour les jumeaux numériques — afin que les institutions, les communautés et les chercheurs collaborent sur les bâtiments, les quartiers et les paysages qu'ils partagent. La plateforme est le moyen. La connexion est l'objectif."
     },
+    "demos": {
+      "sectionLabel": "Démos",
+      "title": "Voyez la plateforme en action.",
+      "subtitle": "De courtes démonstrations de la plateforme en action — de la vue d'ensemble aux outils ciblés sur des cas d'usage précis.",
+      "general": {
+        "title": "Vue d'ensemble de la plateforme",
+        "body": "Une visite guidée de l'espace de travail du jumeau numérique — réunissant BIM, SIG et données ouvertes dans une seule session de navigateur, avec les outils que les institutions utilisent réellement au quotidien."
+      },
+      "sensors": {
+        "title": "Capteurs IoT sur la carte et BIM",
+        "body": "Ajoutez des capteurs IoT en direct directement sur la carte et dans le modèle BIM. Diffusez les lectures vers le jumeau numérique pour relier l'infrastructure physique à son pendant numérique."
+      },
+      "wildfires": {
+        "title": "Visualisation des feux de forêt",
+        "body": "Une carte interactive bâtie avec un groupe de recherche sur les feux de forêt pour surveiller les conditions des incendies au Canada — combinant des jeux de données ouverts du Canadian Interagency Forest Fire Centre (CIFFC) avec des photos et vidéos collectées par les utilisateurs en quasi temps réel."
+      }
+    },
     "capabilities": {
       "sectionLabel": "Capacités",
       "title": "Ce que la plateforme permet.",
@@ -68,7 +85,7 @@
         "feature1": "Résidence des données sous votre contrôle",
         "feature2": "Support inclus",
         "feature3": "Mises à jour automatiques",
-        "feature4": "Niveau gratuit disponible",
+        "feature4": "Niveau gratuit (bientôt disponible)",
         "cta": "Demander un tarif"
       },
       "selfManaged": {
