@@ -28,6 +28,23 @@
       "title": "Conectar a las personas, los lugares y los datos que les dan forma.",
       "body": "Somos una fundación sin fines de lucro que construye infraestructura compartida para gemelos digitales — para que las instituciones, las comunidades y las personas investigadoras colaboren sobre los edificios, los barrios y los paisajes que comparten. La plataforma es el medio. La conexión es el propósito."
     },
+    "demos": {
+      "sectionLabel": "Demos",
+      "title": "Ve la plataforma en acción.",
+      "subtitle": "Breves recorridos de la plataforma en acción — desde la visión general hasta herramientas enfocadas a casos de uso específicos.",
+      "general": {
+        "title": "Vista general de la plataforma",
+        "body": "Un recorrido guiado por el espacio de trabajo del gemelo digital — uniendo BIM, GIS y datos abiertos en una sola sesión del navegador, con las herramientas que las instituciones realmente usan en su día a día."
+      },
+      "sensors": {
+        "title": "Sensores IoT en el mapa y BIM",
+        "body": "Añade sensores IoT en vivo directamente sobre el mapa y dentro del modelo BIM. Transmite lecturas al gemelo digital para conectar la infraestructura física con su contraparte digital."
+      },
+      "wildfires": {
+        "title": "Visualización de incendios forestales",
+        "body": "Un mapa interactivo construido con un grupo de investigación sobre incendios forestales para monitorear las condiciones del fuego en Canadá — combinando conjuntos de datos abiertos del Canadian Interagency Forest Fire Centre (CIFFC) con fotos y videos aportados por las personas usuarias casi en tiempo real."
+      }
+    },
     "capabilities": {
       "sectionLabel": "Capacidades",
       "title": "Lo que la plataforma habilita.",
@@ -68,7 +85,7 @@
         "feature1": "Residencia de datos bajo tu control",
         "feature2": "Soporte incluido",
         "feature3": "Actualizaciones automáticas",
-        "feature4": "Capa gratuita disponible",
+        "feature4": "Capa gratuita (disponible pronto)",
         "cta": "Solicitar precios"
       },
       "selfManaged": {
