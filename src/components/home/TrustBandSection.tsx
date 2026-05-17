@@ -35,7 +35,7 @@ export default function TrustBandSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: 0.5 }}
-          className="flex flex-wrap items-center justify-center gap-x-10 gap-y-5 md:gap-x-14"
+          className="flex flex-col items-start gap-4 max-w-xs mx-auto md:max-w-none md:flex-row md:flex-wrap md:items-center md:justify-center md:gap-x-14 md:gap-y-5"
         >
           {CHIPS.map(({ key, icon: Icon }) => (
             <div
