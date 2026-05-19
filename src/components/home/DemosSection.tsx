@@ -35,6 +35,7 @@ export default function DemosSection({ assetsUrl }: DemosSectionProps) {
     const videoRef = useRef<HTMLVideoElement | null>(null)
     const trackRef = useRef<HTMLDivElement | null>(null)
     const thumbRefs = useRef<Array<HTMLButtonElement | null>>([])
+    const didMountRef = useRef(false)
 
     const updateScrollState = () => {
         const el = trackRef.current
@@ -57,10 +58,15 @@ export default function DemosSection({ assetsUrl }: DemosSectionProps) {
     }, [])
 
     useEffect(() => {
-        const thumb = thumbRefs.current[activeIdx]
-        if (thumb) {
-            thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+        if (!didMountRef.current) {
+            didMountRef.current = true
+            return
         }
+        const thumb = thumbRefs.current[activeIdx]
+        const track = trackRef.current
+        if (!thumb || !track) return
+        const left = thumb.offsetLeft - (track.clientWidth - thumb.clientWidth) / 2
+        track.scrollTo({ left, behavior: 'smooth' })
     }, [activeIdx])
 
     const scrollByAmount = (dir: 1 | -1) => {
