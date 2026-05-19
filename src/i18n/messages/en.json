@@ -2,6 +2,7 @@
   "HomePage": {
     "nav": {
       "capabilities": "capabilities",
+      "demos": "demos",
       "solutions": "solutions",
       "developers": "developers",
       "contact": "contact"
@@ -35,6 +36,22 @@
       "general": {
         "title": "Platform overview",
         "body": "A guided tour of the digital twin workspace — bringing BIM, GIS, and open data together in a single browser session, with the tools institutions actually use day-to-day."
+      },
+      "viewers": {
+        "title": "Platform viewers",
+        "body": "Map, BIM, and point-cloud viewers backed by site, building, and file databases — searchable through buildingSMART Data Dictionary properties. IFC, GeoJSON, point clouds, documents, and media live alongside each building, and the platform is extensible via <link>custom plugins</link>."
+      },
+      "organizational": {
+        "title": "BIM + GIS integration",
+        "body": "Building-scale BIM and infrastructure-scale GIS data load together in a single browser environment, with precise geolocation and support for multiple coordinate systems. Multi-gigabyte portfolios resolve in under two seconds per model, and users can drop geolocated comments and models onto the map to collaborate."
+      },
+      "open-data": {
+        "title": "Open data federation",
+        "body": "Federates dozens of open government datasets pulled through standardized APIs with no manual preparation, and users can connect their own open data sources from anywhere in the world. Layer neighbourhoods, transit, infrastructure, and more alongside your buildings, then tune colour scales and visualization quality for analysis."
+      },
+      "openBIM": {
+        "title": "openBIM viewer",
+        "body": "Browser-native IFC processing that preserves the full schema — every attribute, material, constraint, and custom property set. Add DXF, GLTF, FBX, OBJ, or point-cloud overlays; section, measure, and comment on the geometry; track issues with BCF; validate models against IDS exchange requirements."
       },
       "sensors": {
         "title": "IoT sensors on the map and BIM",

@@ -151,7 +151,7 @@ export default function SimpleMap({
         getTargetTimestamp: (d) => d.time2,
         getSourceColor: DARK_PURPLE,
         getTargetColor: TERRACOTTA,
-        getHeight: 0.6,
+        getHeight: 0.4,
         getWidth: 4,
         timeRange: [currentTime, currentTime + TIME_WINDOW],
         parameters: { cullMode: 'none' },

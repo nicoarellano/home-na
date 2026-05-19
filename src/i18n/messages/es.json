@@ -2,6 +2,7 @@
   "HomePage": {
     "nav": {
       "capabilities": "capacidades",
+      "demos": "demos",
       "solutions": "soluciones",
       "developers": "desarrolladores",
       "contact": "contacto"
@@ -35,6 +36,22 @@
       "general": {
         "title": "Vista general de la plataforma",
         "body": "Un recorrido guiado por el espacio de trabajo del gemelo digital — uniendo BIM, GIS y datos abiertos en una sola sesión del navegador, con las herramientas que las instituciones realmente usan en su día a día."
+      },
+      "viewers": {
+        "title": "Visores de la plataforma",
+        "body": "Visores de mapa, BIM y nube de puntos respaldados por bases de datos de sitios, edificios y archivos — consultables mediante las propiedades del buildingSMART Data Dictionary. IFC, GeoJSON, nubes de puntos, documentos y multimedia conviven junto a cada edificio, y la plataforma es extensible mediante <link>plugins personalizados</link>."
+      },
+      "organizational": {
+        "title": "Integración BIM + GIS",
+        "body": "Los modelos BIM a escala de edificio y los datos GIS a escala de infraestructura cargan juntos en un mismo entorno de navegador, con geolocalización precisa y soporte para múltiples sistemas de coordenadas. Portafolios de varios gigabytes se resuelven en menos de dos segundos por modelo, y las personas usuarias pueden colocar comentarios y modelos geolocalizados sobre el mapa para colaborar."
+      },
+      "open-data": {
+        "title": "Federación de datos abiertos",
+        "body": "Federa decenas de conjuntos de datos gubernamentales abiertos mediante APIs estandarizadas y sin preparación manual, y las personas usuarias pueden conectar sus propias fuentes de datos abiertos desde cualquier lugar del mundo. Superpone barrios, transporte, infraestructura y más junto a tus edificios, y ajusta escalas de color y calidad de visualización para el análisis."
+      },
+      "openBIM": {
+        "title": "Visor openBIM",
+        "body": "Procesamiento IFC nativo en el navegador que preserva el esquema completo — cada atributo, material, restricción y conjunto de propiedades personalizadas. Añade superposiciones DXF, GLTF, FBX, OBJ o de nubes de puntos; secciona, mide y comenta sobre la geometría; gestiona incidencias con BCF; valida modelos contra requisitos de intercambio IDS."
       },
       "sensors": {
         "title": "Sensores IoT en el mapa y BIM",

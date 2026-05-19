@@ -2,6 +2,7 @@
   "HomePage": {
     "nav": {
       "capabilities": "capacités",
+      "demos": "démos",
       "solutions": "solutions",
       "developers": "développeurs",
       "contact": "contact"
@@ -35,6 +36,22 @@
       "general": {
         "title": "Vue d'ensemble de la plateforme",
         "body": "Une visite guidée de l'espace de travail du jumeau numérique — réunissant BIM, SIG et données ouvertes dans une seule session de navigateur, avec les outils que les institutions utilisent réellement au quotidien."
+      },
+      "viewers": {
+        "title": "Visionneuses de la plateforme",
+        "body": "Visionneuses cartographique, BIM et nuage de points adossées à des bases de données de sites, bâtiments et fichiers — interrogeables via les propriétés du buildingSMART Data Dictionary. IFC, GeoJSON, nuages de points, documents et médias cohabitent autour de chaque bâtiment, et la plateforme est extensible via des <link>greffons personnalisés</link>."
+      },
+      "organizational": {
+        "title": "Intégration BIM + SIG",
+        "body": "Les modèles BIM à l'échelle du bâtiment et les données SIG à l'échelle de l'infrastructure se chargent ensemble dans un même environnement de navigateur, avec une géolocalisation précise et la prise en charge de plusieurs systèmes de coordonnées. Des portefeuilles de plusieurs gigaoctets se résolvent en moins de deux secondes par modèle, et les utilisateurs peuvent déposer des commentaires et modèles géolocalisés sur la carte pour collaborer."
+      },
+      "open-data": {
+        "title": "Fédération de données ouvertes",
+        "body": "Fédère des dizaines de jeux de données gouvernementales ouvertes via des API standardisées et sans préparation manuelle, et les utilisateurs peuvent connecter leurs propres sources de données ouvertes partout dans le monde. Superposez quartiers, transport, infrastructure et plus à vos bâtiments, puis ajustez les échelles de couleurs et la qualité de visualisation pour l'analyse."
+      },
+      "openBIM": {
+        "title": "Visionneuse openBIM",
+        "body": "Traitement IFC natif dans le navigateur préservant le schéma complet — chaque attribut, matériau, contrainte et jeu de propriétés personnalisées. Ajoutez des superpositions DXF, GLTF, FBX, OBJ ou de nuages de points ; sectionnez, mesurez et commentez la géométrie ; gérez les enjeux avec BCF ; validez les modèles selon les exigences d'échange IDS."
       },
       "sensors": {
         "title": "Capteurs IoT sur la carte et BIM",
