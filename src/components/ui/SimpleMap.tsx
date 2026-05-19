@@ -7,6 +7,30 @@ import maplibregl from 'maplibre-gl'
 
 import 'maplibre-gl/dist/maplibre-gl.css'
 
+import DeckOverlay from './DeckOverlay'
+import AnimatedArcLayer from './AnimatedArcLayer'
+
+interface Flight {
+  time1: number
+  time2: number
+  lon1: number
+  lat1: number
+  alt1: number
+  lon2: number
+  lat2: number
+  alt2: number
+}
+
+// Dataset matches the deck.gl maplibre example.
+const FLIGHTS_URL =
+  'https://raw.githubusercontent.com/visgl/deck.gl-data/master/examples/globe/2020-01-14.csv'
+const ANIMATION_SPEED = 60
+const TIME_WINDOW = 1800
+const SEC_PER_DAY = 86400
+
+const DARK_PURPLE: [number, number, number] = [88, 28, 135]
+const TERRACOTTA: [number, number, number] = [222, 101, 53]
+
 interface PaddingOptions {
   top: number
   bottom: number
@@ -35,10 +59,13 @@ export default function SimpleMap({
 }: Props) {
   const containerRef = React.useRef<HTMLDivElement>(null)
   const [zoom, setZoom] = React.useState(2.8)
+  const [flights, setFlights] = React.useState<Flight[]>([])
+  const [currentTime, setCurrentTime] = React.useState(0)
   const mapRef = React.useRef<MapRef>(null)
   const paddingRef = React.useRef<PaddingOptions | undefined>(padding)
-  const userInteracting = React.useRef(false)
   const animationRef = React.useRef<number>(0)
+  const timeAnimRef = React.useRef<number>(0)
+  const userInteracting = React.useRef(false)
   const resumeTimeoutRef = React.useRef<ReturnType<typeof setTimeout> | null>(null)
 
   React.useEffect(() => {
@@ -66,9 +93,71 @@ export default function SimpleMap({
   React.useEffect(() => {
     return () => {
       cancelAnimationFrame(animationRef.current)
+      cancelAnimationFrame(timeAnimRef.current)
       if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current)
     }
   }, [])
+
+  React.useEffect(() => {
+    let cancelled = false
+    fetch(FLIGHTS_URL)
+      .then((r) => r.text())
+      .then((text) => {
+        if (cancelled) return
+        const lines = text.trim().split('\n').slice(1)
+        const parsed: Flight[] = []
+        // Sample ~half the rows for a lighter scene.
+        for (let i = 0; i < lines.length; i += 2) {
+          const v = lines[i].split(',')
+          parsed.push({
+            time1: Number(v[0]),
+            time2: Number(v[1]),
+            lon1: Number(v[2]),
+            lat1: Number(v[3]),
+            alt1: Number(v[4]),
+            lon2: Number(v[5]),
+            lat2: Number(v[6]),
+            alt2: Number(v[7]),
+          })
+        }
+        setFlights(parsed)
+      })
+      .catch(() => { })
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  React.useEffect(() => {
+    const start = performance.now()
+    const tick = (now: number) => {
+      const elapsed = (now - start) / 1000
+      setCurrentTime((elapsed * ANIMATION_SPEED) % SEC_PER_DAY)
+      timeAnimRef.current = requestAnimationFrame(tick)
+    }
+    timeAnimRef.current = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(timeAnimRef.current)
+  }, [])
+
+  const layers = React.useMemo(() => {
+    if (!flights.length) return []
+    return [
+      new AnimatedArcLayer<Flight>({
+        id: 'flights',
+        data: flights,
+        getSourcePosition: (d) => [d.lon1, d.lat1, d.alt1],
+        getTargetPosition: (d) => [d.lon2, d.lat2, d.alt2],
+        getSourceTimestamp: (d) => d.time1,
+        getTargetTimestamp: (d) => d.time2,
+        getSourceColor: DARK_PURPLE,
+        getTargetColor: TERRACOTTA,
+        getHeight: 0.6,
+        getWidth: 4,
+        timeRange: [currentTime, currentTime + TIME_WINDOW],
+        parameters: { cullMode: 'none' },
+      }),
+    ]
+  }, [flights, currentTime])
 
   React.useEffect(() => {
     const map = mapRef.current?.getMap()
@@ -136,8 +225,17 @@ export default function SimpleMap({
       }, 1500)
     }
 
-    map.on('mousedown', onInteractionStart)
-    map.on('mouseup', onInteractionEnd)
+    const onMouseDown = (e: maplibregl.MapMouseEvent) => {
+      if (e.originalEvent.button !== 0) return
+      onInteractionStart()
+    }
+    const onMouseUp = (e: maplibregl.MapMouseEvent) => {
+      if (e.originalEvent.button !== 0) return
+      onInteractionEnd()
+    }
+
+    map.on('mousedown', onMouseDown)
+    map.on('mouseup', onMouseUp)
     map.on('touchstart', onInteractionStart)
     map.on('touchend', onInteractionEnd)
     map.on('dragstart', onInteractionStart)
@@ -156,11 +254,10 @@ export default function SimpleMap({
     }
 
     animationRef.current = requestAnimationFrame(rotate)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
-    <div ref={containerRef} className="pointer-events-auto relative z-10 h-full w-full">
+    <div ref={containerRef} className="pointer-events-auto opacity-75 relative z-10 h-full w-full">
       <Map
         ref={mapRef}
         mapStyle={resolvedStyle}
@@ -170,7 +267,15 @@ export default function SimpleMap({
         projection="globe"
         onLoad={handleMapLoad}
         attributionControl={false}
+        dragRotate={false}
+        touchPitch={false}
+        keyboard={false}
+        boxZoom={false}
+        pitchWithRotate={false}
+        minZoom={zoom}
+        maxZoom={zoom + 0.2}
       >
+        <DeckOverlay interleaved layers={layers} />
       </Map>
     </div>
   )

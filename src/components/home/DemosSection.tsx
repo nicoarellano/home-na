@@ -9,7 +9,7 @@ interface DemosSectionProps {
     assetsUrl: string
 }
 
-type DemoKey = 'general' | 'sensors' | 'wildfires'
+type DemoKey = 'general' | 'viewers' | 'organizational' | 'open-data' | 'openBIM' | 'sensors' | 'wildfires'
 
 interface Demo {
     key: DemoKey
@@ -18,6 +18,10 @@ interface Demo {
 
 const DEMOS: Demo[] = [
     { key: 'general', file: 'cdt-demo-home.mp4' },
+    { key: 'viewers', file: 'cdt-viewers.mp4' },
+    { key: 'organizational', file: 'cdt-organizational_data.mp4' },
+    { key: 'open-data', file: 'cdt-open_data.mp4' },
+    { key: 'openBIM', file: 'cdt-openBIM.mp4' },
     { key: 'sensors', file: 'cdt-sensors-demo.mp4' },
     { key: 'wildfires', file: 'cdt-Wildfires.mp4' },
 ]
