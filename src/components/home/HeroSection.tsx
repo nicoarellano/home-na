@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/Button'
 import AnimatedBackground from '@/components/ui/AnimatedBackground'
+import SimpleMap from '@/components/ui/SimpleMap'
 
 interface HeroSectionProps {
   assetsUrl: string
@@ -16,7 +17,7 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
     e.preventDefault()
     try {
       sessionStorage.setItem('cdt_demo_request', '1')
-    } catch {}
+    } catch { }
     const target = document.getElementById('contact')
     if (target) target.scrollIntoView({ behavior: 'smooth' })
     else window.location.hash = '#contact'
@@ -111,19 +112,14 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, delay: 0.15 }}
             id="demo"
-            className="relative w-full"
+            className="relative w-full hidden md:block"
           >
-            <div className="video-glow w-full">
-              <video
-                className="relative rounded-xl w-full aspect-video object-cover shadow-lg"
-                autoPlay
-                muted
-                loop
-                playsInline
-              >
-                <source src={`${assetsUrl}/cdt-homepage/cdt-demo-home.mp4`} type="video/mp4" />
-                {tHero('videoFallback')}
-              </video>
+            <div className="video-glow w-full relative rounded-xl overflow-hidden opacity-75 shadow-lg aspect-square">
+              <SimpleMap
+                width="100%"
+                height="100%"
+                mapStyleUrl="https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"
+              />
             </div>
           </motion.div>
         </div>
