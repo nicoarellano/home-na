@@ -2,14 +2,14 @@
 
 import { useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Maximize2, Pause, Play } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 interface DemosSectionProps {
     assetsUrl: string
 }
 
-type DemoKey = 'general' | 'sensors' | 'wildfires'
+type DemoKey = 'general' | 'viewers' | 'organizational' | 'open-data' | 'openBIM' | 'sensors' | 'wildfires'
 
 interface Demo {
     key: DemoKey
@@ -18,6 +18,10 @@ interface Demo {
 
 const DEMOS: Demo[] = [
     { key: 'general', file: 'cdt-demo-home.mp4' },
+    { key: 'viewers', file: 'cdt-viewers.mp4' },
+    { key: 'organizational', file: 'cdt-organizational_data.mp4' },
+    { key: 'open-data', file: 'cdt-open_data.mp4' },
+    { key: 'openBIM', file: 'cdt-openBIM.mp4' },
     { key: 'sensors', file: 'cdt-sensors-demo.mp4' },
     { key: 'wildfires', file: 'cdt-Wildfires.mp4' },
 ]
@@ -46,6 +50,20 @@ export default function DemosSection({ assetsUrl }: DemosSectionProps) {
             v.pause()
             setIsPlaying(false)
         }
+    }
+
+    const enterFullscreen = () => {
+        const v = videoRef.current
+        if (!v) return
+        const el = v as HTMLVideoElement & {
+            webkitEnterFullscreen?: () => void
+            webkitRequestFullscreen?: () => Promise<void>
+            msRequestFullscreen?: () => Promise<void>
+        }
+        if (el.requestFullscreen) el.requestFullscreen()
+        else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen()
+        else if (el.webkitEnterFullscreen) el.webkitEnterFullscreen()
+        else if (el.msRequestFullscreen) el.msRequestFullscreen()
     }
 
     return (
@@ -145,24 +163,40 @@ export default function DemosSection({ assetsUrl }: DemosSectionProps) {
                                         <ChevronRight className="w-5 h-5" />
                                     </button>
 
-                                    <button
-                                        type="button"
-                                        onClick={togglePlay}
-                                        aria-label={isPlaying ? 'Pause demo' : 'Play demo'}
-                                        className="absolute bottom-3 right-3 z-10 w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
-                                        style={{
-                                            background: 'rgba(0, 0, 0, 0.45)',
-                                            backdropFilter: 'blur(8px)',
-                                            color: '#fff',
-                                            border: '1px solid rgba(255,255,255,0.15)',
-                                        }}
-                                    >
-                                        {isPlaying ? (
-                                            <Pause className="w-4 h-4" />
-                                        ) : (
-                                            <Play className="w-4 h-4 translate-x-[1px]" />
-                                        )}
-                                    </button>
+                                    <div className="absolute bottom-3 right-3 z-10 flex gap-2">
+                                        <button
+                                            type="button"
+                                            onClick={togglePlay}
+                                            aria-label={isPlaying ? 'Pause demo' : 'Play demo'}
+                                            className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                                            style={{
+                                                background: 'rgba(0, 0, 0, 0.45)',
+                                                backdropFilter: 'blur(8px)',
+                                                color: '#fff',
+                                                border: '1px solid rgba(255,255,255,0.15)',
+                                            }}
+                                        >
+                                            {isPlaying ? (
+                                                <Pause className="w-4 h-4" />
+                                            ) : (
+                                                <Play className="w-4 h-4 translate-x-[1px]" />
+                                            )}
+                                        </button>
+                                        <button
+                                            type="button"
+                                            onClick={enterFullscreen}
+                                            aria-label="Open demo in fullscreen"
+                                            className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                                            style={{
+                                                background: 'rgba(0, 0, 0, 0.45)',
+                                                backdropFilter: 'blur(8px)',
+                                                color: '#fff',
+                                                border: '1px solid rgba(255,255,255,0.15)',
+                                            }}
+                                        >
+                                            <Maximize2 className="w-4 h-4" />
+                                        </button>
+                                    </div>
 
                                     <div className="absolute bottom-3 left-3 z-10 flex gap-1.5">
                                         {DEMOS.map((d, i) => (
