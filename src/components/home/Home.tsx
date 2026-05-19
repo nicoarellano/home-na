@@ -38,7 +38,7 @@ export function Home({ assetsUrl }: HomeProps) {
     document.documentElement.classList.toggle('dark', true)
 
     const handleScroll = () => {
-      const sections = ['capabilities', 'solutions', 'developers', 'contact']
+      const sections = ['capabilities', 'demos', 'solutions', 'developers', 'contact']
       const current = sections.find((section) => {
         const element = document.getElementById(section)
         if (element) {
