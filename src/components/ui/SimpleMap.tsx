@@ -26,9 +26,11 @@ const FLIGHTS_URL =
   'https://raw.githubusercontent.com/visgl/deck.gl-data/master/examples/globe/2020-01-14.csv'
 const ANIMATION_SPEED = 320
 
-// Length of time window to show active flights, in seconds. 5400s = 90min, which is a reasonable duration for a flight.
-const TIME_WINDOW = 5400
+// Length of time window to show active flights, in seconds. 2400s = 40min, which is a reasonable duration for a flight.
+const TIME_WINDOW = 2400
 const SEC_PER_DAY = 86400
+// Dataset offset (seconds since midnight UTC) so the loop opens mid-day with the globe already busy.
+const START_TIME = 43200
 
 const DARK_PURPLE: [number, number, number] = [88, 28, 135]
 const TERRACOTTA: [number, number, number] = [222, 101, 53]
@@ -134,7 +136,7 @@ export default function SimpleMap({
     const start = performance.now()
     const tick = (now: number) => {
       const elapsed = (now - start) / 1000
-      setCurrentTime((elapsed * ANIMATION_SPEED) % SEC_PER_DAY)
+      setCurrentTime((START_TIME + elapsed * ANIMATION_SPEED) % SEC_PER_DAY)
       timeAnimRef.current = requestAnimationFrame(tick)
     }
     timeAnimRef.current = requestAnimationFrame(tick)
