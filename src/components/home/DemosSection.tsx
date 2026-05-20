@@ -163,7 +163,7 @@ export default function DemosSection({ assetsUrl }: DemosSectionProps) {
                                             animate={{ opacity: 1 }}
                                             exit={{ opacity: 0 }}
                                             transition={{ duration: 0.4 }}
-                                            className="absolute inset-0 w-full h-full object-cover"
+                                            className="absolute inset-0 w-full h-full object-cover fullscreen-contain"
                                             autoPlay
                                             muted
                                             loop
