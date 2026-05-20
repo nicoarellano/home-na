@@ -24,7 +24,7 @@ interface HomeProps {
 }
 
 export function Home({ assetsUrl }: HomeProps) {
-  const [activeSection, setActiveSection] = useState('capabilities')
+  const [activeSection, setActiveSection] = useState('')
   const [theme, setTheme] = useState<'light' | 'dark'>('dark')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const locale = useLocale() as Language
@@ -37,20 +37,26 @@ export function Home({ assetsUrl }: HomeProps) {
   useEffect(() => {
     document.documentElement.classList.toggle('dark', true)
 
+    const sections = ['capabilities', 'demos', 'solutions', 'developers', 'contact']
+    const threshold = 150
+
     const handleScroll = () => {
-      const sections = ['capabilities', 'demos', 'solutions', 'developers', 'contact']
-      const current = sections.find((section) => {
+      let current = ''
+      for (const section of sections) {
         const element = document.getElementById(section)
-        if (element) {
-          const rect = element.getBoundingClientRect()
-          return rect.top <= 150 && rect.bottom >= 150
+        if (element && element.getBoundingClientRect().top <= threshold) {
+          current = section
         }
-        return false
-      })
-      if (current) setActiveSection(current)
+      }
+      setActiveSection(current)
+      const desiredHash = current ? `#${current}` : ''
+      if (window.location.hash !== desiredHash) {
+        history.replaceState(null, '', `${window.location.pathname}${window.location.search}${desiredHash}`)
+      }
     }
 
-    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -127,6 +133,7 @@ export function Home({ assetsUrl }: HomeProps) {
     const element = document.getElementById(id)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
+      history.pushState(null, '', `${window.location.pathname}${window.location.search}#${id}`)
     }
   }
 

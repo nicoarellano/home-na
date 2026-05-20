@@ -3,7 +3,6 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { Moon, Sun, Menu, X } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/Button'
 import LanguageToggle from '@/components/ui/LanguageToggle'
@@ -61,7 +60,18 @@ export default function Navbar({
             animate={{ opacity: 1, x: 0 }}
             className="flex-shrink-0"
           >
-            <Link href="#hero" className="flex items-center gap-3 group">
+            <button
+              type="button"
+              onClick={() => {
+                setCurrentSection('')
+                const hero = document.getElementById('hero')
+                if (hero) hero.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                else window.scrollTo({ top: 0, behavior: 'smooth' })
+                history.pushState(null, '', `${window.location.pathname}${window.location.search}`)
+              }}
+              className="flex items-center gap-3 group cursor-pointer"
+              aria-label="Back to top"
+            >
               <CdtIcon className="w-8 h-8" />
               <span
                 className="font-display text-xl tracking-wide max-xs:text-sm max-xs:text-nowrap lowercase transition-colors duration-200"
@@ -72,7 +82,7 @@ export default function Navbar({
                   digitaltwins
                 </>
               </span>
-            </Link>
+            </button>
           </motion.div>
 
           {showNavigation && (
