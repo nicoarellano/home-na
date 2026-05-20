@@ -24,8 +24,10 @@ interface Flight {
 // Dataset matches the deck.gl maplibre example.
 const FLIGHTS_URL =
   'https://raw.githubusercontent.com/visgl/deck.gl-data/master/examples/globe/2020-01-14.csv'
-const ANIMATION_SPEED = 60
-const TIME_WINDOW = 1800
+const ANIMATION_SPEED = 320
+
+// Length of time window to show active flights, in seconds. 5400s = 90min, which is a reasonable duration for a flight.
+const TIME_WINDOW = 5400
 const SEC_PER_DAY = 86400
 
 const DARK_PURPLE: [number, number, number] = [88, 28, 135]
@@ -151,7 +153,7 @@ export default function SimpleMap({
         getTargetTimestamp: (d) => d.time2,
         getSourceColor: TERRACOTTA,
         getTargetColor: DARK_PURPLE,
-        getHeight: 0.4,
+        getHeight: 0.2,
         getWidth: 4,
         timeRange: [currentTime, currentTime + TIME_WINDOW],
         parameters: { cullMode: 'none' },
