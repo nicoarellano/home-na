@@ -62,6 +62,19 @@
         "body": "An interactive map built with a wildfire research group to monitor fire conditions across Canada — combining open datasets from the Canadian Interagency Forest Fire Centre (CIFFC) with photos and videos crowdsourced from users in near-real time."
       }
     },
+    "recognition": {
+      "sectionLabel": "Recognition",
+      "title": "Award-winning, internationally recognized.",
+      "subtitle": "External endorsement of the platform's open-source, open-standards approach to digital twin infrastructure.",
+      "openBIM": {
+        "title": "bSI openBIM Awards — Professional Research (2025)",
+        "body": "Winner of the Professional Research category at the buildingSMART International openBIM Awards, selected from 129 submissions across more than 50 countries — the first bSI openBIM Award brought to Canada since the program launched in 2014."
+      },
+      "buildingTransformations": {
+        "title": "Building Transformations Innovation Spotlight Awards (2024)",
+        "body": "Winner of both the Research Award and the Best in Innovation Award — recognizing overall excellence across all categories at the 2024 Innovation Spotlight Awards."
+      }
+    },
     "capabilities": {
       "sectionLabel": "Capabilities",
       "title": "What the platform enables.",

@@ -62,6 +62,19 @@
         "body": "Un mapa interactivo construido con un grupo de investigación sobre incendios forestales para monitorear las condiciones del fuego en Canadá — combinando conjuntos de datos abiertos del Canadian Interagency Forest Fire Centre (CIFFC) con fotos y videos aportados por las personas usuarias casi en tiempo real."
       }
     },
+    "recognition": {
+      "sectionLabel": "Reconocimiento",
+      "title": "Galardonada y reconocida internacionalmente.",
+      "subtitle": "Validación externa del enfoque de código abierto y estándares abiertos de la plataforma.",
+      "openBIM": {
+        "title": "Premios bSI openBIM — Investigación profesional (2025)",
+        "body": "Ganador en la categoría de Investigación Profesional en los Premios openBIM de buildingSMART International, seleccionado entre 129 candidaturas de más de 50 países — el primer premio bSI openBIM otorgado a Canadá desde la creación del programa en 2014."
+      },
+      "buildingTransformations": {
+        "title": "Premios Innovation Spotlight de Building Transformations (2024)",
+        "body": "Ganador del Premio a la Investigación y del Premio a la Mejor Innovación — que reconoce la excelencia general en todas las categorías de los Premios Innovation Spotlight 2024."
+      }
+    },
     "capabilities": {
       "sectionLabel": "Capacidades",
       "title": "Lo que la plataforma habilita.",

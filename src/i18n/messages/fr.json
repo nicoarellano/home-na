@@ -62,6 +62,19 @@
         "body": "Une carte interactive bâtie avec un groupe de recherche sur les feux de forêt pour surveiller les conditions des incendies au Canada — combinant des jeux de données ouverts du Canadian Interagency Forest Fire Centre (CIFFC) avec des photos et vidéos collectées par les utilisateurs en quasi temps réel."
       }
     },
+    "recognition": {
+      "sectionLabel": "Reconnaissance",
+      "title": "Primée, reconnue à l'international.",
+      "subtitle": "Une validation externe de l'approche libre et basée sur des standards ouverts de la plateforme.",
+      "openBIM": {
+        "title": "Prix bSI openBIM — Recherche professionnelle (2025)",
+        "body": "Gagnant de la catégorie Recherche professionnelle aux Prix openBIM de buildingSMART International, sélectionné parmi 129 candidatures provenant de plus de 50 pays — le premier prix bSI openBIM décerné au Canada depuis la création du programme en 2014."
+      },
+      "buildingTransformations": {
+        "title": "Prix Innovation Spotlight de Building Transformations (2024)",
+        "body": "Lauréat à la fois du Prix de la recherche et du Prix de la meilleure innovation — qui souligne l'excellence d'ensemble dans toutes les catégories des Prix Innovation Spotlight 2024."
+      }
+    },
     "capabilities": {
       "sectionLabel": "Capacités",
       "title": "Ce que la plateforme permet.",
