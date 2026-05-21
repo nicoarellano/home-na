@@ -86,6 +86,9 @@ export default function SimpleMap({
       if (minDim <= 0) return
       const next = Math.log2(minDim / FIT_DIVISOR)
       setZoom(Math.max(-1, Math.min(3.5, next)))
+      // Tell maplibre its canvas changed size — otherwise the projection keeps the
+      // old viewport and the globe drifts off-center after a window resize.
+      mapRef.current?.getMap()?.resize()
     }
 
     computeZoom()
@@ -155,7 +158,7 @@ export default function SimpleMap({
         getTargetTimestamp: (d) => d.time2,
         getSourceColor: TERRACOTTA,
         getTargetColor: DARK_PURPLE,
-        getHeight: 0.2,
+        getHeight: 0.1,
         getWidth: 4,
         timeRange: [currentTime, currentTime + TIME_WINDOW],
         parameters: { cullMode: 'none' },
@@ -166,7 +169,16 @@ export default function SimpleMap({
   React.useEffect(() => {
     const map = mapRef.current?.getMap()
     if (!map) return
+
+    // Order matters: setMinZoom rejects values above the current maxZoom (and vice versa).
+    // Widen first, then collapse to the desired window so we never cross the invariant mid-update.
+    const nextMin = zoom
+    const nextMax = zoom + 0.2
+    map.setMinZoom(-2)
+    map.setMaxZoom(24)
     map.setZoom(zoom)
+    map.setMaxZoom(nextMax)
+    map.setMinZoom(nextMin)
 
     const currentPadding = paddingRef.current
     if (!currentPadding) return
@@ -276,8 +288,6 @@ export default function SimpleMap({
         keyboard={false}
         boxZoom={false}
         pitchWithRotate={false}
-        minZoom={zoom}
-        maxZoom={zoom + 0.2}
       >
         <DeckOverlay interleaved layers={layers} />
       </Map>

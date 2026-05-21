@@ -33,16 +33,8 @@ export default function Navbar({
 }: NavbarProps) {
   const tNav = useTranslations('HomePage.nav')
   const tHero = useTranslations('HomePage.hero')
-  const [onMobile, setOnMobile] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [currentSection, setCurrentSection] = useState(activeSection)
-
-  useEffect(() => {
-    const checkMobile = () => setOnMobile(window.innerWidth < 640)
-    checkMobile()
-    window.addEventListener('resize', checkMobile)
-    return () => window.removeEventListener('resize', checkMobile)
-  }, [])
 
   useEffect(() => {
     setCurrentSection(activeSection)
@@ -86,7 +78,7 @@ export default function Navbar({
           </motion.div>
 
           {showNavigation && (
-            <div className={`${onMobile ? 'hidden' : 'flex'} items-center gap-1 flex-1 justify-center`}>
+            <div className="hidden sm:flex items-center gap-1 flex-1 justify-center">
               {['capabilities', 'demos', 'solutions', 'developers', 'contact'].map((section) => (
                 <button
                   key={section}
@@ -117,7 +109,7 @@ export default function Navbar({
           )}
 
           <div className="flex items-center gap-3 flex-shrink-0 ml-auto">
-            <div className={`${onMobile ? 'hidden' : 'flex'} items-center gap-3`}>
+            <div className="hidden sm:flex items-center gap-3">
               <LanguageToggle currentLanguage={locale} onSelect={onSelectLanguage} />
 
               <Button

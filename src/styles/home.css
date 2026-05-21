@@ -38,11 +38,11 @@ html:has(.hp) {
   align-items: center;
   gap: 0.5rem;
   padding: 0.35rem 1rem;
-  background: linear-gradient(135deg, rgb(88, 28, 135) 0%, rgb(222, 101, 53) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(239, 145, 97, 0.1);
+  border: 1px solid rgba(239, 145, 97, 0.25);
   border-radius: 9999px;
   font-size: 0.68rem;
-  color: #fff;
+  color: var(--hp-primary-container);
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
