@@ -1,6 +1,8 @@
 import * as React from 'react'
 import type { Metadata } from 'next'
+// @ts-ignore
 import '@/styles/globals.css'
+// @ts-ignore
 import '@/styles/home.css'
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''

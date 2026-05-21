@@ -5,6 +5,7 @@ import Map from 'react-map-gl/maplibre'
 import type { MapRef } from 'react-map-gl/maplibre'
 import maplibregl from 'maplibre-gl'
 
+// @ts-ignore
 import 'maplibre-gl/dist/maplibre-gl.css'
 
 import DeckOverlay from './DeckOverlay'
