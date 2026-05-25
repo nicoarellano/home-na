@@ -208,9 +208,19 @@
       "mailingLabel": "Developer mailing list"
     },
     "leadership": {
-      "sectionLabel": "Leadership",
-      "title": "Board-governed. Mission-bound.",
-      "intro": "Directed by a board with deep expertise across architecture, technology, research, and education. As a non-profit, our charter requires that the platform serves users — not shareholders.",
+      "sectionLabel": "Team",
+      "title": "Two decades of research and practice, grounded in community.",
+      "intro": "Collab Digital Twins is an independent non-profit, spun out of Carleton Immersive Media Studio (CIMS) — the research group whose work has shaped how Canadian institutions adopt BIM, GIS, AR/VR, immersive media, digital fabrication, digital storytelling, and heritage digitization since the early 2000s.",
+      "heritage": {
+        "label": "Our heritage",
+        "logoAlt": "Carleton Immersive Media Studio",
+        "title": "Applied research with national reach and international standing.",
+        "body": "Founded at Carleton University's Azrieli School of Architecture and Urbanism, CIMS is one of Canada's leading applied research labs at the intersection of architecture, heritage conservation, and advanced visualization. Its work on Heritage BIM, photogrammetry, and immersive documentation has contributed to international standards and shaped a generation of practitioners.",
+        "bodyExtra": "For nearly two decades, the team has delivered on Canada's most significant projects — including the rehabilitation of Parliament Hill — partnering with the National Research Council, Public Services and Procurement Canada, the Department of National Defence, the Senate of Canada, and Global Affairs Canada, alongside major industry partners. Collab Digital Twins continues that practice — independent, open, and at scale.",
+        "cta": "Visit cims.carleton.ca"
+      },
+      "boardLabel": "Board of directors",
+      "boardIntro": "Every director has spent a decade or more inside CIMS — including its founding director and its associate director.",
       "titles": {
         "director": "Director",
         "directorFemale": "Director",

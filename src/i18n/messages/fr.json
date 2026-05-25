@@ -208,9 +208,19 @@
       "mailingLabel": "Liste de diffusion développeurs"
     },
     "leadership": {
-      "sectionLabel": "Direction",
-      "title": "Gouvernance par conseil. Engagement par mission.",
-      "intro": "Dirigée par un conseil d'administration au savoir-faire approfondi en architecture, technologie, recherche et éducation. En tant qu'OBNL, notre charte exige que la plateforme serve les utilisateurs — pas des actionnaires.",
+      "sectionLabel": "Équipe",
+      "title": "Deux décennies de recherche et de pratique, ancrées dans une communauté.",
+      "intro": "Collab Digital Twins est un organisme à but non lucratif indépendant, issu du Carleton Immersive Media Studio (CIMS) — le groupe de recherche dont les travaux façonnent depuis le début des années 2000 la manière dont les institutions canadiennes adoptent le BIM, le SIG, la RA/RV, les médias immersifs, la fabrication numérique, la narration numérique et la numérisation du patrimoine.",
+      "heritage": {
+        "label": "Notre héritage",
+        "logoAlt": "Carleton Immersive Media Studio",
+        "title": "Une recherche appliquée d'envergure nationale et de réputation internationale.",
+        "body": "Fondé à la Azrieli School of Architecture and Urbanism de l'Université Carleton, le CIMS est l'un des principaux laboratoires de recherche appliquée au Canada, à l'intersection de l'architecture, de la conservation du patrimoine et de la visualisation avancée. Ses travaux sur le BIM patrimonial (HBIM), la photogrammétrie et la documentation immersive contribuent à des normes internationales et ont formé toute une génération de praticiens.",
+        "bodyExtra": "Depuis près de vingt ans, l'équipe livre les projets les plus significatifs au Canada — y compris la réhabilitation de la Colline du Parlement — en partenariat avec le Conseil national de recherches, Services publics et Approvisionnement Canada, le ministère de la Défense nationale, le Sénat du Canada et Affaires mondiales Canada, aux côtés de grands partenaires industriels. Collab Digital Twins permet à cette pratique de se poursuivre — indépendante, ouverte, et à grande échelle.",
+        "cta": "Visitez cims.carleton.ca"
+      },
+      "boardLabel": "Conseil d'administration",
+      "boardIntro": "Chaque administrateur a passé une décennie ou plus au sein du CIMS — y compris son directeur fondateur et sa directrice associée.",
       "titles": {
         "director": "Administrateur",
         "directorFemale": "Administratrice",
