@@ -22,56 +22,75 @@ interface ValueCard {
   description: string
 }
 
+function ValueCardItem({ value }: { value: ValueCard }) {
+  return (
+    <div className="tonal-card p-6 flex-shrink-0" style={{ width: '340px' }}>
+      <div className="flex items-start gap-4">
+        <div
+          className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
+          style={{ background: 'rgba(239, 145, 97, 0.1)' }}
+        >
+          <value.icon className="w-5 h-5" style={{ color: 'var(--hp-primary-container)' }} />
+        </div>
+        <div className="space-y-2 min-w-0">
+          <h3
+            className="font-display font-bold"
+            style={{ fontSize: '1rem', lineHeight: '1.3', color: 'var(--hp-on-surface)' }}
+          >
+            {value.title}
+          </h3>
+          <p
+            className="text-[0.9rem] leading-relaxed"
+            style={{ color: 'var(--hp-on-surface-variant)' }}
+          >
+            {value.description}
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function MarqueeRow({ items, direction }: { items: ValueCard[]; direction: 'left' | 'right' }) {
   const repeated = [...items, ...items, ...items]
 
   return (
-    <div className="overflow-hidden relative">
-      <div
-        className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none"
-        style={{ background: 'linear-gradient(90deg, var(--hp-low) 0%, transparent 100%)' }}
-      />
-      <div
-        className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none"
-        style={{ background: 'linear-gradient(270deg, var(--hp-low) 0%, transparent 100%)' }}
-      />
+    <>
+      <div className="hidden sm:block overflow-hidden relative">
+        <div
+          className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none"
+          style={{ background: 'linear-gradient(90deg, var(--hp-low) 0%, transparent 100%)' }}
+        />
+        <div
+          className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none"
+          style={{ background: 'linear-gradient(270deg, var(--hp-low) 0%, transparent 100%)' }}
+        />
+
+        <div
+          className={`flex gap-5 ${direction === 'left' ? 'marquee-left' : 'marquee-right'}`}
+          style={{ width: 'max-content' }}
+        >
+          {repeated.map((value, i) => (
+            <ValueCardItem key={`${value.title}-${i}`} value={value} />
+          ))}
+        </div>
+      </div>
 
       <div
-        className={`flex gap-5 ${direction === 'left' ? 'marquee-left' : 'marquee-right'}`}
-        style={{ width: 'max-content' }}
+        className="sm:hidden overflow-x-auto overflow-y-hidden [&::-webkit-scrollbar]:hidden"
+        style={{
+          WebkitOverflowScrolling: 'touch',
+          overscrollBehaviorX: 'contain',
+          scrollbarWidth: 'none',
+        }}
       >
-        {repeated.map((value, i) => (
-          <div
-            key={`${value.title}-${i}`}
-            className="tonal-card p-6 flex-shrink-0"
-            style={{ width: '340px' }}
-          >
-            <div className="flex items-start gap-4">
-              <div
-                className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                style={{ background: 'rgba(239, 145, 97, 0.1)' }}
-              >
-                <value.icon className="w-5 h-5" style={{ color: 'var(--hp-primary-container)' }} />
-              </div>
-              <div className="space-y-2 min-w-0">
-                <h3
-                  className="font-display font-bold"
-                  style={{ fontSize: '1rem', lineHeight: '1.3', color: 'var(--hp-on-surface)' }}
-                >
-                  {value.title}
-                </h3>
-                <p
-                  className="text-[0.9rem] leading-relaxed"
-                  style={{ color: 'var(--hp-on-surface-variant)' }}
-                >
-                  {value.description}
-                </p>
-              </div>
-            </div>
-          </div>
-        ))}
+        <div className="flex gap-5 px-6 pb-2" style={{ width: 'max-content' }}>
+          {items.map((value, i) => (
+            <ValueCardItem key={`${value.title}-${i}`} value={value} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
