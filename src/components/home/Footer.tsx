@@ -6,7 +6,7 @@ import { Link } from '@/i18n/navigation'
 const NAV_LINKS = [
   { key: 'navCapabilities', href: '#capabilities' },
   { key: 'navSolutions', href: '#solutions' },
-  { key: 'navDevelopers', href: '#developers' },
+  { key: 'navTeam', href: '#team' },
   { key: 'navLeadership', href: '#team' },
   { key: 'navContact', href: '#contact' },
   { key: 'navPlatform', href: 'https://app.collabdt.org/cdt', external: true },

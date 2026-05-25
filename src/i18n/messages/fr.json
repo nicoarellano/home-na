@@ -4,7 +4,7 @@
       "capabilities": "capacités",
       "demos": "démos",
       "solutions": "solutions",
-      "developers": "développeurs",
+      "team": "équipe",
       "contact": "contact"
     },
     "hero": {
@@ -250,7 +250,7 @@
       "navigate": "Naviguer",
       "navCapabilities": "Capacités",
       "navSolutions": "Solutions",
-      "navDevelopers": "Développeurs",
+      "navTeam": "Équipe",
       "navLeadership": "Direction",
       "navContact": "Contact",
       "navPlatform": "Plateforme",
