@@ -114,7 +114,7 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
             id="demo"
             className="relative w-full hidden md:block"
           >
-            <div className="video-glow w-full relative rounded-xl overflow-hidden shadow-lg aspect-square">
+            <div className="w-full relative overflow-hidden aspect-square">
               <SimpleMap
                 width="100%"
                 height="100%"
