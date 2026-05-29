@@ -45,11 +45,11 @@ export default function SolutionsSection() {
   return (
     <section
       id="solutions"
-      className="py-32 relative"
+      className="py-20 md:py-24 relative"
       style={{ background: 'var(--hp-low)' }}
     >
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -61,8 +61,8 @@ export default function SolutionsSection() {
             <h2
               className="font-display font-bold"
               style={{
-                fontSize: 'clamp(1.75rem, 3.6vw, 2.75rem)',
-                lineHeight: '1.1',
+                fontSize: 'clamp(2rem, 4vw, 3.25rem)',
+                lineHeight: '1.08',
                 letterSpacing: '-0.02em',
                 color: 'var(--hp-on-surface)',
               }}

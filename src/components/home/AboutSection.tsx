@@ -145,9 +145,9 @@ export default function AboutSection() {
 
   return (
     <>
-      <section id="whyCdt" className="py-32 relative" style={{ background: 'var(--hp-surface)' }}>
+      <section id="whyCdt" className="py-20 md:py-24 relative" style={{ background: 'var(--hp-surface)' }}>
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto space-y-14">
+          <div className="max-w-7xl mx-auto space-y-14">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -159,8 +159,8 @@ export default function AboutSection() {
               <h2
                 className="font-display font-bold"
                 style={{
-                  fontSize: 'clamp(1.75rem, 3.6vw, 2.75rem)',
-                  lineHeight: '1.1',
+                  fontSize: 'clamp(2rem, 4vw, 3.25rem)',
+                  lineHeight: '1.08',
                   letterSpacing: '-0.02em',
                   color: 'var(--hp-on-surface)',
                 }}
@@ -216,7 +216,7 @@ export default function AboutSection() {
       </section>
 
       <section
-        className="py-24 relative overflow-hidden"
+        className="py-16 md:py-20 relative overflow-hidden"
         style={{ background: 'var(--hp-low)' }}
       >
         <div className="container mx-auto px-6 mb-12">

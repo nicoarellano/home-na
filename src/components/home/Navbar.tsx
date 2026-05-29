@@ -3,48 +3,48 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { Moon, Sun, Menu, X } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import { Link, usePathname } from '@/i18n/navigation'
 import { Button } from '@/components/ui/Button'
 import LanguageToggle from '@/components/ui/LanguageToggle'
 import { CdtIcon } from '@/components/ui/CdtIcon'
 import { Language } from '@/lib/language'
 
 interface NavbarProps {
-  activeSection: string
   theme: 'light' | 'dark'
   locale: Language
-  navOpacity?: any
-  navY: any
   onToggleTheme: () => void
   onSelectLanguage: (target: Language) => void
-  onScrollToSection: (id: string) => void
   showNavigation?: boolean
 }
 
+type NavKey = 'home' | 'about' | 'team' | 'contact' | 'faq'
+
+const NAV_ITEMS: { key: NavKey; href: string }[] = [
+  { key: 'home', href: '/' },
+  { key: 'about', href: '/about' },
+  { key: 'team', href: '/team' },
+  { key: 'contact', href: '/#contact' },
+  { key: 'faq', href: '/faq' },
+]
+
 export default function Navbar({
-  activeSection,
   theme,
   locale,
-  navY,
   onToggleTheme,
   onSelectLanguage,
-  onScrollToSection,
   showNavigation = true,
 }: NavbarProps) {
   const tNav = useTranslations('HomePage.nav')
   const tHero = useTranslations('HomePage.hero')
+  const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [currentSection, setCurrentSection] = useState(activeSection)
 
-  useEffect(() => {
-    setCurrentSection(activeSection)
-  }, [activeSection])
+  const isActive = (href: string) =>
+    href === '/' ? pathname === '/' : pathname.startsWith(href)
 
   return (
-    <motion.nav
-      style={{ y: navY }}
-      className="glass-nav fixed top-0 left-0 right-0 z-50"
-    >
+    <motion.nav className="glass-nav fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center gap-6">
           <motion.div
@@ -52,17 +52,10 @@ export default function Navbar({
             animate={{ opacity: 1, x: 0 }}
             className="flex-shrink-0"
           >
-            <button
-              type="button"
-              onClick={() => {
-                setCurrentSection('')
-                const hero = document.getElementById('hero')
-                if (hero) hero.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                else window.scrollTo({ top: 0, behavior: 'smooth' })
-                history.pushState(null, '', `${window.location.pathname}${window.location.search}`)
-              }}
+            <Link
+              href="/"
               className="flex items-center gap-3 group cursor-pointer"
-              aria-label="Back to top"
+              aria-label="Back to home"
             >
               <CdtIcon className="w-8 h-8" />
               <span
@@ -74,37 +67,36 @@ export default function Navbar({
                   digitaltwins
                 </>
               </span>
-            </button>
+            </Link>
           </motion.div>
 
           {showNavigation && (
             <div className="hidden sm:flex items-center gap-1 flex-1 justify-center">
-              {['capabilities', 'demos', 'solutions', 'team', 'contact'].map((section) => (
-                <button
-                  key={section}
-                  onClick={() => {
-                    setCurrentSection(section)
-                    onScrollToSection(section)
-                  }}
-                  className="relative px-4 py-2 rounded-lg text-sm font-medium transition-all capitalize font-display"
-                  style={{
-                    color:
-                      currentSection === section
+              {NAV_ITEMS.map(({ key, href }) => {
+                const active = isActive(href)
+                return (
+                  <Link
+                    key={key}
+                    href={href}
+                    className="relative px-4 py-2 rounded-lg text-sm font-medium transition-all capitalize font-display"
+                    style={{
+                      color: active
                         ? 'var(--hp-primary-container)'
                         : 'var(--hp-on-surface-variant)',
-                    fontWeight: currentSection === section ? 700 : 500,
-                  }}
-                >
-                  {tNav(section as 'capabilities' | 'demos' | 'solutions' | 'team' | 'contact')}
-                  {currentSection === section && (
-                    <motion.div
-                      layoutId="activeSection"
-                      className="absolute -bottom-[17px] left-2 right-2 h-[2px]"
-                      style={{ background: 'var(--hp-primary-container)' }}
-                    />
-                  )}
-                </button>
-              ))}
+                      fontWeight: active ? 700 : 500,
+                    }}
+                  >
+                    {tNav(key)}
+                    {active && (
+                      <motion.div
+                        layoutId="activeSection"
+                        className="absolute -bottom-[17px] left-2 right-2 h-[2px]"
+                        style={{ background: 'var(--hp-primary-container)' }}
+                      />
+                    )}
+                  </Link>
+                )
+              })}
             </div>
           )}
 
@@ -132,7 +124,7 @@ export default function Navbar({
             <Button
               variant="ghost"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg transition-colors"
+              className="sm:hidden p-2 rounded-lg transition-colors"
               style={{ color: 'var(--hp-on-surface-variant)' }}
               aria-label="Toggle menu"
             >
@@ -148,33 +140,31 @@ export default function Navbar({
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.2 }}
-              className="lg:hidden overflow-hidden"
+              className="sm:hidden overflow-hidden"
             >
               <div className="py-4 space-y-1 mt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.04)' }}>
                 {showNavigation &&
-                  ['capabilities', 'demos', 'solutions', 'team', 'contact'].map((section) => (
-                    <button
-                      key={section}
-                      onClick={() => {
-                        setCurrentSection(section)
-                        onScrollToSection(section)
-                        setMobileMenuOpen(false)
-                      }}
-                      className="block w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all capitalize font-display"
-                      style={{
-                        color:
-                          currentSection === section
+                  NAV_ITEMS.map(({ key, href }) => {
+                    const active = isActive(href)
+                    return (
+                      <Link
+                        key={key}
+                        href={href}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="block w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-all capitalize font-display"
+                        style={{
+                          color: active
                             ? 'var(--hp-primary-container)'
                             : 'var(--hp-on-surface-variant)',
-                        background:
-                          currentSection === section
+                          background: active
                             ? 'rgba(239, 145, 97, 0.08)'
                             : 'transparent',
-                      }}
-                    >
-                      {tNav(section as 'capabilities' | 'demos' | 'solutions' | 'team' | 'contact')}
-                    </button>
-                  ))}
+                        }}
+                      >
+                        {tNav(key)}
+                      </Link>
+                    )
+                  })}
 
                 <div className="flex items-center gap-2 px-4 py-2 pt-3">
                   <Button

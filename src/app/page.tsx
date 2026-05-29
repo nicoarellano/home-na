@@ -24,16 +24,14 @@ export default function RootIndex() {
           style={{ width: '72px', height: '72px' }}
         />
         <p
+          className='font-display tracking-wide lowercase'
           style={{
-            fontFamily: "'Geist', sans-serif",
-            fontSize: '1rem',
-            fontWeight: 600,
-            letterSpacing: '-0.01em',
+            fontSize: '1.25rem',
             color: 'var(--hp-on-surface)',
             margin: 0,
           }}
         >
-          Collab Digital Twins
+          <span style={{ color: 'var(--hp-primary-container)' }}>collab</span>digitaltwins
         </p>
       </div>
     </>

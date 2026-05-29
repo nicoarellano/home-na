@@ -1,21 +1,76 @@
 {
   "HomePage": {
     "nav": {
-      "capabilities": "capabilities",
-      "demos": "demos",
-      "solutions": "solutions",
+      "home": "home",
+      "about": "about us",
       "team": "team",
-      "contact": "contact"
+      "contact": "contact",
+      "faq": "FAQ"
     },
     "hero": {
       "tagline": "Building digital connections, together",
       "title": "Multi-scale digital twins.",
-      "titleEm": "Built on open standards.",
-      "description": "A complete BIM, GIS, and open-data platform that runs in the browser — deployed your way, customized to your needs, free of vendor lock-in. Cost-recovery economics. Source available.",
+      "description": "An open, browser-based platform for digital twins — deployed your way, customized to your needs, free of vendor lock-in. Cost-recovery economics. Source available.",
       "primaryCta": "Request a demo",
       "secondaryCta": "Explore the platform",
       "platformButton": "Platform",
       "videoFallback": "Your browser does not support the video tag."
+    },
+    "trustedBy": {
+      "heading": "Trusted by"
+    },
+    "pageHeaders": {
+      "about": {
+        "eyebrow": "About Us",
+        "title": "Open infrastructure, built to last.",
+        "subtitle": "Why we build the way we do — the principles behind the platform, the ways to deploy it, and how to extend it."
+      },
+      "team": {
+        "eyebrow": "Team",
+        "title": "The people behind the platform.",
+        "subtitle": "Two decades of research and practice, grounded in community — and recognized internationally."
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Security & data privacy, answered.",
+        "subtitle": "Common questions about where your data lives, who can access it, and how the open-source model protects you."
+      }
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "Where is our data hosted, and can we choose the region?",
+          "answer": "With managed hosting, the platform runs on sovereign infrastructure in the region you choose, so your data stays within the jurisdiction you require. If you self-host, your data never leaves your own infrastructure."
+        },
+        {
+          "question": "Who can access our data?",
+          "answer": "Only the people you authorize. We operate on least-privilege access, and on self-managed deployments no one outside your organization has access at all. We never sell or share your data."
+        },
+        {
+          "question": "Is the platform really open source?",
+          "answer": "Yes. The core is released under the AGPL-3.0 licence, so you can read, audit, self-host, and modify the source. There is no proprietary black box."
+        },
+        {
+          "question": "How do we avoid vendor lock-in?",
+          "answer": "Because the platform is built on open standards (IFC, GeoJSON, buildingSMART Data Dictionary) and open source, you can export your data and self-host the core at any time. Your investment is portable."
+        },
+        {
+          "question": "Is our data encrypted?",
+          "answer": "Yes. Data is encrypted in transit (TLS) and at rest on managed deployments. Self-hosted deployments inherit your own infrastructure's encryption and network controls."
+        },
+        {
+          "question": "Can we self-host on our own infrastructure?",
+          "answer": "Absolutely. The AGPL-3.0 core can be deployed entirely on-premise or in your own cloud, giving you complete control over data, network, and integrations."
+        },
+        {
+          "question": "How is the project governed?",
+          "answer": "Collab Digital Twins is a board-governed Canadian non-profit. We operate on cost-recovery pricing with no profit margin, and any surplus is reinvested in the platform and community."
+        },
+        {
+          "question": "How can we run a security review or report a vulnerability?",
+          "answer": "We welcome security reviews. Because the source is open, your team can audit it directly, and you can reach us at info@collabdt.org to coordinate a review or report a vulnerability."
+        }
+      ]
     },
     "trustBand": {
       "openStandards": "Open standards",
@@ -258,11 +313,10 @@
       "stewardship": "Stewarded by a Canadian not-for-profit organization for long-term public benefit",
       "copyright": "Collab Digital Twins. All rights reserved.",
       "navigate": "Navigate",
-      "navCapabilities": "Capabilities",
-      "navSolutions": "Solutions",
+      "navAbout": "About Us",
       "navTeam": "Team",
-      "navLeadership": "Leadership",
       "navContact": "Contact",
+      "navFaq": "FAQ",
       "navPlatform": "Platform",
       "resources": "Resources",
       "betaAccess": "Beta Access",

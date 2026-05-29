@@ -160,7 +160,7 @@ export default function TeamSection() {
   return (
     <section
       id="team"
-      className="py-32 relative"
+      className="py-20 md:py-24 relative"
       style={{ background: 'var(--hp-lowest)' }}
     >
       <div className="container mx-auto px-6">
@@ -174,8 +174,8 @@ export default function TeamSection() {
           <h2
             className="font-display font-bold"
             style={{
-              fontSize: 'clamp(1.75rem, 3.6vw, 2.75rem)',
-              lineHeight: '1.1',
+              fontSize: 'clamp(2rem, 4vw, 3.25rem)',
+              lineHeight: '1.08',
               letterSpacing: '-0.02em',
               color: 'var(--hp-on-surface)',
             }}

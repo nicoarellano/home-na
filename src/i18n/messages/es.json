@@ -1,21 +1,76 @@
 {
   "HomePage": {
     "nav": {
-      "capabilities": "capacidades",
-      "demos": "demos",
-      "solutions": "soluciones",
+      "home": "inicio",
+      "about": "acerca de",
       "team": "equipo",
-      "contact": "contacto"
+      "contact": "contacto",
+      "faq": "FAQ"
     },
     "hero": {
       "tagline": "Construyendo conexiones digitales, juntos",
       "title": "Gemelos digitales multi-escala.",
-      "titleEm": "Construidos sobre estándares abiertos.",
-      "description": "Una plataforma completa de BIM, GIS y datos abiertos que se ejecuta en el navegador — desplegada a tu manera, personalizada según tus necesidades, libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible.",
+      "description": "Una plataforma abierta para gemelos digitales, en el navegador — desplegada a tu manera, personalizada según tus necesidades, libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible.",
       "primaryCta": "Solicitar una demo",
       "secondaryCta": "Explorar la plataforma",
       "platformButton": "Plataforma",
       "videoFallback": "Tu navegador no admite la etiqueta de video."
+    },
+    "trustedBy": {
+      "heading": "Confían en nosotros"
+    },
+    "pageHeaders": {
+      "about": {
+        "eyebrow": "Acerca de",
+        "title": "Infraestructura abierta, hecha para durar.",
+        "subtitle": "Por qué construimos como lo hacemos — los principios detrás de la plataforma, las formas de desplegarla y de extenderla."
+      },
+      "team": {
+        "eyebrow": "Equipo",
+        "title": "Las personas detrás de la plataforma.",
+        "subtitle": "Dos décadas de investigación y práctica, arraigadas en la comunidad — y reconocidas internacionalmente."
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Seguridad y privacidad de datos, respondidas.",
+        "subtitle": "Preguntas frecuentes sobre dónde residen tus datos, quién puede acceder a ellos y cómo te protege el modelo de código abierto."
+      }
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "¿Dónde se alojan nuestros datos y podemos elegir la región?",
+          "answer": "Con el alojamiento gestionado, la plataforma se ejecuta en infraestructura soberana en la región que elijas, de modo que tus datos permanecen dentro de la jurisdicción que requieras. Si te autoalojas, tus datos nunca salen de tu propia infraestructura."
+        },
+        {
+          "question": "¿Quién puede acceder a nuestros datos?",
+          "answer": "Solo las personas que autorices. Operamos con acceso de mínimo privilegio, y en los despliegues autogestionados nadie fuera de tu organización tiene acceso alguno. Nunca vendemos ni compartimos tus datos."
+        },
+        {
+          "question": "¿La plataforma es realmente de código abierto?",
+          "answer": "Sí. El núcleo se publica bajo la licencia AGPL-3.0, por lo que puedes leer, auditar, autoalojar y modificar el código fuente. No hay ninguna caja negra propietaria."
+        },
+        {
+          "question": "¿Cómo evitamos el bloqueo propietario?",
+          "answer": "Como la plataforma está construida sobre estándares abiertos (IFC, GeoJSON, diccionario de datos buildingSMART) y es de código abierto, puedes exportar tus datos y autoalojar el núcleo en cualquier momento. Tu inversión es portable."
+        },
+        {
+          "question": "¿Nuestros datos están cifrados?",
+          "answer": "Sí. Los datos se cifran en tránsito (TLS) y en reposo en los despliegues gestionados. Los despliegues autoalojados heredan el cifrado y los controles de red de tu propia infraestructura."
+        },
+        {
+          "question": "¿Podemos autoalojar en nuestra propia infraestructura?",
+          "answer": "Por supuesto. El núcleo AGPL-3.0 puede desplegarse completamente en las instalaciones o en tu propia nube, dándote control total sobre los datos, la red y las integraciones."
+        },
+        {
+          "question": "¿Cómo se gobierna el proyecto?",
+          "answer": "Collab Digital Twins es una organización canadiense sin fines de lucro dirigida por una junta. Operamos con precios de recuperación de costos, sin margen de beneficio, y todo excedente se reinvierte en la plataforma y la comunidad."
+        },
+        {
+          "question": "¿Cómo realizar una revisión de seguridad o reportar una vulnerabilidad?",
+          "answer": "Damos la bienvenida a las revisiones de seguridad. Como el código es abierto, tu equipo puede auditarlo directamente, y puedes contactarnos en info@collabdt.org para coordinar una revisión o reportar una vulnerabilidad."
+        }
+      ]
     },
     "trustBand": {
       "openStandards": "Estándares abiertos",
@@ -258,11 +313,10 @@
       "stewardship": "Administrado por una organización sin fines de lucro canadiense para el beneficio público a largo plazo",
       "copyright": "Collab Digital Twins. Todos los derechos reservados.",
       "navigate": "Navegar",
-      "navCapabilities": "Capacidades",
-      "navSolutions": "Soluciones",
+      "navAbout": "Acerca de",
       "navTeam": "Equipo",
-      "navLeadership": "Liderazgo",
       "navContact": "Contacto",
+      "navFaq": "FAQ",
       "navPlatform": "Plataforma",
       "resources": "Recursos",
       "betaAccess": "Acceso beta",

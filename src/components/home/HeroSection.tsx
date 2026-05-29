@@ -32,7 +32,7 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
       <AnimatedBackground assetsUrl={assetsUrl} />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center max-w-[1600px] mx-auto">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center max-w-[1760px] mx-auto">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -59,15 +59,13 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="font-display font-bold"
               style={{
-                fontSize: 'clamp(2.5rem, 6vw, 4.75rem)',
+                fontSize: 'clamp(2.75rem, 6.5vw, 6.25rem)',
                 lineHeight: '0.98',
                 letterSpacing: '-0.02em',
                 color: 'var(--hp-on-surface)',
               }}
             >
               {tHero('title')}
-              <br />
-              <span className="text-signature">{tHero('titleEm')}</span>
             </motion.h1>
 
             <motion.p
