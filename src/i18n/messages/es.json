@@ -208,9 +208,19 @@
       "mailingLabel": "Lista de correo para desarrolladores"
     },
     "leadership": {
-      "sectionLabel": "Liderazgo",
-      "title": "Gobernanza por junta. Comprometida con la misión.",
-      "intro": "Dirigida por una junta con profunda experiencia en arquitectura, tecnología, investigación y educación. Como OSFL, nuestra carta exige que la plataforma sirva a los usuarios — no a accionistas.",
+      "sectionLabel": "Equipo",
+      "title": "Dos décadas de investigación y práctica, arraigadas en la comunidad.",
+      "intro": "Collab Digital Twins es una organización sin fines de lucro independiente, escindida del Carleton Immersive Media Studio (CIMS) — el grupo de investigación cuyo trabajo ha dado forma a cómo las instituciones canadienses adoptan BIM, GIS, AR/VR, medios inmersivos, fabricación digital, narrativa digital y digitalización patrimonial desde principios de los años 2000.",
+      "heritage": {
+        "label": "Nuestro origen",
+        "logoAlt": "Carleton Immersive Media Studio",
+        "title": "Investigación aplicada con alcance nacional y proyección internacional.",
+        "body": "Fundado en la Azrieli School of Architecture and Urbanism de la Universidad Carleton, CIMS es uno de los principales laboratorios de investigación aplicada de Canadá, en la intersección entre arquitectura, conservación del patrimonio y visualización avanzada. Su trabajo en BIM patrimonial (HBIM), fotogrametría y documentación inmersiva ha contribuido a estándares internacionales y ha formado a toda una generación de profesionales.",
+        "bodyExtra": "Durante casi dos décadas, el equipo ha entregado los proyectos más significativos de Canadá — incluida la rehabilitación de Parliament Hill — en colaboración con el Consejo Nacional de Investigación, Servicios Públicos y Adquisiciones de Canadá, el Departamento de Defensa Nacional, el Senado de Canadá y Asuntos Globales Canadá, junto a grandes socios industriales. Collab Digital Twins permite que esa práctica continúe — independiente, abierta y a escala.",
+        "cta": "Visita cims.carleton.ca"
+      },
+      "boardLabel": "Junta directiva",
+      "boardIntro": "Cada director ha pasado una década o más dentro de CIMS — incluidos su director fundador y su directora asociada.",
       "titles": {
         "director": "Director",
         "directorFemale": "Directora",
