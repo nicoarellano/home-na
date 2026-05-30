@@ -53,8 +53,8 @@ function ReconstructLogo({ className }: { className?: string }) {
 }
 
 const PARTNERS: Partner[] = [
-  { file: 'dnd-logo.png', name: 'Department of National Defence' },
-  { file: 'NRC-IRAP-logo.png', name: 'National Research Council — IRAP' },
+  { file: 'dnd-logo.png', name: 'Department of National Defence (DND)' },
+  { file: 'NRC-logo.png', name: 'National Research Council (NRC)' },
   { file: 'carleton-logo.png', name: 'Carleton University' },
   { file: 'envirocentre-logo.png', name: 'EnviroCentre' },
   { file: 'reconstruct-logo.svg', name: 'ReConstruct', inline: true },
