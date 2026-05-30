@@ -1,21 +1,76 @@
 {
   "HomePage": {
     "nav": {
-      "capabilities": "capacidades",
-      "demos": "demos",
-      "solutions": "soluciones",
-      "team": "equipo",
+      "home": "inicio",
+      "about": "acerca de",
+      "resources": "recursos",
+      "services": "servicios",
       "contact": "contacto"
     },
     "hero": {
       "tagline": "Construyendo conexiones digitales, juntos",
       "title": "Gemelos digitales multi-escala.",
-      "titleEm": "Construidos sobre estándares abiertos.",
-      "description": "Una plataforma completa de BIM, GIS y datos abiertos que se ejecuta en el navegador — desplegada a tu manera, personalizada según tus necesidades, libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible.",
+      "description": "Una plataforma abierta para gemelos digitales, en el navegador — desplegada a tu manera, personalizada según tus necesidades, libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible.",
       "primaryCta": "Solicitar una demo",
       "secondaryCta": "Explorar la plataforma",
       "platformButton": "Plataforma",
       "videoFallback": "Tu navegador no admite la etiqueta de video."
+    },
+    "trustedBy": {
+      "heading": "Confían en nosotros"
+    },
+    "pageHeaders": {
+      "about": {
+        "eyebrow": "Acerca de",
+        "title": "Infraestructura abierta, hecha para durar.",
+        "subtitle": "Por qué construimos como lo hacemos — los principios detrás de la plataforma, las formas de desplegarla y de extenderla."
+      },
+      "resources": {
+        "eyebrow": "Recursos",
+        "title": "Principios, documentación y respuestas.",
+        "subtitle": "Los principios sobre los que se construye la plataforma, la documentación para desarrolladores y las respuestas a preguntas frecuentes sobre seguridad y privacidad de datos."
+      },
+      "services": {
+        "eyebrow": "Servicios",
+        "title": "Despliegue y soporte, a tu manera.",
+        "subtitle": "Formas flexibles de desplegar la plataforma y soporte práctico para operarla y extenderla — cada servicio con precios a costo."
+      }
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "¿Dónde se alojan nuestros datos y podemos elegir la región?",
+          "answer": "Con el alojamiento gestionado, la plataforma se ejecuta en infraestructura soberana en la región que elijas, de modo que tus datos permanecen dentro de la jurisdicción que requieras. Si te autoalojas, tus datos nunca salen de tu propia infraestructura."
+        },
+        {
+          "question": "¿Quién puede acceder a nuestros datos?",
+          "answer": "Solo las personas que autorices. Operamos con acceso de mínimo privilegio, y en los despliegues autogestionados nadie fuera de tu organización tiene acceso alguno. Nunca vendemos ni compartimos tus datos."
+        },
+        {
+          "question": "¿La plataforma es realmente de código abierto?",
+          "answer": "Sí. El núcleo se publica bajo la licencia AGPL-3.0, por lo que puedes leer, auditar, autoalojar y modificar el código fuente. No hay ninguna caja negra propietaria."
+        },
+        {
+          "question": "¿Cómo evitamos el bloqueo propietario?",
+          "answer": "Como la plataforma está construida sobre estándares abiertos (IFC, GeoJSON, diccionario de datos buildingSMART) y es de código abierto, puedes exportar tus datos y autoalojar el núcleo en cualquier momento. Tu inversión es portable."
+        },
+        {
+          "question": "¿Nuestros datos están cifrados?",
+          "answer": "Sí. Los datos se cifran en tránsito (TLS) y en reposo en los despliegues gestionados. Los despliegues autoalojados heredan el cifrado y los controles de red de tu propia infraestructura."
+        },
+        {
+          "question": "¿Podemos autoalojar en nuestra propia infraestructura?",
+          "answer": "Por supuesto. El núcleo AGPL-3.0 puede desplegarse completamente en las instalaciones o en tu propia nube, dándote control total sobre los datos, la red y las integraciones."
+        },
+        {
+          "question": "¿Cómo se gobierna el proyecto?",
+          "answer": "Collab Digital Twins es una organización canadiense sin fines de lucro dirigida por una junta. Operamos con precios de recuperación de costos, sin margen de beneficio, y todo excedente se reinvierte en la plataforma y la comunidad."
+        },
+        {
+          "question": "¿Cómo realizar una revisión de seguridad o reportar una vulnerabilidad?",
+          "answer": "Damos la bienvenida a las revisiones de seguridad. Como el código es abierto, tu equipo puede auditarlo directamente, y puedes contactarnos en info@collabdt.org para coordinar una revisión o reportar una vulnerabilidad."
+        }
+      ]
     },
     "trustBand": {
       "openStandards": "Estándares abiertos",
@@ -107,6 +162,10 @@
       "sectionLabel": "Soluciones",
       "title": "Elige tu despliegue.",
       "subtitle": "Cuatro rutas hacia el valor — todas a costo, con cualquier excedente reinvertido en la plataforma.",
+      "groupDeployment": "Despliegue",
+      "groupDeploymentSub": "Ejecuta la plataforma en la nube que gestionamos, o autoaloja el núcleo de código abierto en tu propia infraestructura.",
+      "groupSupport": "Soporte",
+      "groupSupportSub": "Co-desarrolla herramientas especializadas y capacita a tu equipo para operar y extender la plataforma.",
       "managedCloud": {
         "tag": "Ruta más rápida",
         "name": "Nube gestionada (SaaS)",
@@ -208,9 +267,19 @@
       "mailingLabel": "Lista de correo para desarrolladores"
     },
     "leadership": {
-      "sectionLabel": "Liderazgo",
-      "title": "Gobernanza por junta. Comprometida con la misión.",
-      "intro": "Dirigida por una junta con profunda experiencia en arquitectura, tecnología, investigación y educación. Como OSFL, nuestra carta exige que la plataforma sirva a los usuarios — no a accionistas.",
+      "sectionLabel": "Equipo",
+      "title": "Dos décadas de investigación y práctica, arraigadas en la comunidad.",
+      "intro": "Collab Digital Twins es una organización sin fines de lucro independiente, escindida del Carleton Immersive Media Studio (CIMS) — el grupo de investigación cuyo trabajo ha dado forma a cómo las instituciones canadienses adoptan BIM, GIS, AR/VR, medios inmersivos, fabricación digital, narrativa digital y digitalización patrimonial desde principios de los años 2000.",
+      "heritage": {
+        "label": "Nuestro origen",
+        "logoAlt": "Carleton Immersive Media Studio",
+        "title": "Investigación aplicada con alcance nacional y proyección internacional.",
+        "body": "Fundado en la Azrieli School of Architecture and Urbanism de la Universidad Carleton, CIMS es uno de los principales laboratorios de investigación aplicada de Canadá, en la intersección entre arquitectura, conservación del patrimonio y visualización avanzada. Su trabajo en BIM patrimonial (HBIM), fotogrametría y documentación inmersiva ha contribuido a estándares internacionales y ha formado a toda una generación de profesionales.",
+        "bodyExtra": "Durante casi dos décadas, el equipo ha entregado los proyectos más significativos de Canadá — incluida la rehabilitación de Parliament Hill — en colaboración con el Consejo Nacional de Investigación, Servicios Públicos y Adquisiciones de Canadá, el Departamento de Defensa Nacional, el Senado de Canadá y Asuntos Globales Canadá, junto a grandes socios industriales. Collab Digital Twins permite que esa práctica continúe — independiente, abierta y a escala.",
+        "cta": "Visita cims.carleton.ca"
+      },
+      "boardLabel": "Junta directiva",
+      "boardIntro": "Cada director ha pasado una década o más dentro de CIMS — incluidos su director fundador y su directora asociada.",
       "titles": {
         "director": "Director",
         "directorFemale": "Directora",
@@ -248,10 +317,9 @@
       "stewardship": "Administrado por una organización sin fines de lucro canadiense para el beneficio público a largo plazo",
       "copyright": "Collab Digital Twins. Todos los derechos reservados.",
       "navigate": "Navegar",
-      "navCapabilities": "Capacidades",
-      "navSolutions": "Soluciones",
-      "navTeam": "Equipo",
-      "navLeadership": "Liderazgo",
+      "navAbout": "Acerca de",
+      "navResources": "Recursos",
+      "navServices": "Servicios",
       "navContact": "Contacto",
       "navPlatform": "Plataforma",
       "resources": "Recursos",

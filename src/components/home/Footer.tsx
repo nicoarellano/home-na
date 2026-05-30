@@ -4,11 +4,10 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 
 const NAV_LINKS = [
-  { key: 'navCapabilities', href: '#capabilities' },
-  { key: 'navSolutions', href: '#solutions' },
-  { key: 'navTeam', href: '#team' },
-  { key: 'navLeadership', href: '#team' },
-  { key: 'navContact', href: '#contact' },
+  { key: 'navAbout', href: '/about' },
+  { key: 'navResources', href: '/resources' },
+  { key: 'navServices', href: '/services' },
+  { key: 'navContact', href: '/#contact' },
   { key: 'navPlatform', href: 'https://app.collabdt.org/cdt', external: true },
 ] as const
 
@@ -47,24 +46,42 @@ export default function Footer() {
           <div className="space-y-5">
             <div className="section-label">{tFooter('navigate')}</div>
             <ul className="space-y-3">
-              {NAV_LINKS.map((link) => (
-                <li key={link.key}>
-                  <a
-                    href={link.href}
-                    target={'external' in link && link.external ? '_blank' : undefined}
-                    rel={'external' in link && link.external ? 'noopener noreferrer' : undefined}
-                    className="text-[0.9rem] transition-colors duration-150"
-                    style={{
-                      color: 'var(--hp-on-surface-variant)',
-                      textDecoration: 'none',
-                    }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface)')}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--hp-on-surface-variant)')}
-                  >
-                    {tFooter(link.key)}
-                  </a>
-                </li>
-              ))}
+              {NAV_LINKS.map((link) => {
+                const external = 'external' in link && link.external
+                const className = 'text-[0.9rem] transition-colors duration-150'
+                const style = { color: 'var(--hp-on-surface-variant)', textDecoration: 'none' }
+                const onMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) =>
+                  (e.currentTarget.style.color = 'var(--hp-on-surface)')
+                const onMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>) =>
+                  (e.currentTarget.style.color = 'var(--hp-on-surface-variant)')
+                return (
+                  <li key={link.key}>
+                    {external ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={className}
+                        style={style}
+                        onMouseEnter={onMouseEnter}
+                        onMouseLeave={onMouseLeave}
+                      >
+                        {tFooter(link.key)}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className={className}
+                        style={style}
+                        onMouseEnter={onMouseEnter}
+                        onMouseLeave={onMouseLeave}
+                      >
+                        {tFooter(link.key)}
+                      </Link>
+                    )}
+                  </li>
+                )
+              })}
             </ul>
           </div>
 

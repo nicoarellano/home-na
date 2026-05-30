@@ -36,7 +36,7 @@ export default function RecognitionSection() {
       style={{ background: 'var(--hp-lowest)' }}
     >
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -48,8 +48,8 @@ export default function RecognitionSection() {
             <h2
               className="font-display font-bold"
               style={{
-                fontSize: 'clamp(1.5rem, 3vw, 2.25rem)',
-                lineHeight: '1.15',
+                fontSize: 'clamp(1.85rem, 3.6vw, 2.85rem)',
+                lineHeight: '1.12',
                 letterSpacing: '-0.02em',
                 color: 'var(--hp-on-surface)',
               }}

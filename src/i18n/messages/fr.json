@@ -1,21 +1,76 @@
 {
   "HomePage": {
     "nav": {
-      "capabilities": "capacités",
-      "demos": "démos",
-      "solutions": "solutions",
-      "team": "équipe",
+      "home": "accueil",
+      "about": "à propos",
+      "resources": "ressources",
+      "services": "services",
       "contact": "contact"
     },
     "hero": {
       "tagline": "Bâtir des connexions numériques, ensemble",
       "title": "Jumeaux numériques multi-échelles.",
-      "titleEm": "Bâtis sur des standards ouverts.",
-      "description": "Une plateforme complète BIM, SIG et données ouvertes qui s'exécute dans le navigateur — déployée à votre manière, personnalisée selon vos besoins, libre de tout verrouillage propriétaire. Économie de recouvrement des coûts. Code source disponible.",
+      "description": "Une plateforme ouverte pour jumeaux numériques, dans le navigateur — déployée à votre manière, personnalisée selon vos besoins, libre de tout verrouillage propriétaire. Économie de recouvrement des coûts. Code source disponible.",
       "primaryCta": "Demander une démo",
       "secondaryCta": "Explorer la plateforme",
       "platformButton": "Plateforme",
       "videoFallback": "Votre navigateur ne prend pas en charge la balise vidéo."
+    },
+    "trustedBy": {
+      "heading": "Ils nous font confiance"
+    },
+    "pageHeaders": {
+      "about": {
+        "eyebrow": "À propos",
+        "title": "Une infrastructure ouverte, conçue pour durer.",
+        "subtitle": "Pourquoi nous bâtissons ainsi — les principes derrière la plateforme, les façons de la déployer et de l'étendre."
+      },
+      "resources": {
+        "eyebrow": "Ressources",
+        "title": "Principes, documentation et réponses.",
+        "subtitle": "Les principes sur lesquels repose la plateforme, la documentation pour développeurs et les réponses aux questions fréquentes sur la sécurité et la confidentialité des données."
+      },
+      "services": {
+        "eyebrow": "Services",
+        "title": "Déploiement et accompagnement, à votre manière.",
+        "subtitle": "Des façons flexibles de déployer la plateforme et un accompagnement concret pour l'exploiter et l'étendre — chaque mandat tarifé au recouvrement des coûts."
+      }
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "Où nos données sont-elles hébergées, et pouvons-nous choisir la région ?",
+          "answer": "Avec l'hébergement géré, la plateforme s'exécute sur une infrastructure souveraine dans la région de votre choix, de sorte que vos données restent dans la juridiction requise. Si vous hébergez vous-même, vos données ne quittent jamais votre propre infrastructure."
+        },
+        {
+          "question": "Qui peut accéder à nos données ?",
+          "answer": "Uniquement les personnes que vous autorisez. Nous appliquons le principe du moindre privilège, et dans les déploiements auto-gérés, personne en dehors de votre organisation n'y a accès. Nous ne vendons ni ne partageons jamais vos données."
+        },
+        {
+          "question": "La plateforme est-elle réellement open source ?",
+          "answer": "Oui. Le cœur est publié sous licence AGPL-3.0 : vous pouvez lire, auditer, héberger et modifier le code source. Il n'y a aucune boîte noire propriétaire."
+        },
+        {
+          "question": "Comment éviter le verrouillage propriétaire ?",
+          "answer": "Parce que la plateforme repose sur des standards ouverts (IFC, GeoJSON, dictionnaire de données buildingSMART) et qu'elle est open source, vous pouvez exporter vos données et héberger le cœur vous-même à tout moment. Votre investissement est transférable."
+        },
+        {
+          "question": "Nos données sont-elles chiffrées ?",
+          "answer": "Oui. Les données sont chiffrées en transit (TLS) et au repos dans les déploiements gérés. Les déploiements auto-hébergés héritent du chiffrement et des contrôles réseau de votre propre infrastructure."
+        },
+        {
+          "question": "Pouvons-nous héberger sur notre propre infrastructure ?",
+          "answer": "Absolument. Le cœur AGPL-3.0 peut être déployé entièrement sur site ou dans votre propre nuage, vous donnant un contrôle complet sur les données, le réseau et les intégrations."
+        },
+        {
+          "question": "Comment le projet est-il gouverné ?",
+          "answer": "Collab Digital Twins est un organisme canadien sans but lucratif dirigé par un conseil d'administration. Nous fonctionnons selon une tarification de recouvrement des coûts, sans marge bénéficiaire, et tout surplus est réinvesti dans la plateforme et la communauté."
+        },
+        {
+          "question": "Comment réaliser un audit de sécurité ou signaler une vulnérabilité ?",
+          "answer": "Nous accueillons favorablement les audits de sécurité. Le code étant ouvert, votre équipe peut l'auditer directement, et vous pouvez nous joindre à info@collabdt.org pour coordonner un audit ou signaler une vulnérabilité."
+        }
+      ]
     },
     "trustBand": {
       "openStandards": "Standards ouverts",
@@ -107,6 +162,10 @@
       "sectionLabel": "Solutions",
       "title": "Choisissez votre déploiement.",
       "subtitle": "Quatre voies vers la valeur — toutes tarifées au coût, tout surplus étant réinvesti dans la plateforme.",
+      "groupDeployment": "Déploiement",
+      "groupDeploymentSub": "Exécutez la plateforme dans l'infonuagique que nous gérons, ou hébergez vous-même le cœur open source sur votre propre infrastructure.",
+      "groupSupport": "Accompagnement",
+      "groupSupportSub": "Co-développez des outils spécialisés et outillez votre équipe pour exploiter et étendre la plateforme.",
       "managedCloud": {
         "tag": "Voie la plus rapide",
         "name": "Cloud géré (SaaS)",
@@ -208,9 +267,19 @@
       "mailingLabel": "Liste de diffusion développeurs"
     },
     "leadership": {
-      "sectionLabel": "Direction",
-      "title": "Gouvernance par conseil. Engagement par mission.",
-      "intro": "Dirigée par un conseil d'administration au savoir-faire approfondi en architecture, technologie, recherche et éducation. En tant qu'OBNL, notre charte exige que la plateforme serve les utilisateurs — pas des actionnaires.",
+      "sectionLabel": "Équipe",
+      "title": "Deux décennies de recherche et de pratique, ancrées dans une communauté.",
+      "intro": "Collab Digital Twins est un organisme à but non lucratif indépendant, issu du Carleton Immersive Media Studio (CIMS) — le groupe de recherche dont les travaux façonnent depuis le début des années 2000 la manière dont les institutions canadiennes adoptent le BIM, le SIG, la RA/RV, les médias immersifs, la fabrication numérique, la narration numérique et la numérisation du patrimoine.",
+      "heritage": {
+        "label": "Notre héritage",
+        "logoAlt": "Carleton Immersive Media Studio",
+        "title": "Une recherche appliquée d'envergure nationale et de réputation internationale.",
+        "body": "Fondé à la Azrieli School of Architecture and Urbanism de l'Université Carleton, le CIMS est l'un des principaux laboratoires de recherche appliquée au Canada, à l'intersection de l'architecture, de la conservation du patrimoine et de la visualisation avancée. Ses travaux sur le BIM patrimonial (HBIM), la photogrammétrie et la documentation immersive contribuent à des normes internationales et ont formé toute une génération de praticiens.",
+        "bodyExtra": "Depuis près de vingt ans, l'équipe livre les projets les plus significatifs au Canada — y compris la réhabilitation de la Colline du Parlement — en partenariat avec le Conseil national de recherches, Services publics et Approvisionnement Canada, le ministère de la Défense nationale, le Sénat du Canada et Affaires mondiales Canada, aux côtés de grands partenaires industriels. Collab Digital Twins permet à cette pratique de se poursuivre — indépendante, ouverte, et à grande échelle.",
+        "cta": "Visitez cims.carleton.ca"
+      },
+      "boardLabel": "Conseil d'administration",
+      "boardIntro": "Chaque administrateur a passé une décennie ou plus au sein du CIMS — y compris son directeur fondateur et sa directrice associée.",
       "titles": {
         "director": "Administrateur",
         "directorFemale": "Administratrice",
@@ -248,10 +317,9 @@
       "stewardship": "Géré par un organisme canadien à but non lucratif pour l'intérêt public à long terme",
       "copyright": "Collab Digital Twins. Tous droits réservés.",
       "navigate": "Naviguer",
-      "navCapabilities": "Capacités",
-      "navSolutions": "Solutions",
-      "navTeam": "Équipe",
-      "navLeadership": "Direction",
+      "navAbout": "À propos",
+      "navResources": "Ressources",
+      "navServices": "Services",
       "navContact": "Contact",
       "navPlatform": "Plateforme",
       "resources": "Ressources",

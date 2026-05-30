@@ -9,7 +9,7 @@ export default function MissionSection() {
   return (
     <section
       id="mission"
-      className="py-28 md:py-32 relative"
+      className="py-20 md:py-24 relative"
       style={{ background: 'var(--hp-low)' }}
     >
       <div
@@ -21,7 +21,7 @@ export default function MissionSection() {
       />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-7">
+        <div className="max-w-5xl mx-auto text-center space-y-7">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -39,8 +39,8 @@ export default function MissionSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display font-bold"
             style={{
-              fontSize: 'clamp(1.75rem, 3.6vw, 2.75rem)',
-              lineHeight: '1.15',
+              fontSize: 'clamp(2rem, 4vw, 3.25rem)',
+              lineHeight: '1.12',
               letterSpacing: '-0.02em',
               color: 'var(--hp-on-surface)',
             }}

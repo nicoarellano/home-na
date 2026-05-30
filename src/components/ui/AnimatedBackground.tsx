@@ -202,14 +202,6 @@ export default function AnimatedBackground({ theme, assetsUrl = '' }: Props = {}
 
   return (
     <>
-      <div className="absolute top-0 right-0 inset-0 z-10 w-screen">
-        <img
-          src={assetsUrl ? `${assetsUrl}/cdt-homepage/home-bg.png` : `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/images/homepage/home-bg.png`}
-          alt="Background"
-          className="object-cover opacity-10 w-screen"
-          style={{ filter: isDark ? 'invert(0)' : 'invert(1)' }}
-        />
-      </div>
       <div className="absolute w-screen inset-0 bg-gradient-to-br from-background/10 via-background/5 to-primary/5" />
       <canvas
         ref={canvasRef}

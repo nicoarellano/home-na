@@ -160,7 +160,7 @@ export default function SimpleMap({
         getSourceColor: TERRACOTTA,
         getTargetColor: DARK_PURPLE,
         getHeight: 0.1,
-        getWidth: 4,
+        getWidth: 2,
         timeRange: [currentTime, currentTime + TIME_WINDOW],
         parameters: { cullMode: 'none' },
       }),
