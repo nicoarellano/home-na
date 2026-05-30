@@ -190,6 +190,28 @@ export default function TeamSection() {
           </p>
         </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.5 }}
+          className="space-y-3 mb-12 max-w-3xl"
+        >
+          <div className="section-label">{tTeam('boardLabel')}</div>
+          <p
+            className="text-base leading-relaxed"
+            style={{ color: 'var(--hp-on-surface-variant)' }}
+          >
+            {tTeam('boardIntro')}
+          </p>
+        </motion.div>
+
+        <div className="flex flex-col items-center gap-8 sm:flex-row sm:flex-wrap sm:justify-between">
+          {directors.map((director) => (
+            <DirectorCard key={director.name} director={director} />
+          ))}
+        </div>
+
         <motion.a
           href={CIMS_URL}
           target="_blank"
@@ -198,7 +220,7 @@ export default function TeamSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.5 }}
-          className="tonal-card block p-8 md:p-10 mb-16 group transition-shadow duration-300 hover:shadow-[0_0_36px_4px_rgba(239,145,97,0.18)]"
+          className="tonal-card block p-8 md:p-10 mt-16 group transition-shadow duration-300 hover:shadow-[0_0_36px_4px_rgba(239,145,97,0.18)]"
         >
           <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-10">
             <div className="space-y-4 md:w-52 md:flex-shrink-0">
@@ -242,28 +264,6 @@ export default function TeamSection() {
             </div>
           </div>
         </motion.a>
-
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5 }}
-          className="space-y-3 mb-12 max-w-3xl"
-        >
-          <div className="section-label">{tTeam('boardLabel')}</div>
-          <p
-            className="text-base leading-relaxed"
-            style={{ color: 'var(--hp-on-surface-variant)' }}
-          >
-            {tTeam('boardIntro')}
-          </p>
-        </motion.div>
-
-        <div className="flex flex-col items-center gap-8 sm:flex-row sm:flex-wrap sm:justify-between">
-          {directors.map((director) => (
-            <DirectorCard key={director.name} director={director} />
-          ))}
-        </div>
       </div>
     </section>
   )

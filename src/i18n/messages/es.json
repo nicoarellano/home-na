@@ -3,9 +3,9 @@
     "nav": {
       "home": "inicio",
       "about": "acerca de",
-      "team": "equipo",
-      "contact": "contacto",
-      "faq": "FAQ"
+      "resources": "recursos",
+      "services": "servicios",
+      "contact": "contacto"
     },
     "hero": {
       "tagline": "Construyendo conexiones digitales, juntos",
@@ -25,15 +25,15 @@
         "title": "Infraestructura abierta, hecha para durar.",
         "subtitle": "Por qué construimos como lo hacemos — los principios detrás de la plataforma, las formas de desplegarla y de extenderla."
       },
-      "team": {
-        "eyebrow": "Equipo",
-        "title": "Las personas detrás de la plataforma.",
-        "subtitle": "Dos décadas de investigación y práctica, arraigadas en la comunidad — y reconocidas internacionalmente."
+      "resources": {
+        "eyebrow": "Recursos",
+        "title": "Principios, documentación y respuestas.",
+        "subtitle": "Los principios sobre los que se construye la plataforma, la documentación para desarrolladores y las respuestas a preguntas frecuentes sobre seguridad y privacidad de datos."
       },
-      "faq": {
-        "eyebrow": "FAQ",
-        "title": "Seguridad y privacidad de datos, respondidas.",
-        "subtitle": "Preguntas frecuentes sobre dónde residen tus datos, quién puede acceder a ellos y cómo te protege el modelo de código abierto."
+      "services": {
+        "eyebrow": "Servicios",
+        "title": "Despliegue y soporte, a tu manera.",
+        "subtitle": "Formas flexibles de desplegar la plataforma y soporte práctico para operarla y extenderla — cada servicio con precios a costo."
       }
     },
     "faq": {
@@ -162,6 +162,10 @@
       "sectionLabel": "Soluciones",
       "title": "Elige tu despliegue.",
       "subtitle": "Cuatro rutas hacia el valor — todas a costo, con cualquier excedente reinvertido en la plataforma.",
+      "groupDeployment": "Despliegue",
+      "groupDeploymentSub": "Ejecuta la plataforma en la nube que gestionamos, o autoaloja el núcleo de código abierto en tu propia infraestructura.",
+      "groupSupport": "Soporte",
+      "groupSupportSub": "Co-desarrolla herramientas especializadas y capacita a tu equipo para operar y extender la plataforma.",
       "managedCloud": {
         "tag": "Ruta más rápida",
         "name": "Nube gestionada (SaaS)",
@@ -314,9 +318,9 @@
       "copyright": "Collab Digital Twins. Todos los derechos reservados.",
       "navigate": "Navegar",
       "navAbout": "Acerca de",
-      "navTeam": "Equipo",
+      "navResources": "Recursos",
+      "navServices": "Servicios",
       "navContact": "Contacto",
-      "navFaq": "FAQ",
       "navPlatform": "Plataforma",
       "resources": "Recursos",
       "betaAccess": "Acceso beta",

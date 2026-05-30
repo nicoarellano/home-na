@@ -5,9 +5,9 @@ import { Link } from '@/i18n/navigation'
 
 const NAV_LINKS = [
   { key: 'navAbout', href: '/about' },
-  { key: 'navTeam', href: '/team' },
+  { key: 'navResources', href: '/resources' },
+  { key: 'navServices', href: '/services' },
   { key: 'navContact', href: '/#contact' },
-  { key: 'navFaq', href: '/faq' },
   { key: 'navPlatform', href: 'https://app.collabdt.org/cdt', external: true },
 ] as const
 

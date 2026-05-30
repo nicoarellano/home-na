@@ -3,9 +3,9 @@
     "nav": {
       "home": "accueil",
       "about": "à propos",
-      "team": "équipe",
-      "contact": "contact",
-      "faq": "FAQ"
+      "resources": "ressources",
+      "services": "services",
+      "contact": "contact"
     },
     "hero": {
       "tagline": "Bâtir des connexions numériques, ensemble",
@@ -25,15 +25,15 @@
         "title": "Une infrastructure ouverte, conçue pour durer.",
         "subtitle": "Pourquoi nous bâtissons ainsi — les principes derrière la plateforme, les façons de la déployer et de l'étendre."
       },
-      "team": {
-        "eyebrow": "Équipe",
-        "title": "Les personnes derrière la plateforme.",
-        "subtitle": "Deux décennies de recherche et de pratique, ancrées dans la communauté — et reconnues à l'international."
+      "resources": {
+        "eyebrow": "Ressources",
+        "title": "Principes, documentation et réponses.",
+        "subtitle": "Les principes sur lesquels repose la plateforme, la documentation pour développeurs et les réponses aux questions fréquentes sur la sécurité et la confidentialité des données."
       },
-      "faq": {
-        "eyebrow": "FAQ",
-        "title": "Sécurité et confidentialité des données, expliquées.",
-        "subtitle": "Questions fréquentes sur l'emplacement de vos données, qui peut y accéder et comment le modèle open source vous protège."
+      "services": {
+        "eyebrow": "Services",
+        "title": "Déploiement et accompagnement, à votre manière.",
+        "subtitle": "Des façons flexibles de déployer la plateforme et un accompagnement concret pour l'exploiter et l'étendre — chaque mandat tarifé au recouvrement des coûts."
       }
     },
     "faq": {
@@ -162,6 +162,10 @@
       "sectionLabel": "Solutions",
       "title": "Choisissez votre déploiement.",
       "subtitle": "Quatre voies vers la valeur — toutes tarifées au coût, tout surplus étant réinvesti dans la plateforme.",
+      "groupDeployment": "Déploiement",
+      "groupDeploymentSub": "Exécutez la plateforme dans l'infonuagique que nous gérons, ou hébergez vous-même le cœur open source sur votre propre infrastructure.",
+      "groupSupport": "Accompagnement",
+      "groupSupportSub": "Co-développez des outils spécialisés et outillez votre équipe pour exploiter et étendre la plateforme.",
       "managedCloud": {
         "tag": "Voie la plus rapide",
         "name": "Cloud géré (SaaS)",
@@ -314,9 +318,9 @@
       "copyright": "Collab Digital Twins. Tous droits réservés.",
       "navigate": "Naviguer",
       "navAbout": "À propos",
-      "navTeam": "Équipe",
+      "navResources": "Ressources",
+      "navServices": "Services",
       "navContact": "Contact",
-      "navFaq": "FAQ",
       "navPlatform": "Plateforme",
       "resources": "Ressources",
       "betaAccess": "Accès bêta",

@@ -3,9 +3,9 @@
     "nav": {
       "home": "home",
       "about": "about us",
-      "team": "team",
-      "contact": "contact",
-      "faq": "FAQ"
+      "resources": "resources",
+      "services": "services",
+      "contact": "contact"
     },
     "hero": {
       "tagline": "Building digital connections, together",
@@ -25,15 +25,15 @@
         "title": "Open infrastructure, built to last.",
         "subtitle": "Why we build the way we do — the principles behind the platform, the ways to deploy it, and how to extend it."
       },
-      "team": {
-        "eyebrow": "Team",
-        "title": "The people behind the platform.",
-        "subtitle": "Two decades of research and practice, grounded in community — and recognized internationally."
+      "resources": {
+        "eyebrow": "Resources",
+        "title": "Principles, documentation, and answers.",
+        "subtitle": "The principles the platform is built on, developer documentation, and answers to common security and data-privacy questions."
       },
-      "faq": {
-        "eyebrow": "FAQ",
-        "title": "Security & data privacy, answered.",
-        "subtitle": "Common questions about where your data lives, who can access it, and how the open-source model protects you."
+      "services": {
+        "eyebrow": "Services",
+        "title": "Deployment and support, your way.",
+        "subtitle": "Flexible ways to deploy the platform and hands-on support to operate and extend it — every engagement priced on cost-recovery."
       }
     },
     "faq": {
@@ -162,6 +162,10 @@
       "sectionLabel": "Solutions",
       "title": "Pick your deployment.",
       "subtitle": "Four routes to value — every one priced on cost-recovery, with any surplus reinvested in the platform.",
+      "groupDeployment": "Deployment",
+      "groupDeploymentSub": "Run the platform in the cloud we manage, or self-host the open-source core on your own infrastructure.",
+      "groupSupport": "Support",
+      "groupSupportSub": "Co-develop specialized tools and equip your team to operate and extend the platform.",
       "managedCloud": {
         "tag": "Fastest path",
         "name": "Managed Cloud (SaaS)",
@@ -314,9 +318,9 @@
       "copyright": "Collab Digital Twins. All rights reserved.",
       "navigate": "Navigate",
       "navAbout": "About Us",
-      "navTeam": "Team",
+      "navResources": "Resources",
+      "navServices": "Services",
       "navContact": "Contact",
-      "navFaq": "FAQ",
       "navPlatform": "Platform",
       "resources": "Resources",
       "betaAccess": "Beta Access",
