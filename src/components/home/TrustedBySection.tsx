@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 
+import { useMarquee } from '@/hooks/useMarquee'
+
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
 
 interface Partner {
@@ -65,8 +67,8 @@ const PARTNERS: Partner[] = [
 
 function LogoItem({ partner }: { partner: Partner }) {
   return (
-    <div className="group flex-shrink-0 flex flex-col items-center gap-3 px-6" style={{ minWidth: '224px' }}>
-      <div className="flex items-center justify-center h-24 w-48 px-6 transition-all duration-300 group-hover:scale-105">
+    <div className="group flex-shrink-0 flex flex-col items-center gap-3 px-3 md:px-6 min-w-[150px] md:min-w-[224px]">
+      <div className="flex items-center justify-center h-24 w-32 md:w-48 px-2 md:px-6 transition-all duration-300 group-hover:scale-105">
         {partner.inline ? (
           <ReconstructLogo className="max-h-16 w-auto object-contain saturate-50 opacity-90 transition-all duration-300 group-hover:saturate-100 group-hover:opacity-100" />
         ) : (
@@ -90,6 +92,7 @@ function LogoItem({ partner }: { partner: Partner }) {
 
 export default function TrustedBySection() {
   const t = useTranslations('HomePage.trustedBy')
+  const trackRef = useMarquee({ baseSpeed: 50, direction: 'left' })
   const repeated = [...PARTNERS, ...PARTNERS, ...PARTNERS]
 
   return (
@@ -122,7 +125,11 @@ export default function TrustedBySection() {
           className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
           style={{ background: 'linear-gradient(270deg, var(--hp-lowest) 0%, transparent 100%)' }}
         />
-        <div className="flex marquee-left" style={{ width: 'max-content' }}>
+        <div
+          ref={trackRef}
+          className="flex select-none"
+          style={{ width: 'max-content', cursor: 'grab', touchAction: 'pan-y' }}
+        >
           {repeated.map((partner, i) => (
             <LogoItem key={`${partner.file}-${i}`} partner={partner} />
           ))}

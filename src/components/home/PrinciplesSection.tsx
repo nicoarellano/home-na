@@ -12,6 +12,8 @@ import {
 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
+import { useMarquee } from '@/hooks/useMarquee'
+
 interface ValueCard {
   icon: LucideIcon
   title: string
@@ -48,45 +50,30 @@ function ValueCardItem({ value }: { value: ValueCard }) {
 }
 
 function MarqueeRow({ items, direction }: { items: ValueCard[]; direction: 'left' | 'right' }) {
+  const trackRef = useMarquee({ baseSpeed: 50, direction })
   const repeated = [...items, ...items, ...items]
 
   return (
-    <>
-      <div className="hidden sm:block overflow-hidden relative">
-        <div
-          className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(90deg, var(--hp-low) 0%, transparent 100%)' }}
-        />
-        <div
-          className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(270deg, var(--hp-low) 0%, transparent 100%)' }}
-        />
-
-        <div
-          className={`flex gap-5 ${direction === 'left' ? 'marquee-left' : 'marquee-right'}`}
-          style={{ width: 'max-content' }}
-        >
-          {repeated.map((value, i) => (
-            <ValueCardItem key={`${value.title}-${i}`} value={value} />
-          ))}
-        </div>
-      </div>
+    <div className="overflow-hidden relative">
+      <div
+        className="absolute left-0 top-0 bottom-0 w-20 z-10 pointer-events-none"
+        style={{ background: 'linear-gradient(90deg, var(--hp-low) 0%, transparent 100%)' }}
+      />
+      <div
+        className="absolute right-0 top-0 bottom-0 w-20 z-10 pointer-events-none"
+        style={{ background: 'linear-gradient(270deg, var(--hp-low) 0%, transparent 100%)' }}
+      />
 
       <div
-        className="sm:hidden overflow-x-auto overflow-y-hidden [&::-webkit-scrollbar]:hidden"
-        style={{
-          WebkitOverflowScrolling: 'touch',
-          overscrollBehaviorX: 'contain',
-          scrollbarWidth: 'none',
-        }}
+        ref={trackRef}
+        className="flex gap-5 select-none"
+        style={{ width: 'max-content', cursor: 'grab', touchAction: 'pan-y' }}
       >
-        <div className="flex gap-5 px-6 pb-2" style={{ width: 'max-content' }}>
-          {items.map((value, i) => (
-            <ValueCardItem key={`${value.title}-${i}`} value={value} />
-          ))}
-        </div>
+        {repeated.map((value, i) => (
+          <ValueCardItem key={`${value.title}-${i}`} value={value} />
+        ))}
       </div>
-    </>
+    </div>
   )
 }
 
