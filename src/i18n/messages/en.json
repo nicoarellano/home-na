@@ -73,11 +73,34 @@
       ]
     },
     "trustBand": {
-      "openStandards": "Open standards",
-      "agpl": "AGPL-3.0 source available",
-      "sovereignHosted": "Sovereign hosting",
-      "costRecovery": "Cost-recovery pricing",
-      "boardGoverned": "Board-governed non-profit"
+      "heading": "How we operate",
+      "subheading": "Five commitments that shape every decision we make about the platform.",
+      "openStandards": {
+        "label": "Open standards",
+        "body": "Built on IFC, glTF and other open formats — your data is never locked into a vendor."
+      },
+      "agpl": {
+        "label": "AGPL-3.0, source available",
+        "body": "The full platform source is public and auditable under a copyleft licence."
+      },
+      "sovereignHosted": {
+        "label": "Sovereign hosting",
+        "body": "Runs on infrastructure you control, in the jurisdiction you choose."
+      },
+      "costRecovery": {
+        "label": "Cost-recovery pricing",
+        "body": "Priced to sustain the platform, not to extract profit from it."
+      },
+      "boardGoverned": {
+        "label": "Board-governed non-profit",
+        "body": "Stewarded by a non-profit board accountable to the community it serves."
+      }
+    },
+    "architecture": {
+      "sectionLabel": "Platform architecture",
+      "title": "An open stack, end to end.",
+      "subtitle": "From the browser down to self-hosted infrastructure, every layer is built on open standards and open-source components. Explore how the pieces fit together.",
+      "cta": "Explore the platform architecture"
     },
     "mission": {
       "sectionLabel": "Our mission",

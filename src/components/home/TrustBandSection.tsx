@@ -1,9 +1,8 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { Globe2, Code2, MapPin, CircleDollarSign, ShieldCheck, type LucideIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-
-import { useMarquee } from '@/hooks/useMarquee'
 
 interface TrustChip {
   key: 'openStandards' | 'agpl' | 'sovereignHosted' | 'costRecovery' | 'boardGoverned'
@@ -20,47 +19,71 @@ const CHIPS: TrustChip[] = [
 
 export default function TrustBandSection() {
   const t = useTranslations('HomePage.trustBand')
-  const trackRef = useMarquee({ baseSpeed: 45, direction: 'left' })
-  const repeated = [...CHIPS, ...CHIPS, ...CHIPS]
 
   return (
     <section
-      className="py-16 md:py-20 relative overflow-hidden"
-      style={{
-        background: 'var(--hp-lowest)',
-        borderTop: '1px solid rgba(255,255,255,0.04)',
-        borderBottom: '1px solid rgba(255,255,255,0.04)',
-      }}
+      className="py-20 md:py-24 relative overflow-hidden"
+      style={{ background: 'var(--hp-lowest)' }}
     >
-      <div className="relative">
-        <div
-          className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(90deg, var(--hp-lowest) 0%, transparent 100%)' }}
-        />
-        <div
-          className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(270deg, var(--hp-lowest) 0%, transparent 100%)' }}
-        />
-        <div
-          ref={trackRef}
-          className="flex items-center select-none"
-          style={{ width: 'max-content', cursor: 'grab', touchAction: 'pan-y' }}
-        >
-          {repeated.map(({ key, icon: Icon }, i) => (
-            <div
-              key={`${key}-${i}`}
-              className="inline-flex items-center gap-3 text-base font-medium flex-shrink-0 px-7"
-              style={{ color: 'var(--hp-on-surface)' }}
-            >
-              <div
-                className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                style={{ background: 'rgba(239, 145, 97, 0.1)' }}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(ellipse 60% 50% at 50% 0%, rgba(239,145,97,0.05) 0%, transparent 70%)',
+        }}
+      />
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-80px' }}
+            transition={{ duration: 0.5 }}
+            className="text-center max-w-2xl mx-auto mb-12 space-y-4"
+          >
+            <div className="section-label justify-center">{t('heading')}</div>
+            <p className="text-lg leading-relaxed" style={{ color: 'var(--hp-on-surface-variant)' }}>
+              {t('subheading')}
+            </p>
+          </motion.div>
+
+          <div className="flex flex-wrap justify-center gap-5">
+            {CHIPS.map(({ key, icon: Icon }, idx) => (
+              <motion.div
+                key={key}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-60px' }}
+                transition={{ duration: 0.5, delay: 0.06 * idx }}
+                className="tonal-card p-7 flex flex-col w-full sm:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.834rem)]"
               >
-                <Icon className="w-5 h-5" style={{ color: 'var(--hp-primary-container)' }} />
-              </div>
-              <span className="whitespace-nowrap">{t(key)}</span>
-            </div>
-          ))}
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+                  style={{ background: 'rgba(239, 145, 97, 0.1)' }}
+                >
+                  <Icon className="w-6 h-6" style={{ color: 'var(--hp-primary-container)' }} />
+                </div>
+                <h3
+                  className="font-display font-bold mb-2"
+                  style={{
+                    fontSize: '1.15rem',
+                    lineHeight: '1.3',
+                    letterSpacing: '-0.01em',
+                    color: 'var(--hp-on-surface)',
+                  }}
+                >
+                  {t(`${key}.label`)}
+                </h3>
+                <p
+                  className="text-[0.95rem] leading-relaxed"
+                  style={{ color: 'var(--hp-on-surface-variant)' }}
+                >
+                  {t(`${key}.body`)}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

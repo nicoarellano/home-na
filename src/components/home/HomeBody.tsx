@@ -5,7 +5,6 @@ import TrustedBySection from './TrustedBySection'
 import MissionSection from './MissionSection'
 import CapabilitiesSection from './CapabilitiesSection'
 import DemosSection from './DemosSection'
-import TrustBandSection from './TrustBandSection'
 import ContactSection from './ContactSection'
 import { useContactForm } from './useContactForm'
 
@@ -19,11 +18,10 @@ export function HomeBody({ assetsUrl }: HomeBodyProps) {
   return (
     <>
       <HeroSection assetsUrl={assetsUrl} />
-      <TrustedBySection />
       <MissionSection />
-      <CapabilitiesSection />
       <DemosSection assetsUrl={assetsUrl} />
-      <TrustBandSection />
+      <CapabilitiesSection />
+      <TrustedBySection />
       <ContactSection onSubmit={handleSubmit} isSubmitting={isSubmitting} />
     </>
   )

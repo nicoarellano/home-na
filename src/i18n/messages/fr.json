@@ -73,11 +73,34 @@
       ]
     },
     "trustBand": {
-      "openStandards": "Standards ouverts",
-      "agpl": "Source AGPL-3.0 disponible",
-      "sovereignHosted": "Hébergement souverain",
-      "costRecovery": "Tarification au coût",
-      "boardGoverned": "OBNL gouverné par un conseil"
+      "heading": "Notre fonctionnement",
+      "subheading": "Cinq engagements qui guident chaque décision concernant la plateforme.",
+      "openStandards": {
+        "label": "Standards ouverts",
+        "body": "Bâtie sur IFC, glTF et d'autres formats ouverts — vos données ne sont jamais captives d'un fournisseur."
+      },
+      "agpl": {
+        "label": "AGPL-3.0, source disponible",
+        "body": "L'intégralité du code source est publique et vérifiable sous licence copyleft."
+      },
+      "sovereignHosted": {
+        "label": "Hébergement souverain",
+        "body": "Fonctionne sur une infrastructure que vous contrôlez, dans la juridiction de votre choix."
+      },
+      "costRecovery": {
+        "label": "Tarification au coût",
+        "body": "Tarifée pour soutenir la plateforme, pas pour en tirer profit."
+      },
+      "boardGoverned": {
+        "label": "OBNL gouverné par un conseil",
+        "body": "Administrée par un conseil sans but lucratif redevable à la communauté qu'il dessert."
+      }
+    },
+    "architecture": {
+      "sectionLabel": "Architecture de la plateforme",
+      "title": "Une pile ouverte, de bout en bout.",
+      "subtitle": "Du navigateur jusqu'à l'infrastructure auto-hébergée, chaque couche repose sur des standards ouverts et des composants libres. Découvrez comment les pièces s'assemblent.",
+      "cta": "Explorer l'architecture de la plateforme"
     },
     "mission": {
       "sectionLabel": "Notre mission",

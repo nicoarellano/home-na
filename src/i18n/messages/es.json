@@ -73,11 +73,34 @@
       ]
     },
     "trustBand": {
-      "openStandards": "Estándares abiertos",
-      "agpl": "Código AGPL-3.0 disponible",
-      "sovereignHosted": "Alojamiento soberano",
-      "costRecovery": "Tarifas a costo",
-      "boardGoverned": "OSFL gobernada por junta"
+      "heading": "Cómo operamos",
+      "subheading": "Cinco compromisos que guían cada decisión sobre la plataforma.",
+      "openStandards": {
+        "label": "Estándares abiertos",
+        "body": "Construida sobre IFC, glTF y otros formatos abiertos — tus datos nunca quedan atados a un proveedor."
+      },
+      "agpl": {
+        "label": "AGPL-3.0, código disponible",
+        "body": "Todo el código fuente es público y auditable bajo una licencia copyleft."
+      },
+      "sovereignHosted": {
+        "label": "Alojamiento soberano",
+        "body": "Funciona sobre infraestructura que tú controlas, en la jurisdicción que elijas."
+      },
+      "costRecovery": {
+        "label": "Tarifas a costo",
+        "body": "Con precios para sostener la plataforma, no para lucrar con ella."
+      },
+      "boardGoverned": {
+        "label": "OSFL gobernada por junta",
+        "body": "Gestionada por una junta sin fines de lucro responsable ante la comunidad a la que sirve."
+      }
+    },
+    "architecture": {
+      "sectionLabel": "Arquitectura de la plataforma",
+      "title": "Una pila abierta, de extremo a extremo.",
+      "subtitle": "Desde el navegador hasta la infraestructura autoalojada, cada capa se basa en estándares abiertos y componentes de código abierto. Descubre cómo encajan las piezas.",
+      "cta": "Explora la arquitectura de la plataforma"
     },
     "mission": {
       "sectionLabel": "Nuestra misión",
