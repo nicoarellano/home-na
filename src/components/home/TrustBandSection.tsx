@@ -1,8 +1,9 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { Globe2, Code2, MapPin, CircleDollarSign, ShieldCheck, type LucideIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+
+import { useMarquee } from '@/hooks/useMarquee'
 
 interface TrustChip {
   key: 'openStandards' | 'agpl' | 'sovereignHosted' | 'costRecovery' | 'boardGoverned'
@@ -19,28 +20,36 @@ const CHIPS: TrustChip[] = [
 
 export default function TrustBandSection() {
   const t = useTranslations('HomePage.trustBand')
+  const trackRef = useMarquee({ baseSpeed: 45, direction: 'left' })
+  const repeated = [...CHIPS, ...CHIPS, ...CHIPS]
 
   return (
     <section
-      className="py-16 md:py-20 relative"
+      className="py-16 md:py-20 relative overflow-hidden"
       style={{
         background: 'var(--hp-lowest)',
         borderTop: '1px solid rgba(255,255,255,0.04)',
         borderBottom: '1px solid rgba(255,255,255,0.04)',
       }}
     >
-      <div className="container mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-50px' }}
-          transition={{ duration: 0.5 }}
-          className="flex flex-col items-start gap-4 max-w-xs mx-auto md:max-w-none md:flex-row md:flex-wrap md:items-center md:justify-center md:gap-x-14 md:gap-y-5"
+      <div className="relative">
+        <div
+          className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
+          style={{ background: 'linear-gradient(90deg, var(--hp-lowest) 0%, transparent 100%)' }}
+        />
+        <div
+          className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
+          style={{ background: 'linear-gradient(270deg, var(--hp-lowest) 0%, transparent 100%)' }}
+        />
+        <div
+          ref={trackRef}
+          className="flex items-center select-none"
+          style={{ width: 'max-content', cursor: 'grab', touchAction: 'pan-y' }}
         >
-          {CHIPS.map(({ key, icon: Icon }) => (
+          {repeated.map(({ key, icon: Icon }, i) => (
             <div
-              key={key}
-              className="inline-flex items-center gap-3 text-base font-medium"
+              key={`${key}-${i}`}
+              className="inline-flex items-center gap-3 text-base font-medium flex-shrink-0 px-7"
               style={{ color: 'var(--hp-on-surface)' }}
             >
               <div
@@ -49,10 +58,10 @@ export default function TrustBandSection() {
               >
                 <Icon className="w-5 h-5" style={{ color: 'var(--hp-primary-container)' }} />
               </div>
-              <span>{t(key)}</span>
+              <span className="whitespace-nowrap">{t(key)}</span>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   )
