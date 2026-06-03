@@ -1,12 +1,19 @@
 import { routing } from '@/i18n/routing'
+import { CdtLogoReveal } from '@/components/ui/CdtLogoReveal'
+import { DelayedRedirect } from '@/components/ui/DelayedRedirect'
 
-const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
+// Keep the splash up long enough for the logo reveal (~1.6s) to finish and for
+// the target locale route to lazy-load before navigating.
+const REVEAL_MS = 1000
 
 export default function RootIndex() {
   const target = `./${routing.defaultLocale}/`
   return (
     <>
-      <meta httpEquiv='refresh' content={`0; url=${target}`} />
+      {/* No-JS fallback. meta refresh only honours integer seconds, so this is
+          rounded up to 2s; the JS path below redirects precisely at REVEAL_MS. */}
+      <meta httpEquiv='refresh' content={`2; url=${target}`} />
+      <DelayedRedirect href={target} delayMs={REVEAL_MS} />
       <div
         style={{
           minHeight: '100vh',
@@ -18,11 +25,7 @@ export default function RootIndex() {
           gap: '1.5rem',
         }}
       >
-        <img
-          src={`${BASE}/images/homepage/cdt-logo-stroke.svg`}
-          alt='Collab Digital Twins'
-          style={{ width: '72px', height: '72px' }}
-        />
+        <CdtLogoReveal size={72} />
         <p
           className='font-display tracking-wide lowercase'
           style={{
