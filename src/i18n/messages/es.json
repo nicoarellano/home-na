@@ -16,6 +16,10 @@
       "platformButton": "Plataforma",
       "videoFallback": "Tu navegador no admite la etiqueta de video."
     },
+    "metadata": {
+      "title": "Collab Digital Twins",
+      "description": "Una plataforma abierta para gemelos digitales, en el navegador — desplegada a tu manera, personalizada según tus necesidades, libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible."
+    },
     "trustedBy": {
       "heading": "Confían en nosotros"
     },

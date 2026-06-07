@@ -17,23 +17,25 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
-  const tHero = await getTranslations({ locale, namespace: 'HomePage.hero' })
+  const tMetadata = await getTranslations({ locale, namespace: 'HomePage.metadata' })
+
+  const ogLocale = locale === 'Fr' ? 'fr_CA' : locale === 'Es' ? 'es_ES' : 'en_CA'
 
   return {
-    title: 'Collab Digital Twins',
-    description: tHero('description'),
+    title: tMetadata('title'),
+    description: tMetadata('description'),
     openGraph: {
-      title: 'Collab Digital Twins',
-      description: tHero('description'),
+      title: tMetadata('title'),
+      description: tMetadata('description'),
       siteName: 'Collab Digital Twins',
       images: [`${basePath}/images/cdt-og_card.png`],
       type: 'website',
-      locale: locale === 'Fr' ? 'fr_CA' : locale === 'Es' ? 'es_ES' : 'en_CA',
+      locale: ogLocale,
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Collab Digital Twins',
-      description: tHero('description'),
+      title: tMetadata('title'),
+      description: tMetadata('description'),
       images: [`${basePath}/images/cdt-og_card.png`],
     },
   }

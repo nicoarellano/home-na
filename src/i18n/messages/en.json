@@ -16,6 +16,10 @@
       "platformButton": "Platform",
       "videoFallback": "Your browser does not support the video tag."
     },
+    "metadata": {
+      "title": "Collab Digital Twins",
+      "description": "An open, browser-based platform for digital twins — deployed your way, customized to your needs, free of vendor lock-in. Cost-recovery economics. Source available."
+    },
     "trustedBy": {
       "heading": "Trusted by"
     },

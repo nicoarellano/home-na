@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
 import { CdtLogoReveal } from '@/components/ui/CdtLogoReveal'
 import { DelayedRedirect } from '@/components/ui/DelayedRedirect'
@@ -5,6 +7,30 @@ import { DelayedRedirect } from '@/components/ui/DelayedRedirect'
 // Keep the splash up long enough for the logo reveal (~1.6s) to finish and for
 // the target locale route to lazy-load before navigating.
 const REVEAL_MS = 1000
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
+export async function generateMetadata(): Promise<Metadata> {
+  const tMetadata = await getTranslations({ locale: routing.defaultLocale, namespace: 'HomePage.metadata' })
+
+  return {
+    title: tMetadata('title'),
+    description: tMetadata('description'),
+    openGraph: {
+      title: tMetadata('title'),
+      description: tMetadata('description'),
+      siteName: 'Collab Digital Twins',
+      images: [`${basePath}/images/cdt-og_card.png`],
+      type: 'website',
+      locale: 'en_CA',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: tMetadata('title'),
+      description: tMetadata('description'),
+      images: [`${basePath}/images/cdt-og_card.png`],
+    },
+  }
+}
 
 export default function RootIndex() {
   const target = `./${routing.defaultLocale}/`

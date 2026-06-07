@@ -16,6 +16,10 @@
       "platformButton": "Plateforme",
       "videoFallback": "Votre navigateur ne prend pas en charge la balise vidéo."
     },
+    "metadata": {
+      "title": "Collab Digital Twins",
+      "description": "Une plateforme ouverte pour jumeaux numériques, dans le navigateur — déployée à votre manière, personnalisée selon vos besoins, libre de tout verrouillage propriétaire. Économie de recouvrement des coûts. Code source disponible."
+    },
     "trustedBy": {
       "heading": "Ils nous font confiance"
     },
