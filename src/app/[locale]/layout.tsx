@@ -16,8 +16,8 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
   const tMetadata = await getTranslations({ locale, namespace: 'HomePage.metadata' })
+  const ogImageUrl = 'https://collabdt.org/images/cdt-og_card.png'
 
   const ogLocale = locale === 'Fr' ? 'fr_CA' : locale === 'Es' ? 'es_ES' : 'en_CA'
 
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: tMetadata('title'),
       description: tMetadata('description'),
       siteName: 'Collab Digital Twins',
-      images: [`${basePath}/images/cdt-og_card.png`],
+      images: [ogImageUrl],
       type: 'website',
       locale: ogLocale,
     },
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title: tMetadata('title'),
       description: tMetadata('description'),
-      images: [`${basePath}/images/cdt-og_card.png`],
+      images: [ogImageUrl],
     },
   }
 }

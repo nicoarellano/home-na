@@ -7,7 +7,7 @@ import { DelayedRedirect } from '@/components/ui/DelayedRedirect'
 // Keep the splash up long enough for the logo reveal (~1.6s) to finish and for
 // the target locale route to lazy-load before navigating.
 const REVEAL_MS = 1000
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+const ogImageUrl = 'https://collabdt.org/images/cdt-og_card.png'
 
 export async function generateMetadata(): Promise<Metadata> {
   const tMetadata = await getTranslations({ locale: routing.defaultLocale, namespace: 'HomePage.metadata' })
@@ -19,7 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: tMetadata('title'),
       description: tMetadata('description'),
       siteName: 'Collab Digital Twins',
-      images: [`${basePath}/images/cdt-og_card.png`],
+      images: [ogImageUrl],
       type: 'website',
       locale: 'en_CA',
     },
@@ -27,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: 'summary_large_image',
       title: tMetadata('title'),
       description: tMetadata('description'),
-      images: [`${basePath}/images/cdt-og_card.png`],
+      images: [ogImageUrl],
     },
   }
 }

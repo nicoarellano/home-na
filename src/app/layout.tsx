@@ -8,7 +8,7 @@ import '@/styles/home.css'
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://collabdigitaltwins.github.io'),
+  metadataBase: new URL('https://collabdt.org'),
   icons: { icon: `${basePath}/favicon.ico` },
 }
 
