@@ -142,6 +142,10 @@
       "wildfires": {
         "title": "Visualisation des feux de forêt",
         "body": "Une carte interactive bâtie avec un groupe de recherche sur les feux de forêt pour surveiller les conditions des incendies au Canada — combinant des jeux de données ouverts du Canadian Interagency Forest Fire Centre (CIFFC) avec des photos et vidéos collectées par les utilisateurs en quasi temps réel."
+      },
+      "disasterResponse": {
+        "title": "Simulation de réponse aux catastrophes",
+        "body": "Simulation en temps réel de scénarios d'urgence — modélise un incident en développement avec de la fumée poussée par le vent, du trafic en mouvement, des zones d'évacuation et un contexte 3D des bâtiments sur la carte."
       }
     },
     "recognition": {

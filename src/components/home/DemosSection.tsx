@@ -9,7 +9,7 @@ interface DemosSectionProps {
     assetsUrl: string
 }
 
-type DemoKey = 'general' | 'viewers' | 'organizational' | 'open-data' | 'openBIM' | 'sensors' | 'wildfires'
+type DemoKey = 'general' | 'viewers' | 'organizational' | 'open-data' | 'openBIM' | 'sensors' | 'wildfires' | 'disasterResponse'
 
 interface Demo {
     key: DemoKey
@@ -24,6 +24,7 @@ const DEMOS: Demo[] = [
     { key: 'openBIM', file: 'cdt-openBIM.mp4' },
     { key: 'sensors', file: 'cdt-sensors-demo.mp4' },
     { key: 'wildfires', file: 'cdt-Wildfires.mp4' },
+    { key: 'disasterResponse', file: 'cdt-iqaluit-warehouse-incident.mp4' },
 ]
 
 export default function DemosSection({ assetsUrl }: DemosSectionProps) {

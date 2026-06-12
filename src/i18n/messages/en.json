@@ -142,6 +142,10 @@
       "wildfires": {
         "title": "Visualizing wildfires",
         "body": "An interactive map built with a wildfire research group to monitor fire conditions across Canada — combining open datasets from the Canadian Interagency Forest Fire Centre (CIFFC) with photos and videos crowdsourced from users in near-real time."
+      },
+      "disasterResponse": {
+        "title": "Disaster Response Simulation",
+        "body": "Real-time emergency scenario simulation — model a developing incident with live wind-driven smoke, moving traffic, evacuation zones, and 3D building context on the map."
       }
     },
     "recognition": {

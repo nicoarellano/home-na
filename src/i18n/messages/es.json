@@ -142,6 +142,10 @@
       "wildfires": {
         "title": "Visualización de incendios forestales",
         "body": "Un mapa interactivo construido con un grupo de investigación sobre incendios forestales para monitorear las condiciones del fuego en Canadá — combinando conjuntos de datos abiertos del Canadian Interagency Forest Fire Centre (CIFFC) con fotos y videos aportados por las personas usuarias casi en tiempo real."
+      },
+      "disasterResponse": {
+        "title": "Simulación de respuesta a desastres",
+        "body": "Simulación en tiempo real de escenarios de emergencia — modela un incidente en desarrollo con humo arrastrado por el viento, tráfico en movimiento, zonas de evacuación y contexto 3D de edificios en el mapa."
       }
     },
     "recognition": {
