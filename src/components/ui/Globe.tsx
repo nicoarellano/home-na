@@ -44,26 +44,75 @@ interface PaddingOptions {
 }
 
 interface Props {
-  width?: string
-  height?: string
   mapStyleUrl?: string
   padding?: PaddingOptions
 }
 
 const ROTATION_SPEED = 0.1
 
-// Empirically tuned so the whole sphere fits inside the container.
-// Globe diameter ≈ FIT_DIVISOR * 2^zoom, so larger values yield more margin.
+// Globe diameter ≈ FIT_DIVISOR * 2^zoom (px) — the empirical constant that fits
+// the sphere to a given pixel size.
 const FIT_DIVISOR = 160
 
-export default function Globe({
-  width = '100%',
-  height = '100%',
-  mapStyleUrl,
-  padding,
-}: Props) {
-  const containerRef = React.useRef<HTMLDivElement>(null)
-  const [zoom, setZoom] = React.useState(2.8)
+// We size the globe off the viewport + the known hero layout (stable and
+// correct the instant the component mounts) instead of measuring the hero box,
+// which can be reported mid-layout when the page remounts (About -> Home) and
+// used to latch the globe at the wrong size.
+
+// Hero layout constants — mirror tailwind.config.ts `screens` + HeroSection.
+// Tailwind's centered `.container` is 100% wide but its max-width steps up to
+// the largest screen <= viewport width, so it caps at 1400px on big displays.
+const CONTAINER_SCREENS = [450, 575, 768, 992, 1200, 1400]
+const CONTAINER_PADDING = 48 // px-6 => 1.5rem each side
+const TWO_COL_BREAKPOINT = 992 // `lg` — grid switches to two columns
+const COLUMN_GAP = 64 // lg:gap-16 => 4rem
+
+// The sphere is inset inside its square canvas so the canvas edges never crop
+// it, and the square is never taller than (a fraction of) the viewport so the
+// whole globe always stays on screen.
+const GLOBE_INSET = 0.94
+const VH_FILL = 0.85
+
+// On large screens (past the container's max width) let the globe grow a little
+// to fill more of its column, gaining GROWTH_PER_PX per extra px of viewport.
+// MAX_GROWTH is capped so the globe never grows wider than its column — it just
+// fills it — and so it never overflows across the gap toward the headline.
+const CONTAINER_MAX = 1400 // largest entry in CONTAINER_SCREENS
+const GROWTH_PER_PX = 0.12
+const MAX_GROWTH = 40
+
+// Final safety clamp; in practice the column width is what limits the size.
+const MAX_ZOOM = 2.6
+// Server render has no window; this default is corrected on mount.
+const DEFAULT_SIDE = 560
+
+function rightColumnWidth(vw: number) {
+  let containerWidth = vw
+  for (const screen of CONTAINER_SCREENS) {
+    if (vw >= screen) containerWidth = screen
+  }
+  const content = containerWidth - CONTAINER_PADDING
+  // Two columns at lg+, otherwise the globe block spans the full content width.
+  return vw >= TWO_COL_BREAKPOINT ? (content - COLUMN_GAP) / 2 : content
+}
+
+function computeGlobeSide() {
+  if (typeof window === 'undefined') return DEFAULT_SIDE
+  // clientWidth excludes the scrollbar, matching the actual layout width.
+  const vw = document.documentElement.clientWidth || window.innerWidth
+  const growth = Math.min(Math.max(0, vw - CONTAINER_MAX) * GROWTH_PER_PX, MAX_GROWTH)
+  // Never wider than its column (+ the large-screen growth) nor taller than the
+  // viewport, so it stays off the headline and the whole sphere stays visible.
+  return Math.min(rightColumnWidth(vw) + growth, window.innerHeight * VH_FILL)
+}
+
+function sideToZoom(side: number) {
+  return Math.max(-1, Math.min(MAX_ZOOM, Math.log2((side * GLOBE_INSET) / FIT_DIVISOR)))
+}
+
+export default function Globe({ mapStyleUrl, padding }: Props) {
+  const [side, setSide] = React.useState(DEFAULT_SIDE)
+  const [zoom, setZoom] = React.useState(() => sideToZoom(DEFAULT_SIDE))
   const [flights, setFlights] = React.useState<Flight[]>([])
   const [currentTime, setCurrentTime] = React.useState(0)
   const mapRef = React.useRef<MapRef>(null)
@@ -78,48 +127,16 @@ export default function Globe({
   }, [padding])
 
   React.useEffect(() => {
-    const el = containerRef.current
-    if (!el) return
-
-    // Largest container edge we've already fit the globe to. The hero globe
-    // lives in an aspect-square box inside an animated motion.div, so when the
-    // Home page remounts (e.g. navigating About -> Home) the box can be measured
-    // mid-layout at a much smaller size. Fitting to that would latch the globe
-    // zoomed-out. So once we've fit to a size, we ignore any *smaller* later
-    // measurement — the zoom stays locked to the correct ratio. A genuine
-    // grow (real resize) still re-fits.
-    let fittedDim = 0
-    let rafId = 0
-
-    const fitTo = (width: number, height: number) => {
-      const minDim = Math.min(width, height)
-      if (!Number.isFinite(minDim) || minDim <= 0) return
-      // Ignore transient shrinks; only re-fit when the box actually grows.
-      if (minDim <= fittedDim) return
-      fittedDim = minDim
-      const next = Math.log2(minDim / FIT_DIVISOR)
-      setZoom(Math.max(-1, Math.min(3.5, next)))
-      // Tell maplibre its canvas changed size — otherwise the projection keeps the
-      // old viewport and the globe drifts off-center after a window resize.
+    const onResize = () => {
+      const next = computeGlobeSide()
+      setSide(next)
+      setZoom(sideToZoom(next))
+      // Tell maplibre its canvas changed size so the projection re-centers.
       mapRef.current?.getMap()?.resize()
     }
-
-    // Defer the first read until layout has settled (two frames), so the remount
-    // measurement reflects the real box size rather than a mid-transition one.
-    rafId = requestAnimationFrame(() =>
-      requestAnimationFrame(() => fitTo(el.clientWidth, el.clientHeight)),
-    )
-
-    const observer = new ResizeObserver((entries) => {
-      const box = entries[0]?.contentRect
-      if (box) fitTo(box.width, box.height)
-    })
-    observer.observe(el)
-
-    return () => {
-      cancelAnimationFrame(rafId)
-      observer.disconnect()
-    }
+    onResize()
+    window.addEventListener('resize', onResize)
+    return () => window.removeEventListener('resize', onResize)
   }, [])
 
   React.useEffect(() => {
@@ -298,12 +315,15 @@ export default function Globe({
   }, [])
 
   return (
-    <div ref={containerRef} className="pointer-events-auto opacity-75 relative z-10 h-full w-full">
+    <div
+      className="pointer-events-auto opacity-75 absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2"
+      style={{ width: side, height: side }}
+    >
       <Map
         ref={mapRef}
         mapStyle={resolvedStyle}
         mapLib={maplibregl}
-        style={{ width, height, position: 'absolute', inset: 0, top: 0 }}
+        style={{ width: '100%', height: '100%', position: 'absolute', inset: 0 }}
         initialViewState={viewState}
         projection="globe"
         onLoad={handleMapLoad}
@@ -313,6 +333,11 @@ export default function Globe({
         keyboard={false}
         boxZoom={false}
         pitchWithRotate={false}
+        // Zoom is fixed at the fit level; allowing zoom-in lets the sphere grow
+        // past its square canvas and expose the canvas edge ("frames").
+        scrollZoom={false}
+        doubleClickZoom={false}
+        touchZoomRotate={false}
       >
         <DeckOverlay interleaved layers={layers} />
       </Map>

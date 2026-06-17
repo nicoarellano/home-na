@@ -112,10 +112,8 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
             id="demo"
             className="relative w-full hidden md:block"
           >
-            <div className="w-full relative overflow-hidden aspect-square">
+            <div className="w-full relative aspect-square">
               <Globe
-                width="100%"
-                height="100%"
                 mapStyleUrl="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
               />
             </div>
