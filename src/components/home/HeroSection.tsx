@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/Button'
 import AnimatedBackground from '@/components/ui/AnimatedBackground'
-import SimpleMap from '@/components/ui/SimpleMap'
+import Globe from '@/components/ui/Globe'
 
 interface HeroSectionProps {
   assetsUrl: string
@@ -113,7 +113,7 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
             className="relative w-full hidden md:block"
           >
             <div className="w-full relative overflow-hidden aspect-square">
-              <SimpleMap
+              <Globe
                 width="100%"
                 height="100%"
                 mapStyleUrl="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
