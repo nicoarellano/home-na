@@ -56,7 +56,7 @@ const ROTATION_SPEED = 0.1
 // Globe diameter ≈ FIT_DIVISOR * 2^zoom, so larger values yield more margin.
 const FIT_DIVISOR = 160
 
-export default function SimpleMap({
+export default function Globe({
   width = '100%',
   height = '100%',
   mapStyleUrl,
@@ -81,10 +81,22 @@ export default function SimpleMap({
     const el = containerRef.current
     if (!el) return
 
-    const computeZoom = () => {
-      const { clientWidth, clientHeight } = el
-      const minDim = Math.min(clientWidth, clientHeight)
-      if (minDim <= 0) return
+    // Largest container edge we've already fit the globe to. The hero globe
+    // lives in an aspect-square box inside an animated motion.div, so when the
+    // Home page remounts (e.g. navigating About -> Home) the box can be measured
+    // mid-layout at a much smaller size. Fitting to that would latch the globe
+    // zoomed-out. So once we've fit to a size, we ignore any *smaller* later
+    // measurement — the zoom stays locked to the correct ratio. A genuine
+    // grow (real resize) still re-fits.
+    let fittedDim = 0
+    let rafId = 0
+
+    const fitTo = (width: number, height: number) => {
+      const minDim = Math.min(width, height)
+      if (!Number.isFinite(minDim) || minDim <= 0) return
+      // Ignore transient shrinks; only re-fit when the box actually grows.
+      if (minDim <= fittedDim) return
+      fittedDim = minDim
       const next = Math.log2(minDim / FIT_DIVISOR)
       setZoom(Math.max(-1, Math.min(3.5, next)))
       // Tell maplibre its canvas changed size — otherwise the projection keeps the
@@ -92,10 +104,22 @@ export default function SimpleMap({
       mapRef.current?.getMap()?.resize()
     }
 
-    computeZoom()
-    const observer = new ResizeObserver(computeZoom)
+    // Defer the first read until layout has settled (two frames), so the remount
+    // measurement reflects the real box size rather than a mid-transition one.
+    rafId = requestAnimationFrame(() =>
+      requestAnimationFrame(() => fitTo(el.clientWidth, el.clientHeight)),
+    )
+
+    const observer = new ResizeObserver((entries) => {
+      const box = entries[0]?.contentRect
+      if (box) fitTo(box.width, box.height)
+    })
     observer.observe(el)
-    return () => observer.disconnect()
+
+    return () => {
+      cancelAnimationFrame(rafId)
+      observer.disconnect()
+    }
   }, [])
 
   React.useEffect(() => {
