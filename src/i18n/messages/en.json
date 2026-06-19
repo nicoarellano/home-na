@@ -23,6 +23,16 @@
     "trustedBy": {
       "heading": "Trusted by"
     },
+    "githubRelease": {
+      "githubAria": "Collab Digital Twins source on GitHub",
+      "viewOnGithub": "View source on GitHub",
+      "released": "It's here!",
+      "releasedMessage": "Collab Digital Twins' open-source code is finally released — and it's all yours.",
+      "close": "Close",
+      "soon": "Open-source soon",
+      "daysUnit": "{days, plural, one {day} other {days}}",
+      "releaseLine": "to the release on July 1st"
+    },
     "pageHeaders": {
       "about": {
         "eyebrow": "About Us",
