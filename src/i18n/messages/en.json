@@ -23,6 +23,17 @@
     "trustedBy": {
       "heading": "Trusted by"
     },
+    "githubRelease": {
+      "githubAria": "Collab Digital Twins source on GitHub",
+      "viewOnGithub": "View source on GitHub",
+      "released": "It's here!",
+      "releasedMessage": "Collab Digital Twins' open-source code is finally released — and it's all yours.",
+      "close": "Close",
+      "soon": "Open-source soon",
+      "heroCountdown": "{days, plural, one {Open-source in # day} other {Open-source in # days}}",
+      "daysUnit": "{days, plural, one {day} other {days}}",
+      "releaseLine": "to the release on July 1st"
+    },
     "pageHeaders": {
       "about": {
         "eyebrow": "About Us",
@@ -40,39 +51,63 @@
         "subtitle": "Flexible ways to deploy the platform and hands-on support to operate and extend it — every engagement priced on cost-recovery."
       }
     },
+    "docsHero": {
+      "eyebrow": "Documentation",
+      "titleAccent": "Explore",
+      "title": "the CDT Platform",
+      "subtitle": "Visit our guides, documentation, and examples to build on the Collab Digital Twins platform.",
+      "startLabel": "Where would you like to start?",
+      "user": {
+        "title": "I am a user",
+        "body": "Guides for using the CDT platform."
+      },
+      "developer": {
+        "title": "I am a developer",
+        "body": "APIs, hooks, components, and plugins."
+      },
+      "deployment": {
+        "title": "Deployment",
+        "body": "Self-host CDT or use a managed deployment."
+      },
+      "browseAll": "Or browse the full",
+      "siteMap": "Site Map"
+    },
     "faq": {
+      "eyebrow": "FAQ",
+      "title": "Security, privacy, and the questions behind them.",
+      "subtitle": "Straight answers on where your data lives, who can reach it, and how an open platform keeps you in control.",
+      "stillQuestions": "Still have a question we haven't answered?",
+      "contactCta": "Talk to the team",
       "items": [
         {
           "question": "Where is our data hosted, and can we choose the region?",
-          "answer": "With managed hosting, the platform runs on sovereign infrastructure in the region you choose, so your data stays within the jurisdiction you require. If you self-host, your data never leaves your own infrastructure."
+          "answer": "With CDT Hosted, the platform runs on sovereign infrastructure — managed for you in Canada, or installed by our team on infrastructure you choose — so your data stays within the jurisdiction you require. If you self-host the containerized stack, your data never leaves your own infrastructure.",
+          "link": { "href": "/services", "label": "Compare deployment & hosting options" }
         },
         {
           "question": "Who can access our data?",
-          "answer": "Only the people you authorize. We operate on least-privilege access, and on self-managed deployments no one outside your organization has access at all. We never sell or share your data."
+          "answer": "Only the people you authorize. Access is governed by role-based permissions on a least-privilege model, and every sign-in is protected by multi-factor authentication. On self-managed deployments no one outside your organization has access at all — and we never sell or share your data.",
+          "link": { "href": "https://docs.collabdt.org/docs/authorization/overview", "label": "Read about roles & permissions" }
         },
         {
           "question": "Is the platform really open source?",
-          "answer": "Yes. The core is released under the AGPL-3.0 licence, so you can read, audit, self-host, and modify the source. There is no proprietary black box."
+          "answer": "Yes. The core is published under the AGPL-3.0 licence, so you can read, audit, self-host, and modify the source — there is no proprietary black box. A separate commercial licence is available for organizations that need different terms, and any revenue funds the non-profit's mission.",
+          "link": { "href": "https://github.com/CollabDigitalTwins", "label": "Browse the source on GitHub" }
         },
         {
           "question": "How do we avoid vendor lock-in?",
-          "answer": "Because the platform is built on open standards (IFC, GeoJSON, buildingSMART Data Dictionary) and open source, you can export your data and self-host the core at any time. Your investment is portable."
-        },
-        {
-          "question": "Is our data encrypted?",
-          "answer": "Yes. Data is encrypted in transit (TLS) and at rest on managed deployments. Self-hosted deployments inherit your own infrastructure's encryption and network controls."
+          "answer": "The platform is built on open standards — IFC, GeoJSON, LAS, BCF, and IDS — so you can export your data in bulk and self-host the open-source core at any time. You can even add new tools and viewers through the plugin system without forking the codebase. Your investment stays portable.",
+          "link": { "href": "https://docs.collabdt.org/docs/concepts/open-standards", "label": "See the open standards we use" }
         },
         {
           "question": "Can we self-host on our own infrastructure?",
-          "answer": "Absolutely. The AGPL-3.0 core can be deployed entirely on-premise or in your own cloud, giving you complete control over data, network, and integrations."
+          "answer": "Absolutely. CDT ships as a containerized stack that starts with a single command via Docker or Podman — entirely on-premise or in your own cloud — giving you complete control over data, network, and integrations.",
+          "link": { "href": "https://docs.collabdt.org/docs/deployment/self-hosting", "label": "Read the self-hosting guide" }
         },
         {
           "question": "How is the project governed?",
-          "answer": "Collab Digital Twins is a board-governed Canadian non-profit. We operate on cost-recovery pricing with no profit margin, and any surplus is reinvested in the platform and community."
-        },
-        {
-          "question": "How can we run a security review or report a vulnerability?",
-          "answer": "We welcome security reviews. Because the source is open, your team can audit it directly, and you can reach us at info@collabdt.org to coordinate a review or report a vulnerability."
+          "answer": "Collab Digital Twins is a board-governed Canadian non-profit. We operate on cost-recovery pricing with no profit margin, and any surplus is reinvested in the platform and the community it serves.",
+          "link": { "href": "/about", "label": "Learn about who we are" }
         }
       ]
     },
@@ -293,7 +328,7 @@
       "sectionLabel": "Developer Platform",
       "title": "Extend the platform. Integrate your systems.",
       "body": "Documented APIs and a contributor ecosystem for analysis tools, extensions, and integrations. Build alongside the core — or on top of it.",
-      "docsLabel": "API documentation",
+      "docsLabel": "Documentation",
       "githubLabel": "GitHub",
       "mailingLabel": "Developer mailing list"
     },

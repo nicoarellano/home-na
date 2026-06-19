@@ -7,6 +7,7 @@ import { useState } from 'react'
 import { Link, usePathname } from '@/i18n/navigation'
 import { Button } from '@/components/ui/Button'
 import LanguageToggle from '@/components/ui/LanguageToggle'
+import GithubReleaseButton from '@/components/home/GithubReleaseButton'
 import { CdtIcon } from '@/components/ui/CdtIcon'
 import { Language } from '@/lib/language'
 
@@ -114,6 +115,8 @@ export default function Navbar({
                 {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
               </Button>
 
+              <GithubReleaseButton />
+
               <Button size="sm" className="btn-nav-cta rounded-md px-5 text-sm" asChild>
                 <a href="https://app.collabdt.org/cdt" target="_blank" rel="noopener noreferrer">
                   {tHero('platformButton')}
@@ -181,8 +184,9 @@ export default function Navbar({
                   </div>
                 </div>
 
-                <div className="pt-2 px-1">
-                  <Button size="sm" className="btn-sovereign w-full rounded-md" asChild>
+                <div className="pt-2 px-1 flex items-center gap-2">
+                  <GithubReleaseButton />
+                  <Button size="sm" className="btn-sovereign flex-1 rounded-md" asChild>
                     <a href="https://app.collabdt.org/cdt" target="_blank" rel="noopener noreferrer">
                       {tHero('platformButton')}
                     </a>

@@ -23,6 +23,17 @@
     "trustedBy": {
       "heading": "Confían en nosotros"
     },
+    "githubRelease": {
+      "githubAria": "Código fuente de Collab Digital Twins en GitHub",
+      "viewOnGithub": "Ver el código fuente en GitHub",
+      "released": "¡Ya está aquí!",
+      "releasedMessage": "El código abierto de Collab Digital Twins por fin está disponible — y es todo tuyo.",
+      "close": "Cerrar",
+      "soon": "Pronto en código abierto",
+      "heroCountdown": "{days, plural, one {Código abierto en # día} other {Código abierto en # días}}",
+      "daysUnit": "{days, plural, one {día} other {días}}",
+      "releaseLine": "para el lanzamiento el 1 de julio"
+    },
     "pageHeaders": {
       "about": {
         "eyebrow": "Acerca de",
@@ -40,39 +51,63 @@
         "subtitle": "Formas flexibles de desplegar la plataforma y soporte práctico para operarla y extenderla — cada servicio con precios a costo."
       }
     },
+    "docsHero": {
+      "eyebrow": "Documentación",
+      "titleAccent": "Explora",
+      "title": "la plataforma CDT",
+      "subtitle": "Consulta nuestras guías, documentación y ejemplos para construir sobre la plataforma Collab Digital Twins.",
+      "startLabel": "¿Por dónde te gustaría empezar?",
+      "user": {
+        "title": "Soy usuario",
+        "body": "Guías para usar la plataforma CDT."
+      },
+      "developer": {
+        "title": "Soy desarrollador",
+        "body": "API, hooks, componentes y complementos."
+      },
+      "deployment": {
+        "title": "Despliegue",
+        "body": "Autoaloja CDT o usa un despliegue gestionado."
+      },
+      "browseAll": "O explora el",
+      "siteMap": "mapa del sitio"
+    },
     "faq": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "La seguridad, la privacidad y las preguntas que las rodean.",
+      "subtitle": "Respuestas claras sobre dónde viven tus datos, quién puede acceder a ellos y cómo una plataforma abierta te mantiene al mando.",
+      "stillQuestions": "¿Tienes una pregunta que no hayamos respondido?",
+      "contactCta": "Habla con el equipo",
       "items": [
         {
           "question": "¿Dónde se alojan nuestros datos y podemos elegir la región?",
-          "answer": "Con el alojamiento gestionado, la plataforma se ejecuta en infraestructura soberana en la región que elijas, de modo que tus datos permanecen dentro de la jurisdicción que requieras. Si te autoalojas, tus datos nunca salen de tu propia infraestructura."
+          "answer": "Con CDT Hosted, la plataforma se ejecuta en infraestructura soberana — gestionada para ti en Canadá, o instalada por nuestro equipo en la infraestructura que elijas — de modo que tus datos permanecen dentro de la jurisdicción que requieras. Si autoalojas la pila en contenedores, tus datos nunca salen de tu propia infraestructura.",
+          "link": { "href": "/services", "label": "Comparar las opciones de despliegue y alojamiento" }
         },
         {
           "question": "¿Quién puede acceder a nuestros datos?",
-          "answer": "Solo las personas que autorices. Operamos con acceso de mínimo privilegio, y en los despliegues autogestionados nadie fuera de tu organización tiene acceso alguno. Nunca vendemos ni compartimos tus datos."
+          "answer": "Solo las personas que autorices. El acceso se rige por permisos basados en roles, según el principio de mínimo privilegio, y cada inicio de sesión está protegido por autenticación multifactor. En los despliegues autogestionados nadie fuera de tu organización tiene acceso alguno — y nunca vendemos ni compartimos tus datos.",
+          "link": { "href": "https://docs.collabdt.org/docs/authorization/overview", "label": "Conoce los roles y permisos" }
         },
         {
           "question": "¿La plataforma es realmente de código abierto?",
-          "answer": "Sí. El núcleo se publica bajo la licencia AGPL-3.0, por lo que puedes leer, auditar, autoalojar y modificar el código fuente. No hay ninguna caja negra propietaria."
+          "answer": "Sí. El núcleo se publica bajo la licencia AGPL-3.0, por lo que puedes leer, auditar, autoalojar y modificar el código fuente — no hay ninguna caja negra propietaria. Existe una licencia comercial aparte para las organizaciones que necesitan otras condiciones, y cualquier ingreso financia la misión de la organización sin fines de lucro.",
+          "link": { "href": "https://github.com/CollabDigitalTwins", "label": "Explora el código en GitHub" }
         },
         {
           "question": "¿Cómo evitamos el bloqueo propietario?",
-          "answer": "Como la plataforma está construida sobre estándares abiertos (IFC, GeoJSON, diccionario de datos buildingSMART) y es de código abierto, puedes exportar tus datos y autoalojar el núcleo en cualquier momento. Tu inversión es portable."
-        },
-        {
-          "question": "¿Nuestros datos están cifrados?",
-          "answer": "Sí. Los datos se cifran en tránsito (TLS) y en reposo en los despliegues gestionados. Los despliegues autoalojados heredan el cifrado y los controles de red de tu propia infraestructura."
+          "answer": "La plataforma está construida sobre estándares abiertos — IFC, GeoJSON, LAS, BCF e IDS — por lo que puedes exportar tus datos de forma masiva y autoalojar el núcleo de código abierto en cualquier momento. Incluso puedes añadir nuevas herramientas y visores mediante el sistema de complementos, sin bifurcar el código. Tu inversión sigue siendo portable.",
+          "link": { "href": "https://docs.collabdt.org/docs/concepts/open-standards", "label": "Mira los estándares abiertos que usamos" }
         },
         {
           "question": "¿Podemos autoalojar en nuestra propia infraestructura?",
-          "answer": "Por supuesto. El núcleo AGPL-3.0 puede desplegarse completamente en las instalaciones o en tu propia nube, dándote control total sobre los datos, la red y las integraciones."
+          "answer": "Por supuesto. CDT se distribuye como una pila en contenedores que arranca con un solo comando mediante Docker o Podman — completamente en tus instalaciones o en tu propia nube — dándote control total sobre los datos, la red y las integraciones.",
+          "link": { "href": "https://docs.collabdt.org/docs/deployment/self-hosting", "label": "Lee la guía de autoalojamiento" }
         },
         {
           "question": "¿Cómo se gobierna el proyecto?",
-          "answer": "Collab Digital Twins es una organización canadiense sin fines de lucro dirigida por una junta. Operamos con precios de recuperación de costos, sin margen de beneficio, y todo excedente se reinvierte en la plataforma y la comunidad."
-        },
-        {
-          "question": "¿Cómo realizar una revisión de seguridad o reportar una vulnerabilidad?",
-          "answer": "Damos la bienvenida a las revisiones de seguridad. Como el código es abierto, tu equipo puede auditarlo directamente, y puedes contactarnos en info@collabdt.org para coordinar una revisión o reportar una vulnerabilidad."
+          "answer": "Collab Digital Twins es una organización canadiense sin fines de lucro dirigida por una junta. Operamos con precios de recuperación de costos, sin margen de beneficio, y todo excedente se reinvierte en la plataforma y la comunidad a la que sirve.",
+          "link": { "href": "/about", "label": "Conoce quiénes somos" }
         }
       ]
     },
@@ -293,7 +328,7 @@
       "sectionLabel": "Plataforma para desarrolladores",
       "title": "Extiende la plataforma. Integra tus sistemas.",
       "body": "APIs documentadas y un ecosistema de colaboración para herramientas de análisis, extensiones e integraciones. Construye junto al núcleo — o encima de él.",
-      "docsLabel": "Documentación de API",
+      "docsLabel": "Documentación",
       "githubLabel": "GitHub",
       "mailingLabel": "Lista de correo para desarrolladores"
     },

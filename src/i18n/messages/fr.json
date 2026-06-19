@@ -23,6 +23,17 @@
     "trustedBy": {
       "heading": "Ils nous font confiance"
     },
+    "githubRelease": {
+      "githubAria": "Code source de Collab Digital Twins sur GitHub",
+      "viewOnGithub": "Voir le code source sur GitHub",
+      "released": "Ça y est !",
+      "releasedMessage": "Le code open source de Collab Digital Twins est enfin disponible — et il est à vous.",
+      "close": "Fermer",
+      "soon": "Bientôt en open source",
+      "heroCountdown": "{days, plural, one {Open source dans # jour} other {Open source dans # jours}}",
+      "daysUnit": "{days, plural, one {jour} other {jours}}",
+      "releaseLine": "avant la sortie le 1er juillet"
+    },
     "pageHeaders": {
       "about": {
         "eyebrow": "À propos",
@@ -40,39 +51,63 @@
         "subtitle": "Des façons flexibles de déployer la plateforme et un accompagnement concret pour l'exploiter et l'étendre — chaque mandat tarifé au recouvrement des coûts."
       }
     },
+    "docsHero": {
+      "eyebrow": "Documentation",
+      "titleAccent": "Explorez",
+      "title": "la plateforme CDT",
+      "subtitle": "Consultez nos guides, notre documentation et nos exemples pour bâtir sur la plateforme Collab Digital Twins.",
+      "startLabel": "Par où souhaitez-vous commencer ?",
+      "user": {
+        "title": "Je suis utilisateur",
+        "body": "Guides pour utiliser la plateforme CDT."
+      },
+      "developer": {
+        "title": "Je suis développeur",
+        "body": "API, hooks, composants et plugiciels."
+      },
+      "deployment": {
+        "title": "Déploiement",
+        "body": "Auto-hébergez CDT ou optez pour un déploiement géré."
+      },
+      "browseAll": "Ou parcourez le",
+      "siteMap": "plan du site"
+    },
     "faq": {
+      "eyebrow": "FAQ",
+      "title": "La sécurité, la confidentialité et les questions qui s'y rattachent.",
+      "subtitle": "Des réponses claires sur l'endroit où vivent vos données, qui peut y accéder et comment une plateforme ouverte vous garde aux commandes.",
+      "stillQuestions": "Une question à laquelle nous n'avons pas répondu ?",
+      "contactCta": "Parler à l'équipe",
       "items": [
         {
           "question": "Où nos données sont-elles hébergées, et pouvons-nous choisir la région ?",
-          "answer": "Avec l'hébergement géré, la plateforme s'exécute sur une infrastructure souveraine dans la région de votre choix, de sorte que vos données restent dans la juridiction requise. Si vous hébergez vous-même, vos données ne quittent jamais votre propre infrastructure."
+          "answer": "Avec CDT Hosted, la plateforme s'exécute sur une infrastructure souveraine — gérée pour vous au Canada, ou installée par notre équipe sur l'infrastructure de votre choix — de sorte que vos données restent dans la juridiction requise. Si vous hébergez vous-même la pile conteneurisée, vos données ne quittent jamais votre propre infrastructure.",
+          "link": { "href": "/services", "label": "Comparer les options de déploiement et d'hébergement" }
         },
         {
           "question": "Qui peut accéder à nos données ?",
-          "answer": "Uniquement les personnes que vous autorisez. Nous appliquons le principe du moindre privilège, et dans les déploiements auto-gérés, personne en dehors de votre organisation n'y a accès. Nous ne vendons ni ne partageons jamais vos données."
+          "answer": "Uniquement les personnes que vous autorisez. L'accès est régi par des permissions basées sur les rôles, selon le principe du moindre privilège, et chaque connexion est protégée par une authentification multifacteur. Dans les déploiements auto-gérés, personne en dehors de votre organisation n'y a accès — et nous ne vendons ni ne partageons jamais vos données.",
+          "link": { "href": "https://docs.collabdt.org/docs/authorization/overview", "label": "En savoir plus sur les rôles et permissions" }
         },
         {
           "question": "La plateforme est-elle réellement open source ?",
-          "answer": "Oui. Le cœur est publié sous licence AGPL-3.0 : vous pouvez lire, auditer, héberger et modifier le code source. Il n'y a aucune boîte noire propriétaire."
+          "answer": "Oui. Le cœur est publié sous licence AGPL-3.0 : vous pouvez lire, auditer, héberger et modifier le code source — il n'y a aucune boîte noire propriétaire. Une licence commerciale distincte est proposée aux organisations qui ont besoin de conditions différentes, et tout revenu finance la mission de l'organisme sans but lucratif.",
+          "link": { "href": "https://github.com/CollabDigitalTwins", "label": "Consulter le code source sur GitHub" }
         },
         {
           "question": "Comment éviter le verrouillage propriétaire ?",
-          "answer": "Parce que la plateforme repose sur des standards ouverts (IFC, GeoJSON, dictionnaire de données buildingSMART) et qu'elle est open source, vous pouvez exporter vos données et héberger le cœur vous-même à tout moment. Votre investissement est transférable."
-        },
-        {
-          "question": "Nos données sont-elles chiffrées ?",
-          "answer": "Oui. Les données sont chiffrées en transit (TLS) et au repos dans les déploiements gérés. Les déploiements auto-hébergés héritent du chiffrement et des contrôles réseau de votre propre infrastructure."
+          "answer": "La plateforme repose sur des standards ouverts — IFC, GeoJSON, LAS, BCF et IDS — vous pouvez donc exporter vos données en masse et héberger vous-même le cœur open source à tout moment. Vous pouvez même ajouter de nouveaux outils et visualiseurs via le système de plugiciels, sans dupliquer le code. Votre investissement reste transférable.",
+          "link": { "href": "https://docs.collabdt.org/docs/concepts/open-standards", "label": "Voir les standards ouverts que nous utilisons" }
         },
         {
           "question": "Pouvons-nous héberger sur notre propre infrastructure ?",
-          "answer": "Absolument. Le cœur AGPL-3.0 peut être déployé entièrement sur site ou dans votre propre nuage, vous donnant un contrôle complet sur les données, le réseau et les intégrations."
+          "answer": "Absolument. CDT est livré sous forme de pile conteneurisée qui démarre avec une seule commande via Docker ou Podman — entièrement sur site ou dans votre propre nuage — vous donnant un contrôle complet sur les données, le réseau et les intégrations.",
+          "link": { "href": "https://docs.collabdt.org/docs/deployment/self-hosting", "label": "Lire le guide d'auto-hébergement" }
         },
         {
           "question": "Comment le projet est-il gouverné ?",
-          "answer": "Collab Digital Twins est un organisme canadien sans but lucratif dirigé par un conseil d'administration. Nous fonctionnons selon une tarification de recouvrement des coûts, sans marge bénéficiaire, et tout surplus est réinvesti dans la plateforme et la communauté."
-        },
-        {
-          "question": "Comment réaliser un audit de sécurité ou signaler une vulnérabilité ?",
-          "answer": "Nous accueillons favorablement les audits de sécurité. Le code étant ouvert, votre équipe peut l'auditer directement, et vous pouvez nous joindre à info@collabdt.org pour coordonner un audit ou signaler une vulnérabilité."
+          "answer": "Collab Digital Twins est un organisme canadien sans but lucratif dirigé par un conseil d'administration. Nous fonctionnons selon une tarification de recouvrement des coûts, sans marge bénéficiaire, et tout surplus est réinvesti dans la plateforme et la communauté qu'elle sert.",
+          "link": { "href": "/about", "label": "Découvrir qui nous sommes" }
         }
       ]
     },
