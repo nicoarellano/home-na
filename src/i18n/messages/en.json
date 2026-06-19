@@ -30,6 +30,7 @@
       "releasedMessage": "Collab Digital Twins' open-source code is finally released — and it's all yours.",
       "close": "Close",
       "soon": "Open-source soon",
+      "heroCountdown": "{days, plural, one {Open-source in # day} other {Open-source in # days}}",
       "daysUnit": "{days, plural, one {day} other {days}}",
       "releaseLine": "to the release on July 1st"
     },

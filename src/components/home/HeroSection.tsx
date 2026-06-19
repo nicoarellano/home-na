@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/Button'
 import AnimatedBackground from '@/components/ui/AnimatedBackground'
 import Globe from '@/components/ui/Globe'
+import HeroReleaseCountdown from '@/components/home/HeroReleaseCountdown'
 
 interface HeroSectionProps {
   assetsUrl: string
@@ -102,6 +103,7 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
                   {tHero('secondaryCta')}
                 </a>
               </Button>
+              <HeroReleaseCountdown />
             </motion.div>
           </motion.div>
 
