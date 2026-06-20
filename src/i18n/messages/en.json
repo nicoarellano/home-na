@@ -54,7 +54,7 @@
     "docsHero": {
       "eyebrow": "Documentation",
       "titleAccent": "Explore",
-      "title": "the CDT Platform",
+      "title": "the CDT Platform Documentation",
       "subtitle": "Visit our guides, documentation, and examples to build on the Collab Digital Twins platform.",
       "startLabel": "Where would you like to start?",
       "user": {
@@ -82,32 +82,50 @@
         {
           "question": "Where is our data hosted, and can we choose the region?",
           "answer": "With CDT Hosted, the platform runs on sovereign infrastructure — managed for you in Canada, or installed by our team on infrastructure you choose — so your data stays within the jurisdiction you require. If you self-host the containerized stack, your data never leaves your own infrastructure.",
-          "link": { "href": "/services", "label": "Compare deployment & hosting options" }
+          "link": {
+            "href": "/services",
+            "label": "Compare deployment & hosting options"
+          }
         },
         {
           "question": "Who can access our data?",
           "answer": "Only the people you authorize. Access is governed by role-based permissions on a least-privilege model, and every sign-in is protected by multi-factor authentication. On self-managed deployments no one outside your organization has access at all — and we never sell or share your data.",
-          "link": { "href": "https://docs.collabdt.org/docs/authorization/overview", "label": "Read about roles & permissions" }
+          "link": {
+            "href": "https://docs.collabdt.org/docs/authorization/overview",
+            "label": "Read about roles & permissions"
+          }
         },
         {
           "question": "Is the platform really open source?",
           "answer": "Yes. The core is published under the AGPL-3.0 licence, so you can read, audit, self-host, and modify the source — there is no proprietary black box. A separate commercial licence is available for organizations that need different terms, and any revenue funds the non-profit's mission.",
-          "link": { "href": "https://github.com/CollabDigitalTwins", "label": "Browse the source on GitHub" }
+          "link": {
+            "href": "https://github.com/CollabDigitalTwins",
+            "label": "Browse the source on GitHub"
+          }
         },
         {
           "question": "How do we avoid vendor lock-in?",
           "answer": "The platform is built on open standards — IFC, GeoJSON, LAS, BCF, and IDS — so you can export your data in bulk and self-host the open-source core at any time. You can even add new tools and viewers through the plugin system without forking the codebase. Your investment stays portable.",
-          "link": { "href": "https://docs.collabdt.org/docs/concepts/open-standards", "label": "See the open standards we use" }
+          "link": {
+            "href": "https://docs.collabdt.org/docs/concepts/open-standards",
+            "label": "See the open standards we use"
+          }
         },
         {
           "question": "Can we self-host on our own infrastructure?",
           "answer": "Absolutely. CDT ships as a containerized stack that starts with a single command via Docker or Podman — entirely on-premise or in your own cloud — giving you complete control over data, network, and integrations.",
-          "link": { "href": "https://docs.collabdt.org/docs/deployment/self-hosting", "label": "Read the self-hosting guide" }
+          "link": {
+            "href": "https://docs.collabdt.org/docs/deployment/self-hosting",
+            "label": "Read the self-hosting guide"
+          }
         },
         {
           "question": "How is the project governed?",
           "answer": "Collab Digital Twins is a board-governed Canadian non-profit. We operate on cost-recovery pricing with no profit margin, and any surplus is reinvested in the platform and the community it serves.",
-          "link": { "href": "/about", "label": "Learn about who we are" }
+          "link": {
+            "href": "/about",
+            "label": "Learn about who we are"
+          }
         }
       ]
     },

@@ -54,7 +54,7 @@
     "docsHero": {
       "eyebrow": "Documentación",
       "titleAccent": "Explora",
-      "title": "la plataforma CDT",
+      "title": "la documentación de la plataforma CDT",
       "subtitle": "Consulta nuestras guías, documentación y ejemplos para construir sobre la plataforma Collab Digital Twins.",
       "startLabel": "¿Por dónde te gustaría empezar?",
       "user": {
@@ -82,32 +82,50 @@
         {
           "question": "¿Dónde se alojan nuestros datos y podemos elegir la región?",
           "answer": "Con CDT Hosted, la plataforma se ejecuta en infraestructura soberana — gestionada para ti en Canadá, o instalada por nuestro equipo en la infraestructura que elijas — de modo que tus datos permanecen dentro de la jurisdicción que requieras. Si autoalojas la pila en contenedores, tus datos nunca salen de tu propia infraestructura.",
-          "link": { "href": "/services", "label": "Comparar las opciones de despliegue y alojamiento" }
+          "link": {
+            "href": "/services",
+            "label": "Comparar las opciones de despliegue y alojamiento"
+          }
         },
         {
           "question": "¿Quién puede acceder a nuestros datos?",
           "answer": "Solo las personas que autorices. El acceso se rige por permisos basados en roles, según el principio de mínimo privilegio, y cada inicio de sesión está protegido por autenticación multifactor. En los despliegues autogestionados nadie fuera de tu organización tiene acceso alguno — y nunca vendemos ni compartimos tus datos.",
-          "link": { "href": "https://docs.collabdt.org/docs/authorization/overview", "label": "Conoce los roles y permisos" }
+          "link": {
+            "href": "https://docs.collabdt.org/docs/authorization/overview",
+            "label": "Conoce los roles y permisos"
+          }
         },
         {
           "question": "¿La plataforma es realmente de código abierto?",
           "answer": "Sí. El núcleo se publica bajo la licencia AGPL-3.0, por lo que puedes leer, auditar, autoalojar y modificar el código fuente — no hay ninguna caja negra propietaria. Existe una licencia comercial aparte para las organizaciones que necesitan otras condiciones, y cualquier ingreso financia la misión de la organización sin fines de lucro.",
-          "link": { "href": "https://github.com/CollabDigitalTwins", "label": "Explora el código en GitHub" }
+          "link": {
+            "href": "https://github.com/CollabDigitalTwins",
+            "label": "Explora el código en GitHub"
+          }
         },
         {
           "question": "¿Cómo evitamos el bloqueo propietario?",
           "answer": "La plataforma está construida sobre estándares abiertos — IFC, GeoJSON, LAS, BCF e IDS — por lo que puedes exportar tus datos de forma masiva y autoalojar el núcleo de código abierto en cualquier momento. Incluso puedes añadir nuevas herramientas y visores mediante el sistema de complementos, sin bifurcar el código. Tu inversión sigue siendo portable.",
-          "link": { "href": "https://docs.collabdt.org/docs/concepts/open-standards", "label": "Mira los estándares abiertos que usamos" }
+          "link": {
+            "href": "https://docs.collabdt.org/docs/concepts/open-standards",
+            "label": "Mira los estándares abiertos que usamos"
+          }
         },
         {
           "question": "¿Podemos autoalojar en nuestra propia infraestructura?",
           "answer": "Por supuesto. CDT se distribuye como una pila en contenedores que arranca con un solo comando mediante Docker o Podman — completamente en tus instalaciones o en tu propia nube — dándote control total sobre los datos, la red y las integraciones.",
-          "link": { "href": "https://docs.collabdt.org/docs/deployment/self-hosting", "label": "Lee la guía de autoalojamiento" }
+          "link": {
+            "href": "https://docs.collabdt.org/docs/deployment/self-hosting",
+            "label": "Lee la guía de autoalojamiento"
+          }
         },
         {
           "question": "¿Cómo se gobierna el proyecto?",
           "answer": "Collab Digital Twins es una organización canadiense sin fines de lucro dirigida por una junta. Operamos con precios de recuperación de costos, sin margen de beneficio, y todo excedente se reinvierte en la plataforma y la comunidad a la que sirve.",
-          "link": { "href": "/about", "label": "Conoce quiénes somos" }
+          "link": {
+            "href": "/about",
+            "label": "Conoce quiénes somos"
+          }
         }
       ]
     },
