@@ -99,7 +99,7 @@
           "question": "¿La plataforma es realmente de código abierto?",
           "answer": "Sí. El núcleo se publica bajo la licencia AGPL-3.0, por lo que puedes leer, auditar, autoalojar y modificar el código fuente — no hay ninguna caja negra propietaria. Existe una licencia comercial aparte para las organizaciones que necesitan otras condiciones, y cualquier ingreso financia la misión de la organización sin fines de lucro.",
           "link": {
-            "href": "https://github.com/CollabDigitalTwins",
+            "href": "https://github.com/CollabDigitalTwins/core",
             "label": "Explora el código en GitHub"
           }
         },
