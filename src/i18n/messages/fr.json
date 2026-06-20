@@ -99,7 +99,7 @@
           "question": "La plateforme est-elle réellement open source ?",
           "answer": "Oui. Le cœur est publié sous licence AGPL-3.0 : vous pouvez lire, auditer, héberger et modifier le code source — il n'y a aucune boîte noire propriétaire. Une licence commerciale distincte est proposée aux organisations qui ont besoin de conditions différentes, et tout revenu finance la mission de l'organisme sans but lucratif.",
           "link": {
-            "href": "https://github.com/CollabDigitalTwins",
+            "href": "https://github.com/CollabDigitalTwins/core",
             "label": "Consulter le code source sur GitHub"
           }
         },

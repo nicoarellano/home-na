@@ -99,7 +99,7 @@
           "question": "Is the platform really open source?",
           "answer": "Yes. The core is published under the AGPL-3.0 licence, so you can read, audit, self-host, and modify the source — there is no proprietary black box. A separate commercial licence is available for organizations that need different terms, and any revenue funds the non-profit's mission.",
           "link": {
-            "href": "https://github.com/CollabDigitalTwins",
+            "href": "https://github.com/CollabDigitalTwins/core",
             "label": "Browse the source on GitHub"
           }
         },
