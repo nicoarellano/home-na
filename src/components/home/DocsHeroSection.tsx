@@ -23,14 +23,14 @@ export default function DocsHeroSection() {
 
   return (
     <section
-      className="relative pt-36 pb-16 md:pt-40 md:pb-24 overflow-hidden"
+      className="relative min-h-screen flex items-center overflow-hidden pt-24 pb-16"
       style={{ background: 'var(--hp-surface)' }}
     >
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 55% 50% at 50% 0%, rgba(239,145,97,0.06) 0%, transparent 70%)',
+            'radial-gradient(ellipse 55% 50% at 50% 50%, rgba(239,145,97,0.06) 0%, transparent 70%)',
         }}
       />
 
@@ -42,17 +42,6 @@ export default function DocsHeroSection() {
           className="max-w-3xl mx-auto text-center space-y-8"
         >
           <div className="space-y-5">
-            <div className="flex justify-center">
-              <span className="stat-pill">
-                <span
-                  className="w-1.5 h-1.5 rounded-full"
-                  style={{ background: 'var(--hp-primary-container)' }}
-                  aria-hidden
-                />
-                {t('eyebrow')}
-              </span>
-            </div>
-
             <h1
               className="font-display font-bold"
               style={{
@@ -124,7 +113,7 @@ export default function DocsHeroSection() {
             <p className="text-[0.9rem]" style={{ color: 'var(--hp-on-surface-variant)' }}>
               {t('browseAll')}{' '}
               <a
-                href={DOCS_BASE}
+                href={`${DOCS_BASE}/site-map`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 font-semibold transition-opacity hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--hp-primary-container)] rounded"
