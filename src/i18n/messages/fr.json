@@ -2,7 +2,7 @@
   "HomePage": {
     "nav": {
       "home": "accueil",
-      "about": "à propos",
+      "about": "à propos de nous",
       "resources": "ressources",
       "services": "services",
       "contact": "contact"
@@ -10,7 +10,7 @@
     "hero": {
       "tagline": "Bâtir des connexions numériques, ensemble",
       "title": "Jumeaux numériques multi-échelles.",
-      "description": "Une plateforme ouverte pour jumeaux numériques, dans le navigateur — déployée à votre manière, personnalisée selon vos besoins, libre de tout verrouillage propriétaire. Économie de recouvrement des coûts. Code source disponible.",
+      "description": "Une plateforme ouverte, dans le navigateur, pour créer, héberger et explorer des jumeaux numériques, déployée à votre manière, personnalisée selon vos besoins et libre de tout verrouillage propriétaire. Économie de recouvrement des coûts. Code source disponible.",
       "primaryCta": "Demander une démo",
       "secondaryCta": "Explorer la plateforme",
       "platformButton": "Plateforme",
@@ -18,7 +18,7 @@
     },
     "metadata": {
       "title": "Collab Digital Twins",
-      "description": "Une plateforme ouverte pour jumeaux numériques, dans le navigateur — déployée à votre manière, personnalisée selon vos besoins, libre de tout verrouillage propriétaire. Économie de recouvrement des coûts. Code source disponible."
+      "description": "Une plateforme ouverte, dans le navigateur, pour créer, héberger et explorer des jumeaux numériques, déployée à votre manière, personnalisée selon vos besoins et libre de tout verrouillage propriétaire. Économie de recouvrement des coûts. Code source disponible."
     },
     "trustedBy": {
       "heading": "Ils nous font confiance"
@@ -27,7 +27,7 @@
       "githubAria": "Code source de Collab Digital Twins sur GitHub",
       "viewOnGithub": "Voir le code source sur GitHub",
       "released": "Ça y est !",
-      "releasedMessage": "Le code open source de Collab Digital Twins est enfin disponible — et il est à vous.",
+      "releasedMessage": "Le code open source de Collab Digital Twins est enfin disponible, et il est à vous.",
       "close": "Fermer",
       "soon": "Bientôt en open source",
       "heroCountdown": "{days, plural, one {Open source dans # jour} other {Open source dans # jours}}",
@@ -36,9 +36,9 @@
     },
     "pageHeaders": {
       "about": {
-        "eyebrow": "À propos",
+        "eyebrow": "À propos de nous",
         "title": "Une infrastructure ouverte, conçue pour durer.",
-        "subtitle": "Pourquoi nous bâtissons ainsi — les principes derrière la plateforme, les façons de la déployer et de l'étendre."
+        "subtitle": "Pourquoi nous bâtissons ainsi : les principes derrière la plateforme, les façons de la déployer et de l'étendre."
       },
       "resources": {
         "eyebrow": "Ressources",
@@ -48,7 +48,7 @@
       "services": {
         "eyebrow": "Services",
         "title": "Déploiement et accompagnement, à votre manière.",
-        "subtitle": "Des façons flexibles de déployer la plateforme et un accompagnement concret pour l'exploiter et l'étendre — chaque mandat tarifé au recouvrement des coûts."
+        "subtitle": "Des façons flexibles de déployer la plateforme et un accompagnement concret pour l'exploiter et l'étendre, chaque mandat étant tarifé au recouvrement des coûts."
       }
     },
     "docsHero": {
@@ -81,7 +81,7 @@
       "items": [
         {
           "question": "Où nos données sont-elles hébergées, et pouvons-nous choisir la région ?",
-          "answer": "Avec CDT Hosted, la plateforme s'exécute sur une infrastructure souveraine — gérée pour vous au Canada, ou installée par notre équipe sur l'infrastructure de votre choix — de sorte que vos données restent dans la juridiction requise. Si vous hébergez vous-même la pile conteneurisée, vos données ne quittent jamais votre propre infrastructure.",
+          "answer": "Avec CDT Hosted, la plateforme s'exécute sur une infrastructure souveraine, gérée pour vous au Canada ou installée par notre équipe sur l'infrastructure de votre choix, de sorte que vos données restent dans la juridiction requise. Si vous hébergez vous-même la pile conteneurisée, vos données ne quittent jamais votre propre infrastructure.",
           "link": {
             "href": "/services",
             "label": "Comparer les options de déploiement et d'hébergement"
@@ -89,7 +89,7 @@
         },
         {
           "question": "Qui peut accéder à nos données ?",
-          "answer": "Uniquement les personnes que vous autorisez. L'accès est régi par des permissions basées sur les rôles, selon le principe du moindre privilège, et chaque connexion est protégée par une authentification multifacteur. Dans les déploiements auto-gérés, personne en dehors de votre organisation n'y a accès — et nous ne vendons ni ne partageons jamais vos données.",
+          "answer": "Uniquement les personnes que vous autorisez. L'accès est régi par des permissions basées sur les rôles, selon le principe du moindre privilège, et chaque connexion est protégée par une authentification multifacteur. Dans les déploiements auto-gérés, personne en dehors de votre organisation n'y a accès, et nous ne vendons ni ne partageons jamais vos données.",
           "link": {
             "href": "https://docs.collabdt.org/docs/authorization/overview",
             "label": "En savoir plus sur les rôles et permissions"
@@ -97,7 +97,7 @@
         },
         {
           "question": "La plateforme est-elle réellement open source ?",
-          "answer": "Oui. Le cœur est publié sous licence AGPL-3.0 : vous pouvez lire, auditer, héberger et modifier le code source — il n'y a aucune boîte noire propriétaire. Une licence commerciale distincte est proposée aux organisations qui ont besoin de conditions différentes, et tout revenu finance la mission de l'organisme sans but lucratif.",
+          "answer": "Oui. Le cœur est publié sous licence AGPL-3.0 : vous pouvez lire, auditer, héberger et modifier le code source. Il n'y a aucune boîte noire propriétaire. Une licence commerciale distincte est proposée aux organisations qui ont besoin de conditions différentes, et tout revenu finance la mission de l'organisme sans but lucratif.",
           "link": {
             "href": "https://github.com/CollabDigitalTwins/core",
             "label": "Consulter le code source sur GitHub"
@@ -105,7 +105,7 @@
         },
         {
           "question": "Comment éviter le verrouillage propriétaire ?",
-          "answer": "La plateforme repose sur des standards ouverts — IFC, GeoJSON, LAS, BCF et IDS — vous pouvez donc exporter vos données en masse et héberger vous-même le cœur open source à tout moment. Vous pouvez même ajouter de nouveaux outils et visualiseurs via le système de plugiciels, sans dupliquer le code. Votre investissement reste transférable.",
+          "answer": "La plateforme repose sur des standards ouverts (IFC, GeoJSON, LAS, BCF et IDS), vous pouvez donc exporter vos données en masse et héberger vous-même le cœur open source à tout moment. Vous pouvez même ajouter de nouveaux outils et visualiseurs via le système de plugiciels, sans dupliquer le code. Votre investissement reste transférable.",
           "link": {
             "href": "https://docs.collabdt.org/docs/concepts/open-standards",
             "label": "Voir les standards ouverts que nous utilisons"
@@ -113,7 +113,7 @@
         },
         {
           "question": "Pouvons-nous héberger sur notre propre infrastructure ?",
-          "answer": "Absolument. CDT est livré sous forme de pile conteneurisée qui démarre avec une seule commande via Docker ou Podman — entièrement sur site ou dans votre propre nuage — vous donnant un contrôle complet sur les données, le réseau et les intégrations.",
+          "answer": "Absolument. CDT est livré sous forme de pile conteneurisée qui démarre avec une seule commande via Docker ou Podman, entièrement sur site ou dans votre propre nuage, vous donnant un contrôle complet sur les données, le réseau et les intégrations.",
           "link": {
             "href": "https://docs.collabdt.org/docs/deployment/self-hosting",
             "label": "Lire le guide d'auto-hébergement"
@@ -134,7 +134,7 @@
       "subheading": "Cinq engagements qui guident chaque décision concernant la plateforme.",
       "openStandards": {
         "label": "Standards ouverts",
-        "body": "Bâtie sur IFC, glTF et d'autres formats ouverts — vos données ne sont jamais captives d'un fournisseur."
+        "body": "Bâtie sur IFC, glTF et d'autres formats ouverts, vos données ne sont donc jamais captives d'un fournisseur."
       },
       "agpl": {
         "label": "AGPL-3.0, source disponible",
@@ -162,23 +162,23 @@
     "mission": {
       "sectionLabel": "Notre mission",
       "title": "Relier les personnes, les lieux et les données qui les façonnent.",
-      "body": "Nous sommes une fondation à but non lucratif qui bâtit une infrastructure partagée pour les jumeaux numériques — afin que les institutions, les communautés et les chercheurs collaborent sur les bâtiments, les quartiers et les paysages qu'ils partagent. La plateforme est le moyen. La connexion est l'objectif."
+      "body": "Collab Digital Twins est un organisme à but non lucratif qui développe une infrastructure partagée pour les jumeaux numériques, afin que les institutions, les communautés et les chercheurs puissent documenter, comprendre et gérer les bâtiments, les quartiers et les paysages qu'ils partagent."
     },
     "demos": {
       "sectionLabel": "Démos",
       "title": "Voyez la plateforme en action.",
-      "subtitle": "De courtes démonstrations de la plateforme en action — de la vue d'ensemble aux outils ciblés sur des cas d'usage précis.",
+      "subtitle": "De courtes démonstrations de la plateforme en action, de la vue d'ensemble aux outils ciblés sur des cas d'usage précis.",
       "general": {
         "title": "Vue d'ensemble de la plateforme",
-        "body": "Une visite guidée de l'espace de travail du jumeau numérique — réunissant BIM, SIG et données ouvertes dans une seule session de navigateur, avec les outils que les institutions utilisent réellement au quotidien."
+        "body": "Une visite guidée de l'espace de travail du jumeau numérique, réunissant BIM, SIG et données ouvertes dans une seule session de navigateur, avec les outils que les institutions utilisent réellement au quotidien."
       },
       "viewers": {
         "title": "Visionneuses de la plateforme",
-        "body": "Visionneuses cartographique, BIM et nuage de points adossées à des bases de données de sites, bâtiments et fichiers — interrogeables via les propriétés du buildingSMART Data Dictionary. IFC, GeoJSON, nuages de points, documents et médias cohabitent autour de chaque bâtiment, et la plateforme est extensible via des <link>greffons personnalisés</link>."
+        "body": "Visionneuses cartographique, BIM et nuage de points adossées à des bases de données de sites, bâtiments et fichiers, interrogeables via les propriétés du buildingSMART Data Dictionary. IFC, GeoJSON, nuages de points, documents et médias cohabitent autour de chaque bâtiment, et la plateforme est extensible via des <link>greffons personnalisés</link>."
       },
       "organizational": {
         "title": "Intégration BIM + SIG",
-        "body": "Les modèles BIM à l'échelle du bâtiment et les données SIG à l'échelle de l'infrastructure se chargent ensemble dans un même environnement de navigateur, avec une géolocalisation précise et la prise en charge de plusieurs systèmes de coordonnées. Des portefeuilles de plusieurs gigaoctets se résolvent en moins de deux secondes par modèle, et les utilisateurs peuvent déposer des commentaires et modèles géolocalisés sur la carte pour collaborer."
+        "body": "Les données BIM à l'échelle du bâtiment et les données SIG à l'échelle de l'infrastructure se chargent ensemble dans un même environnement de navigateur, avec une géolocalisation précise et la prise en charge de plusieurs systèmes de coordonnées. Des portefeuilles de plusieurs gigaoctets se résolvent en moins de deux secondes par modèle, et les utilisateurs peuvent déposer des commentaires et modèles géolocalisés sur la carte pour collaborer."
       },
       "open-data": {
         "title": "Fédération de données ouvertes",
@@ -186,7 +186,7 @@
       },
       "openBIM": {
         "title": "Visionneuse openBIM",
-        "body": "Traitement IFC natif dans le navigateur préservant le schéma complet — chaque attribut, matériau, contrainte et jeu de propriétés personnalisées. Ajoutez des superpositions DXF, GLTF, FBX, OBJ ou de nuages de points ; sectionnez, mesurez et commentez la géométrie ; gérez les enjeux avec BCF ; validez les modèles selon les exigences d'échange IDS."
+        "body": "Traitement IFC natif dans le navigateur préservant le schéma complet : chaque attribut, matériau, contrainte et jeu de propriétés personnalisées. Ajoutez des superpositions DXF, GLTF, FBX, OBJ ou de nuages de points ; sectionnez, mesurez et commentez la géométrie ; gérez les enjeux avec BCF ; validez les modèles selon les exigences d'échange IDS."
       },
       "sensors": {
         "title": "Capteurs IoT sur la carte et BIM",
@@ -194,24 +194,24 @@
       },
       "wildfires": {
         "title": "Visualisation des feux de forêt",
-        "body": "Une carte interactive bâtie avec un groupe de recherche sur les feux de forêt pour surveiller les conditions des incendies au Canada — combinant des jeux de données ouverts du Canadian Interagency Forest Fire Centre (CIFFC) avec des photos et vidéos collectées par les utilisateurs en quasi temps réel."
+        "body": "Une carte interactive bâtie avec un groupe de recherche sur les feux de forêt pour surveiller les conditions des incendies au Canada, combinant des jeux de données ouverts du Canadian Interagency Forest Fire Centre (CIFFC) avec des photos et vidéos collectées par les utilisateurs en quasi temps réel."
       },
       "disasterResponse": {
         "title": "Simulation de réponse aux catastrophes",
-        "body": "Simulation en temps réel de scénarios d'urgence — modélise un incident en développement avec de la fumée poussée par le vent, du trafic en mouvement, des zones d'évacuation et un contexte 3D des bâtiments sur la carte."
+        "body": "Simulation en temps réel de scénarios d'urgence. Modélise un incident en développement avec de la fumée poussée par le vent, du trafic en mouvement, des zones d'évacuation et un contexte 3D des bâtiments sur la carte."
       }
     },
     "recognition": {
       "sectionLabel": "Reconnaissance",
       "title": "Primée, reconnue à l'international.",
-      "subtitle": "Une validation externe de l'approche libre et basée sur des standards ouverts de la plateforme.",
+      "subtitle": "L'industrie salue notre approche libre et fondée sur des standards ouverts pour l'infrastructure de jumeaux numériques.",
       "openBIM": {
-        "title": "Prix bSI openBIM — Recherche professionnelle (2025)",
-        "body": "Gagnant de la catégorie Recherche professionnelle aux Prix openBIM de buildingSMART International, sélectionné parmi 129 candidatures provenant de plus de 50 pays — le premier prix bSI openBIM décerné au Canada depuis la création du programme en 2014."
+        "title": "Prix bSI openBIM : Recherche professionnelle (2025)",
+        "body": "Gagnant de la catégorie Recherche professionnelle aux Prix openBIM de buildingSMART International, sélectionné parmi 129 candidatures provenant de plus de 50 pays. C'est le premier prix bSI openBIM remporté par une équipe canadienne depuis la création du programme en 2014."
       },
       "buildingTransformations": {
         "title": "Prix Innovation Spotlight de Building Transformations (2024)",
-        "body": "Lauréat à la fois du Prix de la recherche et du Prix de la meilleure innovation — qui souligne l'excellence d'ensemble dans toutes les catégories des Prix Innovation Spotlight 2024."
+        "body": "Lauréat à la fois du Prix de la recherche et du Prix de la meilleure innovation, qui souligne l'excellence d'ensemble dans toutes les catégories des Prix Innovation Spotlight 2024."
       }
     },
     "capabilities": {
@@ -219,7 +219,7 @@
       "title": "Ce que la plateforme permet.",
       "bridge": {
         "title": "Relier BIM, SIG et données ouvertes",
-        "body": "Visualisez et analysez des jumeaux numériques multi-échelles dans un seul espace de travail dans le navigateur — du bâtiment unique aux paysages régionaux."
+        "body": "Visualisez et analysez des jumeaux numériques multi-échelles dans un seul espace de travail dans le navigateur, du bâtiment unique aux paysages régionaux."
       },
       "interop": {
         "title": "Interopérable par conception",
@@ -235,7 +235,7 @@
       },
       "customize": {
         "title": "Personnaliser sans forker",
-        "body": "Commandez des fonctionnalités spécialisées sur la base du recouvrement des coûts — bâties sur le cœur ouvert pour rester sur la voie des mises à jour."
+        "body": "Commandez des fonctionnalités spécialisées sur la base du recouvrement des coûts, bâties sur le cœur ouvert pour rester sur la voie des mises à jour."
       },
       "train": {
         "title": "Outillez votre équipe",
@@ -245,7 +245,7 @@
     "solutions": {
       "sectionLabel": "Solutions",
       "title": "Choisissez votre déploiement.",
-      "subtitle": "Quatre voies vers la valeur — toutes tarifées au coût, tout surplus étant réinvesti dans la plateforme.",
+      "subtitle": "Quatre voies vers la valeur, toutes tarifées au coût, tout surplus étant réinvesti dans la plateforme.",
       "groupDeployment": "Déploiement",
       "groupDeploymentSub": "Exécutez la plateforme dans l'infonuagique que nous gérons, ou hébergez vous-même le cœur open source sur votre propre infrastructure.",
       "groupSupport": "Accompagnement",
@@ -254,7 +254,7 @@
         "tag": "Voie la plus rapide",
         "name": "Cloud géré (SaaS)",
         "headline": "Hébergement souverain, prêt en quelques jours.",
-        "body": "Nous exécutons la plateforme sur une infrastructure souveraine de votre choix, avec support inclus, mises à jour automatiques et garanties de résidence des données. Tarification au coût — sans marge.",
+        "body": "Nous exécutons la plateforme sur une infrastructure souveraine de votre choix, avec support inclus, mises à jour automatiques et garanties de résidence des données. Tarification au coût, sans marge.",
         "feature1": "Résidence des données sous votre contrôle",
         "feature2": "Support inclus",
         "feature3": "Mises à jour automatiques",
@@ -308,7 +308,7 @@
       },
       "costRecovery": {
         "title": "Économie de recouvrement des coûts",
-        "body": "Nous sommes un OBNL. Aucune marge bénéficiaire intégrée. Tout surplus est réinvesti dans la plateforme — pas extrait."
+        "body": "Nous sommes un OBNL. Aucune marge bénéficiaire intégrée. Tout surplus est réinvesti dans la plateforme, pas extrait."
       },
       "multidisciplinary": {
         "title": "Multidisciplinaire par conception",
@@ -345,7 +345,7 @@
     "developers": {
       "sectionLabel": "Plateforme développeur",
       "title": "Étendez la plateforme. Intégrez vos systèmes.",
-      "body": "API documentées et écosystème de contributeurs pour outils d'analyse, extensions et intégrations. Construisez aux côtés du cœur — ou par-dessus.",
+      "body": "API documentées et écosystème de contributeurs pour outils d'analyse, extensions et intégrations. Construisez aux côtés du cœur, ou par-dessus.",
       "docsLabel": "Documentation API",
       "githubLabel": "GitHub",
       "mailingLabel": "Liste de diffusion développeurs"
@@ -353,17 +353,17 @@
     "leadership": {
       "sectionLabel": "Équipe",
       "title": "Deux décennies de recherche et de pratique, ancrées dans une communauté.",
-      "intro": "Collab Digital Twins est un organisme à but non lucratif indépendant, issu du Carleton Immersive Media Studio (CIMS) — le groupe de recherche dont les travaux façonnent depuis le début des années 2000 la manière dont les institutions canadiennes adoptent le BIM, le SIG, la RA/RV, les médias immersifs, la fabrication numérique, la narration numérique et la numérisation du patrimoine.",
+      "intro": "Collab Digital Twins est un organisme à but non lucratif indépendant, créé par l'équipe de recherche principale du Carleton Immersive Media Studio (CIMS), le groupe de recherche dont les travaux façonnent depuis le début des années 2000 la manière dont les institutions canadiennes adoptent le BIM, le SIG, la RA/RV, les médias immersifs, la fabrication numérique, la narration numérique et la numérisation du patrimoine.",
       "heritage": {
-        "label": "Notre héritage",
+        "label": "Notre expertise",
         "logoAlt": "Carleton Immersive Media Studio",
         "title": "Une recherche appliquée d'envergure nationale et de réputation internationale.",
         "body": "Fondé à la Azrieli School of Architecture and Urbanism de l'Université Carleton, le CIMS est l'un des principaux laboratoires de recherche appliquée au Canada, à l'intersection de l'architecture, de la conservation du patrimoine et de la visualisation avancée. Ses travaux sur le BIM patrimonial (HBIM), la photogrammétrie et la documentation immersive contribuent à des normes internationales et ont formé toute une génération de praticiens.",
-        "bodyExtra": "Depuis près de vingt ans, l'équipe livre les projets les plus significatifs au Canada — y compris la réhabilitation de la Colline du Parlement — en partenariat avec le Conseil national de recherches, Services publics et Approvisionnement Canada, le ministère de la Défense nationale, le Sénat du Canada et Affaires mondiales Canada, aux côtés de grands partenaires industriels. Collab Digital Twins permet à cette pratique de se poursuivre — indépendante, ouverte, et à grande échelle.",
+        "bodyExtra": "Depuis près de vingt ans, l'équipe de recherche du CIMS apporte de l'innovation numérique aux projets les plus significatifs au Canada, y compris la réhabilitation de la Colline du Parlement, en partenariat avec le Conseil national de recherches, Services publics et Approvisionnement Canada, le ministère de la Défense nationale, le Sénat du Canada et Affaires mondiales Canada, aux côtés de grands partenaires industriels. Collab Digital Twins poursuit cette approche dans les technologies de jumeaux numériques : de façon indépendante, ouverte et à grande échelle.",
         "cta": "Visitez cims.carleton.ca"
       },
       "boardLabel": "Conseil d'administration",
-      "boardIntro": "Chaque administrateur a passé une décennie ou plus au sein du CIMS — y compris son directeur fondateur et sa directrice associée.",
+      "boardIntro": "Chaque administrateur possède plus d'une décennie d'expérience au CIMS, y compris son directeur fondateur et sa directrice associée.",
       "titles": {
         "director": "Administrateur",
         "directorFemale": "Administratrice",
@@ -395,13 +395,13 @@
     },
     "footer": {
       "tagline": "construire des connexions numériques, ensemble",
-      "description": "Infrastructure de jumeau numérique multi-échelles pour les institutions. Standards ouverts, tarification au coût, sans verrouillage propriétaire.",
+      "description": "Infrastructure de jumeau numérique multi-échelles pour les institutions. Développée à partir de standards ouverts. Tarification au coût, sans verrouillage propriétaire.",
       "governance": "Société canadienne à but non lucratif. Gouvernée par un conseil d'administration. Source AGPL-3.0. Surplus réinvesti dans la plateforme et la communauté.",
       "license": "Sous licence AGPL 3.0",
       "stewardship": "Géré par un organisme canadien à but non lucratif pour l'intérêt public à long terme",
       "copyright": "Collab Digital Twins. Tous droits réservés.",
       "navigate": "Naviguer",
-      "navAbout": "À propos",
+      "navAbout": "À propos de nous",
       "navResources": "Ressources",
       "navServices": "Services",
       "navContact": "Contact",
