@@ -10,7 +10,7 @@
     "hero": {
       "tagline": "Building digital connections, together",
       "title": "Multi-scale digital twins.",
-      "description": "An open, browser-based platform for digital twins — deployed your way, customized to your needs, free of vendor lock-in. Cost-recovery economics. Source available.",
+      "description": "An open, browser-based platform for building, hosting, and exploring digital twins, deployed your way, customized to your needs, and free of vendor lock-in. Cost-recovery economics. Source available.",
       "primaryCta": "Request a demo",
       "secondaryCta": "Explore the platform",
       "platformButton": "Platform",
@@ -18,7 +18,7 @@
     },
     "metadata": {
       "title": "Collab Digital Twins",
-      "description": "An open, browser-based platform for digital twins — deployed your way, customized to your needs, free of vendor lock-in. Cost-recovery economics. Source available."
+      "description": "An open, browser-based platform for building, hosting, and exploring digital twins, deployed your way, customized to your needs, and free of vendor lock-in. Cost-recovery economics. Source available."
     },
     "trustedBy": {
       "heading": "Trusted by"
@@ -27,7 +27,7 @@
       "githubAria": "Collab Digital Twins source on GitHub",
       "viewOnGithub": "View source on GitHub",
       "released": "It's here!",
-      "releasedMessage": "Collab Digital Twins' open-source code is finally released — and it's all yours.",
+      "releasedMessage": "Collab Digital Twins' open-source code is finally released, and it's all yours.",
       "close": "Close",
       "soon": "Open-source soon",
       "heroCountdown": "{days, plural, one {Open-source in # day} other {Open-source in # days}}",
@@ -38,7 +38,7 @@
       "about": {
         "eyebrow": "About Us",
         "title": "Open infrastructure, built to last.",
-        "subtitle": "Why we build the way we do — the principles behind the platform, the ways to deploy it, and how to extend it."
+        "subtitle": "Why we build the way we do: the principles behind the platform, the ways to deploy it, and how to extend it."
       },
       "resources": {
         "eyebrow": "Resources",
@@ -48,7 +48,7 @@
       "services": {
         "eyebrow": "Services",
         "title": "Deployment and support, your way.",
-        "subtitle": "Flexible ways to deploy the platform and hands-on support to operate and extend it — every engagement priced on cost-recovery."
+        "subtitle": "Flexible ways to deploy the platform and hands-on support to operate and extend it, with every engagement priced on cost-recovery."
       }
     },
     "docsHero": {
@@ -81,7 +81,7 @@
       "items": [
         {
           "question": "Where is our data hosted, and can we choose the region?",
-          "answer": "With CDT Hosted, the platform runs on sovereign infrastructure — managed for you in Canada, or installed by our team on infrastructure you choose — so your data stays within the jurisdiction you require. If you self-host the containerized stack, your data never leaves your own infrastructure.",
+          "answer": "With CDT Hosted, the platform runs on sovereign infrastructure, managed for you in Canada or installed by our team on infrastructure you choose, so your data stays within the jurisdiction you require. If you self-host the containerized stack, your data never leaves your own infrastructure.",
           "link": {
             "href": "/services",
             "label": "Compare deployment & hosting options"
@@ -89,7 +89,7 @@
         },
         {
           "question": "Who can access our data?",
-          "answer": "Only the people you authorize. Access is governed by role-based permissions on a least-privilege model, and every sign-in is protected by multi-factor authentication. On self-managed deployments no one outside your organization has access at all — and we never sell or share your data.",
+          "answer": "Only the people you authorize. Access is governed by role-based permissions on a least-privilege model, and every sign-in is protected by multi-factor authentication. On self-managed deployments no one outside your organization has access at all, and we never sell or share your data.",
           "link": {
             "href": "https://docs.collabdt.org/docs/authorization/overview",
             "label": "Read about roles & permissions"
@@ -97,7 +97,7 @@
         },
         {
           "question": "Is the platform really open source?",
-          "answer": "Yes. The core is published under the AGPL-3.0 licence, so you can read, audit, self-host, and modify the source — there is no proprietary black box. A separate commercial licence is available for organizations that need different terms, and any revenue funds the non-profit's mission.",
+          "answer": "Yes. The core is published under the AGPL-3.0 licence, so you can read, audit, self-host, and modify the source. There is no proprietary black box. A separate commercial licence is available for organizations that need different terms, and any revenue funds the non-profit's mission.",
           "link": {
             "href": "https://github.com/CollabDigitalTwins/core",
             "label": "Browse the source on GitHub"
@@ -105,7 +105,7 @@
         },
         {
           "question": "How do we avoid vendor lock-in?",
-          "answer": "The platform is built on open standards — IFC, GeoJSON, LAS, BCF, and IDS — so you can export your data in bulk and self-host the open-source core at any time. You can even add new tools and viewers through the plugin system without forking the codebase. Your investment stays portable.",
+          "answer": "The platform is built on open standards (IFC, GeoJSON, LAS, BCF, and IDS), so you can export your data in bulk and self-host the open-source core at any time. You can even add new tools and viewers through the plugin system without forking the codebase. Your investment stays portable.",
           "link": {
             "href": "https://docs.collabdt.org/docs/concepts/open-standards",
             "label": "See the open standards we use"
@@ -113,7 +113,7 @@
         },
         {
           "question": "Can we self-host on our own infrastructure?",
-          "answer": "Absolutely. CDT ships as a containerized stack that starts with a single command via Docker or Podman — entirely on-premise or in your own cloud — giving you complete control over data, network, and integrations.",
+          "answer": "Absolutely. CDT ships as a containerized stack that starts with a single command via Docker or Podman, entirely on-premise or in your own cloud, giving you complete control over data, network, and integrations.",
           "link": {
             "href": "https://docs.collabdt.org/docs/deployment/self-hosting",
             "label": "Read the self-hosting guide"
@@ -134,7 +134,7 @@
       "subheading": "Five commitments that shape every decision we make about the platform.",
       "openStandards": {
         "label": "Open standards",
-        "body": "Built on IFC, glTF and other open formats — your data is never locked into a vendor."
+        "body": "Built on IFC, glTF and other open formats, so your data is never locked into a vendor."
       },
       "agpl": {
         "label": "AGPL-3.0, source available",
@@ -162,23 +162,23 @@
     "mission": {
       "sectionLabel": "Our mission",
       "title": "Connecting people, places, and the data that shapes them.",
-      "body": "We're a non-profit foundation building shared infrastructure for digital twins — so institutions, communities, and researchers can collaborate on the buildings, neighbourhoods, and landscapes they share. The platform is the means. Connection is the point."
+      "body": "Collab Digital Twins is a non-profit organization developing a shared infrastructure for digital twins, so institutions, communities, and researchers can document, understand, and manage the buildings, neighbourhoods, and landscapes they share."
     },
     "demos": {
       "sectionLabel": "Demos",
       "title": "See the platform in action.",
-      "subtitle": "Short walk-throughs of the platform in action — from the general overview to focused tools built for specific use cases.",
+      "subtitle": "Short walk-throughs of the platform in action, from the general overview to focused tools built for specific use cases.",
       "general": {
         "title": "Platform overview",
-        "body": "A guided tour of the digital twin workspace — bringing BIM, GIS, and open data together in a single browser session, with the tools institutions actually use day-to-day."
+        "body": "A guided tour of the digital twin workspace, bringing BIM, GIS, and open data together in a single browser session, with the tools institutions actually use day-to-day."
       },
       "viewers": {
         "title": "Platform viewers",
-        "body": "Map, BIM, and point-cloud viewers backed by site, building, and file databases — searchable through buildingSMART Data Dictionary properties. IFC, GeoJSON, point clouds, documents, and media live alongside each building, and the platform is extensible via <link>custom plugins</link>."
+        "body": "Map, BIM, and point-cloud viewers backed by site, building, and file databases, searchable through buildingSMART Data Dictionary properties. IFC, GeoJSON, point clouds, documents, and media live alongside each building, and the platform is extensible via <link>custom plugins</link>."
       },
       "organizational": {
         "title": "BIM + GIS integration",
-        "body": "Building-scale BIM and infrastructure-scale GIS data load together in a single browser environment, with precise geolocation and support for multiple coordinate systems. Multi-gigabyte portfolios resolve in under two seconds per model, and users can drop geolocated comments and models onto the map to collaborate."
+        "body": "Building-scale BIM data and infrastructure-scale GIS data load together in a single browser environment, with precise geolocation and support for multiple coordinate systems. Multi-gigabyte portfolios resolve in under two seconds per model, and users can drop geolocated comments and models onto the map to collaborate."
       },
       "open-data": {
         "title": "Open data federation",
@@ -186,7 +186,7 @@
       },
       "openBIM": {
         "title": "openBIM viewer",
-        "body": "Browser-native IFC processing that preserves the full schema — every attribute, material, constraint, and custom property set. Add DXF, GLTF, FBX, OBJ, or point-cloud overlays; section, measure, and comment on the geometry; track issues with BCF; validate models against IDS exchange requirements."
+        "body": "Browser-native IFC processing that preserves the full schema: every attribute, material, constraint, and custom property set. Add DXF, GLTF, FBX, OBJ, or point-cloud overlays; section, measure, and comment on the geometry; track issues with BCF; validate models against IDS exchange requirements."
       },
       "sensors": {
         "title": "IoT sensors on the map and BIM",
@@ -194,24 +194,24 @@
       },
       "wildfires": {
         "title": "Visualizing wildfires",
-        "body": "An interactive map built with a wildfire research group to monitor fire conditions across Canada — combining open datasets from the Canadian Interagency Forest Fire Centre (CIFFC) with photos and videos crowdsourced from users in near-real time."
+        "body": "An interactive map built with a wildfire research group to monitor fire conditions across Canada, combining open datasets from the Canadian Interagency Forest Fire Centre (CIFFC) with photos and videos crowdsourced from users in near-real time."
       },
       "disasterResponse": {
         "title": "Disaster Response Simulation",
-        "body": "Real-time emergency scenario simulation — model a developing incident with live wind-driven smoke, moving traffic, evacuation zones, and 3D building context on the map."
+        "body": "Real-time emergency scenario simulation. Model a developing incident with live wind-driven smoke, moving traffic, evacuation zones, and 3D building context on the map."
       }
     },
     "recognition": {
       "sectionLabel": "Recognition",
       "title": "Award-winning, internationally recognized.",
-      "subtitle": "External endorsement of the platform's open-source, open-standards approach to digital twin infrastructure.",
+      "subtitle": "Industry applauds our open-source, open-standards approach to digital twin infrastructure.",
       "openBIM": {
-        "title": "bSI openBIM Awards — Professional Research (2025)",
-        "body": "Winner of the Professional Research category at the buildingSMART International openBIM Awards, selected from 129 submissions across more than 50 countries — the first bSI openBIM Award brought to Canada since the program launched in 2014."
+        "title": "bSI openBIM Awards: Professional Research (2025)",
+        "body": "Winner of the Professional Research category at the buildingSMART International openBIM Awards, selected from 129 submissions across more than 50 countries. It is the first bSI openBIM Award won by a Canadian team since the program launched in 2014."
       },
       "buildingTransformations": {
         "title": "Building Transformations Innovation Spotlight Awards (2024)",
-        "body": "Winner of both the Research Award and the Best in Innovation Award — recognizing overall excellence across all categories at the 2024 Innovation Spotlight Awards."
+        "body": "Winner of both the Research Award and the Best in Innovation Award, recognizing overall excellence across all categories at the 2024 Innovation Spotlight Awards."
       }
     },
     "capabilities": {
@@ -219,7 +219,7 @@
       "title": "What the platform enables.",
       "bridge": {
         "title": "Bridge BIM, GIS, and open data",
-        "body": "Visualize and analyze multi-scale digital twins in a single browser-based workspace — from individual buildings to regional landscapes."
+        "body": "Visualize and analyze multi-scale digital twins in a single browser-based workspace, from individual buildings to regional landscapes."
       },
       "interop": {
         "title": "Interoperable by design",
@@ -235,7 +235,7 @@
       },
       "customize": {
         "title": "Customize without forking",
-        "body": "Commission specialized features on a cost-recovery basis — built on the open core so you stay on the upgrade path."
+        "body": "Commission specialized features on a cost-recovery basis, built on the open core so you stay on the upgrade path."
       },
       "train": {
         "title": "Equip your team",
@@ -245,7 +245,7 @@
     "solutions": {
       "sectionLabel": "Solutions",
       "title": "Pick your deployment.",
-      "subtitle": "Four routes to value — every one priced on cost-recovery, with any surplus reinvested in the platform.",
+      "subtitle": "Four routes to value, every one priced on cost-recovery, with any surplus reinvested in the platform.",
       "groupDeployment": "Deployment",
       "groupDeploymentSub": "Run the platform in the cloud we manage, or self-host the open-source core on your own infrastructure.",
       "groupSupport": "Support",
@@ -254,7 +254,7 @@
         "tag": "Fastest path",
         "name": "Managed Cloud (SaaS)",
         "headline": "Sovereign hosting, ready in days.",
-        "body": "We run the platform on sovereign infrastructure of your choice, with included support, automatic updates, and data residency guarantees. Cost-recovery pricing — no profit margin.",
+        "body": "We run the platform on sovereign infrastructure of your choice, with included support, automatic updates, and data residency guarantees. Cost-recovery pricing, no profit margin.",
         "feature1": "Data residency you control",
         "feature2": "Included support",
         "feature3": "Automatic updates",
@@ -308,7 +308,7 @@
       },
       "costRecovery": {
         "title": "Cost-recovery economics",
-        "body": "We're a non-profit. No profit margin baked in. Any surplus is reinvested in the platform — not extracted."
+        "body": "We're a non-profit. No profit margin baked in. Any surplus is reinvested in the platform, not extracted."
       },
       "multidisciplinary": {
         "title": "Multidisciplinary by design",
@@ -345,7 +345,7 @@
     "developers": {
       "sectionLabel": "Developer Platform",
       "title": "Extend the platform. Integrate your systems.",
-      "body": "Documented APIs and a contributor ecosystem for analysis tools, extensions, and integrations. Build alongside the core — or on top of it.",
+      "body": "Documented APIs and a contributor ecosystem for analysis tools, extensions, and integrations. Build alongside the core, or on top of it.",
       "docsLabel": "Documentation",
       "githubLabel": "GitHub",
       "mailingLabel": "Developer mailing list"
@@ -353,17 +353,17 @@
     "leadership": {
       "sectionLabel": "Team",
       "title": "Two decades of research and practice, grounded in community.",
-      "intro": "Collab Digital Twins is an independent non-profit, spun out of Carleton Immersive Media Studio (CIMS) — the research group whose work has shaped how Canadian institutions adopt BIM, GIS, AR/VR, immersive media, digital fabrication, digital storytelling, and heritage digitization since the early 2000s.",
+      "intro": "Collab Digital Twins is an independent not-for-profit organization, set up by the core research team at Carleton Immersive Media Studio (CIMS), the research group whose work has shaped how Canadian institutions adopt BIM, GIS, AR/VR, immersive media, digital fabrication, digital storytelling, and heritage digitization since the early 2000s.",
       "heritage": {
-        "label": "Our heritage",
+        "label": "Our expertise",
         "logoAlt": "Carleton Immersive Media Studio",
         "title": "Applied research with national reach and international standing.",
         "body": "Founded at Carleton University's Azrieli School of Architecture and Urbanism, CIMS is one of Canada's leading applied research labs at the intersection of architecture, heritage conservation, and advanced visualization. Its work on Heritage BIM, photogrammetry, and immersive documentation has contributed to international standards and shaped a generation of practitioners.",
-        "bodyExtra": "For nearly two decades, the team has delivered on Canada's most significant projects — including the rehabilitation of Parliament Hill — partnering with the National Research Council, Public Services and Procurement Canada, the Department of National Defence, the Senate of Canada, and Global Affairs Canada, alongside major industry partners. Collab Digital Twins continues that practice — independent, open, and at scale.",
+        "bodyExtra": "For nearly two decades, the CIMS research team has delivered digital innovation on Canada's most significant projects, including the rehabilitation of Parliament Hill, partnering with the National Research Council, Public Services and Procurement Canada, the Department of National Defence, the Senate of Canada, and Global Affairs Canada, alongside major industry partners. Collab Digital Twins continues this approach in digital twin technologies: independent, open, and at scale.",
         "cta": "Visit cims.carleton.ca"
       },
       "boardLabel": "Board of directors",
-      "boardIntro": "Every director has spent a decade or more inside CIMS — including its founding director and its associate director.",
+      "boardIntro": "Every director has more than a decade of experience at CIMS, including its founding director and its associate director.",
       "titles": {
         "director": "Director",
         "directorFemale": "Director",
@@ -395,8 +395,8 @@
     },
     "footer": {
       "tagline": "building digital connections, together",
-      "description": "Multi-scale digital twin infrastructure for institutions. Open standards, cost-recovery pricing, no vendor lock-in.",
-      "governance": "Canadian non-profit corporation. Board-governed. Source AGPL-3.0. Surplus reinvested in the platform and the community.",
+      "description": "Multi-scale digital twin infrastructure for institutions. Developed using open standards. Cost-recovery pricing, no vendor lock-in.",
+      "governance": "Canadian not-for-profit corporation. Board-governed. Source AGPL-3.0. Surplus reinvested in the platform and the community.",
       "license": "Licensed under AGPL 3.0",
       "stewardship": "Stewarded by a Canadian not-for-profit organization for long-term public benefit",
       "copyright": "Collab Digital Twins. All rights reserved.",

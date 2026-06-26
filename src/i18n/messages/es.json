@@ -2,7 +2,7 @@
   "HomePage": {
     "nav": {
       "home": "inicio",
-      "about": "acerca de",
+      "about": "acerca de nosotros",
       "resources": "recursos",
       "services": "servicios",
       "contact": "contacto"
@@ -10,7 +10,7 @@
     "hero": {
       "tagline": "Construyendo conexiones digitales, juntos",
       "title": "Gemelos digitales multi-escala.",
-      "description": "Una plataforma abierta para gemelos digitales, en el navegador — desplegada a tu manera, personalizada según tus necesidades, libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible.",
+      "description": "Una plataforma abierta, en el navegador, para crear, alojar y explorar gemelos digitales, desplegada a tu manera, personalizada según tus necesidades y libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible.",
       "primaryCta": "Solicitar una demo",
       "secondaryCta": "Explorar la plataforma",
       "platformButton": "Plataforma",
@@ -18,7 +18,7 @@
     },
     "metadata": {
       "title": "Collab Digital Twins",
-      "description": "Una plataforma abierta para gemelos digitales, en el navegador — desplegada a tu manera, personalizada según tus necesidades, libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible."
+      "description": "Una plataforma abierta, en el navegador, para crear, alojar y explorar gemelos digitales, desplegada a tu manera, personalizada según tus necesidades y libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible."
     },
     "trustedBy": {
       "heading": "Confían en nosotros"
@@ -27,7 +27,7 @@
       "githubAria": "Código fuente de Collab Digital Twins en GitHub",
       "viewOnGithub": "Ver el código fuente en GitHub",
       "released": "¡Ya está aquí!",
-      "releasedMessage": "El código abierto de Collab Digital Twins por fin está disponible — y es todo tuyo.",
+      "releasedMessage": "El código abierto de Collab Digital Twins por fin está disponible, y es todo tuyo.",
       "close": "Cerrar",
       "soon": "Pronto en código abierto",
       "heroCountdown": "{days, plural, one {Código abierto en # día} other {Código abierto en # días}}",
@@ -36,9 +36,9 @@
     },
     "pageHeaders": {
       "about": {
-        "eyebrow": "Acerca de",
+        "eyebrow": "Acerca de nosotros",
         "title": "Infraestructura abierta, hecha para durar.",
-        "subtitle": "Por qué construimos como lo hacemos — los principios detrás de la plataforma, las formas de desplegarla y de extenderla."
+        "subtitle": "Por qué construimos como lo hacemos: los principios detrás de la plataforma, las formas de desplegarla y de extenderla."
       },
       "resources": {
         "eyebrow": "Recursos",
@@ -48,7 +48,7 @@
       "services": {
         "eyebrow": "Servicios",
         "title": "Despliegue y soporte, a tu manera.",
-        "subtitle": "Formas flexibles de desplegar la plataforma y soporte práctico para operarla y extenderla — cada servicio con precios a costo."
+        "subtitle": "Formas flexibles de desplegar la plataforma y soporte práctico para operarla y extenderla, con cada servicio cobrado a costo."
       }
     },
     "docsHero": {
@@ -81,7 +81,7 @@
       "items": [
         {
           "question": "¿Dónde se alojan nuestros datos y podemos elegir la región?",
-          "answer": "Con CDT Hosted, la plataforma se ejecuta en infraestructura soberana — gestionada para ti en Canadá, o instalada por nuestro equipo en la infraestructura que elijas — de modo que tus datos permanecen dentro de la jurisdicción que requieras. Si autoalojas la pila en contenedores, tus datos nunca salen de tu propia infraestructura.",
+          "answer": "Con CDT Hosted, la plataforma se ejecuta en infraestructura soberana, gestionada para ti en Canadá o instalada por nuestro equipo en la infraestructura que elijas, de modo que tus datos permanecen dentro de la jurisdicción que requieras. Si autoalojas la pila en contenedores, tus datos nunca salen de tu propia infraestructura.",
           "link": {
             "href": "/services",
             "label": "Comparar las opciones de despliegue y alojamiento"
@@ -89,7 +89,7 @@
         },
         {
           "question": "¿Quién puede acceder a nuestros datos?",
-          "answer": "Solo las personas que autorices. El acceso se rige por permisos basados en roles, según el principio de mínimo privilegio, y cada inicio de sesión está protegido por autenticación multifactor. En los despliegues autogestionados nadie fuera de tu organización tiene acceso alguno — y nunca vendemos ni compartimos tus datos.",
+          "answer": "Solo las personas que autorices. El acceso se rige por permisos basados en roles, según el principio de mínimo privilegio, y cada inicio de sesión está protegido por autenticación multifactor. En los despliegues autogestionados nadie fuera de tu organización tiene acceso alguno, y nunca vendemos ni compartimos tus datos.",
           "link": {
             "href": "https://docs.collabdt.org/docs/authorization/overview",
             "label": "Conoce los roles y permisos"
@@ -97,7 +97,7 @@
         },
         {
           "question": "¿La plataforma es realmente de código abierto?",
-          "answer": "Sí. El núcleo se publica bajo la licencia AGPL-3.0, por lo que puedes leer, auditar, autoalojar y modificar el código fuente — no hay ninguna caja negra propietaria. Existe una licencia comercial aparte para las organizaciones que necesitan otras condiciones, y cualquier ingreso financia la misión de la organización sin fines de lucro.",
+          "answer": "Sí. El núcleo se publica bajo la licencia AGPL-3.0, por lo que puedes leer, auditar, autoalojar y modificar el código fuente. No hay ninguna caja negra propietaria. Existe una licencia comercial aparte para las organizaciones que necesitan otras condiciones, y cualquier ingreso financia la misión de la organización sin fines de lucro.",
           "link": {
             "href": "https://github.com/CollabDigitalTwins/core",
             "label": "Explora el código en GitHub"
@@ -105,7 +105,7 @@
         },
         {
           "question": "¿Cómo evitamos el bloqueo propietario?",
-          "answer": "La plataforma está construida sobre estándares abiertos — IFC, GeoJSON, LAS, BCF e IDS — por lo que puedes exportar tus datos de forma masiva y autoalojar el núcleo de código abierto en cualquier momento. Incluso puedes añadir nuevas herramientas y visores mediante el sistema de complementos, sin bifurcar el código. Tu inversión sigue siendo portable.",
+          "answer": "La plataforma está construida sobre estándares abiertos (IFC, GeoJSON, LAS, BCF e IDS), por lo que puedes exportar tus datos de forma masiva y autoalojar el núcleo de código abierto en cualquier momento. Incluso puedes añadir nuevas herramientas y visores mediante el sistema de complementos, sin bifurcar el código. Tu inversión sigue siendo portable.",
           "link": {
             "href": "https://docs.collabdt.org/docs/concepts/open-standards",
             "label": "Mira los estándares abiertos que usamos"
@@ -113,7 +113,7 @@
         },
         {
           "question": "¿Podemos autoalojar en nuestra propia infraestructura?",
-          "answer": "Por supuesto. CDT se distribuye como una pila en contenedores que arranca con un solo comando mediante Docker o Podman — completamente en tus instalaciones o en tu propia nube — dándote control total sobre los datos, la red y las integraciones.",
+          "answer": "Por supuesto. CDT se distribuye como una pila en contenedores que arranca con un solo comando mediante Docker o Podman, completamente en tus instalaciones o en tu propia nube, dándote control total sobre los datos, la red y las integraciones.",
           "link": {
             "href": "https://docs.collabdt.org/docs/deployment/self-hosting",
             "label": "Lee la guía de autoalojamiento"
@@ -134,7 +134,7 @@
       "subheading": "Cinco compromisos que guían cada decisión sobre la plataforma.",
       "openStandards": {
         "label": "Estándares abiertos",
-        "body": "Construida sobre IFC, glTF y otros formatos abiertos — tus datos nunca quedan atados a un proveedor."
+        "body": "Construida sobre IFC, glTF y otros formatos abiertos, así tus datos nunca quedan atados a un proveedor."
       },
       "agpl": {
         "label": "AGPL-3.0, código disponible",
@@ -162,23 +162,23 @@
     "mission": {
       "sectionLabel": "Nuestra misión",
       "title": "Conectar a las personas, los lugares y los datos que les dan forma.",
-      "body": "Somos una fundación sin fines de lucro que construye infraestructura compartida para gemelos digitales — para que las instituciones, las comunidades y las personas investigadoras colaboren sobre los edificios, los barrios y los paisajes que comparten. La plataforma es el medio. La conexión es el propósito."
+      "body": "Collab Digital Twins es una organización sin fines de lucro que desarrolla una infraestructura compartida para gemelos digitales, de modo que las instituciones, las comunidades y las personas investigadoras puedan documentar, comprender y gestionar los edificios, los barrios y los paisajes que comparten."
     },
     "demos": {
       "sectionLabel": "Demos",
       "title": "Ve la plataforma en acción.",
-      "subtitle": "Breves recorridos de la plataforma en acción — desde la visión general hasta herramientas enfocadas a casos de uso específicos.",
+      "subtitle": "Breves recorridos de la plataforma en acción, desde la visión general hasta herramientas enfocadas a casos de uso específicos.",
       "general": {
         "title": "Vista general de la plataforma",
-        "body": "Un recorrido guiado por el espacio de trabajo del gemelo digital — uniendo BIM, GIS y datos abiertos en una sola sesión del navegador, con las herramientas que las instituciones realmente usan en su día a día."
+        "body": "Un recorrido guiado por el espacio de trabajo del gemelo digital, que reúne BIM, GIS y datos abiertos en una sola sesión del navegador, con las herramientas que las instituciones realmente usan en su día a día."
       },
       "viewers": {
         "title": "Visores de la plataforma",
-        "body": "Visores de mapa, BIM y nube de puntos respaldados por bases de datos de sitios, edificios y archivos — consultables mediante las propiedades del buildingSMART Data Dictionary. IFC, GeoJSON, nubes de puntos, documentos y multimedia conviven junto a cada edificio, y la plataforma es extensible mediante <link>plugins personalizados</link>."
+        "body": "Visores de mapa, BIM y nube de puntos respaldados por bases de datos de sitios, edificios y archivos, consultables mediante las propiedades del buildingSMART Data Dictionary. IFC, GeoJSON, nubes de puntos, documentos y multimedia conviven junto a cada edificio, y la plataforma es extensible mediante <link>plugins personalizados</link>."
       },
       "organizational": {
         "title": "Integración BIM + GIS",
-        "body": "Los modelos BIM a escala de edificio y los datos GIS a escala de infraestructura cargan juntos en un mismo entorno de navegador, con geolocalización precisa y soporte para múltiples sistemas de coordenadas. Portafolios de varios gigabytes se resuelven en menos de dos segundos por modelo, y las personas usuarias pueden colocar comentarios y modelos geolocalizados sobre el mapa para colaborar."
+        "body": "Los datos BIM a escala de edificio y los datos GIS a escala de infraestructura cargan juntos en un mismo entorno de navegador, con geolocalización precisa y soporte para múltiples sistemas de coordenadas. Portafolios de varios gigabytes se resuelven en menos de dos segundos por modelo, y las personas usuarias pueden colocar comentarios y modelos geolocalizados sobre el mapa para colaborar."
       },
       "open-data": {
         "title": "Federación de datos abiertos",
@@ -186,7 +186,7 @@
       },
       "openBIM": {
         "title": "Visor openBIM",
-        "body": "Procesamiento IFC nativo en el navegador que preserva el esquema completo — cada atributo, material, restricción y conjunto de propiedades personalizadas. Añade superposiciones DXF, GLTF, FBX, OBJ o de nubes de puntos; secciona, mide y comenta sobre la geometría; gestiona incidencias con BCF; valida modelos contra requisitos de intercambio IDS."
+        "body": "Procesamiento IFC nativo en el navegador que preserva el esquema completo: cada atributo, material, restricción y conjunto de propiedades personalizadas. Añade superposiciones DXF, GLTF, FBX, OBJ o de nubes de puntos; secciona, mide y comenta sobre la geometría; gestiona incidencias con BCF; valida modelos contra requisitos de intercambio IDS."
       },
       "sensors": {
         "title": "Sensores IoT en el mapa y BIM",
@@ -194,24 +194,24 @@
       },
       "wildfires": {
         "title": "Visualización de incendios forestales",
-        "body": "Un mapa interactivo construido con un grupo de investigación sobre incendios forestales para monitorear las condiciones del fuego en Canadá — combinando conjuntos de datos abiertos del Canadian Interagency Forest Fire Centre (CIFFC) con fotos y videos aportados por las personas usuarias casi en tiempo real."
+        "body": "Un mapa interactivo construido con un grupo de investigación sobre incendios forestales para monitorear las condiciones del fuego en Canadá, combinando conjuntos de datos abiertos del Canadian Interagency Forest Fire Centre (CIFFC) con fotos y videos aportados por las personas usuarias casi en tiempo real."
       },
       "disasterResponse": {
         "title": "Simulación de respuesta a desastres",
-        "body": "Simulación en tiempo real de escenarios de emergencia — modela un incidente en desarrollo con humo arrastrado por el viento, tráfico en movimiento, zonas de evacuación y contexto 3D de edificios en el mapa."
+        "body": "Simulación en tiempo real de escenarios de emergencia. Modela un incidente en desarrollo con humo arrastrado por el viento, tráfico en movimiento, zonas de evacuación y contexto 3D de edificios en el mapa."
       }
     },
     "recognition": {
       "sectionLabel": "Reconocimiento",
       "title": "Galardonada y reconocida internacionalmente.",
-      "subtitle": "Validación externa del enfoque de código abierto y estándares abiertos de la plataforma.",
+      "subtitle": "La industria aplaude nuestro enfoque de código abierto y estándares abiertos para la infraestructura de gemelos digitales.",
       "openBIM": {
-        "title": "Premios bSI openBIM — Investigación profesional (2025)",
-        "body": "Ganador en la categoría de Investigación Profesional en los Premios openBIM de buildingSMART International, seleccionado entre 129 candidaturas de más de 50 países — el primer premio bSI openBIM otorgado a Canadá desde la creación del programa en 2014."
+        "title": "Premios bSI openBIM: Investigación profesional (2025)",
+        "body": "Ganador en la categoría de Investigación Profesional en los Premios openBIM de buildingSMART International, seleccionado entre 129 candidaturas de más de 50 países. Es el primer premio bSI openBIM ganado por un equipo canadiense desde la creación del programa en 2014."
       },
       "buildingTransformations": {
         "title": "Premios Innovation Spotlight de Building Transformations (2024)",
-        "body": "Ganador del Premio a la Investigación y del Premio a la Mejor Innovación — que reconoce la excelencia general en todas las categorías de los Premios Innovation Spotlight 2024."
+        "body": "Ganador del Premio a la Investigación y del Premio a la Mejor Innovación, que reconoce la excelencia general en todas las categorías de los Premios Innovation Spotlight 2024."
       }
     },
     "capabilities": {
@@ -219,7 +219,7 @@
       "title": "Lo que la plataforma habilita.",
       "bridge": {
         "title": "Conectar BIM, GIS y datos abiertos",
-        "body": "Visualiza y analiza gemelos digitales multi-escala en un único espacio de trabajo en el navegador — desde edificios individuales hasta paisajes regionales."
+        "body": "Visualiza y analiza gemelos digitales multi-escala en un único espacio de trabajo en el navegador, desde edificios individuales hasta paisajes regionales."
       },
       "interop": {
         "title": "Interoperable por diseño",
@@ -235,7 +235,7 @@
       },
       "customize": {
         "title": "Personaliza sin bifurcar",
-        "body": "Encarga funcionalidades especializadas a costo — construidas sobre el núcleo abierto para permanecer en la ruta de actualizaciones."
+        "body": "Encarga funcionalidades especializadas a costo, construidas sobre el núcleo abierto para permanecer en la ruta de actualizaciones."
       },
       "train": {
         "title": "Capacita a tu equipo",
@@ -245,7 +245,7 @@
     "solutions": {
       "sectionLabel": "Soluciones",
       "title": "Elige tu despliegue.",
-      "subtitle": "Cuatro rutas hacia el valor — todas a costo, con cualquier excedente reinvertido en la plataforma.",
+      "subtitle": "Cuatro rutas hacia el valor, todas a costo, con cualquier excedente reinvertido en la plataforma.",
       "groupDeployment": "Despliegue",
       "groupDeploymentSub": "Ejecuta la plataforma en la nube que gestionamos, o autoaloja el núcleo de código abierto en tu propia infraestructura.",
       "groupSupport": "Soporte",
@@ -254,7 +254,7 @@
         "tag": "Ruta más rápida",
         "name": "Nube gestionada (SaaS)",
         "headline": "Alojamiento soberano, listo en días.",
-        "body": "Ejecutamos la plataforma sobre infraestructura soberana de tu elección, con soporte incluido, actualizaciones automáticas y garantías de residencia de datos. Tarifas a costo — sin margen.",
+        "body": "Ejecutamos la plataforma sobre infraestructura soberana de tu elección, con soporte incluido, actualizaciones automáticas y garantías de residencia de datos. Tarifas a costo, sin margen.",
         "feature1": "Residencia de datos bajo tu control",
         "feature2": "Soporte incluido",
         "feature3": "Actualizaciones automáticas",
@@ -308,7 +308,7 @@
       },
       "costRecovery": {
         "title": "Economía a costo",
-        "body": "Somos una OSFL. Sin margen de ganancia integrado. Cualquier excedente se reinvierte en la plataforma — no se extrae."
+        "body": "Somos una OSFL. Sin margen de ganancia integrado. Cualquier excedente se reinvierte en la plataforma, no se extrae."
       },
       "multidisciplinary": {
         "title": "Multidisciplinario por diseño",
@@ -345,7 +345,7 @@
     "developers": {
       "sectionLabel": "Plataforma para desarrolladores",
       "title": "Extiende la plataforma. Integra tus sistemas.",
-      "body": "APIs documentadas y un ecosistema de colaboración para herramientas de análisis, extensiones e integraciones. Construye junto al núcleo — o encima de él.",
+      "body": "APIs documentadas y un ecosistema de colaboración para herramientas de análisis, extensiones e integraciones. Construye junto al núcleo, o encima de él.",
       "docsLabel": "Documentación",
       "githubLabel": "GitHub",
       "mailingLabel": "Lista de correo para desarrolladores"
@@ -353,17 +353,17 @@
     "leadership": {
       "sectionLabel": "Equipo",
       "title": "Dos décadas de investigación y práctica, arraigadas en la comunidad.",
-      "intro": "Collab Digital Twins es una organización sin fines de lucro independiente, escindida del Carleton Immersive Media Studio (CIMS) — el grupo de investigación cuyo trabajo ha dado forma a cómo las instituciones canadienses adoptan BIM, GIS, AR/VR, medios inmersivos, fabricación digital, narrativa digital y digitalización patrimonial desde principios de los años 2000.",
+      "intro": "Collab Digital Twins es una organización sin fines de lucro independiente, creada por el equipo central de investigación del Carleton Immersive Media Studio (CIMS), el grupo de investigación cuyo trabajo ha dado forma a cómo las instituciones canadienses adoptan BIM, GIS, AR/VR, medios inmersivos, fabricación digital, narrativa digital y digitalización patrimonial desde principios de los años 2000.",
       "heritage": {
-        "label": "Nuestro origen",
+        "label": "Nuestra experiencia",
         "logoAlt": "Carleton Immersive Media Studio",
         "title": "Investigación aplicada con alcance nacional y proyección internacional.",
         "body": "Fundado en la Azrieli School of Architecture and Urbanism de la Universidad Carleton, CIMS es uno de los principales laboratorios de investigación aplicada de Canadá, en la intersección entre arquitectura, conservación del patrimonio y visualización avanzada. Su trabajo en BIM patrimonial (HBIM), fotogrametría y documentación inmersiva ha contribuido a estándares internacionales y ha formado a toda una generación de profesionales.",
-        "bodyExtra": "Durante casi dos décadas, el equipo ha entregado los proyectos más significativos de Canadá — incluida la rehabilitación de Parliament Hill — en colaboración con el Consejo Nacional de Investigación, Servicios Públicos y Adquisiciones de Canadá, el Departamento de Defensa Nacional, el Senado de Canadá y Asuntos Globales Canadá, junto a grandes socios industriales. Collab Digital Twins permite que esa práctica continúe — independiente, abierta y a escala.",
+        "bodyExtra": "Durante casi dos décadas, el equipo de investigación de CIMS ha aportado innovación digital a los proyectos más significativos de Canadá, incluida la rehabilitación de Parliament Hill, en colaboración con el Consejo Nacional de Investigación, Servicios Públicos y Adquisiciones de Canadá, el Departamento de Defensa Nacional, el Senado de Canadá y Asuntos Globales Canadá, junto a grandes socios industriales. Collab Digital Twins continúa este enfoque en las tecnologías de gemelos digitales: de forma independiente, abierta y a escala.",
         "cta": "Visita cims.carleton.ca"
       },
       "boardLabel": "Junta directiva",
-      "boardIntro": "Cada director ha pasado una década o más dentro de CIMS — incluidos su director fundador y su directora asociada.",
+      "boardIntro": "Cada director cuenta con más de una década de experiencia en CIMS, incluidos su director fundador y su directora asociada.",
       "titles": {
         "director": "Director",
         "directorFemale": "Directora",
@@ -395,13 +395,13 @@
     },
     "footer": {
       "tagline": "construyendo conexiones digitales, juntos",
-      "description": "Infraestructura de gemelo digital multi-escala para instituciones. Estándares abiertos, tarifas a costo, sin bloqueo propietario.",
+      "description": "Infraestructura de gemelo digital multi-escala para instituciones. Desarrollada con estándares abiertos. Tarifas a costo, sin bloqueo propietario.",
       "governance": "Corporación canadiense sin fines de lucro. Gobernada por una junta directiva. Código AGPL-3.0. Excedentes reinvertidos en la plataforma y la comunidad.",
       "license": "Licenciado bajo AGPL 3.0",
       "stewardship": "Administrado por una organización sin fines de lucro canadiense para el beneficio público a largo plazo",
       "copyright": "Collab Digital Twins. Todos los derechos reservados.",
       "navigate": "Navegar",
-      "navAbout": "Acerca de",
+      "navAbout": "Acerca de nosotros",
       "navResources": "Recursos",
       "navServices": "Servicios",
       "navContact": "Contacto",
