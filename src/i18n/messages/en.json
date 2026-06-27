@@ -3,22 +3,19 @@
     "nav": {
       "home": "home",
       "about": "about us",
-      "resources": "resources",
       "services": "services",
       "contact": "contact"
     },
     "hero": {
       "tagline": "Building digital connections, together",
       "title": "Multi-scale digital twins.",
-      "description": "An open, browser-based platform for building, hosting, and exploring digital twins, deployed your way, customized to your needs, and free of vendor lock-in. Cost-recovery economics. Source available.",
-      "primaryCta": "Request a demo",
+      "description": "An open, browser-based digital twin platform, deployed your way, customized to your needs, and free of vendor lock-in. Cost-recovery economics. Source available.",
       "secondaryCta": "Explore the platform",
-      "platformButton": "Platform",
-      "videoFallback": "Your browser does not support the video tag."
+      "platformButton": "Platform"
     },
     "metadata": {
       "title": "Collab Digital Twins",
-      "description": "An open, browser-based platform for building, hosting, and exploring digital twins, deployed your way, customized to your needs, and free of vendor lock-in. Cost-recovery economics. Source available."
+      "description": "An open, browser-based digital twin platform, deployed your way, customized to your needs, and free of vendor lock-in. Cost-recovery economics. Source available."
     },
     "trustedBy": {
       "heading": "Trusted by"
@@ -36,14 +33,7 @@
     },
     "pageHeaders": {
       "about": {
-        "eyebrow": "About Us",
-        "title": "Open infrastructure, built to last.",
-        "subtitle": "Why we build the way we do: the principles behind the platform, the ways to deploy it, and how to extend it."
-      },
-      "resources": {
-        "eyebrow": "Resources",
-        "title": "Principles, documentation, and answers.",
-        "subtitle": "The principles the platform is built on, developer documentation, and answers to common security and data-privacy questions."
+        "eyebrow": "About Us"
       },
       "services": {
         "eyebrow": "Services",
@@ -129,39 +119,8 @@
         }
       ]
     },
-    "trustBand": {
-      "heading": "How we operate",
-      "subheading": "Five commitments that shape every decision we make about the platform.",
-      "openStandards": {
-        "label": "Open standards",
-        "body": "Built on IFC, glTF and other open formats, so your data is never locked into a vendor."
-      },
-      "agpl": {
-        "label": "AGPL-3.0, source available",
-        "body": "The full platform source is public and auditable under a copyleft licence."
-      },
-      "sovereignHosted": {
-        "label": "Sovereign hosting",
-        "body": "Runs on infrastructure you control, in the jurisdiction you choose."
-      },
-      "costRecovery": {
-        "label": "Cost-recovery pricing",
-        "body": "Priced to sustain the platform, not to extract profit from it."
-      },
-      "boardGoverned": {
-        "label": "Board-governed non-profit",
-        "body": "Stewarded by a non-profit board accountable to the community it serves."
-      }
-    },
-    "architecture": {
-      "sectionLabel": "Platform architecture",
-      "title": "An open stack, end to end.",
-      "subtitle": "From the browser down to self-hosted infrastructure, every layer is built on open standards and open-source components. Explore how the pieces fit together.",
-      "cta": "Explore the platform architecture"
-    },
     "mission": {
-      "sectionLabel": "Our mission",
-      "title": "Connecting people, places, and the data that shapes them.",
+      "title": "Connecting people, places, and the data.",
       "body": "Collab Digital Twins is a non-profit organization developing a shared infrastructure for digital twins, so institutions, communities, and researchers can document, understand, and manage the buildings, neighbourhoods, and landscapes they share."
     },
     "demos": {
@@ -315,41 +274,6 @@
         "body": "Built from the start to connect BIM, GIS, research, and operations. The platform fits the way institutions actually work."
       }
     },
-    "values": {
-      "title": "Principles you can build on",
-      "openStandards": {
-        "title": "Open Standards",
-        "description": "Eliminate proprietary barriers and promote interoperability through open standards."
-      },
-      "communityDriven": {
-        "title": "Community Driven",
-        "description": "Build with and for the community."
-      },
-      "transparent": {
-        "title": "Transparent",
-        "description": "Foster trust and collaborative development through open source code."
-      },
-      "imagination": {
-        "title": "Imagination",
-        "description": "Challenge current boundaries that limit what is possible with open source digital technologies."
-      },
-      "multidisciplinary": {
-        "title": "Multidisciplinary",
-        "description": "Where we are today is evidence that we are stronger and smarter together."
-      },
-      "accessible": {
-        "title": "Accessible",
-        "description": "Empower everyone with intuitive, user-friendly tools that work directly in the browser."
-      }
-    },
-    "developers": {
-      "sectionLabel": "Developer Platform",
-      "title": "Extend the platform. Integrate your systems.",
-      "body": "Documented APIs and a contributor ecosystem for analysis tools, extensions, and integrations. Build alongside the core, or on top of it.",
-      "docsLabel": "Documentation",
-      "githubLabel": "GitHub",
-      "mailingLabel": "Developer mailing list"
-    },
     "leadership": {
       "sectionLabel": "Team",
       "title": "Two decades of research and practice, grounded in community.",
@@ -362,8 +286,6 @@
         "bodyExtra": "For nearly two decades, the CIMS research team has delivered digital innovation on Canada's most significant projects, including the rehabilitation of Parliament Hill, partnering with the National Research Council, Public Services and Procurement Canada, the Department of National Defence, the Senate of Canada, and Global Affairs Canada, alongside major industry partners. Collab Digital Twins continues this approach in digital twin technologies: independent, open, and at scale.",
         "cta": "Visit cims.carleton.ca"
       },
-      "boardLabel": "Board of directors",
-      "boardIntro": "Every director has more than a decade of experience at CIMS, including its founding director and its associate director.",
       "titles": {
         "director": "Director",
         "directorFemale": "Director",
@@ -390,19 +312,17 @@
       "sendButton": "Request demo",
       "sending": "Sending...",
       "orEmail": "Or email us directly at",
-      "infoEmail": "info@collabdt.org",
-      "supportEmail": "support@collabdt.org"
+      "infoEmail": "info@collabdt.org"
     },
     "footer": {
       "tagline": "building digital connections, together",
-      "description": "Multi-scale digital twin infrastructure for institutions. Developed using open standards. Cost-recovery pricing, no vendor lock-in.",
-      "governance": "Canadian not-for-profit corporation. Board-governed. Source AGPL-3.0. Surplus reinvested in the platform and the community.",
+      "description": "Multi-scale digital twin infrastructure for institutions. Developed using open standards.",
+      "governance": "Non-profit organization. Board-governed. Surplus reinvested in the platform and the community.",
       "license": "Licensed under AGPL 3.0",
-      "stewardship": "Stewarded by a Canadian not-for-profit organization for long-term public benefit",
+      "stewardship": "Stewarded by a Non-profit organization for long-term public benefit",
       "copyright": "Collab Digital Twins. All rights reserved.",
       "navigate": "Navigate",
       "navAbout": "About Us",
-      "navResources": "Resources",
       "navServices": "Services",
       "navContact": "Contact",
       "navPlatform": "Platform",

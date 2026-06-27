@@ -1,5 +1,4 @@
 import HeroSection from './HeroSection'
-import MissionSection from './MissionSection'
 import DemosSection from './DemosSection'
 import WhyCdtSection from './WhyCdtSection'
 import CapabilitiesSection from './CapabilitiesSection'
@@ -15,7 +14,6 @@ export function HomeBody({ assetsUrl }: HomeBodyProps) {
   return (
     <>
       <HeroSection assetsUrl={assetsUrl} />
-      <MissionSection />
       <DemosSection assetsUrl={assetsUrl} />
       <WhyCdtSection background="var(--hp-low)" />
       <CapabilitiesSection />

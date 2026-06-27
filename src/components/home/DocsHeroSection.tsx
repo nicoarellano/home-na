@@ -23,7 +23,7 @@ export default function DocsHeroSection() {
 
   return (
     <section
-      className="relative min-h-screen flex items-center overflow-hidden pt-24 pb-16"
+      className="relative overflow-hidden py-20 md:py-24"
       style={{ background: 'var(--hp-surface)' }}
     >
       <div
