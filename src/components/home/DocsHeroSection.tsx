@@ -42,7 +42,7 @@ export default function DocsHeroSection() {
           className="max-w-3xl mx-auto text-center space-y-8"
         >
           <div className="space-y-5">
-            <h1
+            <h2
               className="font-display font-bold"
               style={{
                 fontSize: 'clamp(2.5rem, 5.5vw, 4rem)',
@@ -53,7 +53,7 @@ export default function DocsHeroSection() {
             >
               <span style={{ color: 'var(--hp-primary-container)' }}>{t('titleAccent')}</span>{' '}
               {t('title')}
-            </h1>
+            </h2>
 
             <p
               className="text-lg leading-relaxed max-w-xl mx-auto"

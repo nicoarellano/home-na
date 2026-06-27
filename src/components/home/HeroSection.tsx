@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/Button'
 import AnimatedBackground from '@/components/ui/AnimatedBackground'
 import Globe from '@/components/ui/Globe'
 import HeroReleaseCountdown from '@/components/home/HeroReleaseCountdown'
+import GithubReleaseButton from '@/components/home/GithubReleaseButton'
 
 interface HeroSectionProps {
   assetsUrl: string
@@ -13,16 +14,6 @@ interface HeroSectionProps {
 
 export default function HeroSection({ assetsUrl }: HeroSectionProps) {
   const tHero = useTranslations('HomePage.hero')
-
-  const handleDemoRequest = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault()
-    try {
-      sessionStorage.setItem('cdt_demo_request', '1')
-    } catch { }
-    const target = document.getElementById('contact')
-    if (target) target.scrollIntoView({ behavior: 'smooth' })
-    else window.location.hash = '#contact'
-  }
 
   return (
     <section
@@ -90,19 +81,15 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
                 className="btn-sovereign text-base px-8 w-full sm:w-auto"
                 asChild
               >
-                <a href="#contact" onClick={handleDemoRequest}>
-                  {tHero('primaryCta')}
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                className="btn-glass text-base px-8 w-full sm:w-auto"
-                asChild
-              >
                 <a href="https://app.collabdt.org/cdt" target="_blank" rel="noopener noreferrer">
                   {tHero('secondaryCta')}
                 </a>
               </Button>
+              <GithubReleaseButton
+                label="GitHub"
+                size="lg"
+                className="btn-glass text-base px-8 w-full sm:w-auto"
+              />
               <HeroReleaseCountdown />
             </motion.div>
           </motion.div>

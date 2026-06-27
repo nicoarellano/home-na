@@ -1,21 +1,17 @@
-'use client'
-
 import HeroSection from './HeroSection'
-import TrustedBySection from './TrustedBySection'
 import MissionSection from './MissionSection'
+import DemosSection from './DemosSection'
 import WhyCdtSection from './WhyCdtSection'
 import CapabilitiesSection from './CapabilitiesSection'
-import DemosSection from './DemosSection'
-import ContactSection from './ContactSection'
-import { useContactForm } from './useContactForm'
+import DocsHeroSection from './DocsHeroSection'
+import FaqSection from './FaqSection'
+import TrustedBySection from './TrustedBySection'
 
 interface HomeBodyProps {
   assetsUrl: string
 }
 
 export function HomeBody({ assetsUrl }: HomeBodyProps) {
-  const { handleSubmit, isSubmitting } = useContactForm()
-
   return (
     <>
       <HeroSection assetsUrl={assetsUrl} />
@@ -23,8 +19,9 @@ export function HomeBody({ assetsUrl }: HomeBodyProps) {
       <DemosSection assetsUrl={assetsUrl} />
       <WhyCdtSection background="var(--hp-low)" />
       <CapabilitiesSection />
+      <DocsHeroSection />
+      <FaqSection />
       <TrustedBySection />
-      <ContactSection onSubmit={handleSubmit} isSubmitting={isSubmitting} />
     </>
   )
 }

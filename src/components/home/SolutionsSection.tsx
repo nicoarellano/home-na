@@ -16,10 +16,10 @@ interface Solution {
 }
 
 const SOLUTIONS: Record<SolutionKey, Solution> = {
-  managedCloud: { key: 'managedCloud', icon: Cloud, href: '/#contact', external: false },
+  managedCloud: { key: 'managedCloud', icon: Cloud, href: '/contact', external: false },
   selfManaged: { key: 'selfManaged', icon: Server, href: 'https://docs.collabdt.org/', external: true },
-  customDev: { key: 'customDev', icon: Hammer, href: '/#contact', external: false },
-  training: { key: 'training', icon: GraduationCap, href: '/#contact', external: false },
+  customDev: { key: 'customDev', icon: Hammer, href: '/contact', external: false },
+  training: { key: 'training', icon: GraduationCap, href: '/contact', external: false },
 }
 
 interface Group {
