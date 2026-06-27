@@ -3,7 +3,6 @@
     "nav": {
       "home": "accueil",
       "about": "à propos de nous",
-      "resources": "ressources",
       "services": "services",
       "contact": "contact"
     },
@@ -11,10 +10,8 @@
       "tagline": "Bâtir des connexions numériques, ensemble",
       "title": "Jumeaux numériques multi-échelles.",
       "description": "Une plateforme ouverte, dans le navigateur, pour créer, héberger et explorer des jumeaux numériques, déployée à votre manière, personnalisée selon vos besoins et libre de tout verrouillage propriétaire. Économie de recouvrement des coûts. Code source disponible.",
-      "primaryCta": "Demander une démo",
       "secondaryCta": "Explorer la plateforme",
-      "platformButton": "Plateforme",
-      "videoFallback": "Votre navigateur ne prend pas en charge la balise vidéo."
+      "platformButton": "Plateforme"
     },
     "metadata": {
       "title": "Collab Digital Twins",
@@ -36,14 +33,7 @@
     },
     "pageHeaders": {
       "about": {
-        "eyebrow": "À propos de nous",
-        "title": "Une infrastructure ouverte, conçue pour durer.",
-        "subtitle": "Pourquoi nous bâtissons ainsi : les principes derrière la plateforme, les façons de la déployer et de l'étendre."
-      },
-      "resources": {
-        "eyebrow": "Ressources",
-        "title": "Principes, documentation et réponses.",
-        "subtitle": "Les principes sur lesquels repose la plateforme, la documentation pour développeurs et les réponses aux questions fréquentes sur la sécurité et la confidentialité des données."
+        "eyebrow": "À propos de nous"
       },
       "services": {
         "eyebrow": "Services",
@@ -129,38 +119,7 @@
         }
       ]
     },
-    "trustBand": {
-      "heading": "Notre fonctionnement",
-      "subheading": "Cinq engagements qui guident chaque décision concernant la plateforme.",
-      "openStandards": {
-        "label": "Standards ouverts",
-        "body": "Bâtie sur IFC, glTF et d'autres formats ouverts, vos données ne sont donc jamais captives d'un fournisseur."
-      },
-      "agpl": {
-        "label": "AGPL-3.0, source disponible",
-        "body": "L'intégralité du code source est publique et vérifiable sous licence copyleft."
-      },
-      "sovereignHosted": {
-        "label": "Hébergement souverain",
-        "body": "Fonctionne sur une infrastructure que vous contrôlez, dans la juridiction de votre choix."
-      },
-      "costRecovery": {
-        "label": "Tarification au coût",
-        "body": "Tarifée pour soutenir la plateforme, pas pour en tirer profit."
-      },
-      "boardGoverned": {
-        "label": "OBNL gouverné par un conseil",
-        "body": "Administrée par un conseil sans but lucratif redevable à la communauté qu'il dessert."
-      }
-    },
-    "architecture": {
-      "sectionLabel": "Architecture de la plateforme",
-      "title": "Une pile ouverte, de bout en bout.",
-      "subtitle": "Du navigateur jusqu'à l'infrastructure auto-hébergée, chaque couche repose sur des standards ouverts et des composants libres. Découvrez comment les pièces s'assemblent.",
-      "cta": "Explorer l'architecture de la plateforme"
-    },
     "mission": {
-      "sectionLabel": "Notre mission",
       "title": "Relier les personnes, les lieux et les données qui les façonnent.",
       "body": "Collab Digital Twins est un organisme à but non lucratif qui développe une infrastructure partagée pour les jumeaux numériques, afin que les institutions, les communautés et les chercheurs puissent documenter, comprendre et gérer les bâtiments, les quartiers et les paysages qu'ils partagent."
     },
@@ -315,41 +274,6 @@
         "body": "Conçu dès le départ pour relier BIM, SIG, recherche et opérations. La plateforme épouse la façon dont les institutions travaillent réellement."
       }
     },
-    "values": {
-      "title": "Principes sur lesquels bâtir",
-      "openStandards": {
-        "title": "Standards ouverts",
-        "description": "Éliminer les barrières propriétaires et promouvoir l'interopérabilité grâce aux standards ouverts."
-      },
-      "communityDriven": {
-        "title": "Axé sur la communauté",
-        "description": "Construire avec et pour la communauté."
-      },
-      "transparent": {
-        "title": "Transparent",
-        "description": "Favoriser la confiance et le développement collaboratif grâce au code open source."
-      },
-      "imagination": {
-        "title": "Imagination",
-        "description": "Repousser les limites actuelles de ce qui est possible avec les technologies numériques open source."
-      },
-      "multidisciplinary": {
-        "title": "Multidisciplinaire",
-        "description": "Où nous en sommes aujourd'hui prouve que nous sommes plus forts et plus intelligents ensemble."
-      },
-      "accessible": {
-        "title": "Accessible",
-        "description": "Donner à chacun des outils intuitifs et conviviaux qui fonctionnent directement dans le navigateur."
-      }
-    },
-    "developers": {
-      "sectionLabel": "Plateforme développeur",
-      "title": "Étendez la plateforme. Intégrez vos systèmes.",
-      "body": "API documentées et écosystème de contributeurs pour outils d'analyse, extensions et intégrations. Construisez aux côtés du cœur, ou par-dessus.",
-      "docsLabel": "Documentation API",
-      "githubLabel": "GitHub",
-      "mailingLabel": "Liste de diffusion développeurs"
-    },
     "leadership": {
       "sectionLabel": "Équipe",
       "title": "Deux décennies de recherche et de pratique, ancrées dans une communauté.",
@@ -362,8 +286,6 @@
         "bodyExtra": "Depuis près de vingt ans, l'équipe de recherche du CIMS apporte de l'innovation numérique aux projets les plus significatifs au Canada, y compris la réhabilitation de la Colline du Parlement, en partenariat avec le Conseil national de recherches, Services publics et Approvisionnement Canada, le ministère de la Défense nationale, le Sénat du Canada et Affaires mondiales Canada, aux côtés de grands partenaires industriels. Collab Digital Twins poursuit cette approche dans les technologies de jumeaux numériques : de façon indépendante, ouverte et à grande échelle.",
         "cta": "Visitez cims.carleton.ca"
       },
-      "boardLabel": "Conseil d'administration",
-      "boardIntro": "Chaque administrateur possède plus d'une décennie d'expérience au CIMS, y compris son directeur fondateur et sa directrice associée.",
       "titles": {
         "director": "Administrateur",
         "directorFemale": "Administratrice",
@@ -390,8 +312,7 @@
       "sendButton": "Demander une démo",
       "sending": "Envoi en cours...",
       "orEmail": "Ou envoyez-nous un e-mail directement à",
-      "infoEmail": "info@collabdt.org",
-      "supportEmail": "support@collabdt.org"
+      "infoEmail": "info@collabdt.org"
     },
     "footer": {
       "tagline": "construire des connexions numériques, ensemble",
@@ -402,7 +323,6 @@
       "copyright": "Collab Digital Twins. Tous droits réservés.",
       "navigate": "Naviguer",
       "navAbout": "À propos de nous",
-      "navResources": "Ressources",
       "navServices": "Services",
       "navContact": "Contact",
       "navPlatform": "Plateforme",

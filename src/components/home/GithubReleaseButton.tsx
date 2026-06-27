@@ -19,7 +19,15 @@ function daysUntilRelease(): number {
   return Math.ceil(ms / 86_400_000)
 }
 
-export default function GithubReleaseButton({ className }: { className?: string }) {
+export default function GithubReleaseButton({
+  className,
+  label,
+  size,
+}: {
+  className?: string
+  label?: string
+  size?: 'sm' | 'lg'
+}) {
   const t = useTranslations('HomePage.githubRelease')
   const [mounted, setMounted] = useState(false)
   const [open, setOpen] = useState(false)
@@ -54,12 +62,18 @@ export default function GithubReleaseButton({ className }: { className?: string 
     <>
       <Button
         variant="ghost"
+        size={size}
         onClick={() => setOpen(true)}
         aria-label={t('githubAria')}
-        className={`p-2 rounded-lg transition-colors ${className ?? ''}`}
-        style={{ color: 'var(--hp-on-surface-variant)' }}
+        className={
+          label
+            ? `transition-colors ${className ?? ''}`
+            : `p-2 rounded-lg transition-colors ${className ?? ''}`
+        }
+        style={label ? undefined : { color: 'var(--hp-on-surface-variant)' }}
       >
         <Github className="w-4 h-4" />
+        {label && <span>{label}</span>}
       </Button>
 
       {mounted &&

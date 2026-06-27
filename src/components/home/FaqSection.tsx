@@ -169,7 +169,7 @@ export default function FaqSection() {
           <p className="text-[0.95rem]" style={{ color: 'var(--hp-on-surface-variant)' }}>
             {t('stillQuestions')}{' '}
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center gap-1 font-semibold transition-opacity hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--hp-primary-container)] rounded"
               style={{ color: 'var(--hp-primary-container)' }}
             >

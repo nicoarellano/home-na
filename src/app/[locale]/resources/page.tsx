@@ -1,22 +1,19 @@
 import { setRequestLocale } from 'next-intl/server'
-import { SiteChrome } from '@/components/home/SiteChrome'
-import DocsHeroSection from '@/components/home/DocsHeroSection'
-import PlatformArchitectureEmbed from '@/components/home/PlatformArchitectureEmbed'
-import FaqSection from '@/components/home/FaqSection'
 
 interface Props {
   params: Promise<{ locale: string }>
 }
 
-export default async function ResourcesPage({ params }: Props) {
+/**
+ * The Resources page has been retired: its Documentation and FAQ sections now
+ * live at the end of the home page, and the platform-architecture embed is
+ * archived (kept in the repo, no longer rendered). Redirect any old
+ * /resources links back to the home page.
+ *
+ * Relative to /[locale]/resources/ (trailingSlash), `../` resolves to /[locale]/.
+ */
+export default async function ResourcesRedirect({ params }: Props) {
   const { locale } = await params
   setRequestLocale(locale)
-
-  return (
-    <SiteChrome>
-      <DocsHeroSection />
-      <PlatformArchitectureEmbed />
-      <FaqSection />
-    </SiteChrome>
-  )
+  return <meta httpEquiv="refresh" content="0; url=../" />
 }

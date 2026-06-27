@@ -51,7 +51,7 @@ export default function ContactSection({ onSubmit, isSubmitting = false }: Conta
   return (
     <section
       id="contact"
-      className="py-20 md:py-24 relative"
+      className="pt-32 md:pt-40 pb-20 md:pb-24 relative"
       style={{ background: 'var(--hp-low)' }}
     >
       <div className="container mx-auto px-6">

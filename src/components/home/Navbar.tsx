@@ -19,14 +19,13 @@ interface NavbarProps {
   showNavigation?: boolean
 }
 
-type NavKey = 'home' | 'about' | 'resources' | 'services' | 'contact'
+type NavKey = 'home' | 'about' | 'services' | 'contact'
 
 const NAV_ITEMS: { key: NavKey; href: string }[] = [
   { key: 'home', href: '/' },
   { key: 'about', href: '/about' },
-  { key: 'resources', href: '/resources' },
   { key: 'services', href: '/services' },
-  { key: 'contact', href: '/#contact' },
+  { key: 'contact', href: '/contact' },
 ]
 
 export default function Navbar({

@@ -3,7 +3,6 @@
     "nav": {
       "home": "inicio",
       "about": "acerca de nosotros",
-      "resources": "recursos",
       "services": "servicios",
       "contact": "contacto"
     },
@@ -11,10 +10,8 @@
       "tagline": "Construyendo conexiones digitales, juntos",
       "title": "Gemelos digitales multi-escala.",
       "description": "Una plataforma abierta, en el navegador, para crear, alojar y explorar gemelos digitales, desplegada a tu manera, personalizada según tus necesidades y libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible.",
-      "primaryCta": "Solicitar una demo",
       "secondaryCta": "Explorar la plataforma",
-      "platformButton": "Plataforma",
-      "videoFallback": "Tu navegador no admite la etiqueta de video."
+      "platformButton": "Plataforma"
     },
     "metadata": {
       "title": "Collab Digital Twins",
@@ -36,14 +33,7 @@
     },
     "pageHeaders": {
       "about": {
-        "eyebrow": "Acerca de nosotros",
-        "title": "Infraestructura abierta, hecha para durar.",
-        "subtitle": "Por qué construimos como lo hacemos: los principios detrás de la plataforma, las formas de desplegarla y de extenderla."
-      },
-      "resources": {
-        "eyebrow": "Recursos",
-        "title": "Principios, documentación y respuestas.",
-        "subtitle": "Los principios sobre los que se construye la plataforma, la documentación para desarrolladores y las respuestas a preguntas frecuentes sobre seguridad y privacidad de datos."
+        "eyebrow": "Acerca de nosotros"
       },
       "services": {
         "eyebrow": "Servicios",
@@ -129,38 +119,7 @@
         }
       ]
     },
-    "trustBand": {
-      "heading": "Cómo operamos",
-      "subheading": "Cinco compromisos que guían cada decisión sobre la plataforma.",
-      "openStandards": {
-        "label": "Estándares abiertos",
-        "body": "Construida sobre IFC, glTF y otros formatos abiertos, así tus datos nunca quedan atados a un proveedor."
-      },
-      "agpl": {
-        "label": "AGPL-3.0, código disponible",
-        "body": "Todo el código fuente es público y auditable bajo una licencia copyleft."
-      },
-      "sovereignHosted": {
-        "label": "Alojamiento soberano",
-        "body": "Funciona sobre infraestructura que tú controlas, en la jurisdicción que elijas."
-      },
-      "costRecovery": {
-        "label": "Tarifas a costo",
-        "body": "Con precios para sostener la plataforma, no para lucrar con ella."
-      },
-      "boardGoverned": {
-        "label": "OSFL gobernada por junta",
-        "body": "Gestionada por una junta sin fines de lucro responsable ante la comunidad a la que sirve."
-      }
-    },
-    "architecture": {
-      "sectionLabel": "Arquitectura de la plataforma",
-      "title": "Una pila abierta, de extremo a extremo.",
-      "subtitle": "Desde el navegador hasta la infraestructura autoalojada, cada capa se basa en estándares abiertos y componentes de código abierto. Descubre cómo encajan las piezas.",
-      "cta": "Explora la arquitectura de la plataforma"
-    },
     "mission": {
-      "sectionLabel": "Nuestra misión",
       "title": "Conectar a las personas, los lugares y los datos que les dan forma.",
       "body": "Collab Digital Twins es una organización sin fines de lucro que desarrolla una infraestructura compartida para gemelos digitales, de modo que las instituciones, las comunidades y las personas investigadoras puedan documentar, comprender y gestionar los edificios, los barrios y los paisajes que comparten."
     },
@@ -315,41 +274,6 @@
         "body": "Construido desde el principio para conectar BIM, GIS, investigación y operaciones. La plataforma se adapta a cómo realmente trabajan las instituciones."
       }
     },
-    "values": {
-      "title": "Principios sobre los que construir",
-      "openStandards": {
-        "title": "Estándares abiertos",
-        "description": "Eliminar barreras propietarias y promover la interoperabilidad a través de estándares abiertos."
-      },
-      "communityDriven": {
-        "title": "Impulsados por la comunidad",
-        "description": "Construir con y para la comunidad."
-      },
-      "transparent": {
-        "title": "Transparentes",
-        "description": "Fomentar la confianza y el desarrollo colaborativo a través de código de fuente abierta."
-      },
-      "imagination": {
-        "title": "Imaginación",
-        "description": "Desafiar los límites actuales de lo que es posible con las tecnologías digitales de código abierto."
-      },
-      "multidisciplinary": {
-        "title": "Multidisciplinarios",
-        "description": "Donde estamos hoy es prueba de que somos más fuertes y más inteligentes juntos."
-      },
-      "accessible": {
-        "title": "Accesibles",
-        "description": "Dar a todas las personas herramientas intuitivas y fáciles de usar que funcionan directamente en el navegador."
-      }
-    },
-    "developers": {
-      "sectionLabel": "Plataforma para desarrolladores",
-      "title": "Extiende la plataforma. Integra tus sistemas.",
-      "body": "APIs documentadas y un ecosistema de colaboración para herramientas de análisis, extensiones e integraciones. Construye junto al núcleo, o encima de él.",
-      "docsLabel": "Documentación",
-      "githubLabel": "GitHub",
-      "mailingLabel": "Lista de correo para desarrolladores"
-    },
     "leadership": {
       "sectionLabel": "Equipo",
       "title": "Dos décadas de investigación y práctica, arraigadas en la comunidad.",
@@ -362,8 +286,6 @@
         "bodyExtra": "Durante casi dos décadas, el equipo de investigación de CIMS ha aportado innovación digital a los proyectos más significativos de Canadá, incluida la rehabilitación de Parliament Hill, en colaboración con el Consejo Nacional de Investigación, Servicios Públicos y Adquisiciones de Canadá, el Departamento de Defensa Nacional, el Senado de Canadá y Asuntos Globales Canadá, junto a grandes socios industriales. Collab Digital Twins continúa este enfoque en las tecnologías de gemelos digitales: de forma independiente, abierta y a escala.",
         "cta": "Visita cims.carleton.ca"
       },
-      "boardLabel": "Junta directiva",
-      "boardIntro": "Cada director cuenta con más de una década de experiencia en CIMS, incluidos su director fundador y su directora asociada.",
       "titles": {
         "director": "Director",
         "directorFemale": "Directora",
@@ -390,8 +312,7 @@
       "sendButton": "Solicitar demo",
       "sending": "Enviando...",
       "orEmail": "O envíanos un correo directamente a",
-      "infoEmail": "info@collabdt.org",
-      "supportEmail": "support@collabdt.org"
+      "infoEmail": "info@collabdt.org"
     },
     "footer": {
       "tagline": "construyendo conexiones digitales, juntos",
@@ -402,7 +323,6 @@
       "copyright": "Collab Digital Twins. Todos los derechos reservados.",
       "navigate": "Navegar",
       "navAbout": "Acerca de nosotros",
-      "navResources": "Recursos",
       "navServices": "Servicios",
       "navContact": "Contacto",
       "navPlatform": "Plataforma",
