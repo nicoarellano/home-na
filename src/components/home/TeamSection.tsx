@@ -190,22 +190,6 @@ export default function TeamSection() {
           </p>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5 }}
-          className="space-y-3 mb-12 max-w-3xl"
-        >
-          <div className="section-label">{tTeam('boardLabel')}</div>
-          <p
-            className="text-base leading-relaxed"
-            style={{ color: 'var(--hp-on-surface-variant)' }}
-          >
-            {tTeam('boardIntro')}
-          </p>
-        </motion.div>
-
         <div className="flex flex-col items-center gap-8 sm:flex-row sm:flex-wrap sm:justify-between">
           {directors.map((director) => (
             <DirectorCard key={director.name} director={director} />

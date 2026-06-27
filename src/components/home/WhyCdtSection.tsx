@@ -2,39 +2,37 @@
 
 import { motion } from 'framer-motion'
 import {
+  Unlock,
+  ShieldCheck,
+  CircleDollarSign,
   Layers,
-  Network,
-  Plug,
-  Server,
-  Wrench,
-  GraduationCap,
   type LucideIcon,
 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
-interface Capability {
-  key: 'bridge' | 'interop' | 'extend' | 'deploy' | 'customize' | 'train'
+interface Pillar {
+  key: 'noLockIn' | 'dataSovereignty' | 'costRecovery' | 'multidisciplinary'
   icon: LucideIcon
 }
 
-const CAPABILITIES: Capability[] = [
-  { key: 'bridge', icon: Layers },
-  { key: 'interop', icon: Network },
-  { key: 'extend', icon: Plug },
-  { key: 'deploy', icon: Server },
-  { key: 'customize', icon: Wrench },
-  { key: 'train', icon: GraduationCap },
+const PILLARS: Pillar[] = [
+  { key: 'noLockIn', icon: Unlock },
+  { key: 'dataSovereignty', icon: ShieldCheck },
+  { key: 'costRecovery', icon: CircleDollarSign },
+  { key: 'multidisciplinary', icon: Layers },
 ]
 
-export default function CapabilitiesSection() {
-  const t = useTranslations('HomePage.capabilities')
+interface WhyCdtSectionProps {
+  background?: string
+}
+
+export default function WhyCdtSection({
+  background = 'var(--hp-surface)',
+}: WhyCdtSectionProps) {
+  const tWhy = useTranslations('HomePage.whyCdt')
 
   return (
-    <section
-      id="capabilities"
-      className="py-20 md:py-24 relative"
-      style={{ background: 'var(--hp-surface)' }}
-    >
+    <section id="whyCdt" className="py-20 md:py-24 relative" style={{ background }}>
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -44,7 +42,7 @@ export default function CapabilitiesSection() {
             transition={{ duration: 0.6 }}
             className="mb-14 max-w-3xl lg:max-w-4xl space-y-4"
           >
-            <div className="section-label">{t('sectionLabel')}</div>
+            <div className="section-label">{tWhy('sectionLabel')}</div>
             <h2
               className="font-display font-bold"
               style={{
@@ -54,12 +52,12 @@ export default function CapabilitiesSection() {
                 color: 'var(--hp-on-surface)',
               }}
             >
-              {t('title')}
+              {tWhy('title')}
             </h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 gap-x-10 lg:gap-x-16">
-            {CAPABILITIES.map(({ key, icon: Icon }, idx) => (
+            {PILLARS.map(({ key, icon: Icon }, idx) => (
               <motion.div
                 key={key}
                 initial={{ opacity: 0, y: 20 }}
@@ -88,13 +86,13 @@ export default function CapabilitiesSection() {
                       color: 'var(--hp-on-surface)',
                     }}
                   >
-                    {t(`${key}.title`)}
+                    {tWhy(`${key}.title`)}
                   </h3>
                   <p
                     className="text-[0.95rem] leading-relaxed"
                     style={{ color: 'var(--hp-on-surface-variant)' }}
                   >
-                    {t(`${key}.body`)}
+                    {tWhy(`${key}.body`)}
                   </p>
                 </div>
               </motion.div>
