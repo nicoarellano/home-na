@@ -21,11 +21,11 @@ function daysUntilRelease(): number {
 
 export default function GithubReleaseButton({
   className,
-  label,
+  countdown,
   size,
 }: {
   className?: string
-  label?: string
+  countdown?: boolean
   size?: 'sm' | 'lg'
 }) {
   const t = useTranslations('HomePage.githubRelease')
@@ -58,6 +58,12 @@ export default function GithubReleaseButton({
     }
   }, [open])
 
+  // In countdown mode the button label is the release countdown ("Open-source
+  // in N days"). Before mount and once released it falls back to the GitHub
+  // label, keeping the SSR/first-client render stable (no hydration mismatch).
+  const countdownText =
+    mounted && !released ? t('heroCountdown', { days }) : t('viewOnGithub')
+
   return (
     <>
       <Button
@@ -66,14 +72,14 @@ export default function GithubReleaseButton({
         onClick={() => setOpen(true)}
         aria-label={t('githubAria')}
         className={
-          label
+          countdown
             ? `transition-colors ${className ?? ''}`
             : `p-2 rounded-lg transition-colors ${className ?? ''}`
         }
-        style={label ? undefined : { color: 'var(--hp-on-surface-variant)' }}
+        style={countdown ? undefined : { color: 'var(--hp-on-surface-variant)' }}
       >
         <Github className="w-4 h-4" />
-        {label && <span>{label}</span>}
+        {countdown && <span>{countdownText}</span>}
       </Button>
 
       {mounted &&
