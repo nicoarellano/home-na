@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/Button'
 import AnimatedBackground from '@/components/ui/AnimatedBackground'
 import Globe from '@/components/ui/Globe'
-import HeroReleaseCountdown from '@/components/home/HeroReleaseCountdown'
 import GithubReleaseButton from '@/components/home/GithubReleaseButton'
 
 interface HeroSectionProps {
@@ -86,11 +85,10 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
                 </a>
               </Button>
               <GithubReleaseButton
-                label="GitHub"
+                countdown
                 size="lg"
                 className="btn-glass text-base px-8 w-full sm:w-auto"
               />
-              <HeroReleaseCountdown />
             </motion.div>
           </motion.div>
 
