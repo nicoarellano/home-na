@@ -84,6 +84,15 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
                   {tHero('secondaryCta')}
                 </a>
               </Button>
+              <Button
+                size="lg"
+                className="btn-glass text-base px-8 w-full sm:w-auto"
+                asChild
+              >
+                <a href="https://docs.collabdt.org/" target="_blank" rel="noopener noreferrer">
+                  {tHero('docsButton')}
+                </a>
+              </Button>
               <GithubReleaseButton
                 countdown
                 size="lg"
