@@ -5,14 +5,14 @@
       "about": "à propos de nous",
       "services": "services",
       "contact": "contact",
-      "goToDocs": "Aller à la documentation de l'API"
+      "goToDocs": "Aller à la documentation de la plateforme"
     },
     "hero": {
       "tagline": "Bâtir des connexions numériques, ensemble",
       "title": "Jumeaux numériques multi-échelles.",
       "description": "Une plateforme ouverte, dans le navigateur, pour créer, héberger et explorer des jumeaux numériques, déployée à votre manière, personnalisée selon vos besoins et libre de tout verrouillage propriétaire. Économie de recouvrement des coûts. Code source disponible.",
       "secondaryCta": "Explorer la plateforme",
-      "platformButton": "Plateforme"
+      "docsButton": "Documentations"
     },
     "metadata": {
       "title": "Collab Digital Twins",
