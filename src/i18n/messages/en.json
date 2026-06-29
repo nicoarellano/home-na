@@ -4,7 +4,8 @@
       "home": "home",
       "about": "about us",
       "services": "services",
-      "contact": "contact"
+      "contact": "contact",
+      "goToDocs": "Go to the API documentation"
     },
     "hero": {
       "tagline": "Building digital connections, together",
@@ -79,7 +80,7 @@
         },
         {
           "question": "Who can access our data?",
-          "answer": "Only the people you authorize. Access is governed by role-based permissions on a least-privilege model, and every sign-in is protected by multi-factor authentication. On self-managed deployments no one outside your organization has access at all, and we never sell or share your data.",
+          "answer": "Only the people you authorize. Access is governed by role-based permissions on a least-privilege model, and every sign-in is protected by multi-factor authentication. With self-managed deployments, no one outside your organization has access, and we never sell or share your data.",
           "link": {
             "href": "https://docs.collabdt.org/docs/authorization/overview",
             "label": "Read about roles & permissions"
@@ -103,7 +104,7 @@
         },
         {
           "question": "Can we self-host on our own infrastructure?",
-          "answer": "Absolutely. CDT ships as a containerized stack that starts with a single command via Docker or Podman, entirely on-premise or in your own cloud, giving you complete control over data, network, and integrations.",
+          "answer": "Absolutely. CDT ships as a containerized stack that starts with a single command via Docker or Podman, entirely on-premises or in your own cloud, giving you complete control over data, network, and integrations.",
           "link": {
             "href": "https://docs.collabdt.org/docs/deployment/self-hosting",
             "label": "Read the self-hosting guide"

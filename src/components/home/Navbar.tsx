@@ -1,7 +1,7 @@
 'use client'
 
 import { motion, AnimatePresence } from 'framer-motion'
-import { Moon, Sun, Menu, X } from 'lucide-react'
+import * as LR from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import { Link, usePathname } from '@/i18n/navigation'
@@ -20,6 +20,8 @@ interface NavbarProps {
 }
 
 type NavKey = 'home' | 'about' | 'services' | 'contact'
+
+const DOCS_URL = 'https://docs.collabdt.org/'
 
 const NAV_ITEMS: { key: NavKey; href: string }[] = [
   { key: 'home', href: '/' },
@@ -111,10 +113,25 @@ export default function Navbar({
                 style={{ color: 'var(--hp-on-surface-variant)' }}
                 aria-label="Toggle theme"
               >
-                {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+                {theme === 'dark' ? <LR.Sun className="w-4 h-4" /> : <LR.Moon className="w-4 h-4" />}
               </Button>
 
               <GithubReleaseButton />
+              <Button
+                variant="ghost"
+                className="p-2 rounded-lg transition-colors"
+                style={{ color: 'var(--hp-on-surface-variant)' }}
+                aria-label="Toggle theme"
+              >
+                <a
+                  href={DOCS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={tNav('goToDocs')}
+                >
+                  <LR.BookOpenText className="w-4 h-4" aria-hidden />
+                </a>
+              </Button>
 
               <Button size="sm" className="btn-nav-cta rounded-md px-5 text-sm" asChild>
                 <a href="https://app.collabdt.org/cdt" target="_blank" rel="noopener noreferrer">
@@ -130,7 +147,7 @@ export default function Navbar({
               style={{ color: 'var(--hp-on-surface-variant)' }}
               aria-label="Toggle menu"
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? <LR.X className="w-5 h-5" /> : <LR.Menu className="w-5 h-5" />}
             </Button>
           </div>
         </div>
@@ -175,7 +192,7 @@ export default function Navbar({
                     className="flex-1 p-2 rounded-lg transition-colors flex items-center justify-center gap-2"
                     style={{ color: 'var(--hp-on-surface-variant)' }}
                   >
-                    {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+                    {theme === 'dark' ? <LR.Sun className="w-4 h-4" /> : <LR.Moon className="w-4 h-4" />}
                     <span className="text-sm">{theme === 'dark' ? 'Light' : 'Dark'}</span>
                   </Button>
                   <div className="flex-1">
