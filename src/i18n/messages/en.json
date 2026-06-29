@@ -33,19 +33,19 @@
     },
     "pageHeaders": {
       "about": {
-        "eyebrow": "About Us"
+        "eyebrow": "Our Mission"
       },
       "services": {
         "eyebrow": "Services",
         "title": "Deployment and support, your way.",
-        "subtitle": "Flexible ways to deploy the platform and hands-on support to operate and extend it, with every engagement priced on cost-recovery."
+        "subtitle": "Flexible ways to deploy the platform and hands-on support to operate and extend it."
       }
     },
     "docsHero": {
       "eyebrow": "Documentation",
       "titleAccent": "Explore",
       "title": "the CDT Platform Documentation",
-      "subtitle": "Visit our guides, documentation, and examples to build on the Collab Digital Twins platform.",
+      "subtitle": "Visit our guides, documentation, and examples to build on the CDT platform.",
       "startLabel": "Where would you like to start?",
       "user": {
         "title": "I am a user",
@@ -64,8 +64,8 @@
     },
     "faq": {
       "eyebrow": "FAQ",
-      "title": "Security, privacy, and the questions behind them.",
-      "subtitle": "Straight answers on where your data lives, who can reach it, and how an open platform keeps you in control.",
+      "title": "Frequently asked questions",
+      "subtitle": "Straight answers on where your data lives, who can reach it, is it secure and private, and how an open platform keeps you in control.",
       "stillQuestions": "Still have a question we haven't answered?",
       "contactCta": "Talk to the team",
       "items": [
@@ -255,11 +255,11 @@
       }
     },
     "whyCdt": {
-      "sectionLabel": "Why CDT",
-      "title": "Built to remove the things that usually go wrong.",
+      "sectionLabel": "Why CDT?",
+      "title": "Built to remove roadblocks.",
       "noLockIn": {
         "title": "No vendor lock-in",
-        "body": "AGPL-3.0 source means you can always self-host, fork, or exit. Your investment in the platform is portable."
+        "body": "AGPL-3.0 license means you can always self-host, fork, or exit. Your investment in the platform is portable."
       },
       "dataSovereignty": {
         "title": "Data sovereignty",
@@ -267,7 +267,7 @@
       },
       "costRecovery": {
         "title": "Cost-recovery economics",
-        "body": "We're a non-profit. No profit margin baked in. Any surplus is reinvested in the platform, not extracted."
+        "body": "We're a non-profit. No profit margin baked in. Any surplus is reinvested in the platform rather than extracted."
       },
       "multidisciplinary": {
         "title": "Multidisciplinary by design",
