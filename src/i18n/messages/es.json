@@ -34,19 +34,19 @@
     },
     "pageHeaders": {
       "about": {
-        "eyebrow": "Acerca de nosotros"
+        "eyebrow": "Nuestra misión"
       },
       "services": {
         "eyebrow": "Servicios",
         "title": "Despliegue y soporte, a tu manera.",
-        "subtitle": "Formas flexibles de desplegar la plataforma y soporte práctico para operarla y extenderla, con cada servicio cobrado a costo."
+        "subtitle": "Formas flexibles de desplegar la plataforma y soporte práctico para operarla y extenderla."
       }
     },
     "docsHero": {
       "eyebrow": "Documentación",
       "titleAccent": "Explora",
       "title": "la documentación de la plataforma CDT",
-      "subtitle": "Consulta nuestras guías, documentación y ejemplos para construir sobre la plataforma Collab Digital Twins.",
+      "subtitle": "Consulta nuestras guías, documentación y ejemplos para construir sobre la plataforma CDT.",
       "startLabel": "¿Por dónde te gustaría empezar?",
       "user": {
         "title": "Soy usuario",
@@ -64,9 +64,9 @@
       "siteMap": "mapa del sitio"
     },
     "faq": {
-      "eyebrow": "Preguntas frecuentes",
-      "title": "La seguridad, la privacidad y las preguntas que las rodean.",
-      "subtitle": "Respuestas claras sobre dónde viven tus datos, quién puede acceder a ellos y cómo una plataforma abierta te mantiene al mando.",
+      "eyebrow": "FAQ",
+      "title": "Preguntas frecuentes",
+      "subtitle": "Respuestas claras sobre dónde viven tus datos, quién puede acceder a ellos, si están seguros y son privados, y cómo una plataforma abierta te mantiene al mando.",
       "stillQuestions": "¿Tienes una pregunta que no hayamos respondido?",
       "contactCta": "Habla con el equipo",
       "items": [
@@ -256,11 +256,11 @@
       }
     },
     "whyCdt": {
-      "sectionLabel": "Por qué CDT",
-      "title": "Construido para eliminar las cosas que suelen salir mal.",
+      "sectionLabel": "¿Por qué CDT?",
+      "title": "Construido para eliminar los obstáculos.",
       "noLockIn": {
         "title": "Sin bloqueo propietario",
-        "body": "El código AGPL-3.0 significa que siempre puedes auto-alojar, bifurcar o salir. Tu inversión en la plataforma es portable."
+        "body": "La licencia AGPL-3.0 significa que siempre puedes auto-alojar, bifurcar o salir. Tu inversión en la plataforma es portable."
       },
       "dataSovereignty": {
         "title": "Soberanía de datos",
@@ -268,7 +268,7 @@
       },
       "costRecovery": {
         "title": "Economía a costo",
-        "body": "Somos una OSFL. Sin margen de ganancia integrado. Cualquier excedente se reinvierte en la plataforma, no se extrae."
+        "body": "Somos una OSFL. Sin margen de ganancia integrado. Cualquier excedente se reinvierte en la plataforma en lugar de extraerse."
       },
       "multidisciplinary": {
         "title": "Multidisciplinario por diseño",
