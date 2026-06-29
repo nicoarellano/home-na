@@ -4,7 +4,8 @@
       "home": "accueil",
       "about": "à propos de nous",
       "services": "services",
-      "contact": "contact"
+      "contact": "contact",
+      "goToDocs": "Aller à la documentation de l'API"
     },
     "hero": {
       "tagline": "Bâtir des connexions numériques, ensemble",

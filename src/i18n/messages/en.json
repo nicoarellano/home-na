@@ -4,7 +4,8 @@
       "home": "home",
       "about": "about us",
       "services": "services",
-      "contact": "contact"
+      "contact": "contact",
+      "goToDocs": "Go to the API documentation"
     },
     "hero": {
       "tagline": "Building digital connections, together",
