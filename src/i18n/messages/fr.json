@@ -33,19 +33,19 @@
     },
     "pageHeaders": {
       "about": {
-        "eyebrow": "À propos de nous"
+        "eyebrow": "Notre mission"
       },
       "services": {
         "eyebrow": "Services",
         "title": "Déploiement et accompagnement, à votre manière.",
-        "subtitle": "Des façons flexibles de déployer la plateforme et un accompagnement concret pour l'exploiter et l'étendre, chaque mandat étant tarifé au recouvrement des coûts."
+        "subtitle": "Des façons flexibles de déployer la plateforme et un accompagnement concret pour l'exploiter et l'étendre."
       }
     },
     "docsHero": {
       "eyebrow": "Documentation",
       "titleAccent": "Explorez",
       "title": "la documentation de la plateforme CDT",
-      "subtitle": "Consultez nos guides, notre documentation et nos exemples pour bâtir sur la plateforme Collab Digital Twins.",
+      "subtitle": "Consultez nos guides, notre documentation et nos exemples pour bâtir sur la plateforme CDT.",
       "startLabel": "Par où souhaitez-vous commencer ?",
       "user": {
         "title": "Je suis utilisateur",
@@ -64,8 +64,8 @@
     },
     "faq": {
       "eyebrow": "FAQ",
-      "title": "La sécurité, la confidentialité et les questions qui s'y rattachent.",
-      "subtitle": "Des réponses claires sur l'endroit où vivent vos données, qui peut y accéder et comment une plateforme ouverte vous garde aux commandes.",
+      "title": "Foire aux questions",
+      "subtitle": "Des réponses claires sur l'endroit où vivent vos données, qui peut y accéder, si elles sont sécurisées et confidentielles, et comment une plateforme ouverte vous garde aux commandes.",
       "stillQuestions": "Une question à laquelle nous n'avons pas répondu ?",
       "contactCta": "Parler à l'équipe",
       "items": [
@@ -255,11 +255,11 @@
       }
     },
     "whyCdt": {
-      "sectionLabel": "Pourquoi CDT",
-      "title": "Conçu pour éliminer les choses qui dérapent habituellement.",
+      "sectionLabel": "Pourquoi CDT?",
+      "title": "Conçu pour éliminer les obstacles.",
       "noLockIn": {
         "title": "Pas de verrouillage propriétaire",
-        "body": "La source AGPL-3.0 signifie que vous pouvez toujours auto-héberger, forker ou sortir. Votre investissement dans la plateforme est portable."
+        "body": "La licence AGPL-3.0 signifie que vous pouvez toujours auto-héberger, forker ou sortir. Votre investissement dans la plateforme est portable."
       },
       "dataSovereignty": {
         "title": "Souveraineté des données",
@@ -267,7 +267,7 @@
       },
       "costRecovery": {
         "title": "Économie de recouvrement des coûts",
-        "body": "Nous sommes un OBNL. Aucune marge bénéficiaire intégrée. Tout surplus est réinvesti dans la plateforme, pas extrait."
+        "body": "Nous sommes un OBNL. Aucune marge bénéficiaire intégrée. Tout surplus est réinvesti dans la plateforme plutôt qu'extrait."
       },
       "multidisciplinary": {
         "title": "Multidisciplinaire par conception",
