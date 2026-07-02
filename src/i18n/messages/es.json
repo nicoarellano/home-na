@@ -12,7 +12,8 @@
       "title": "Gemelos digitales multi-escala.",
       "description": "Una plataforma abierta, en el navegador, para crear, alojar y explorar gemelos digitales, desplegada a tu manera, personalizada según tus necesidades y libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible.",
       "secondaryCta": "Explorar la plataforma",
-      "docsButton": "Documentación"
+      "docsButton": "Documentación",
+      "sourceCodeButton": "GitHub"
     },
     "metadata": {
       "title": "Collab Digital Twins",
@@ -23,14 +24,7 @@
     },
     "githubRelease": {
       "githubAria": "Código fuente de Collab Digital Twins en GitHub",
-      "viewOnGithub": "Ver el código fuente en GitHub",
-      "released": "¡Ya está aquí!",
-      "releasedMessage": "El código abierto de Collab Digital Twins por fin está disponible, y es todo tuyo.",
-      "close": "Cerrar",
-      "soon": "Pronto en código abierto",
-      "heroCountdown": "{days, plural, one {Código abierto en # día} other {Código abierto en # días}}",
-      "daysUnit": "{days, plural, one {día} other {días}}",
-      "releaseLine": "para el lanzamiento el 1 de julio"
+      "viewOnGithub": "Ver el código fuente en GitHub"
     },
     "pageHeaders": {
       "about": {

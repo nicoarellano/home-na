@@ -13,6 +13,7 @@
       "description": "An open, browser-based digital twin platform, deployed your way, customized to your needs, and free of vendor lock-in. Cost-recovery economics. Source available.",
       "secondaryCta": "Explore the platform",
       "docsButton": "Platform Docs",
+      "sourceCodeButton": "GitHub",
       "platformButton": "Platform"
     },
     "metadata": {
@@ -24,14 +25,7 @@
     },
     "githubRelease": {
       "githubAria": "Collab Digital Twins source on GitHub",
-      "viewOnGithub": "View source on GitHub",
-      "released": "It's here!",
-      "releasedMessage": "Collab Digital Twins' open-source code is finally released, and it's all yours.",
-      "close": "Close",
-      "soon": "Open-source soon",
-      "heroCountdown": "{days, plural, one {Open-source in # day} other {Open-source in # days}}",
-      "daysUnit": "{days, plural, one {day} other {days}}",
-      "releaseLine": "to the release on July 1st"
+      "viewOnGithub": "View source on GitHub"
     },
     "pageHeaders": {
       "about": {

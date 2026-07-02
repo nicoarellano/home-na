@@ -14,15 +14,15 @@ export default async function PrivacyPolicy({ params }: Props) {
     <PolicyLayout
       eyebrow="Legal"
       title="Privacy Policy"
+      brand="privacypolicy"
       lastUpdated="April 1, 2026"
       effectiveDate="April 1, 2026"
     >
       <p>
-        This Privacy Policy describes the policies of Carleton Immersive Media Studio,
-        Visualization and Simulation Bldg, 1125 Colonel By Drive, ON K1S 5P8, Canada,
-        email: <a href="mailto:info@collabdt.org">info@collabdt.org</a>, phone: (613) 520-2600,
+        This Privacy Policy describes the policies of <strong>Collab Digital Twins</strong>,
+        email: <a href="mailto:info@collabdt.org">info@collabdt.org</a>
         on the collection, use and disclosure of your information that we collect when you use
-        our website (<a href="https://collabdt.org" target="_blank" rel="noopener noreferrer">https://collabdt.org</a>)
+        our platform (<a href="https://app.collabdt.org" target="_blank" rel="noopener noreferrer">https://app.collabdt.org</a>)
         (the &quot;Service&quot;). By accessing or using the Service, you are consenting to the collection,
         use and disclosure of your information in accordance with this Privacy Policy. If you do not
         consent to the same, please do not access or use the Service.

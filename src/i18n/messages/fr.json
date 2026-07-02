@@ -12,7 +12,8 @@
       "title": "Jumeaux numériques multi-échelles.",
       "description": "Une plateforme ouverte, dans le navigateur, pour créer, héberger et explorer des jumeaux numériques, déployée à votre manière, personnalisée selon vos besoins et libre de tout verrouillage propriétaire. Économie de recouvrement des coûts. Code source disponible.",
       "secondaryCta": "Explorer la plateforme",
-      "docsButton": "Documentations"
+      "docsButton": "Documentations",
+      "sourceCodeButton": "GitHub"
     },
     "metadata": {
       "title": "Collab Digital Twins",
@@ -23,14 +24,7 @@
     },
     "githubRelease": {
       "githubAria": "Code source de Collab Digital Twins sur GitHub",
-      "viewOnGithub": "Voir le code source sur GitHub",
-      "released": "Ça y est !",
-      "releasedMessage": "Le code open source de Collab Digital Twins est enfin disponible, et il est à vous.",
-      "close": "Fermer",
-      "soon": "Bientôt en open source",
-      "heroCountdown": "{days, plural, one {Open source dans # jour} other {Open source dans # jours}}",
-      "daysUnit": "{days, plural, one {jour} other {jours}}",
-      "releaseLine": "avant la sortie le 1er juillet"
+      "viewOnGithub": "Voir le code source sur GitHub"
     },
     "pageHeaders": {
       "about": {

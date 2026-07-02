@@ -42,24 +42,29 @@ body:has(.policy-page) {
 .policy-nav-brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  font-family: 'Geist', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: -0.01em;
-  color: var(--hp-on-surface);
+  gap: 0.75rem;
   text-decoration: none;
-  transition: color 0.2s ease, text-shadow 0.2s ease;
+  cursor: pointer;
 }
 
-.policy-nav-brand:hover {
+.policy-nav-brand-text {
+  font-family: 'Geist', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1.75rem;
+  text-transform: lowercase;
   color: var(--hp-on-surface);
-  text-shadow: 0 0 18px rgba(239, 145, 97, 0.55), 0 0 6px rgba(255, 182, 146, 0.3);
+  transition: color 0.2s ease;
+}
+
+.policy-nav-brand-accent {
+  color: var(--hp-primary-container);
 }
 
 .policy-nav-logo {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
   flex-shrink: 0;
 }
 
@@ -92,18 +97,21 @@ body:has(.policy-page) {
 .policy-nav-back {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.82rem;
-  font-weight: 600;
-  font-family: 'Geist', sans-serif;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--hp-outline-variant);
+  border-radius: 0.5rem;
   color: var(--hp-on-surface-variant);
   text-decoration: none;
-  letter-spacing: 0.01em;
-  transition: color 0.15s ease;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .policy-nav-back:hover {
+  background: var(--hp-low);
+  border-color: var(--hp-primary-container);
   color: var(--hp-primary-container);
+  transform: scale(1.08);
 }
 
 .policy-content {

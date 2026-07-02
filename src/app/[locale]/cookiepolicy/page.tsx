@@ -13,6 +13,7 @@ export default async function CookiePolicy({ params }: Props) {
     <PolicyLayout
       eyebrow="Legal"
       title="Cookie Policy"
+      brand="cookiespolicy"
       lastUpdated="April 8, 2026"
       effectiveDate="April 8, 2026"
     >
