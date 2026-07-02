@@ -7,7 +7,6 @@ import { useState } from 'react'
 import { Link, usePathname } from '@/i18n/navigation'
 import { Button } from '@/components/ui/Button'
 import LanguageToggle from '@/components/ui/LanguageToggle'
-import GithubReleaseButton from '@/components/home/GithubReleaseButton'
 import { CdtIcon } from '@/components/ui/CdtIcon'
 import { Language } from '@/lib/language'
 
@@ -22,6 +21,7 @@ interface NavbarProps {
 type NavKey = 'home' | 'about' | 'services' | 'contact'
 
 const DOCS_URL = 'https://docs.collabdt.org/'
+const GH_URL = 'https://github.com/CollabDigitalTwins/core'
 
 const NAV_ITEMS: { key: NavKey; href: string }[] = [
   { key: 'home', href: '/' },
@@ -39,6 +39,7 @@ export default function Navbar({
 }: NavbarProps) {
   const tNav = useTranslations('HomePage.nav')
   const tHero = useTranslations('HomePage.hero')
+  const tGh = useTranslations('HomePage.githubRelease')
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -116,12 +117,28 @@ export default function Navbar({
                 {theme === 'dark' ? <LR.Sun className="w-4 h-4" /> : <LR.Moon className="w-4 h-4" />}
               </Button>
 
-              <GithubReleaseButton />
               <Button
                 variant="ghost"
                 className="p-2 rounded-lg transition-colors"
                 style={{ color: 'var(--hp-on-surface-variant)' }}
-                aria-label="Toggle theme"
+                aria-label={tGh('githubAria')}
+                asChild
+              >
+                <a
+                  href={GH_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={tGh('viewOnGithub')}
+                >
+                  <LR.Github className="w-4 h-4" aria-hidden />
+                </a>
+              </Button>
+              <Button
+                variant="ghost"
+                className="p-2 rounded-lg transition-colors"
+                style={{ color: 'var(--hp-on-surface-variant)' }}
+                aria-label={tNav('goToDocs')}
+                asChild
               >
                 <a
                   href={DOCS_URL}
@@ -201,7 +218,22 @@ export default function Navbar({
                 </div>
 
                 <div className="pt-2 px-1 flex items-center gap-2">
-                  <GithubReleaseButton />
+                  <Button
+                    variant="ghost"
+                    className="p-2 rounded-lg transition-colors"
+                    style={{ color: 'var(--hp-on-surface-variant)' }}
+                    aria-label={tGh('githubAria')}
+                    asChild
+                  >
+                    <a
+                      href={GH_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={tGh('viewOnGithub')}
+                    >
+                      <LR.Github className="w-4 h-4" aria-hidden />
+                    </a>
+                  </Button>
                   <Button size="sm" className="btn-sovereign flex-1 rounded-md" asChild>
                     <a href="https://app.collabdt.org/cdt" target="_blank" rel="noopener noreferrer">
                       {tHero('platformButton')}

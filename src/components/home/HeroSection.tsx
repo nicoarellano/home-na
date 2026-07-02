@@ -1,11 +1,13 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { Github } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/Button'
 import AnimatedBackground from '@/components/ui/AnimatedBackground'
 import Globe from '@/components/ui/Globe'
-import GithubReleaseButton from '@/components/home/GithubReleaseButton'
+
+const GH_URL = 'https://github.com/CollabDigitalTwins/core'
 
 interface HeroSectionProps {
   assetsUrl: string
@@ -13,6 +15,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ assetsUrl }: HeroSectionProps) {
   const tHero = useTranslations('HomePage.hero')
+  const tGh = useTranslations('HomePage.githubRelease')
 
   return (
     <section
@@ -84,20 +87,28 @@ export default function HeroSection({ assetsUrl }: HeroSectionProps) {
                   {tHero('secondaryCta')}
                 </a>
               </Button>
-              <Button
-                size="lg"
-                className="btn-glass text-base px-8 w-full sm:w-auto"
-                asChild
-              >
-                <a href="https://docs.collabdt.org/" target="_blank" rel="noopener noreferrer">
-                  {tHero('docsButton')}
-                </a>
-              </Button>
-              <GithubReleaseButton
-                countdown
-                size="lg"
-                className="btn-glass text-base px-8 w-full sm:w-auto"
-              />
+              <div className="flex items-center gap-3 w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  className="btn-glass text-base px-8 flex-1 sm:flex-none"
+                  asChild
+                >
+                  <a href="https://docs.collabdt.org/" target="_blank" rel="noopener noreferrer">
+                    {tHero('docsButton')}
+                  </a>
+                </Button>
+                <Button
+                  size="lg"
+                  className="btn-glass px-4 flex-none"
+                  aria-label={tGh('githubAria')}
+                  title={tGh('viewOnGithub')}
+                  asChild
+                >
+                  <a href={GH_URL} target="_blank" rel="noopener noreferrer">
+                    <Github className="w-4 h-4" aria-hidden />
+                  </a>
+                </Button>
+              </div>
             </motion.div>
           </motion.div>
 

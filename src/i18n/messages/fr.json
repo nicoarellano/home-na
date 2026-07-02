@@ -23,14 +23,7 @@
     },
     "githubRelease": {
       "githubAria": "Code source de Collab Digital Twins sur GitHub",
-      "viewOnGithub": "Voir le code source sur GitHub",
-      "released": "Ça y est !",
-      "releasedMessage": "Le code open source de Collab Digital Twins est enfin disponible, et il est à vous.",
-      "close": "Fermer",
-      "soon": "Bientôt en open source",
-      "heroCountdown": "{days, plural, one {Open source dans # jour} other {Open source dans # jours}}",
-      "daysUnit": "{days, plural, one {jour} other {jours}}",
-      "releaseLine": "avant la sortie le 1er juillet"
+      "viewOnGithub": "Voir le code source sur GitHub"
     },
     "pageHeaders": {
       "about": {
