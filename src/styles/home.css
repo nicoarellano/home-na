@@ -244,6 +244,25 @@ html:has(.hp) {
   border-color: rgba(239, 145, 97, 0.18);
 }
 
+/* Mobile: drop the pill chrome (background, border, dot) and keep the tagline on
+   a single tightened line — a cleaner label than the wrapped pill at small
+   widths. Grouped with `.dark` and placed after it so it wins in both themes. */
+@media (max-width: 767px) {
+  .stat-pill,
+  .dark .stat-pill {
+    padding: 0;
+    background: transparent;
+    border-color: transparent;
+    gap: 0;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    white-space: nowrap;
+  }
+  .stat-pill > span {
+    display: none;
+  }
+}
+
 .dark .hp-input:focus {
   background: var(--hp-high) !important;
   border-color: rgba(74, 61, 92, 0.18) !important;

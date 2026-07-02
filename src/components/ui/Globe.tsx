@@ -46,6 +46,14 @@ interface PaddingOptions {
 interface Props {
   mapStyleUrl?: string
   padding?: PaddingOptions
+  // When false the globe is purely decorative: it can't be dragged and it lets
+  // pointer/touch events pass through (so it never hijacks page scroll behind
+  // hero content). Defaults to true — the interactive desktop behaviour.
+  interactive?: boolean
+  // Background mode: size the sphere to this fraction of the viewport height
+  // (e.g. 0.8) and let it bleed past the viewport width instead of fitting a
+  // column. Omit for the default desktop column-fit sizing.
+  sizeToHeight?: number
 }
 
 const ROTATION_SPEED = 0.1
@@ -96,8 +104,12 @@ function rightColumnWidth(vw: number) {
   return vw >= TWO_COL_BREAKPOINT ? (content - COLUMN_GAP) / 2 : content
 }
 
-function computeGlobeSide() {
+function computeGlobeSide(sizeToHeight?: number) {
   if (typeof window === 'undefined') return DEFAULT_SIDE
+  // Background mode: size purely to a fraction of the viewport height and let the
+  // sphere bleed past the viewport width (its container crops it). Skips the
+  // column-fit logic below, which is meant for the desktop two-up layout.
+  if (sizeToHeight) return window.innerHeight * sizeToHeight
   // clientWidth excludes the scrollbar, matching the actual layout width.
   const vw = document.documentElement.clientWidth || window.innerWidth
   const growth = Math.min(Math.max(0, vw - CONTAINER_MAX) * GROWTH_PER_PX, MAX_GROWTH)
@@ -110,7 +122,7 @@ function sideToZoom(side: number) {
   return Math.max(-1, Math.min(MAX_ZOOM, Math.log2((side * GLOBE_INSET) / FIT_DIVISOR)))
 }
 
-export default function Globe({ mapStyleUrl, padding }: Props) {
+export default function Globe({ mapStyleUrl, padding, interactive = true, sizeToHeight }: Props) {
   const [side, setSide] = React.useState(DEFAULT_SIDE)
   const [zoom, setZoom] = React.useState(() => sideToZoom(DEFAULT_SIDE))
   const [flights, setFlights] = React.useState<Flight[]>([])
@@ -128,7 +140,7 @@ export default function Globe({ mapStyleUrl, padding }: Props) {
 
   React.useEffect(() => {
     const onResize = () => {
-      const next = computeGlobeSide()
+      const next = computeGlobeSide(sizeToHeight)
       setSide(next)
       setZoom(sideToZoom(next))
       // Tell maplibre its canvas changed size so the projection re-centers.
@@ -137,7 +149,7 @@ export default function Globe({ mapStyleUrl, padding }: Props) {
     onResize()
     window.addEventListener('resize', onResize)
     return () => window.removeEventListener('resize', onResize)
-  }, [])
+  }, [sizeToHeight])
 
   React.useEffect(() => {
     return () => {
@@ -316,7 +328,9 @@ export default function Globe({ mapStyleUrl, padding }: Props) {
 
   return (
     <div
-      className="pointer-events-auto opacity-75 absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2"
+      className={`${
+        interactive ? 'pointer-events-auto' : 'pointer-events-none'
+      } opacity-75 absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2`}
       style={{ width: side, height: side }}
     >
       <Map
@@ -328,6 +342,7 @@ export default function Globe({ mapStyleUrl, padding }: Props) {
         projection="globe"
         onLoad={handleMapLoad}
         attributionControl={false}
+        dragPan={interactive}
         dragRotate={false}
         touchPitch={false}
         keyboard={false}

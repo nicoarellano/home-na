@@ -13,6 +13,7 @@
       "description": "An open, browser-based digital twin platform, deployed your way, customized to your needs, and free of vendor lock-in. Cost-recovery economics. Source available.",
       "secondaryCta": "Explore the platform",
       "docsButton": "Platform Docs",
+      "sourceCodeButton": "GitHub",
       "platformButton": "Platform"
     },
     "metadata": {

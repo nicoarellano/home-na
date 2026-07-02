@@ -12,7 +12,8 @@
       "title": "Gemelos digitales multi-escala.",
       "description": "Una plataforma abierta, en el navegador, para crear, alojar y explorar gemelos digitales, desplegada a tu manera, personalizada según tus necesidades y libre de bloqueo propietario. Economía de recuperación de costos. Código fuente disponible.",
       "secondaryCta": "Explorar la plataforma",
-      "docsButton": "Documentación"
+      "docsButton": "Documentación",
+      "sourceCodeButton": "GitHub"
     },
     "metadata": {
       "title": "Collab Digital Twins",

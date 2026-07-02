@@ -12,7 +12,8 @@
       "title": "Jumeaux numériques multi-échelles.",
       "description": "Une plateforme ouverte, dans le navigateur, pour créer, héberger et explorer des jumeaux numériques, déployée à votre manière, personnalisée selon vos besoins et libre de tout verrouillage propriétaire. Économie de recouvrement des coûts. Code source disponible.",
       "secondaryCta": "Explorer la plateforme",
-      "docsButton": "Documentations"
+      "docsButton": "Documentations",
+      "sourceCodeButton": "GitHub"
     },
     "metadata": {
       "title": "Collab Digital Twins",
